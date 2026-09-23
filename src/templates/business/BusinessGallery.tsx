@@ -17,7 +17,7 @@ function BusinessGallery() {
     <Box
       as="section"
       id="gallery"
-      className="business-casebook-section business-contact-sheet"
+      className="business-casebook-section business-contact-sheet quarto-figure-panel"
       data-presentation="business-gallery"
       data-testid="gallery-section"
     >

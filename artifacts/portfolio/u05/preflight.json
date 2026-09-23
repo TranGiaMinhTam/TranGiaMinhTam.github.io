@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-16T17:43:30Z",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workingTreeEntryCount": 115,
+  "activeEntry": {
+    "path": "src/App.tsx",
+    "sha256": "be06360156977349a7147e0f6a5bda3eb47dfb067d719b894482c7fc9f80ea86"
+  },
+  "approvedRegistry": {
+    "path": "src/portfolio/research/sectionBodies.tsx",
+    "sha256": "ffec3be051b5ed79a0be62133643d3bb17e14c5073ae210b5f170292152c1318",
+    "finishedBodyCount": 5,
+    "temporaryBodyCount": 5
+  },
+  "dependencies": {
+    "packageJsonSha256": "45eccc947a2db2c91d89320b6dbf1394fce95cce5b7097948ad28205347f783a",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "dependencyDeclarationsSha256": "bfc60b12c6fe1082dd3c54cecb42c60dd301a294b77e36c1df356daa5a4a9e82",
+    "devDependencyDeclarationsSha256": "8758c3660ecb24479ecd68e22a399d45f2aab99895a0ba7385aa1398f4d9461d"
+  },
+  "versions": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "vitest": "4.1.9"
+  },
+  "baselineBuild": {
+    "modulesTransformed": 94,
+    "javascriptBytes": 249238,
+    "javascriptGzipBytes": 77391,
+    "cssBytes": 30359,
+    "cssGzipBytes": 6153
+  },
+  "evidenceInventory": {
+    "pdfCount": 7,
+    "pdfBytes": 22866108,
+    "imageCount": 3,
+    "imageBytes": 1251556,
+    "eligibleBytes": 24117664
+  },
+  "tests": {
+    "research": 19,
+    "identity": 18,
+    "shell": 39,
+    "portfolio": 92,
+    "complete": 138
+  },
+  "checks": {
+    "strictTypes": "passed",
+    "lint": "passed",
+    "activeBoundaries": "passed",
+    "recovery": "passed",
+    "shell": "passed",
+    "identity": "passed",
+    "research": "passed",
+    "productionBuild": "passed",
+    "measurement": "passed"
+  },
+  "findings": [],
+  "canProceed": true
+}

@@ -1,52 +1,41 @@
-# Unit Test Execution Instructions
+# Unit Test Instructions
 
-## Purpose
-
-Run the deterministic tests that protect typed data, navigation, layout helpers, template selection, registry behavior, CSS isolation, and accessibility safeguards.
-
-## Run All Automated Tests
+## Complete Suite
 
 ```bash
-npm run test
+npm test
 ```
 
-Expected verified result:
+Verified result: 59 files and 204 tests pass. The first resource-heavy concurrent attempt caused two unrelated legacy template timeouts; an independent rerun passed all 204 tests.
 
-- 9 test files pass.
-- 88 tests pass.
-- 0 tests fail.
+Coverage instrumentation is not configured, so no coverage percentage is claimed.
 
-Vitest reports results in the terminal. Coverage reporting is not configured, so no coverage percentage or report directory should be inferred.
-
-## Run the Unit-Oriented Group
+## Portfolio Suite
 
 ```bash
-npx vitest run src/utils/templateSelection.test.ts src/hooks/usePortfolioLayout.test.ts src/test/data/navigation.test.ts src/test/data/portfolio.test.ts src/templates/templateRegistry.test.ts src/themeAccessibility.test.ts
+npm run test:portfolio
 ```
 
-Expected verified result: 6 files and 49 tests pass.
+Verified result: 51 files and 158 tests pass.
 
-## Test Inventory
+## Focused Unit Suites
 
-| File                                     | Main responsibility                                                                                 |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `src/utils/templateSelection.test.ts`    | Source default, saved preference, invalid-value fallback, and storage failures                      |
-| `src/hooks/usePortfolioLayout.test.ts`   | Layout validation, hash parsing, route creation, fallback, and persistence                          |
-| `src/test/data/navigation.test.ts`       | Unique section IDs, labels, baseline availability, and visibility filtering                         |
-| `src/test/data/portfolio.test.ts`        | Beginner README, shared content, links, accessible media, resume facts, and certificates            |
-| `src/templates/templateRegistry.test.ts` | Two registered templates, visible selector options, complete section maps, and Engineering fallback |
-| `src/themeAccessibility.test.ts`         | Theme contrast, semantic contact colors, scoped selectors, control clearance, and reduced motion    |
+| Area                   | Command                        | Verified responsibility                                                                |
+| ---------------------- | ------------------------------ | -------------------------------------------------------------------------------------- |
+| Scientific shell       | `npm run test:shell`           | Registry, section resolution, navigation, theme, and shell behavior                    |
+| Identity and questions | `npm run test:identity`        | Hero identity, image framing, question bodies, and shell integration                   |
+| Research and data      | `npm run test:research`        | Projects, data stories, research facts, and boundary presentation                      |
+| Academic and evidence  | `npm run test:academic`        | Trajectory, evidence archive, asset metadata, and shell integration                    |
+| Tools and fieldwork    | `npm run test:tools-fieldwork` | Capability map, impact/fieldwork content, and responsive structures                    |
+| Contact and Journal    | `npm run test:contact-journal` | 14 files and 39 tests for validation, encoding, routing, lazy states, and note content |
 
-The remaining three files exercise rendered component integrations and are documented in `integration-test-instructions.md`.
+## Failure Workflow
 
-## Fixing a Failure
+1. Run the smallest focused command that reproduces the failure.
+2. Fix the source unless an approved requirement changed.
+3. Rerun the focused suite.
+4. Run `npm run test:portfolio`.
+5. Run `npm test` independently so worker contention does not mask the result.
+6. Run `npm run lint` and `npm run build` before handoff.
 
-1. Read the failing test name and first assertion message.
-2. Open the source file named in the stack trace.
-3. Correct the source or update the test only when the intended behavior changed.
-4. Rerun the focused file with `npx vitest run path/to/file.test.ts`.
-5. Rerun `npm run test` before considering the issue resolved.
-
-## When to Run
-
-Run the suite after changing shared data, assets, navigation, template availability, persistence, layouts, section names, theme components, or styling safeguards, and before publishing the site.
+Do not update expected facts, routes, or asset hashes merely to make a failing test pass; reconcile them with the approved requirements and evidence first.

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-16T12:08:03Z",
+  "unit": "U-04 Research and Data",
+  "status": "verified-pre-switch",
+  "target": "src/App.tsx",
+  "expectedSha256": "bc61903e381be228cef404331e838d8fc33bb0859156736bc936f0316bf5f2f3",
+  "content": "import { identityQuestionBodyRegistry } from './portfolio/identity'\nimport { PortfolioExperience } from './portfolio/shell/PortfolioExperience'\n\nexport function PortfolioApp() {\n  return <PortfolioExperience sectionBodies={identityQuestionBodyRegistry} />\n}\n\nfunction App() {\n  return <PortfolioApp />\n}\n\nexport default App\n",
+  "dependentRegistry": {
+    "path": "src/portfolio/identity/sectionBodies.tsx",
+    "expectedSha256": "f466f5c9f4c36ae1a504792a0b9616548d4a303c51f01591392320d6c007d56f",
+    "bodyKeys": ["identity", "questions"]
+  },
+  "restoreCondition": "Apply this exact App.tsx content only if a post-activation U-04 P0 check fails.",
+  "destructiveGitCommandsAllowed": false
+}

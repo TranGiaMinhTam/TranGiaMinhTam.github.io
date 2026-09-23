@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "targetCount": 33,
+  "existingTargetCount": 25,
+  "absentTargetCount": 8,
+  "targetStates": [
+    {
+      "path": "src/portfolio/shell/shell.types.ts",
+      "exists": true,
+      "bytes": 2387,
+      "sha256": "ae22d04204f6ed894a84b69c9d607e251244a564d738e7510a801413434b16e5"
+    },
+    {
+      "path": "src/portfolio/shell/PortfolioExperience.tsx",
+      "exists": true,
+      "bytes": 836,
+      "sha256": "4168a10257139a04f2b60225c0a5b3c20c4b0fb2c7f24fbdb617a01df90e10a9"
+    },
+    {
+      "path": "src/portfolio/shell/ObservatoryShell.tsx",
+      "exists": true,
+      "bytes": 2098,
+      "sha256": "e75bef18a1cbf7a935e62a20045e3ffe317f4fed7ef134018eefc04f8ba273bc"
+    },
+    {
+      "path": "src/portfolio/shell/SpecimenMasthead.tsx",
+      "exists": true,
+      "bytes": 614,
+      "sha256": "2e9055632bc20b6cca36ac661325c5a8d02974b062add4a27bcd9798ae09ea79"
+    },
+    {
+      "path": "src/portfolio/shell/ThemeControl.tsx",
+      "exists": true,
+      "bytes": 550,
+      "sha256": "6253a6ce04d27e731c7da23302fa693ef8308d68b3ea627ad1eaa1e5317663c8"
+    },
+    {
+      "path": "src/portfolio/shell/Shell.module.css",
+      "exists": true,
+      "bytes": 8611,
+      "sha256": "242d46e866fc68ff52f987a472056a239bedae32fd4c91af11b2533ed5e4d020"
+    },
+    {
+      "path": "src/portfolio/styles/tokens.css",
+      "exists": true,
+      "bytes": 1334,
+      "sha256": "db86eaf98d1a07594cf8ea131a4b3a821e09a3d13d61925777e7b5867a39710e"
+    },
+    {
+      "path": "src/portfolio/index.ts",
+      "exists": true,
+      "bytes": 735,
+      "sha256": "edcd8ead4b16e796ca1de53491e30f9053d993594c6a30619895ecd916e7313e"
+    },
+    {
+      "path": "src/portfolio/identity/RelationshipSummary.tsx",
+      "exists": true,
+      "bytes": 935,
+      "sha256": "5c16377af91b0ee69d2d9a56f82706660960be9e4d34d91475e34838bc966653"
+    },
+    {
+      "path": "src/portfolio/identity/IdentityQuestions.module.css",
+      "exists": true,
+      "bytes": 9609,
+      "sha256": "e62ab8ad6c00808339bb3653402b0277024e9d35d5440b1a55cb21a200a241be"
+    },
+    {
+      "path": "src/portfolio/identity/ResearchQuestions.tsx",
+      "exists": true,
+      "bytes": 1211,
+      "sha256": "5fd8db739dad29778ae98206b2990aafb786a2633c8f87d11a7458c57d1aa5b2"
+    },
+    {
+      "path": "src/portfolio/research/ResearchRelationshipSummary.tsx",
+      "exists": true,
+      "bytes": 871,
+      "sha256": "54b445200a9f24e3e1fc3df9644f6b414afbadb890cbe64966fd331c115f2a0f"
+    },
+    {
+      "path": "src/portfolio/research/ResearchData.module.css",
+      "exists": true,
+      "bytes": 11998,
+      "sha256": "8a2527501db0d30979d7d9707b24134b72f987c2690dc01bb31bd905bf088aea"
+    },
+    {
+      "path": "src/portfolio/research/LaboratoryResearch.tsx",
+      "exists": true,
+      "bytes": 2544,
+      "sha256": "3bf37efddf3a76d1daa6e1c7ca9978b966bac28595829740795bdc6ae2bc3136"
+    },
+    {
+      "path": "src/portfolio/research/ComputationalProjects.tsx",
+      "exists": true,
+      "bytes": 2443,
+      "sha256": "9cb988b0f3d917038e74003d8e79b460b34060af3b67ce5cc0c99caa958f0b4b"
+    },
+    {
+      "path": "src/portfolio/research/DataStories.tsx",
+      "exists": true,
+      "bytes": 2611,
+      "sha256": "dc9b9e77450c599add9f24a7c9c7690d8d953c30de7b37b2df549505dd82f3e8"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicRelationshipSummary.tsx",
+      "exists": true,
+      "bytes": 738,
+      "sha256": "0f396fa2d73d3a35d06fc03741c18ea3c263304e63e2d8f0565ecb2aa09b5f77"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicEvidence.module.css",
+      "exists": true,
+      "bytes": 11655,
+      "sha256": "7a7b7451efb2b4178d0ad8ed6d6861da00702542373ceb14eb20eb5ed39e64d3"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicTrajectory.tsx",
+      "exists": true,
+      "bytes": 2645,
+      "sha256": "3816885d77a5e9d2bc4f3fa9884bdf3637519ec19c0807303459ea0c5bbe7d68"
+    },
+    {
+      "path": "src/portfolio/academics/EvidenceCountSummary.tsx",
+      "exists": true,
+      "bytes": 999,
+      "sha256": "a7669e2015792708e5573d9d30c8ff6ac4865229d80dc4d89059841ec2cbcc15"
+    },
+    {
+      "path": "src/portfolio/visualization/AccessibleDataSummary.tsx",
+      "exists": true,
+      "bytes": 1602,
+      "sha256": "0880d2078b80cde1f7a09da85a1e8e09256e32fb761735f6d13ff48f1bd26e82"
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "bytes": 9276,
+      "sha256": "3f96963ae8b82f8da8146b569f840c32cd2eefd67b3e4d40f2ca53f53741d112"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "exists": true,
+      "bytes": 1576,
+      "sha256": "b26343ecf7023ddec8fd93fa410ea25272bdd6b7cba6f0ebd879b83cb3b20a0b"
+    },
+    {
+      "path": "vite.config.ts",
+      "exists": true,
+      "bytes": 562,
+      "sha256": "7d182cb8b7acbfafd245d240318dccda31a8d2e59f7e14f13d52be2b4995d360"
+    },
+    {
+      "path": "scripts/portfolio/check-boundaries.mjs",
+      "exists": true,
+      "bytes": 23294,
+      "sha256": "5f14c0acce9a7bcf7161741889e7df3441c01ace9c8a068d69bbd71cf2ac086c"
+    },
+    {
+      "path": "src/portfolio/shared/semanticSummary.types.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/shared/semanticSummaryModel.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/shared/SemanticSummary.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/shared/SemanticSummary.module.css",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/shell/mastheadModel.ts",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/masthead-alignment-candidate/index.html",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/masthead-alignment-candidate/main.tsx",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/masthead-alignment-candidate/vite.config.mjs",
+      "exists": false
+    }
+  ],
+  "trackedDiff": {
+    "path": "tracked-targets.patch",
+    "bytes": 9892,
+    "sha256": "e225273ed15e39437a6ac1b12ba23d467fedf78f922a2169b421b31e41fb62b2"
+  },
+  "protectedSources": {
+    "resume": {
+      "path": "src/assets/documents/Tran-Gia-Minh-Tam-Resume.pdf",
+      "exists": true,
+      "bytes": 169191,
+      "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+    },
+    "protectedManifest": {
+      "path": ".aidlc-recovery/source-governance-safe-foundation/protected-archive-sha256.txt",
+      "exists": true,
+      "bytes": 18622,
+      "sha256": "0b1015a9a270a9bea4e1607cdcdfc1375fd77c35fa5349341acd0a3cfa4fc0d4"
+    }
+  },
+  "restoration": {
+    "isolated": true,
+    "findings": [],
+    "passed": true
+  },
+  "canProceed": true
+}

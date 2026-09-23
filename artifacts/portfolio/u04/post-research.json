@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-09-16T13:05:24Z",
+  "phase": "active",
+  "activation": {
+    "appSha256": "be06360156977349a7147e0f6a5bda3eb47dfb067d719b894482c7fc9f80ea86",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "finishedBodyCount": 5,
+    "temporaryBodyCount": 5,
+    "bodyKeys": [
+      "identity",
+      "questions",
+      "computational-projects",
+      "laboratory-research",
+      "data-stories"
+    ]
+  },
+  "tests": {
+    "research": 19,
+    "identity": 18,
+    "shell": 39,
+    "portfolio": 92,
+    "complete": 138
+  },
+  "production": {
+    "modulesTransformed": 94,
+    "javascriptBytes": 249238,
+    "javascriptGzipBytes": 77391,
+    "cssBytes": 30359,
+    "cssGzipBytes": 6153,
+    "javascriptGrowthFromU03Percent": 11.2675,
+    "javascriptLimitBytes": 250000,
+    "cssLimitBytes": 30720,
+    "javascriptGrowthLimitPercent": 12,
+    "figureBytes": 1251556,
+    "researchDocumentBytes": 11244477
+  },
+  "portraitAmendment": {
+    "sourceImageChanged": false,
+    "objectPosition": "88% 50%",
+    "stylesheetSha256": "e62ab8ad6c00808339bb3653402b0277024e9d35d5440b1a55cb21a200a241be",
+    "regressionTest": "passed"
+  },
+  "results": {
+    "strictTypes": "passed",
+    "focusedTests": "passed",
+    "completeTests": "passed",
+    "lint": "passed",
+    "activeBoundaries": "passed",
+    "recoveryVerification": "passed",
+    "shellVerification": "passed",
+    "identityVerification": "passed",
+    "researchVerification": "passed",
+    "productionBuild": "passed",
+    "productionMeasurement": "passed"
+  },
+  "p0Findings": [],
+  "recoveryApplied": false,
+  "canProceedToReview": true
+}

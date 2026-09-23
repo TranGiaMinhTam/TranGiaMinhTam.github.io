@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "decidedAt": "2026-09-15T16:52:21Z",
+  "response": "it looks good now, except instead of download academic record, change it to downloading CV first (i will supply it later). Now, please proceed",
+  "decision": "A",
+  "disposition": "approved-after-pending-cv-correction",
+  "findings": [],
+  "conditions": [
+    "Show Download CV instead of Download academic record.",
+    "Do not create an enabled download until the user supplies the CV file."
+  ],
+  "conditionStatus": "fulfilled",
+  "canActivate": true,
+  "liveEntryChanged": true,
+  "activatedAt": "2026-09-15T16:55:30Z",
+  "activeAppSha256": "bc61903e381be228cef404331e838d8fc33bb0859156736bc936f0316bf5f2f3"
+}

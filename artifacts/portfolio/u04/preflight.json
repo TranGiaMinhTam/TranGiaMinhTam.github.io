@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-16T12:08:03Z",
+  "unit": "U-04 Research and Data",
+  "revision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workspace": "/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io",
+  "dirtyEntryCount": 109,
+  "dirtyWorktreeDisposition": "Expected protected work from the restarted workflow and approved U-01 through U-03 units; U-04 uses the exact approved file allowlist.",
+  "dependencies": {
+    "packageJsonSha256": "2934c897bbcf0a73c5776cd45c90043b5483529c6072722bfb800ac6eb0a9bcb",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "dependencyDeclarationsSha256": "bfc60b12c6fe1082dd3c54cecb42c60dd301a294b77e36c1df356daa5a4a9e82",
+    "devDependencyDeclarationsSha256": "8758c3660ecb24479ecd68e22a399d45f2aab99895a0ba7385aa1398f4d9461d"
+  },
+  "activeEntry": {
+    "htmlSha256": "f95f0f2031341499fb126662ef472acdefe31a17d92708e9221fc1fed0e8c3bc",
+    "mainSha256": "aa6313594e755d3691569ee1d4b43b64613adf8ec8640c66266e6be3c91f091a",
+    "appSha256": "bc61903e381be228cef404331e838d8fc33bb0859156736bc936f0316bf5f2f3",
+    "identityRegistrySha256": "f466f5c9f4c36ae1a504792a0b9616548d4a303c51f01591392320d6c007d56f",
+    "activeBodyKeys": ["identity", "questions"],
+    "temporaryBodyCount": 8
+  },
+  "assets": {
+    "figures": {
+      "molecularDockingBytes": 255505,
+      "cashewPolyphenolBytes": 164808,
+      "dataAnalyticsBytes": 831243,
+      "totalBytes": 1251556
+    },
+    "documents": {
+      "proteinDockingPublicationBytes": 3490329,
+      "wicoPosterBytes": 7702179,
+      "simLseCertificateBytes": 51969,
+      "totalBytes": 11244477
+    }
+  },
+  "tools": {
+    "node": "24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.9"
+  },
+  "baselineBuild": {
+    "status": "passed",
+    "transformedModules": 69,
+    "javascriptBytes": 223999,
+    "javascriptGzipBytes": 70718,
+    "cssBytes": 19150,
+    "cssGzipBytes": 4586
+  },
+  "checks": [
+    { "name": "strict TypeScript", "status": "passed" },
+    { "name": "complete tests", "status": "passed", "files": 34, "tests": 121 },
+    { "name": "lint", "status": "passed" },
+    { "name": "active boundaries", "status": "passed", "findings": 0 },
+    { "name": "U-03 active verification", "status": "passed", "findings": 0 },
+    { "name": "U-02 active verification", "status": "passed", "findings": 0 },
+    { "name": "U-01 recovery verification", "status": "passed", "findings": 0 },
+    { "name": "production build and measurement", "status": "passed" }
+  ],
+  "knownBaselineDisposition": {
+    "command": "npm run verify:shell",
+    "result": "expected stale-candidate hash findings",
+    "explanation": "The default phase checks U-02 pre-activation hashes. The approved active-phase command npm run verify:shell -- --phase active passes with zero findings after U-03 activation."
+  },
+  "extensions": {
+    "securityBaseline": "disabled",
+    "propertyBasedTesting": "disabled"
+  },
+  "scopeCompatible": true
+}

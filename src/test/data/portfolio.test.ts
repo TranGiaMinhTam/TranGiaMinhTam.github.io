@@ -212,26 +212,13 @@ describe("src/data/portfolio.ts", () => {
         project.description,
         `src/data/projects.ts project "${project.title}" needs a description`,
       );
-      expectNonEmpty(
-        project.image,
-        `src/data/projects.ts project "${project.title}" needs a project cover`,
-      );
-      expect(
-        project.image,
-        `src/data/projects.ts project "${project.title}" cover must use its supplied PNG asset`,
-      ).toMatch(/\.png$/);
-      expectNonEmpty(
-        project.imageAlt,
-        `src/data/projects.ts project "${project.title}" needs image alt text`,
-      );
-      expect(
-        project.imageAlt.split(/\s+/).length,
-        `src/data/projects.ts project "${project.title}" needs descriptive image alt text`,
-      ).toBeGreaterThanOrEqual(6);
-      expect(
-        project.imageAlt,
-        `src/data/projects.ts project "${project.title}" alt text must describe the supplied screenshot or diagram`,
-      ).toMatch(/screenshot|diagram/i);
+      if (project.image || project.imageAlt) {
+        expectNonEmpty(project.image, `src/data/projects.ts project "${project.title}" needs a project cover`);
+        expect(project.image).toMatch(/\.(?:png|jpe?g)$/i);
+        expectNonEmpty(project.imageAlt, `src/data/projects.ts project "${project.title}" needs image alt text`);
+        expect(project.imageAlt!.split(/\s+/).length).toBeGreaterThanOrEqual(6);
+        expect(project.imageAlt).toMatch(/screenshot|diagram|overview|presentation/i);
+      }
       expectNonEmpty(
         project.logoKey,
         `src/data/projects.ts project "${project.title}" needs a logo key`,
@@ -254,9 +241,9 @@ describe("src/data/portfolio.ts", () => {
     }
 
     expect(portfolio.projects.map((project) => project.id)).toEqual([
-      "coursework-certificates",
-      "program-analyzer",
-      "java-resume-application",
+      "molecular-docking-model",
+      "cashew-testa-research",
+      "sim-lse-data-analytics",
     ]);
 
     for (const post of portfolio.blog) {
@@ -341,6 +328,12 @@ describe("src/data/portfolio.ts", () => {
       portfolio.writing.some((post) => post.source === "wordpress"),
       "src/data/portfolio.ts writing needs WordPress posts",
     ).toBe(true);
+  });
+
+  it("does not claim a visual for the retail data project", () => {
+    const dataProject = portfolio.projects.find(({ id }) => id === "sim-lse-data-analytics");
+    expect(dataProject?.image).toBeUndefined();
+    expect(dataProject?.imageAlt).toBeUndefined();
   });
 
   it("keeps gallery and certificate entries accessible", () => {
@@ -490,40 +483,31 @@ describe("src/data/portfolio.ts", () => {
     }
   });
 
-  it("includes the resume-backed Sea and PSA internship experience", () => {
-    const seaInternship = portfolio.experience.find(
-      (entry) =>
-        entry.title === "Data Analyst Intern" &&
-        entry.company === "Sea Limited (Shopee Finance)",
+  it("includes the CV-grounded leadership and mentoring experience", () => {
+    const researchLead = portfolio.experience.find(
+      (entry) => entry.company === "The Institute of Viéce (TIV)",
     );
-    const psaInternship = portfolio.experience.find(
-      (entry) =>
-        entry.title === "Data Analytics and Machine Learning Intern" &&
-        entry.company === "PSA International",
+    const mathematicsMentor = portfolio.experience.find(
+      (entry) => entry.title === "Free IGCSE Mathematics Mentor",
     );
 
-    expect(seaInternship?.period).toBe("Nov 2021 - May 2022");
-    expect(seaInternship?.description.length).toBeGreaterThanOrEqual(3);
-    expect(psaInternship?.period).toBe("May 2021 - Nov 2021");
-    expect(psaInternship?.description.length).toBeGreaterThanOrEqual(2);
+    expect(researchLead?.period).toBe("Mar 2026 - Sep 2026");
+    expect(researchLead?.description.length).toBeGreaterThanOrEqual(3);
+    expect(mathematicsMentor?.period).toBe("Feb 2025 - Jun 2025");
+    expect(mathematicsMentor?.description.length).toBeGreaterThanOrEqual(2);
   });
 
-  it("includes the Saint Andrew's and Zhonghua school achievements", () => {
-    const modelStudentAward = portfolio.awards.find(
-      (award) =>
-        award.title === "Model Student Award" &&
-        award.organization === "Saint Andrew's Junior College",
+  it("includes the CV-grounded research recognition", () => {
+    const vsicAward = portfolio.awards.find(
+      (award) => award.organization.includes("Vinschool Science Innovation"),
     );
-    const choirAward = portfolio.awards.find(
-      (award) =>
-        award.title === "Singapore Youth Festival Choir - Silver Award" &&
-        award.organization === "Zhonghua Secondary School",
+    const wicoAward = portfolio.awards.find(
+      (award) => award.organization.includes("World Invention Creativity"),
     );
 
-    expect(modelStudentAward).toMatchObject({ year: "2017", tag: "CHARACTER" });
-    expect(modelStudentAward?.description).toContain("exemplary character");
-    expect(choirAward).toMatchObject({ year: "2015", tag: "ARTS" });
-    expect(choirAward?.logo).toContain("zhonghua");
-    expect(choirAward?.description).toContain("Singapore Youth Festival");
+    expect(vsicAward).toMatchObject({ year: "May 2026", tag: "RESEARCH" });
+    expect(vsicAward?.description).toContain("molecular docking");
+    expect(wicoAward).toMatchObject({ year: "July 2025", tag: "INTERNATIONAL" });
+    expect(wicoAward?.description).toContain("34-page research paper");
   });
 });

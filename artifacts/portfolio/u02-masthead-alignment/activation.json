@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "decision": "approved-option-a",
+  "userInput": "approve with A",
+  "scope": "u02-masthead-theme-hidden-summary-responsive-alignment",
+  "promotion": "approved in-place source consumed by the unchanged active composition",
+  "activeReview": "artifacts/portfolio/u02-masthead-alignment/active-review.json",
+  "recoveryVerification": "artifacts/portfolio/u02-masthead-alignment/recovery-verification.json",
+  "privacyVerification": "artifacts/portfolio/u02-masthead-alignment/privacy-verification.json",
+  "deferred": [
+    "u03-resume-content",
+    "u04-archive-browser",
+    "u05-media-dialogs",
+    "deployment"
+  ],
+  "canProceed": true
+}

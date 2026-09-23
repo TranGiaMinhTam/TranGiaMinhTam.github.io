@@ -1,0 +1,506 @@
+.observatory {
+  min-width: 20rem;
+  min-height: 100vh;
+  overflow-x: clip;
+  color: var(--color-text-primary);
+  background: var(--color-canvas);
+}
+
+.skipLink {
+  position: fixed;
+  z-index: 20;
+  inset: var(--space-3) auto auto var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+  transform: translateY(-160%);
+}
+
+.skipLink:focus {
+  transform: translateY(0);
+}
+
+.masthead {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(18rem, 1.4fr) minmax(12rem, auto);
+  align-items: center;
+  gap: clamp(1rem, 3vw, 3.5rem);
+  min-height: 10rem;
+  padding: clamp(1.25rem, 3vw, 2.75rem) clamp(1.25rem, 5vw, 5rem);
+  border-bottom: var(--border-thin) solid var(--color-rule);
+  overflow: hidden;
+  background: var(--color-masthead-surface);
+}
+
+.masthead::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--color-masthead-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-masthead-grid) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+  mask-image: linear-gradient(90deg, #000 0%, transparent 76%);
+  content: '';
+}
+
+.masthead::after {
+  position: absolute;
+  z-index: -1;
+  inset: auto 0 0;
+  block-size: 0.28rem;
+  background: linear-gradient(90deg, var(--color-accent) 0 36%, var(--color-data-neutral) 36% 70%, var(--color-data-caution) 70%);
+  content: '';
+}
+
+.brandLockup {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.specimenCode,
+.progressCode,
+.locusIndex,
+.slotBody small,
+.fieldLabel,
+.statusSignal,
+.footerSequence {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.specimenCode,
+.progressCode,
+.locusIndex,
+.slotBody small {
+  color: var(--color-text-secondary);
+  font-size: 0.7rem;
+}
+
+.brandName {
+  font-size: clamp(2.2rem, 4.5vw, 4.8rem);
+  font-weight: 720;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+}
+
+.mastheadField {
+  display: grid;
+  grid-template-columns: minmax(3rem, 0.35fr) minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: center;
+  min-width: 0;
+}
+
+.fieldRule {
+  block-size: var(--border-strong);
+  background: var(--color-accent);
+}
+
+.fieldLabel {
+  max-width: var(--measure-readable);
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(0.72rem, 1.2vw, 0.88rem);
+}
+
+.mastheadMeta {
+  display: grid;
+  justify-items: end;
+  gap: var(--space-4);
+}
+
+.statusSignal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+  font-size: 0.7rem;
+}
+
+.statusSignal span {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--color-data-positive);
+  box-shadow: 0 0 0 0.3rem color-mix(in srgb, var(--color-data-positive) 18%, transparent);
+}
+
+.navigationBand {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  border-bottom: var(--border-thin) solid var(--color-rule);
+  background: color-mix(in srgb, var(--color-canvas) 92%, transparent);
+  backdrop-filter: blur(1rem);
+}
+
+.locusNavigation {
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+.coordinateRail {
+  display: flex;
+  width: max-content;
+  min-width: 100%;
+  padding-inline: clamp(0.75rem, 4vw, 4rem);
+}
+
+.locusLink {
+  position: relative;
+  display: grid;
+  gap: 0.1rem;
+  min-width: max(6.75rem, 10vw);
+  min-height: 3.5rem;
+  padding: 0.7rem 0.9rem;
+  border-inline-start: var(--border-thin) solid var(--color-rule);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+
+.locusLink:last-child {
+  border-inline-end: var(--border-thin) solid var(--color-rule);
+}
+
+.locusLink[aria-current='location'] {
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+}
+
+.locusLink[aria-current='location'] .locusIndex {
+  color: inherit;
+}
+
+.themeControl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-width: 8.75rem;
+  min-height: var(--target-minimum);
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-thin) solid var(--color-rule);
+  color: var(--color-text-primary);
+  background: var(--color-surface-elevated);
+  font: 0.72rem var(--font-mono);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.themeControl:hover,
+.resumeAction:hover {
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+}
+
+.themeControl:focus-visible,
+.resumeAction:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.mastheadActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+.resumeAction {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target-minimum);
+  padding: var(--space-3) var(--space-4);
+  border: var(--border-thin) solid var(--color-accent);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  font: 0.72rem var(--font-mono);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.progressBand {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.7fr) minmax(20rem, 1.3fr);
+  align-items: center;
+  gap: clamp(1rem, 4vw, 5rem);
+  min-height: 5.25rem;
+  padding: var(--space-4) clamp(1.25rem, 5vw, 5rem);
+  border-bottom: var(--border-thin) solid var(--color-rule);
+  background: var(--color-surface-elevated);
+}
+
+.progressReadout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: var(--space-4);
+}
+
+.progressReadout strong {
+  font-size: clamp(1rem, 2vw, 1.35rem);
+}
+
+.progressReadout [role='status'] {
+  color: var(--color-text-secondary);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.progressTrack {
+  position: relative;
+  height: 0.25rem;
+  background: color-mix(in srgb, var(--color-rule) 34%, transparent);
+}
+
+.progressFill {
+  display: block;
+  height: 100%;
+  background: var(--color-accent);
+  transition: width var(--motion-standard) ease;
+}
+
+.progressMarker {
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: var(--border-strong) solid var(--color-canvas);
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 var(--border-thin) var(--color-accent);
+  transform: translate(-50%, -50%);
+  transition: left var(--motion-standard) ease;
+}
+
+.scanField {
+  display: block;
+}
+
+.sectionAnchor {
+  scroll-margin-top: 9rem;
+}
+
+.scanSection {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(18rem, 1.35fr);
+  gap: clamp(2rem, 8vw, 9rem);
+  min-height: min(62rem, 76vh);
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.25rem, 8vw, 9rem);
+  border-bottom: var(--border-thin) solid var(--color-rule);
+}
+
+.scanSection[data-custom-body] {
+  grid-template-columns: minmax(8rem, 0.28fr) minmax(0, 1.72fr);
+  gap: clamp(1.5rem, 3vw, 3.5rem);
+  padding-inline: clamp(1.25rem, 4vw, 5rem);
+}
+
+.scanSection[data-custom-body] > header {
+  position: sticky;
+  top: 10rem;
+}
+
+.scanSection[data-custom-body] h2 {
+  max-width: 9ch;
+  font-size: clamp(1.5rem, 2.25vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  overflow-wrap: normal;
+}
+
+.scanSection[data-custom-body] > :last-child {
+  min-width: 0;
+}
+
+.sectionAnchor:nth-child(even) .scanSection {
+  background: var(--color-surface);
+}
+
+.sectionAnchor:nth-child(3n) .scanSection {
+  background:
+    radial-gradient(circle at 82% 24%, color-mix(in srgb, var(--color-data-neutral) 16%, transparent) 0 0.2rem, transparent 0.25rem) 0 0 / 1.5rem 1.5rem,
+    var(--color-surface-elevated);
+}
+
+.scanSection header {
+  align-self: start;
+}
+
+.scanSection header p {
+  margin: 0 0 var(--space-4);
+  color: var(--color-accent);
+  font: 0.72rem var(--font-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.scanSection h2 {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2.25rem, 6vw, 6.75rem);
+  font-weight: 570;
+  line-height: 0.92;
+  letter-spacing: -0.065em;
+}
+
+.slotBody {
+  align-self: end;
+  max-width: 42rem;
+  padding-block-end: clamp(1rem, 5vw, 5rem);
+}
+
+.sequenceMark {
+  display: block;
+  margin-bottom: clamp(2rem, 6vw, 6rem);
+  color: var(--color-data-neutral);
+  font: clamp(1.15rem, 3vw, 2.4rem) var(--font-mono);
+  letter-spacing: 0.18em;
+}
+
+.slotBody p {
+  max-width: 34ch;
+  margin: 0 0 var(--space-4);
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.capabilityNote {
+  padding: var(--space-3) clamp(1.25rem, 5vw, 5rem);
+  border-bottom: var(--border-thin) solid var(--color-rule);
+  color: var(--color-text-secondary);
+  background: var(--color-surface-elevated);
+  font-size: 0.82rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding: clamp(2rem, 5vw, 5rem);
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 48rem) {
+  .masthead {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 8rem;
+  }
+
+  .mastheadField {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .mastheadMeta {
+    align-self: start;
+  }
+
+  .themeControl {
+    min-width: var(--target-minimum);
+  }
+
+  .progressBand,
+  .scanSection {
+    grid-template-columns: 1fr;
+  }
+
+  .scanSection[data-custom-body] {
+    grid-template-columns: 1fr;
+  }
+
+  .scanSection[data-custom-body] > header {
+    position: static;
+  }
+
+  .progressBand {
+    gap: var(--space-3);
+  }
+
+  .scanSection {
+    min-height: 80vh;
+    gap: clamp(4rem, 18vw, 8rem);
+  }
+
+  .slotBody {
+    padding-bottom: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 28rem) {
+  .masthead {
+    grid-template-columns: 1fr;
+  }
+
+  .mastheadMeta {
+    justify-items: start;
+  }
+
+  .mastheadActions {
+    justify-content: flex-start;
+  }
+
+  .themeControlLabel {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .progressReadout {
+    grid-template-columns: auto 1fr;
+  }
+
+  .progressReadout [role='status'] {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progressFill,
+  .progressMarker {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .masthead::before,
+  .masthead::after {
+    display: none;
+  }
+
+  .statusSignal span {
+    border: var(--border-strong) solid currentColor;
+  }
+}

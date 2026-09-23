@@ -17,7 +17,7 @@ function Awards() {
         <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} gap={6}>
           {awards.map((award, index) => (
             <ContentCard
-              key={award.title}
+              key={`${award.title}-${award.organization}`}
               p={6}
               textAlign="left"
               className={`reveal-up ${getAnimationDelayClass(index)}`}

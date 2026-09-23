@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T17:30:00Z",
+  "decision": "retain-and-quarantine",
+  "activeGraphReachable": false,
+  "deletionAuthorized": false,
+  "recoveryRoot": "artifacts/portfolio/u07/recovery/legacy",
+  "targets": [
+    { "path": "src/components/Contact.tsx", "bytes": 6966, "sha256": "13459dc021b22c1147fc410fe19a657b1648f3a831f37287ea67eff05a0d3bba", "incomingReferences": [], "disposition": "retain" },
+    { "path": "src/components/Journal.tsx", "bytes": 9896, "sha256": "d39ab7baa4629fcc9395f6c363cf07fbe4cb45ea18ef026d88da86007e5fcce2", "incomingReferences": [], "disposition": "retain" },
+    { "path": "src/components/JournalPostPage.tsx", "bytes": 7816, "sha256": "44d911590521323b10083d3537bc39c8ea3f9f788c51c097cc283ef72897d52b", "incomingReferences": [], "disposition": "retain" },
+    { "path": "src/templates/business/BusinessContact.tsx", "bytes": 3818, "sha256": "793cb348f801a4bc05e79792c8cc97e6992a4dcd3f6cbd286b874ba48f653c76", "incomingReferences": ["src/templates/business/index.ts"], "disposition": "retain" },
+    { "path": "src/templates/business/BusinessJournal.tsx", "bytes": 4964, "sha256": "bcb4e30c40a0907f5e1f330a27507c96dedb4621b4a9969f9692eef1eb133ae4", "incomingReferences": ["src/templates/business/index.ts"], "disposition": "retain" },
+    { "path": "src/templates/business/BusinessJournalPostPage.tsx", "bytes": 3439, "sha256": "f3e0819b29ee64220b0832da78c632f45ed6d6680ea293d7b577139baf898f31", "incomingReferences": ["src/templates/business/index.ts", "src/templates/journalPostPages.test.tsx"], "disposition": "retain" },
+    { "path": "src/templates/journalPostPages.test.tsx", "bytes": 1894, "sha256": "85a957230fbc9e717f473b6095dc7cef7fe63ec8617877e927397fd55662a75f", "incomingReferences": [], "disposition": "retain" },
+    { "path": "src/data/blog.ts", "bytes": 2701, "sha256": "1c27686067474c79c4b486c05e8ef72179bd2b68149b732ff124ca5d8e61534a", "incomingReferences": ["src/data/journalPosts.ts", "src/data/portfolio.ts", "src/test/data/portfolio.test.ts"], "disposition": "retain" },
+    { "path": "src/data/journalPosts.ts", "bytes": 1159, "sha256": "209469cbeabd14b31ebc9e363e02b904b779463115cd6fff4fc615522e7dbda4", "incomingReferences": ["src/components/JournalPostPage.tsx", "src/templates/business/BusinessJournalPostPage.tsx", "src/data/portfolio.ts", "src/test/data/portfolio.test.ts"], "disposition": "retain" },
+    { "path": "src/content/journal/first-local-journal.md", "bytes": 1587, "sha256": "ccdf2e5e1007c5dce7b59bc67895e0060dce1c1856d14768eed32d2a0e1fad73", "incomingReferences": ["src/data/journalPosts.ts"], "disposition": "retain" },
+    { "path": "src/utils/contact.ts", "bytes": 615, "sha256": "84fdeaba6351768e2a26eb5000d79d4a0707a34b6f67360f9e3a1bf5b9594362", "incomingReferences": ["src/components/Contact.tsx", "src/templates/business/BusinessContact.tsx"], "disposition": "retain" },
+    { "path": "src/utils/journal.ts", "bytes": 442, "sha256": "18e7aa4f4607ab4a43dd149d0d3091b33cbdf03dd4d9f97fd0cbdcd5cdb9b2c2", "incomingReferences": ["src/data/journalPosts.ts"], "disposition": "retain" }
+  ],
+  "rationale": "The active portfolio must not import these files, but the dirty brownfield workspace and legacy/test graph make deletion inappropriate in U-07. Exact recovery copies are present before any later separately approved cleanup."
+}

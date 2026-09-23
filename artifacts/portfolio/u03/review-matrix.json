@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "candidateUrl": "http://127.0.0.1:4175/",
+  "capturedAt": "2026-09-15T11:04:35Z",
+  "server": {
+    "status": "available",
+    "host": "127.0.0.1",
+    "port": 4175,
+    "httpCheck": "passed"
+  },
+  "automatedBrowserVersions": [],
+  "browserAutomation": {
+    "status": "unavailable",
+    "classification": "P1 environment limitation",
+    "detail": "No Chromium, Chrome, Firefox, or Playwright executable is installed in the workspace environment."
+  },
+  "performance": {
+    "mobileProfileLcp": "not measured",
+    "cls": "not measured",
+    "interaction": "semantic and reducer tests passed; browser timing not measured",
+    "classification": "P1 environment limitation"
+  },
+  "matrix": [
+    { "widthCssPixels": 320, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 320, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 768, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 768, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1280, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1280, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1440, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1440, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" }
+  ],
+  "automatedEvidence": [
+    "One shared light/dark DOM with token-driven theme behavior",
+    "Narrow breakpoints at 52rem and 30rem transform the identity and relationship composition",
+    "Document shell clips horizontal overflow; the semantic relationship table may scroll locally",
+    "Portrait reserves a 1024 by 689 aspect ratio and has a tested local failure fallback",
+    "Native links preserve keyboard order, visible focus behavior, stable names, and adequate minimum height",
+    "SVG relationships use labels plus marker and line variation rather than color alone",
+    "Reduced-motion rules remove optional transitions and animation",
+    "Semantic content remains present without the stylesheet or SVG interpretation",
+    "Identity and Questions use asymmetric specimen-field, exploration-spectrum, continuous-ledger, constellation, and semantic relationship structures",
+    "No hero card, circular avatar, sidebar, drawer, hamburger, selector, repeated generic card grid, or later-unit body is present"
+  ],
+  "requiredUserReview": [
+    "Inspect 320, 768, 1280, and 1440 CSS-pixel widths in light and dark themes",
+    "Confirm no document-level horizontal overflow or clipped identity/question content",
+    "Confirm the asymmetrical identity field, integrated portrait aperture, exploration spectrum, question ledger, and constellation are visibly unique",
+    "Confirm the portrait fallback, keyboard order, visible focus, text spacing, 200-percent zoom, and narrow reflow remain understandable",
+    "Confirm the other eight sections remain temporary and unchanged"
+  ],
+  "p0AutomatedFindings": [],
+  "userReview": {
+    "response": "the current template is hard to see, with inconsistent coloring, please fix it",
+    "decision": "B",
+    "status": "changes-requested",
+    "findings": [
+      "Insufficient visual legibility",
+      "Inconsistent color treatment"
+    ]
+  },
+  "correctedCandidate": {
+    "rebuiltAt": "2026-09-15T16:34:23Z",
+    "status": "awaiting-user-review",
+    "automatedStructuralChecks": "passed",
+    "visualUserReview": "pending",
+    "mainContentSharePercent": 86,
+    "customBodyOnly": true,
+    "customHeadingScale": "clamp(1.5rem, 2.25vw, 2.75rem)"
+  },
+  "approvalResponse": "it looks good now, except instead of download academic record, change it to downloading CV first (i will supply it later). Now, please proceed",
+  "approvalCondition": "fulfilled by truthful pending CV status",
+  "p0ReviewComplete": true,
+  "canActivate": true
+}

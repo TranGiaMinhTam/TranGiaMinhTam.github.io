@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "decidedAt": "2026-09-16T12:58:42Z",
+  "response": "please fix this image from being cut-off, shift it left so that the person in white shirt is centralised. Other than that, approve and continue",
+  "decision": "A",
+  "disposition": "approved-after-portrait-crop-correction",
+  "conditions": [
+    "Shift the portrait photograph left within its aperture.",
+    "Center the person in the white shirt without editing the source image."
+  ],
+  "conditionImplementation": "src/portfolio/identity/IdentityQuestions.module.css uses object-position: 88% 50% and identityStyles.test.ts verifies it.",
+  "conditionStatus": "fulfilled",
+  "postConditionValidation": {
+    "strictTypes": "passed",
+    "focusedIdentityTests": 18,
+    "focusedResearchTests": 19,
+    "completeTests": 138,
+    "lint": "passed",
+    "candidateBuild": "passed",
+    "candidateMeasurement": "passed",
+    "candidateVerification": "passed",
+    "javascriptBytes": 249170,
+    "cssBytes": 30359,
+    "p0Findings": []
+  },
+  "canActivate": true,
+  "liveEntryChanged": true,
+  "activatedAt": "2026-09-16T13:05:24Z",
+  "activeAppSha256": "be06360156977349a7147e0f6a5bda3eb47dfb067d719b894482c7fc9f80ea86"
+}

@@ -11,19 +11,16 @@ import {
 } from "@chakra-ui/react";
 import { LuLayoutGrid, LuMenu, LuX } from "react-icons/lu";
 
-import { PortfolioStyleSelector } from "../../components/shared/PortfolioStyleSelector";
 import { ColorModeButton } from "../../components/ui/color-mode";
 import { profile } from "../../data/portfolio";
 import type { PortfolioShellProps } from "../types";
 
 function BusinessShell({
   activeSection,
-  activeTemplateId,
   layoutMode,
   navigationItems,
   getNavigationHref,
   onNavigate,
-  onSelectTemplate,
   onToggleLayoutMode,
   children,
 }: PortfolioShellProps) {
@@ -84,7 +81,7 @@ function BusinessShell({
     <Box
       minH="100vh"
       w="100%"
-      className="portfolio-template portfolio-template-business business-shell"
+      className="portfolio-template portfolio-template-business business-shell clinical-research-shell quarto-publication-shell"
       data-template-id="business"
       position="relative"
       isolation="isolate"
@@ -99,7 +96,7 @@ function BusinessShell({
       </Box>
       <Box
         as="header"
-        className="business-casebook-header"
+        className="business-casebook-header clinical-topbar quarto-topbar"
         position="sticky"
         top={0}
         zIndex={1000}
@@ -126,7 +123,7 @@ function BusinessShell({
             display="flex"
             alignItems="center"
             gap={4}
-            aria-label="Navigate to Business portfolio home"
+            aria-label="Navigate to biomedical research portfolio home"
             data-testid="business-brand-link"
           >
             <Box
@@ -142,7 +139,7 @@ function BusinessShell({
               fontWeight={800}
               flex="none"
             >
-              NQH
+              TGT
             </Box>
             <Box minW={0}>
               <Text
@@ -154,7 +151,7 @@ function BusinessShell({
                 {profile.name}
               </Text>
               <Text color="var(--text-300)" fontSize="xs" truncate>
-                Editorial casebook / {profile.role}
+                Research notebook / Bioinformatics profile
               </Text>
             </Box>
           </Link>
@@ -172,11 +169,6 @@ function BusinessShell({
                 {activeLabel}
               </Text>
             </Box>
-            <PortfolioStyleSelector
-              activeTemplateId={activeTemplateId}
-              onSelectTemplate={onSelectTemplate}
-              testIdPrefix="business"
-            />
             <ColorModeButton
               color="var(--text-100)"
               border="1px solid"
@@ -232,7 +224,7 @@ function BusinessShell({
             >
               <Flex justify="space-between" align="center" w="100%">
                 <Box>
-                  <Text fontWeight={800}>Casebook index</Text>
+                  <Text fontWeight={800}>Manuscript index</Text>
                   <Text mt={1} color="var(--text-300)" fontSize="xs">
                     {profile.name}
                   </Text>
@@ -249,7 +241,7 @@ function BusinessShell({
             </Drawer.Header>
             <Drawer.Body py={5}>
               <VStack align="stretch" gap={5}>
-                <Box as="nav" aria-label="Business mobile showcase navigation">
+                <Box as="nav" aria-label="Bioinformatics manuscript navigation">
                   <VStack as="ul" align="stretch" gap={1} listStyleType="none">
                     {navigationLinks("mobile")}
                   </VStack>
@@ -275,7 +267,7 @@ function BusinessShell({
       </Drawer.Root>
 
       <Box
-        className="business-casebook-layout"
+        className="business-casebook-layout clinical-console"
         display="grid"
         gridTemplateColumns={{ base: "1fr", lg: "280px minmax(0, 1fr)" }}
         maxW="1600px"
@@ -284,7 +276,7 @@ function BusinessShell({
       >
         <Box
           as="aside"
-          className="business-casebook-rail"
+          className="business-casebook-rail clinical-sidebar quarto-sidebar"
           display={{ base: "none", lg: "flex" }}
           position="sticky"
           top="64px"
@@ -307,9 +299,9 @@ function BusinessShell({
               Contents
             </Text>
             <Text mt={2} color="var(--text-300)" fontSize="sm" lineHeight="1.6">
-              A structured record of work, study, and ongoing learning.
+              A living publication of experiments, evidence, learning, and impact.
             </Text>
-            <Box as="nav" aria-label="Business showcase contents" mt={6}>
+            <Box as="nav" aria-label="Bioinformatics manuscript contents" mt={6}>
               <VStack as="ul" align="stretch" gap={0} listStyleType="none">
                 {navigationLinks("contents")}
               </VStack>
@@ -334,7 +326,7 @@ function BusinessShell({
 
         <Box
           as="main"
-          className="business-casebook-document"
+          className="business-casebook-document clinical-workspace quarto-article"
           id="portfolio-main"
           minW={0}
           minH="100vh"

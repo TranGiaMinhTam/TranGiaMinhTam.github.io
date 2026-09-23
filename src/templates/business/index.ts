@@ -1,6 +1,5 @@
 import "./business.css";
 
-import { portfolioTemplateOptions } from "../options";
 import type { PortfolioTemplate } from "../types";
 import BusinessAbout from "./BusinessAbout";
 import BusinessAwards from "./BusinessAwards";
@@ -29,7 +28,10 @@ export const businessChapterLabels = {
 } satisfies PortfolioTemplate["chapterLabels"];
 
 export const businessTemplate = {
-  ...portfolioTemplateOptions.business,
+  id: "business",
+  label: "Research Casebook",
+  description:
+    "A research-led portfolio for scientific projects, academic milestones, and community impact.",
   ShellComponent: BusinessShell,
   JournalPostComponent: BusinessJournalPostPage,
   chapterLabels: businessChapterLabels,

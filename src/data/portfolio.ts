@@ -10,6 +10,7 @@ import { journalPosts, writing } from "./journalPosts";
 import { navigation, sectionIds } from "./navigation";
 import { hero, profile } from "./profile";
 import { projects } from "./projects";
+import { researchProjects, researchProjectById } from "./research";
 import { sectionContent, subsectionContent } from "./sectionContent";
 import { skills } from "./skills";
 import { videos } from "./videos";
@@ -24,6 +25,7 @@ export const portfolio = {
   experience,
   awards,
   projects,
+  researchProjects,
   gallery,
   videos,
   blog,
@@ -46,6 +48,8 @@ export {
   navigation,
   profile,
   projects,
+  researchProjects,
+  researchProjectById,
   sectionContent,
   subsectionContent,
   sectionIds,

@@ -1,99 +1,90 @@
 # Build Instructions
 
+## Purpose
+
+Produce the final static portfolio bundle with the same locked dependencies and checks used for the approved U-01 through U-07 implementation.
+
 ## Prerequisites
 
-| Requirement                   | Project value                                                      |
-| ----------------------------- | ------------------------------------------------------------------ |
-| Runtime                       | Node.js 20.19 or newer; the verified local run used Node.js 24.0.0 |
-| Package manager               | npm; the verified local run used npm 11.3.0                        |
-| Build tools                   | TypeScript 5.9 and Vite 7 through the package scripts              |
-| Required secrets              | None                                                               |
-| Optional environment variable | `VITE_BASE_PATH` for a non-root GitHub Pages path                  |
-| Output directory              | `dist/`                                                            |
+| Requirement                  | Project value                                                |
+| ---------------------------- | ------------------------------------------------------------ |
+| Runtime                      | Node.js 20.19 or newer; verified locally with Node.js 24.0.0 |
+| Package manager              | npm; verified locally with npm 11.3.0                        |
+| Build tools                  | TypeScript 5.9.3 and Vite 7.3.0 through package scripts      |
+| Required secrets or services | None                                                         |
+| Optional configuration       | `VITE_BASE_PATH` for a non-root GitHub Pages path            |
+| Output                       | `dist/`, including `dist/.vite/manifest.json`                |
 
-The GitHub Pages workflow uses the current Node.js 20 release and derives `VITE_BASE_PATH` automatically.
+The repository's GitHub Pages workflow derives `VITE_BASE_PATH`. A local build without it uses `/`.
 
-## Build Steps
+## Reproducible Build
 
-### 1. Install Locked Dependencies
-
-From the repository root, run:
+Run from the repository root:
 
 ```bash
 npm ci
-```
-
-Use `npm install` only when intentionally changing dependencies or regenerating `package-lock.json`.
-
-### 2. Run Quality Checks
-
-```bash
-npm run test
 npm run lint
-```
-
-Expected verified result: 9 test files and 88 tests pass, with no ESLint errors.
-
-### 3. Build the Static Site
-
-```bash
+npm test
 npm run build
 ```
 
-This runs the TypeScript project build and then creates the Vite production bundle.
+`npm run build` performs the TypeScript project build before Vite creates the production output.
 
-### 4. Verify Build Success
+For a project-site base path, use the same value the deployment workflow derives:
 
-Expected results:
+```bash
+VITE_BASE_PATH=/TranGiaMinhTam.github.io/ npm run build
+```
 
-- The command exits successfully.
-- `dist/index.html` exists.
-- `dist/assets/` contains the bundled JavaScript, CSS, images, resume, and certificates.
-- The generated site remains compatible with static GitHub Pages hosting.
+## Required Result
 
-The current build emits a non-blocking Vite warning because the main JavaScript chunk is larger than 500 kB. The verified output is 975.76 kB minified and 296.49 kB gzip.
+- Every command exits with status zero.
+- `dist/index.html`, `dist/assets/`, and `dist/.vite/manifest.json` exist.
+- The manifest lists `JournalRouteEntry.tsx` outside the initial static dependency closure.
+- The active boundary and U-07 verifier remain clean:
 
-### 5. Preview the Production Build
+```bash
+npm run check:portfolio
+npm run check:contact-journal:active
+npm run verify:contact-journal:active
+npm run verify:recovery
+```
+
+## Preview
 
 ```bash
 npm run preview
 ```
 
-Open the local URL printed by Vite. The verified preview served `/` with HTTP 200.
+Open the local URL printed by Vite. Confirm the continuous portfolio loads, Data Stories opens the Research Note route, returning restores the portfolio, and the Contact form only creates the approved local `mailto:` handoff.
 
 ## Build Artifacts
 
-| Artifact                  | Description                                             |
-| ------------------------- | ------------------------------------------------------- |
-| `dist/index.html`         | Static application entry point                          |
-| `dist/assets/index-*.js`  | Minified React application bundle                       |
-| `dist/assets/index-*.css` | Compiled shared and theme styling                       |
-| `dist/assets/` media      | Bundled images, resume, certificates, and project media |
+| Artifact                   | Responsibility                                        |
+| -------------------------- | ----------------------------------------------------- |
+| `dist/index.html`          | Static entry document                                 |
+| `dist/assets/index-*.js`   | Initial application JavaScript                        |
+| `dist/assets/index-*.css`  | Initial shared styling                                |
+| Journal-named assets       | Lazy Research Note JavaScript and CSS                 |
+| `dist/.vite/manifest.json` | Entry, dependency, and lazy-route classification      |
+| Copied evidence files      | Verified local portfolio evidence available on demand |
 
-The verified `dist/` directory is approximately 9.4 MB, including portfolio media and PDF certificates.
+Do not commit `dist/` unless the repository's publishing policy is intentionally changed.
 
 ## Troubleshooting
 
-### Native SWC Binding Fails to Load
+### Dependency or native binding failure
 
-This usually means `node_modules` was installed with another Node.js version or computer architecture.
+Confirm the Node version, remove only this repository's `node_modules` if necessary, and rerun `npm ci`. Do not regenerate `package-lock.json` unless changing dependencies intentionally.
 
-1. Confirm the active runtime with `node --version`.
-2. Stop the development server.
-3. Remove only the repository's `node_modules` directory.
-4. Run `npm ci` again.
-5. Retry `npm run build` or `npm run dev`.
+### TypeScript, lint, or test failure
 
-### Dependency Installation Fails
+Fix the first reported error, rerun its focused command, then rerun the complete sequence. Never accept a build by bypassing TypeScript, lint, boundary, or verifier failures.
 
-- Confirm Node.js meets the minimum version above.
-- Confirm the terminal is open in the repository root.
-- Keep `package-lock.json` and use `npm ci` for a reproducible installation.
+### Built assets fail under GitHub Pages
 
-### TypeScript Build Fails
+Confirm the build received `/` for a root Pages repository or `/<repository>/` for a project repository. See `DEPLOYMENT.md` and `.github/workflows/deploy.yml`.
 
-Run `npm run test` and inspect the first reported file. Common causes are a typed data value that no longer matches `src/types/portfolio.ts`, a missing asset import, or an incomplete template registry entry.
+### Bundle budget failure
 
-### Built Assets Do Not Load
-
-Check that imported files still exist under `src/assets/`. For project-site deployment, confirm the GitHub workflow supplies the correct `VITE_BASE_PATH` before building.
+Use the exact measurement command in `performance-test-instructions.md`. Inspect the manifest before changing budgets; budget increases require a deliberate review rather than silently changing the ceiling.

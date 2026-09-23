@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T17:17:54Z",
+  "purpose": "Exact pre-U-07 recovery content for every plan-approved mutable application or tooling seam",
+  "root": "artifacts/portfolio/u07/recovery",
+  "files": [
+    "src/App.tsx",
+    "src/portfolio/research/projectCatalog.ts",
+    "src/portfolio/research/research.types.ts",
+    "src/portfolio/research/researchDataModel.ts",
+    "src/portfolio/research/DataStories.tsx",
+    "src/portfolio/research/PublicationStatus.tsx",
+    "src/portfolio/research/ResearchData.module.css",
+    "scripts/portfolio/check-boundaries.mjs",
+    "scripts/portfolio/measure-build.mjs",
+    "package.json",
+    "legacy/src/components/Contact.tsx",
+    "legacy/src/components/Journal.tsx",
+    "legacy/src/components/JournalPostPage.tsx",
+    "legacy/src/templates/business/BusinessContact.tsx",
+    "legacy/src/templates/business/BusinessJournal.tsx",
+    "legacy/src/templates/business/BusinessJournalPostPage.tsx",
+    "legacy/src/templates/journalPostPages.test.tsx.payload",
+    "legacy/src/data/blog.ts",
+    "legacy/src/data/journalPosts.ts",
+    "legacy/src/content/journal/first-local-journal.md",
+    "legacy/src/utils/contact.ts",
+    "legacy/src/utils/journal.ts"
+  ],
+  "restorePolicy": "Copy only after a current U-07 P0 activation failure and record the failed acceptance."
+}

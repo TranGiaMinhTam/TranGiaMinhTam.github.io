@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-09-14T11:22:58Z",
+  "unit": "U-01 Foundation and Safe Migration",
+  "status": "passed-with-inherited-follow-up",
+  "commands": [
+    {"command": "npm run test:portfolio", "status": "passed", "testFiles": 8, "tests": 18},
+    {"command": "npm test", "status": "passed", "testFiles": 16, "tests": 63},
+    {"command": "npm run lint", "status": "passed"},
+    {"command": "npm run build", "status": "passed", "transformedModules": 1589, "viteSeconds": 3.69},
+    {"command": "npm run check:portfolio", "status": "passed", "findings": 0},
+    {"command": "npm run verify:recovery", "status": "passed", "findings": 0},
+    {"command": "npm run measure:portfolio -- --output artifacts/portfolio/u01/post-unit.json", "status": "passed-no-regression"},
+    {"command": "npm ls --all", "status": "passed"},
+    {"command": "npm audit --omit=dev --json", "status": "completed-with-existing-advisories"}
+  ],
+  "entryGraph": {
+    "u01ImportedByActiveEntry": false,
+    "javascriptBytes": 893367,
+    "cssBytes": 68577,
+    "javascriptChangePercent": 0,
+    "cssChangePercent": 0,
+    "noRegression": true,
+    "absoluteJavascriptBudgetMet": false,
+    "absoluteCssBudgetMet": true
+  },
+  "recovery": {
+    "verified": true,
+    "elapsedSeconds": 6.1,
+    "objectiveSeconds": 1800,
+    "payloadHashMismatches": 0,
+    "protectedSourceFiles": 104,
+    "protectedSourceMutated": false
+  },
+  "accessibility": {
+    "semanticComponentTests": "passed",
+    "lightDarkTokenContrast": "passed for declared primary, secondary, accent, and focus pairs",
+    "minimumPointerTargetFoundation": "24 by 24 CSS pixels",
+    "reducedMotionFoundation": "present and preserves content",
+    "reflowSafeMediaDefaults": "present",
+    "renderedShellKeyboardZoomReflowAndBrowserChecks": "deferred to U-02 and owning presentation units because U-01 is inactive"
+  },
+  "dependencyAudit": {
+    "dependencyChangesInU01": false,
+    "vulnerabilities": {"info": 0, "low": 0, "moderate": 1, "high": 5, "critical": 0, "total": 6},
+    "fixAvailable": true,
+    "disposition": "Existing dependency-tree findings recorded for an explicitly approved dependency-maintenance change; U-01 does not silently alter dependencies."
+  },
+  "dispositions": [
+    {"code": "PER-001", "origin": "pre-U-01 baseline", "disposition": "No U-01 regression; final absolute JavaScript reduction remains assigned to the active-shell migration beginning in U-02."},
+    {"code": "DEP-AUDIT", "origin": "existing lockfile", "disposition": "Six advisories recorded; remediation requires a separately reviewed dependency update because this plan prohibits dependency changes."}
+  ],
+  "extensions": {
+    "securityBaseline": "disabled; skipped",
+    "propertyBasedTesting": "disabled; skipped"
+  }
+}

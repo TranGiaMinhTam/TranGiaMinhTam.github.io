@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-17T08:25:14Z",
+  "status": "eligible-for-review",
+  "toolVersions": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "vitest": "4.1.9"
+  },
+  "build": {
+    "outputDirectory": "/private/tmp/portfolio-u06-candidate-dist",
+    "modulesTransformed": 117,
+    "durationMilliseconds": 715,
+    "entryJavaScriptBytes": 281127,
+    "entryCssBytes": 46045,
+    "entryHtmlBytes": 521,
+    "javascriptChangePercent": 4.7063,
+    "cssChangePercent": 9.6179,
+    "javascriptBudgetBytes": 285000,
+    "cssBudgetBytes": 46080,
+    "javascriptRegressionBudgetPercent": 8,
+    "absoluteBudgetsPass": true,
+    "javascriptRegressionPass": true
+  },
+  "publication": {
+    "u06EvidenceBytes": 0,
+    "inheritedEvidenceBytes": 24195314,
+    "candidateEvidenceBytes": 24195314,
+    "incrementalEvidenceBytes": 0,
+    "runtimeNetworkSurfaces": 0
+  },
+  "checks": {
+    "typescript": "pass",
+    "toolsFieldworkTests": "28 passed",
+    "academicTests": "18 passed",
+    "researchTests": "19 passed",
+    "identityTests": "18 passed",
+    "shellTests": "39 passed",
+    "portfolioTests": "133 passed",
+    "repositoryTests": "180 passed",
+    "lint": "pass",
+    "candidateBoundaries": "pass",
+    "activeBoundaries": "pass",
+    "recovery": "pass",
+    "priorUnitVerification": "pass",
+    "toolsFieldworkSourceVerification": "pass",
+    "toolsFieldworkCandidateVerification": "pass"
+  },
+  "dispositions": [
+    {
+      "severity": "P0",
+      "code": "CSS_BUDGET",
+      "status": "resolved",
+      "detail": "The first two candidate measurements exceeded the 46,080-byte CSS ceiling. Redundant U-06 declarations were removed without relaxing the approved budget; the approved aligned candidate is 46,045 bytes."
+    },
+    {
+      "severity": "P0",
+      "code": "READING_SURFACE_CONTRAST",
+      "status": "resolved-and-approved",
+      "detail": "The first rendered review found that the transparent U-06 body exposed the shell dot field behind content and that explanatory copy inherited display-label styling. Both U-06 bodies now use an opaque theme-aware surface and explicit normal body typography with primary text contrast."
+    },
+    {
+      "severity": "P0",
+      "code": "CAPABILITY_ROW_ALIGNMENT",
+      "status": "resolved-and-approved",
+      "detail": "The final rendered review requested consistent section alignment. Tool names, classification markers, and context-link boxes now share a top edge; bordered controls retain a matched minimum height and the narrow layout remains one column."
+    },
+    {
+      "severity": "P1",
+      "code": "BROWSER_PERFORMANCE_EVIDENCE",
+      "status": "unavailable-before-rendered-review",
+      "detail": "No browser performance trace or mobile timing is claimed in the command-line candidate gate."
+    }
+  ],
+  "p0Findings": [],
+  "canProceedToRenderedReview": true
+}

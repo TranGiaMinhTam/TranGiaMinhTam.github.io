@@ -1,65 +1,77 @@
 # Build and Test Summary
 
+> **Status: Approved on 2026-09-18.**
+
 ## Outcome
 
-The template-first beginner README and mode-specific Business Direct Contact color update pass all automated quality gates. No dependency, route, asset, data model, or deployment workflow changed.
-
-## Build Status
-
-- **Build tool**: TypeScript 5.9 and Vite 7 through `npm run build`
-- **Status**: Success
-- **Build time**: Approximately 6.00 seconds on the verification machine
-- **Artifacts**: Static entry point, JavaScript, CSS, images, resume, and certificates under `dist/`
-- **Preview**: HTTP 200 for `/` on the local production preview
+The complete seven-unit science, data science, and bioinformatics portfolio redesign passes every current automated P0 gate. The production application contains ten finished continuous section bodies plus one separately lazy, fact-only Research Note route. No dependency or deployment architecture changed.
 
 ## Verified Results
 
-| Check                           | Result                                         |
-| ------------------------------- | ---------------------------------------------- |
-| Focused README/contact tests    | 18 tests across 2 files passed                 |
-| Complete Vitest suite           | 88 tests across 9 files passed                 |
-| Unit-oriented test group        | 49 tests across 6 files passed                 |
-| Rendered integration group      | 39 tests across 3 files passed                 |
-| ESLint                          | Passed                                         |
-| TypeScript and Vite build       | Passed                                         |
-| Local production preview        | HTTP 200                                       |
-| Main JavaScript                 | 975.76 kB minified; 296.49 kB gzip             |
-| Main CSS                        | 34.61 kB minified; 7.43 kB gzip                |
-| Complete `dist/`                | Approximately 9.4 MB including images and PDFs |
-| Prettier and `git diff --check` | Passed                                         |
-| Non-audit stale-reference scan  | Passed with no matches                         |
+| Check                                    | Result                                 |
+| ---------------------------------------- | -------------------------------------- |
+| Node.js / npm verification               | 24.0.0 / 11.3.0                        |
+| Strict TypeScript                        | Pass                                   |
+| ESLint                                   | Pass                                   |
+| Focused U-07 suite                       | 14 files, 39 tests pass                |
+| Portfolio suite                          | 51 files, 158 tests pass               |
+| Full repository suite                    | 59 files, 204 tests pass independently |
+| Active portfolio boundaries              | Pass; zero errors and zero warnings    |
+| Active U-02 through U-07 verifiers       | Pass                                   |
+| Recovery verifier                        | Pass                                   |
+| Production Vite build and manifest       | Pass                                   |
+| Retained legacy verification             | 12 of 12 files unchanged               |
+| Dependency lockfile                      | Unchanged                              |
+| Evidence growth                          | Zero bytes                             |
+| Markdown whitespace (`git diff --check`) | Pass                                   |
 
-The existing Vite warning for a JavaScript chunk above 500 kB remains non-blocking.
+The first concurrent full-suite attempt produced two unrelated legacy template timeouts under worker contention. The suite was rerun independently and all 204 tests passed.
+
+## Production Measurements
+
+| Metric                  |        Actual |                            Ceiling | Result |
+| ----------------------- | ------------: | ---------------------------------: | ------ |
+| Initial JavaScript      | 295,847 bytes | 296,000 bytes and 6-percent growth | Pass   |
+| Initial CSS             |  50,935 bytes |                       51,200 bytes | Pass   |
+| Lazy Journal JavaScript |   3,213 bytes |                       18,432 bytes | Pass   |
+| Lazy Journal CSS        |   3,693 bytes |                        6,144 bytes | Pass   |
+| U-07 evidence growth    |       0 bytes |                            0 bytes | Pass   |
 
 ## Test Category Status
 
-| Category             | Status | Rationale                                                           |
-| -------------------- | ------ | ------------------------------------------------------------------- |
-| Unit                 | Pass   | 49 deterministic tests passed                                       |
-| Integration          | Pass   | 39 rendered component and application tests passed                  |
-| Static performance   | Pass   | Build output recorded and local preview returned HTTP 200           |
-| End-to-end browser   | N/A    | No dedicated browser automation is configured                       |
-| Contract             | N/A    | The static application has no service or API contract               |
-| Load and stress      | N/A    | The application has no runtime server                               |
-| Security penetration | N/A    | No new authentication, authorization, or network boundary was added |
+| Category             | Status                                         | Evidence or limitation                                                                                    |
+| -------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Unit                 | Pass                                           | Focused and full Vitest suites pass                                                                       |
+| Integration          | Pass                                           | Portfolio suite, active boundaries, semantic verifiers, and recovery checks pass                          |
+| Static performance   | Pass                                           | Initial/lazy byte gates and manifest classification pass                                                  |
+| Security and privacy | Pass for applicable static checks              | Contact remains local-only, safe-scheme and content checks pass; registry vulnerability audit was not run |
+| End-to-end browser   | Approved manual review; automation unavailable | User approved all twelve rendered review items; no browser automation framework is installed              |
+| Contract             | N/A                                            | No service or application API exists                                                                      |
+| Load and stress      | N/A                                            | No runtime application server exists                                                                      |
 
-## Scope Validation
+Browser timing was unavailable, so no Lighthouse or Web Vitals result is claimed. Deployment was not performed in this stage.
 
-- `README.md` now follows an ordered account-to-live-site journey with template creation, collaborator access, Pages, local editing, safe push, and deployment verification.
-- The light Business contact card uses the same primary pair as the Send message button; dark mode uses a deep surface, near-white text, and accessible blue control highlights.
-- Engineering presentation, content, assets, routes, and GitHub Pages workflow remain unchanged.
+## Requirements and Story Closure
 
-## Reproduce
+- The redesigned shell, identity, research, academic evidence, tools/fieldwork, Contact, and Journal units are active.
+- The CV action remains a labeled future download until the user supplies the actual CV.
+- Research claims and evidence remain constrained to verified records; former-owner Journal claims are excluded.
+- Contact validation and `mailto:` encoding are local-only, with no storage, analytics, or false delivery confirmation.
+- The U-07 Journal route is lazy and recoverable, while the main portfolio remains continuous and keyboard-accessible.
+- Twelve legacy cleanup candidates remain quarantined and recoverable; no destructive cleanup was authorized.
 
-```bash
-npm ci
-npm test
-npm run lint
-npm run build
-```
+## Reproduction Documents
+
+- `build-instructions.md`
+- `unit-test-instructions.md`
+- `integration-test-instructions.md`
+- `performance-test-instructions.md`
+- `security-test-instructions.md`
+- `e2e-test-instructions.md`
 
 ## Overall Status
 
 - **Build**: Success
-- **All applicable tests**: Pass
-- **Ready for Operations review**: Yes
+- **All applicable automated tests**: Pass
+- **Known limitations**: No automated browser E2E, no controlled browser timing, no registry vulnerability audit in this stage, and no deployment execution
+- **Ready for Operations review**: Yes, for the existing static GitHub Pages workflow

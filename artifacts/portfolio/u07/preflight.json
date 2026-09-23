@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "unit": "U-07 Contact and Journal",
+  "capturedAt": "2026-09-17T17:17:54Z",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workspace": {
+    "kind": "dirty-brownfield",
+    "userOwnedChangesPreserved": true
+  },
+  "versions": {
+    "node": "24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "vitest": "4.1.9",
+    "typescript": "5.9.3"
+  },
+  "protectedHashes": {
+    "src/App.tsx": "4078f40a9f9cc9b8f3b3f748ffabf2705b90ad9d51464a97abe3bc943881ece5",
+    "package-lock.json": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "package.json": "c08026c4fda41f9c3f0f53a9170a7e1464e14d658da01ba4578a619c6706f8c5",
+    "src/portfolio/research/projectCatalog.ts": "7c498e1de0dd7c0f721aae44e258f9db018b79d12637cafb64007aca84df5700",
+    "src/portfolio/research/research.types.ts": "b7dc45584120f8802d6b2bfa9ecbc3cb92b1b6d3c3d181f9fbcc31dd43a2200c",
+    "src/portfolio/research/researchDataModel.ts": "7bac8b5460e0a6d81b5b27cebeb1dfe775888d5b1d59253db2fc4d5a521f2571",
+    "src/portfolio/research/DataStories.tsx": "0d6f623458157eb84a8e56f958ea1262cb820cb94e3a87bc7259578b9a338e96",
+    "src/portfolio/research/PublicationStatus.tsx": "2333ca762032561336c18ac274b569a22756ae6450eeb98b20ba83a44d79fa1a",
+    "src/portfolio/research/ResearchData.module.css": "6e14302dd543a3d8f3cf8cf40c2a280e134f64608145540010b5d7ebfc803b80",
+    "scripts/portfolio/check-boundaries.mjs": "8eaf9f7432163210fe83b5bb81650ea11d82189ffc9bc61a7237e24a975d9da7",
+    "scripts/portfolio/measure-build.mjs": "250167ca715edd72e8feff4cd1e0f753c72fa45b6e6ec2bf553d8f46ba43c3e2"
+  },
+  "baseline": {
+    "finishedBodies": 9,
+    "temporaryBodies": 1,
+    "javascriptBytes": 281183,
+    "cssBytes": 46045,
+    "evidenceAssetBytes": 24195314
+  },
+  "checks": {
+    "typescript": "pass",
+    "portfolioTests": "41 files, 134 tests passed",
+    "fullTests": "49 files, 180 tests passed",
+    "lint": "pass",
+    "u06Boundary": "pass",
+    "recovery": "pass",
+    "u02ThroughU06ActiveVerification": "pass",
+    "productionBuild": "pass",
+    "measurement": "pass"
+  },
+  "canProceed": true
+}

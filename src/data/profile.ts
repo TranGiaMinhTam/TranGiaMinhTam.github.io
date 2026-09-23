@@ -1,61 +1,51 @@
-import profileImage from '../assets/profile.jpeg'
-import resumePdf from '../assets/documents/resume.pdf'
+import profileImage from '../assets/minh-tam/profile_pic.jpg'
+import resumeDocument from '../assets/documents/Tran-Gia-Minh-Tam-Resume.pdf'
 import type { HeroSection, Profile } from '../types/portfolio'
 
 export const profile = {
-  name: 'Nham Quoc Hung',
-  slug: 'nham-quoc-hung',
-  role: 'Data Engineer at Torilab Inc.',
-  location: 'Hanoi Capital Region, Vietnam',
-  email: 'nhamhung.gttn@gmail.com',
+  name: 'TRAN GIA MINH TAM',
+  slug: 'tran-gia-minh-tam',
+  role: 'Student Researcher in Biology, Chemistry & Mathematics',
+  location: 'Ho Chi Minh City, Vietnam',
+  email: 'minhtamtrangia@gmail.com',
   profileImage,
   resume: {
     label: 'Download Resume',
-    href: resumePdf,
-    fileName: 'Nham-Quoc-Hung-Resume.pdf',
-    ariaLabel: 'Download Nham Quoc Hung resume PDF',
+    href: resumeDocument,
+    fileName: 'Tran-Gia-Minh-Tam-Resume.pdf',
+    ariaLabel: 'Download Tran Gia Minh Tam resume PDF',
   },
   summary:
-    'I am a Computer Science graduate with a specialisation in Data and passion for teaching. In a world being increasingly influenced and shaped by technological advances, these domains are my way of navigating through present complexities and making sense of what is coming next.',
+    'I am a high school student pursuing AS & A-level studies in Biology, Chemistry, and Mathematics while exploring molecular science, data-driven research, public health innovation, and sustainability.',
   socialLinks: [
     {
-      label: 'GitHub',
-      href: 'https://github.com/nhamhung',
-      ariaLabel: 'Open Nham Quoc Hung GitHub profile',
-    },
-    {
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/quoc-hung-nham/',
-      ariaLabel: 'Open Nham Quoc Hung LinkedIn profile',
-    },
-    {
       label: 'Email',
-      href: 'mailto:nhamhung.gttn@gmail.com',
-      ariaLabel: 'Email Nham Quoc Hung',
+      href: 'mailto:minhtamtrangia@gmail.com',
+      ariaLabel: 'Email Tran Gia Minh Tam',
     },
   ],
 } satisfies Profile
 
 export const hero = {
-  eyebrow: '<engineer id="nham-quoc-hung" />',
-  statusBadges: ['SYSTEM STATUS: BUILDING', 'DATA | SOFTWARE | MENTORSHIP'],
-  headline: 'Building reliable data pipelines and scalable data platforms.',
-  highlightedPhrase: 'data pipelines',
+  eyebrow: '<researcher id="tran-gia-minh-tam" />',
+  statusBadges: ['SCIENCE | RESEARCH | LEADERSHIP'],
+  headline: 'Exploring molecular science, data-driven research, and sustainable innovation.',
+  highlightedPhrase: 'molecular science',
   intro: profile.summary,
   stats: [
-    { value: '4+ Years', label: 'Experience' },
-    { value: 'Data + Teaching', label: 'Focus' },
-    { value: 'Everything Data-related', label: 'Coverage' },
+    { value: '9.0/10', label: 'Grade 10 GPA' },
+    { value: 'IELTS 7.0', label: 'English score' },
+    { value: 'Gold + Silver', label: 'International awards' },
   ],
   primaryAction: {
-    label: 'View Projects',
-    sectionId: 'projects',
-    ariaLabel: 'Scroll to selected projects',
+    label: 'View Awards',
+    sectionId: 'awards',
+    ariaLabel: 'Scroll to awards and achievements',
   },
   secondaryAction: {
     label: 'Contact',
     sectionId: 'contact',
     ariaLabel: 'Scroll to contact section',
   },
-  stackHighlights: ['Big Data', 'Data Analytics', 'Data Science', 'Data Engineering', 'Machine Learning', 'Deep Learning'],
+  stackHighlights: ['Biology', 'Chemistry', 'Mathematics', 'Molecular Docking', 'Research', 'Data Analysis'],
 } satisfies HeroSection

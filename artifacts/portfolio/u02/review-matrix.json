@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "candidateUrl": "http://127.0.0.1:4174/",
+  "capturedAt": "2026-09-14T16:39:20Z",
+  "server": {
+    "status": "available",
+    "host": "127.0.0.1",
+    "port": 4174,
+    "httpCheck": "passed"
+  },
+  "automatedBrowserVersions": [],
+  "manualDevices": [
+    "User-reviewed local browser; exact browser and device version not reported"
+  ],
+  "standardsInferred": [
+    "CSS Grid and flex responsive structure",
+    "native anchor fallback",
+    "IntersectionObserver capability guard",
+    "matchMedia and storage capability guards"
+  ],
+  "matrix": [
+    { "widthCssPixels": 320, "theme": "light", "status": "approved-by-user" },
+    { "widthCssPixels": 320, "theme": "dark", "status": "approved-by-user" },
+    { "widthCssPixels": 768, "theme": "light", "status": "approved-by-user" },
+    { "widthCssPixels": 768, "theme": "dark", "status": "approved-by-user" },
+    { "widthCssPixels": 1280, "theme": "light", "status": "approved-by-user" },
+    { "widthCssPixels": 1280, "theme": "dark", "status": "approved-by-user" },
+    { "widthCssPixels": 1440, "theme": "light", "status": "approved-by-user" },
+    { "widthCssPixels": 1440, "theme": "dark", "status": "approved-by-user" }
+  ],
+  "requiredReview": [
+    "No document-level horizontal overflow",
+    "Locus navigation remains directly available and may scroll locally",
+    "No sidebar, drawer, hamburger, layout selector, or repeated card frame",
+    "Focus indicators remain visible and unobscured",
+    "Controls wrap without collision and targets remain usable",
+    "Progress communicates section name and ordinal as text",
+    "Theme toggle preserves the same content tree",
+    "Reduced motion and 200-percent zoom preserve operation"
+  ],
+  "reviewResponse": "approve and continue",
+  "reviewedAt": "2026-09-14T17:09:13Z",
+  "p0ReviewComplete": true,
+  "canSwitch": true
+}

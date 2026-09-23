@@ -1,191 +1,393 @@
-# Component Methods
+# Component Methods and Interfaces
 
-## Application Shell
+## Scope
 
-### `App`
+These signatures define high-level contracts. They intentionally omit implementation detail and exact business rules, which are resolved during per-unit Functional Design. Proposed names may be refined during Code Generation without weakening the contracts.
 
-```ts
-function App(): JSX.Element
-```
-
-- **Purpose**: Render the portfolio page with navigation and ordered sections.
-- **Inputs**: Portfolio data/config imported from `src/data/portfolio`.
-- **Output**: React page tree.
+## Core Archive Types
 
 ```ts
-function useActiveSection(sectionIds: SectionId[], offset?: number): SectionId
-```
+type PhysicalAssetId = Brand<string, 'PhysicalAssetId'>
+type CanonicalAssetId = Brand<string, 'CanonicalAssetId'>
+type ArchiveGroupId = Brand<string, 'ArchiveGroupId'>
+type Sha256 = Brand<string, 'Sha256'>
 
-- **Purpose**: Track which section is currently active while scrolling.
-- **Inputs**:
-  - `sectionIds`: Ordered section identifiers.
-  - `offset`: Optional scroll offset for fixed navbar.
-- **Output**: Active section ID.
+type ArchiveMediaType = 'pdf' | 'jpeg' | 'png' | 'heic' | 'svg' | 'docx'
+type PublicationDisposition =
+  | 'narrative'
+  | 'gallery'
+  | 'document-collection'
+  | 'download-original'
+  | 'fallback'
 
-## Navigation
+type PhysicalAssetFact = Readonly<{
+  id: PhysicalAssetId
+  repositoryPath: string
+  mediaType: ArchiveMediaType
+  bytes: number
+  sha256: Sha256
+}>
 
-### `Navbar`
-
-```ts
-type NavbarProps = {
-  activeSection?: SectionId
-}
-
-function Navbar(props: NavbarProps): JSX.Element
-```
-
-- **Purpose**: Render desktop/mobile navigation from shared config.
-- **Inputs**: `activeSection`.
-- **Output**: Header, desktop links, mobile drawer.
-
-```ts
-function scrollToSection(sectionId: SectionId): void
-```
-
-- **Purpose**: Smooth-scroll to a section by ID.
-- **Inputs**: Section ID.
-- **Output**: Browser scroll side effect.
-
-## Shared Utilities
-
-```ts
-function buildMailtoUrl(input: ContactFormInput, recipientEmail: string): string
-```
-
-- **Purpose**: Build encoded mailto URL from contact form fields.
-- **Inputs**:
-  - Contact form data.
-  - Recipient email.
-- **Output**: Mailto URL string.
-
-```ts
-function getYouTubeEmbedUrl(videoId: string): string
-```
-
-- **Purpose**: Build iframe embed URL for YouTube videos.
-- **Inputs**: YouTube video ID.
-- **Output**: YouTube embed URL.
-
-```ts
-function getYouTubeWatchUrl(videoId: string): string
-```
-
-- **Purpose**: Build external YouTube watch URL.
-- **Inputs**: YouTube video ID.
-- **Output**: YouTube watch URL.
-
-```ts
-function getAnimationDelayClass(index: number): string
-```
-
-- **Purpose**: Return existing reveal animation delay class.
-- **Inputs**: Item index.
-- **Output**: CSS class string.
-
-## Section Components
-
-Each section keeps a simple function component signature:
-
-```ts
-function Hero(): JSX.Element
-function About(): JSX.Element
-function Education(): JSX.Element
-function Experience(): JSX.Element
-function Awards(): JSX.Element
-function Projects(): JSX.Element
-function Gallery(): JSX.Element
-function Videos(): JSX.Element
-function Skills(): JSX.Element
-function Contact(): JSX.Element
-```
-
-- **Purpose**: Render one portfolio section.
-- **Inputs**: Imported typed data modules.
-- **Output**: Section-specific React UI.
-
-## Shared UI Components
-
-```ts
-type SectionShellProps = {
-  id: SectionId
-  eyebrow?: string
+type CuratedArchiveMetadata = Readonly<{
+  canonicalId: CanonicalAssetId
+  contentHash: Sha256
   title: string
-  intro?: string
-  nextSectionId?: SectionId
-  children: React.ReactNode
-}
+  caption: string
+  accessibleText?: string
+  decorative: boolean
+  groupId: ArchiveGroupId
+  order: number
+  disposition: PublicationDisposition
+  authority: 'evidence' | 'resume' | 'owner-reviewed'
+}>
 
-function SectionShell(props: SectionShellProps): JSX.Element
+type DerivativeOutcome =
+  | Readonly<{ status: 'ready'; purpose: 'thumbnail' | 'preview'; source: LocalMediaSource; width?: number; height?: number }>
+  | Readonly<{ status: 'unavailable'; reason: 'unsupported' | 'conversion-failed' | 'not-required' }>
+
+type CanonicalArchiveItem = Readonly<{
+  id: CanonicalAssetId
+  mediaType: ArchiveMediaType
+  title: string
+  caption: string
+  accessibleText?: string
+  decorative: boolean
+  groupId: ArchiveGroupId
+  order: number
+  disposition: PublicationDisposition
+  physicalSources: readonly PhysicalAssetFact[]
+  original: LocalMediaSource
+  derivatives: readonly DerivativeOutcome[]
+}>
 ```
 
-- **Purpose**: Standardize section container and heading layout.
-- **Inputs**: Section metadata, optional next-section target, children.
-- **Output**: Styled section wrapper.
+## Archive Inventory and Catalog Methods
 
 ```ts
-type ContentCardProps = {
-  children: React.ReactNode
-  className?: string
-}
-
-function ContentCard(props: ContentCardProps): JSX.Element
+function inventoryArchive(root: RepositoryAssetRoot): Promise<InventoryResult>
 ```
 
-- **Purpose**: Standardize repeated card chrome.
-- **Inputs**: Children and optional class name.
-- **Output**: Styled card wrapper.
+- Enumerates every physical file inside the approved archive root.
+- Returns repository-relative locators, sizes, types, and hashes.
+- Rejects path escape and unsupported filesystem state; never mutates source files.
 
 ```ts
-type ExternalActionProps = {
+function canonicalizeAssets(facts: readonly PhysicalAssetFact[]): CanonicalizationResult
+```
+
+- Groups identical hashes into one canonical identity while preserving every physical source member.
+- Output order is deterministic and independent of input order.
+- Functional Design must specify idempotence, membership, and ordering properties.
+
+```ts
+function joinArchiveMetadata(
+  canonical: readonly CanonicalAssetSeed[],
+  metadata: readonly CuratedArchiveMetadata[],
+  derivatives: readonly DerivativeManifestEntry[],
+): ArchiveCatalogResult
+```
+
+- Requires exactly one eligible metadata record per published canonical item.
+- Produces typed blocking findings for orphan metadata, missing reviewed dispositions, invalid derivatives, unsafe public paths, or duplicate IDs.
+
+```ts
+function serializeArchiveManifest(catalog: ArchiveCatalog): string
+function parseArchiveManifest(value: string): ArchiveCatalogResult
+```
+
+- Provides a deterministic manifest representation when a generated manifest is used.
+- Functional Design must specify round-trip behavior and canonical serialization.
+
+```ts
+function buildArchiveGroupSummaries(catalog: ArchiveCatalog): readonly ArchiveGroupSummary[]
+function selectArchiveGroup(catalog: ArchiveCatalog, id: ArchiveGroupId): ArchiveGroupSelection
+```
+
+- Group summaries contain no full-media imports.
+- Group selection is stable by explicit order, then canonical ID as a documented tie-breaker.
+
+```ts
+type ArchiveGroupLoader = (id: ArchiveGroupId) => Promise<ArchiveGroupLoadResult>
+```
+
+- Resolves only an approved group module.
+- Unknown IDs fail closed to a visitor-safe not-found state.
+
+## Resume and Content Methods
+
+```ts
+type ResumeClaim = Readonly<{
+  id: ContentId
+  category: ResumeCategory
+  statement: string
+  facts: Readonly<Record<string, string | readonly string[]>>
+  period?: string
+  sourcePage: 1 | 2 | 3 | 4
+  evidenceIds: readonly EvidenceId[]
+  publication: 'public' | 'document-only'
+}>
+
+type ReconciledClaim = ResumeClaim & Readonly<{
+  authority: 'evidence-backed' | 'resume-only' | 'conflicted'
+  provenanceIds: readonly ProvenanceId[]
+}>
+```
+
+```ts
+function reconcileResumeClaims(
+  resume: readonly ResumeClaim[],
+  source: VerifiedPortfolioSource,
+  evidence: readonly PublishedEvidence[],
+): ResumeReconciliationResult
+```
+
+- Evidence-backed facts prevail over conflicting resume wording.
+- Conflicts become explicit findings, never silent substitutions.
+- Claims marked `document-only`, including the phone number, cannot enter page view models.
+
+```ts
+function mapClaimsToSections(
+  claims: readonly ReconciledClaim[],
+  sections: readonly SectionDefinition[],
+): ResumeSectionSelectionResult
+```
+
+- Maps every valid resume category into one or more of the preserved ten sections.
+- Does not create claims absent from a source record.
+- Functional Design must define completeness and non-invention properties.
+
+```ts
+function buildMastheadViewModel(
+  identity: ResearchIdentityViewModel,
+  resume: DownloadableResume,
+): MastheadViewModel
+```
+
+- Produces identity, field label, active status, and a validated local resume action.
+- Contains no theme state and no phone field.
+
+```ts
+function createResumeDownload(
+  source: SafeLocalPdfSource,
+  filename: 'Tran-Gia-Minh-Tam-Resume.pdf',
+): DownloadableResume
+```
+
+- Requires a bundled local PDF.
+- Returns the same capability to both masthead and Identity consumers.
+
+## Media Source Policy
+
+```ts
+type LocalMediaSource = Readonly<{
+  kind: 'local'
   href: string
-  label: string
-  ariaLabel?: string
-  variant?: 'button' | 'icon' | 'link'
-}
+  mediaType: 'pdf' | 'image' | 'download'
+}>
 
-function ExternalAction(props: ExternalActionProps): JSX.Element
+type ApprovedHttpsSource = Readonly<{
+  kind: 'approved-https'
+  href: `https://${string}`
+  mediaType: 'pdf' | 'image' | 'download'
+}>
+
+type MediaSource = LocalMediaSource | ApprovedHttpsSource
+
+type SafeMediaResolution =
+  | Readonly<{ ok: true; value: MediaSource }>
+  | Readonly<{ ok: false; code: 'unsafe-scheme' | 'malformed-source' | 'unapproved-origin'; publicMessage: string }>
 ```
-
-- **Purpose**: Render external links/actions consistently and accessibly.
-- **Inputs**: URL, visual label, accessible label, variant.
-- **Output**: Link or button-like external action.
-
-## Data Modules
 
 ```ts
-export const profile: Profile
-export const navigationItems: NavigationItem[]
-export const about: AboutSection
-export const education: EducationEntry[]
-export const experience: ExperienceEntry[]
-export const awards: AwardEntry[]
-export const projects: ProjectEntry[]
-export const gallery: GalleryItem[]
-export const videos: VideoEntry[]
-export const skills: SkillCategory[]
-export const certificates: CertificateEntry[]
-export const portfolio: Portfolio
+function resolveMediaSource(candidate: MediaSourceCandidate, policy: MediaSourcePolicy): SafeMediaResolution
 ```
 
-- **Purpose**: Provide typed example content for students to customize.
-- **Inputs**: Static imports and literals.
-- **Output**: Typed portfolio data.
-
-## Test Interfaces
+- Allows Vite-bundled sources and explicitly allowlisted HTTPS origins only.
+- Rejects `javascript:`, document-bearing `data:`, `file:`, malformed, or unapproved sources.
+- Does not return internal paths or parser details in `publicMessage`.
 
 ```ts
-describe('portfolio data', () => void)
-describe('navigation config', () => void)
-describe('App smoke render', () => void)
+function toPdfPreviewCapability(item: CanonicalArchiveItem): PdfPreviewResult
+function toImagePreviewCapability(item: CanonicalArchiveItem): ImagePreviewResult
 ```
 
-- **Purpose**: Validate data/config integrity and app render.
-- **Inputs**: Portfolio data and React app.
-- **Output**: Passing Vitest assertions.
+- Converts catalog records into presentation-safe capabilities only after source validation.
+- Preserves metadata and safe direct action when preview support is unavailable.
 
-## Extension Rule Compliance
+## Dialog State and Navigation
 
-| Extension | Status | Rationale |
-|---|---|---|
-| Security Baseline | Disabled | User opted out during Requirements Analysis. |
-| Property-Based Testing | Disabled | User opted out during Requirements Analysis. |
+```ts
+type MediaDialogState =
+  | Readonly<{ kind: 'closed' }>
+  | Readonly<{ kind: 'pdf'; item: PdfViewerCapability; triggerId: string }>
+  | Readonly<{
+      kind: 'image'
+      groupId: ArchiveGroupId
+      items: readonly ImageViewerCapability[]
+      index: number
+      triggerId: string
+    }>
+  | Readonly<{ kind: 'failure'; title: string; publicMessage: string; triggerId: string }>
+
+type MediaDialogEvent =
+  | Readonly<{ type: 'OPEN_PDF'; item: PdfViewerCapability; triggerId: string }>
+  | Readonly<{ type: 'OPEN_IMAGE'; groupId: ArchiveGroupId; items: readonly ImageViewerCapability[]; index: number; triggerId: string }>
+  | Readonly<{ type: 'PREVIOUS' }>
+  | Readonly<{ type: 'NEXT' }>
+  | Readonly<{ type: 'MEDIA_FAILED' }>
+  | Readonly<{ type: 'CLOSE' }>
+```
+
+```ts
+function transitionMediaDialog(state: MediaDialogState, event: MediaDialogEvent): MediaDialogState
+```
+
+- Pure reducer; never produces an out-of-bounds image index.
+- Previous at the first item and next at the last item remain at their valid boundary unless Functional Design explicitly approves wrapping.
+- Close always returns `closed`.
+- Functional Design must define invariant and stateful-model properties.
+
+```ts
+function useMediaDialog(): MediaDialogController
+```
+
+- Owns reducer state and stable action callbacks.
+- DOM focus behavior stays in `MediaDialogHost`.
+
+```ts
+type MediaDialogHostProps = Readonly<{
+  state: MediaDialogState
+  onClose: () => void
+  onPrevious: () => void
+  onNext: () => void
+  onMediaFailure: () => void
+}>
+```
+
+- Host effects set initial focus, contain focus, make background content inert, close on Escape/backdrop, restore trigger focus, and clean up on every exit path.
+
+## Semantic Summary Methods
+
+```ts
+type SemanticSummaryModel =
+  | Readonly<{ kind: 'relationships'; label: string; entries: readonly RelationshipSummaryEntry[] }>
+  | Readonly<{ kind: 'counts'; label: string; entries: readonly CountSummaryEntry[] }>
+  | Readonly<{ kind: 'sequence'; label: string; entries: readonly SequenceSummaryEntry[] }>
+
+function projectSemanticSummary(source: DomainSemanticSource): SemanticSummaryResult
+```
+
+- Projects already-verified relationships, counts, or sequence meaning.
+- Produces no visible table and no new factual inference.
+- Output order follows the same verified order as the corresponding visual.
+
+```ts
+type SemanticSummaryProps = Readonly<{ model: SemanticSummaryModel }>
+```
+
+- Renders a visually hidden heading plus list or description structure.
+- The hidden container remains in the accessibility tree and consumes no visual layout space.
+
+## Shell Interfaces
+
+```ts
+type MastheadViewModel = Readonly<{
+  specimenCode: string
+  name: string
+  fieldLabel: string
+  statusLabel: string
+  resume: DownloadableResume
+}>
+
+type SpecimenMastheadProps = Readonly<{
+  model: MastheadViewModel
+  theme: ThemeState
+  onToggleTheme: () => void
+}>
+```
+
+```ts
+type ObservatoryShellProps = Readonly<{
+  activeSectionId: SectionId
+  progress: ProgressState
+  theme: ThemeState
+  masthead: MastheadViewModel
+  mediaDialog: MediaDialogController
+  findings: readonly ShellFinding[]
+  onNavigate: (sectionId: SectionId) => boolean
+  onRegister: (sectionId: SectionId, element: HTMLElement | null) => void
+  onToggleTheme: () => void
+  sectionBodies?: SectionBodyRegistry
+}>
+```
+
+- Existing navigation and progress contracts remain.
+- The theme button is rendered by the masthead, not the sticky navigation band.
+- The shell mounts one `MediaDialogHost` after the main document structure.
+
+## Local Derivative Pipeline Methods
+
+```ts
+async function generateDerivatives(
+  inventory: InventoryResult,
+  policy: DerivativePolicy,
+): Promise<DerivativeGenerationResult>
+```
+
+- Reads only approved source roots and writes only plan-approved derivative roots.
+- Uses explicit output paths, deterministic names, and atomic replacement where supported.
+- Records failures as dispositions and preserves originals.
+
+```ts
+function validateDerivativeManifest(
+  inventory: InventoryResult,
+  manifest: DerivativeManifest,
+): DerivativeValidationReport
+```
+
+- Detects missing source membership, stale hashes, path escape, duplicate outputs, unsupported types, and invalid dimensions.
+
+## Security and Delivery Verification
+
+```ts
+type RequiredSecurityHeaders = Readonly<{
+  contentSecurityPolicy: string
+  strictTransportSecurity: 'max-age=31536000; includeSubDomains'
+  contentTypeOptions: 'nosniff'
+  frameOptions: 'DENY' | 'SAMEORIGIN'
+  referrerPolicy: 'strict-origin-when-cross-origin'
+}>
+
+async function verifyDeploymentHeaders(
+  htmlEndpoint: URL,
+  expected: RequiredSecurityHeaders,
+): Promise<HeaderVerificationReport>
+```
+
+- Verifies actual response headers, not HTML meta approximations.
+- Returns a blocking report when hosting cannot meet the contract.
+
+```ts
+async function verifyReleaseCandidate(input: ReleaseCandidateInput): Promise<ReleaseGateReport>
+```
+
+- Aggregates type, lint, example tests, PBT, boundaries, archive integrity, privacy scan, dependency audit, SBOM, bundle/request budgets, response headers, and recovery checks.
+- Any blocking failure prevents activation.
+
+## Property-Test Generator Interfaces
+
+```ts
+type PortfolioArbitraries = Readonly<{
+  physicalAssetFact: Arbitrary<PhysicalAssetFact>
+  physicalAssetSet: Arbitrary<readonly PhysicalAssetFact[]>
+  curatedMetadata: Arbitrary<CuratedArchiveMetadata>
+  archiveCatalog: Arbitrary<ArchiveCatalog>
+  resumeClaim: Arbitrary<ResumeClaim>
+  mediaSourceCandidate: Arbitrary<MediaSourceCandidate>
+  imageDialogScenario: Arbitrary<ImageDialogScenario>
+}>
+```
+
+- `fast-check` is the selected framework, subject to dependency approval during NFR Requirements and installation only during an approved Code Generation plan.
+- Generators constrain hashes, paths, categories, indices, and group membership to realistic domains while including empty sets, duplicates, Unicode labels, boundary indices, malformed schemes, and maximum permitted lengths.
+- Shrinking remains enabled and seeds must be reproducible in CI.

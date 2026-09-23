@@ -1,0 +1,170 @@
+{
+  "canonicalItemCount": 104,
+  "duplicateGroups": [
+    {
+      "canonicalId": "asset-1fa6103b2d5218d4582b",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/School Transcript/GPA 8 + 9 + 10/4. Transcript.pdf",
+        "src/assets/minh-tam/certificates/academic-transcript.pdf"
+      ],
+      "sha256": "1fa6103b2d5218d4582b5ab49dde883d7becc22484ce88674615f4fd84af7017"
+    },
+    {
+      "canonicalId": "asset-387e7a940cacfc2d6326",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/certificates/borsworth-scholarship.pdf",
+        "src/assets/minh-tam/source/School Scholarship/Offer pack 80_.pdf"
+      ],
+      "sha256": "387e7a940cacfc2d63268232ab1fa7d9b4036e2a25aeac79d17612a87d4062b6"
+    },
+    {
+      "canonicalId": "asset-429f2d3ae420734faa76",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/certificates/wico-poster.pdf",
+        "src/assets/minh-tam/source/Science research /WICO_document/Poster.pdf"
+      ],
+      "sha256": "429f2d3ae420734faa76229a87100bef7a6fd21d320b530e665f23817a4bb57e"
+    },
+    {
+      "canonicalId": "asset-452f1568b330e85f7501",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/gallery/wico.jpg",
+        "src/assets/minh-tam/source/Science research /WICO 2025/WICO.jpg"
+      ],
+      "sha256": "452f1568b330e85f75014bede8de5825049f08e10bf6b6f8f6cc66526b8e4514"
+    },
+    {
+      "canonicalId": "asset-54fee476945d2584cc28",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/certificates/sim-lse-certificate.pdf",
+        "src/assets/minh-tam/source/Academic competitions/SIM-LSE Data Analytics Challenge 2026/Certificate of Participation_Tran Gia Minh Tam - FredAndBob.pdf"
+      ],
+      "sha256": "54fee476945d2584cc282ba8935a3560795e05b62b92bcc06cc2203c833e32a2"
+    },
+    {
+      "canonicalId": "asset-554ad295d0a8a2b6d9ed",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Academic competitions/Kyoto Youth Summit 2026/DSC03753.JPG",
+        "src/assets/minh-tam/gallery/kyoto-summit.jpg"
+      ],
+      "sha256": "554ad295d0a8a2b6d9ed734624d20203ecdafc83ee64b80dff00e908888dda46"
+    },
+    {
+      "canonicalId": "asset-597501346162b189fc12",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Science research /Science Research Project/NCKH.jpg",
+        "src/assets/minh-tam/projects/molecular-docking.jpg"
+      ],
+      "sha256": "597501346162b189fc125a668266217afe9cdbaa09cbcaca99df539013f05a1f"
+    },
+    {
+      "canonicalId": "asset-81624ac0f5d1800c2021",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Academic competitions/FINO 2026/7a41b469582ad874813b.jpg",
+        "src/assets/minh-tam/projects/data-analytics.jpg"
+      ],
+      "sha256": "81624ac0f5d1800c2021bd76e8a36be4fc6075d39d90a1b07e4bac7b0ab33a43"
+    },
+    {
+      "canonicalId": "asset-8fce51314a555c5e651e",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Volunteer/Nam Cat Tien Protecting Wildlife 2024/20240723_092143.jpg",
+        "src/assets/minh-tam/source/Volunteer/Nam Cat Tien Protecting Wildlife 2024/20240723_092143(1).jpg"
+      ],
+      "sha256": "8fce51314a555c5e651ec18a5371f18bfdd5620ebd98eb0f30d2fa83ef38da61"
+    },
+    {
+      "canonicalId": "asset-9bed56ad995fcc168569",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/certificates/gys-brochure.pdf",
+        "src/assets/minh-tam/source/Science research /GYS_Document/BROCHURE.pdf"
+      ],
+      "sha256": "9bed56ad995fcc1685693d4a6658cb2ee7fbace633958a6c7350eb2a28aa19a3"
+    },
+    {
+      "canonicalId": "asset-b4c4be731cca49c7942f",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/projects/cashew-polyphenol.jpg",
+        "src/assets/minh-tam/source/Science research /Science Research Project/NCKH 3.jpg"
+      ],
+      "sha256": "b4c4be731cca49c7942f64b023903a8191efea40d815c6f10d48b08597365da8"
+    },
+    {
+      "canonicalId": "asset-bb6558ed2c3d21a636a8",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Volunteer/Volunteer Cert/Nui Chua Protect Sea Turle 2025.jpg",
+        "src/assets/minh-tam/gallery/nui-chua-certificate.jpg"
+      ],
+      "sha256": "bb6558ed2c3d21a636a8c2627df08ed5278ec11b07b0a8a60ec368da327fb2e7"
+    },
+    {
+      "canonicalId": "asset-c7b4fac692d858f06b63",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/gallery/debate.jpg",
+        "src/assets/minh-tam/source/Public speaking/Debate.jpg"
+      ],
+      "sha256": "c7b4fac692d858f06b63e3c040b2b361acc2eb1116308189d040d760f62fbffa"
+    },
+    {
+      "canonicalId": "asset-d076ab15fe4fd6ccfbdb",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Volunteer/Nam Cat Tien Protecting Wildlife 2024/20240723_092036.jpg",
+        "src/assets/minh-tam/gallery/nam-cat-tien.jpg"
+      ],
+      "sha256": "d076ab15fe4fd6ccfbdb9fdb2722e152328594ac540e5aad10547ac7e57e0502"
+    },
+    {
+      "canonicalId": "asset-d6e6398b821168498d4d",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Academic competitions/Kyoto Youth Summit 2026/Kyoto 1.png",
+        "src/assets/minh-tam/profile.png"
+      ],
+      "sha256": "d6e6398b821168498d4dd7179c92354f57d7160ddbe8ec842d6cc70a3defeb54"
+    },
+    {
+      "canonicalId": "asset-dc6125151ef633adf31a",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/School Scholarship/Offer Pack 90_.pdf",
+        "src/assets/minh-tam/certificates/worthgate-scholarship.pdf"
+      ],
+      "sha256": "dc6125151ef633adf31a5668ee8ee28ad0b80f2101a3e75c1fefa63fc2f3c746"
+    },
+    {
+      "canonicalId": "asset-dcc1b81a83eb9d3b10e6",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/source/Science research /2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf",
+        "src/assets/minh-tam/certificates/protein-docking-research.pdf"
+      ],
+      "sha256": "dcc1b81a83eb9d3b10e6b9dc36c4452735e34f4f93db16355a2c782bf1669e74"
+    },
+    {
+      "canonicalId": "asset-dedfbd3440855f44fae3",
+      "decision": "exact-content-duplicate",
+      "members": [
+        "src/assets/minh-tam/gallery/gys.jpg",
+        "src/assets/minh-tam/source/Science research /GYS 2025/GYS.jpg"
+      ],
+      "sha256": "dedfbd3440855f44fae328ac19f8d4fde662be5164183dde437613c577cf3619"
+    }
+  ],
+  "physicalFileCount": 122,
+  "reviewedNonIdenticalAliases": [],
+  "schemaVersion": 1
+}

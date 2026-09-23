@@ -77,6 +77,7 @@ const logoIcons: Record<string, IconType> = {
 }
 
 const logoTextMarks: Record<string, string> = {
+  academic: 'ACAD',
   act: '35',
   aiximpact: 'AI',
   database: 'DB',
@@ -84,7 +85,9 @@ const logoTextMarks: Record<string, string> = {
   javafx: 'JFX',
   nus: 'NUS',
   pdfbox: 'PDF',
+  research: 'BIO',
   sat: '800',
+  scholarship: 'SCH',
   university: 'UNI',
 }
 

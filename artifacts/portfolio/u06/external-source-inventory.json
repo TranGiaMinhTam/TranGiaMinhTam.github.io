@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T07:59:06Z",
+  "status": "preserved-unactivated-input",
+  "files": [
+    { "path": "src/portfolio/impact/ActivityRecordCard.tsx", "sha256": "c49688896e26049aef06555fb5e327dd6a396999eb4e2c9cc92f427e933df354" },
+    { "path": "src/portfolio/impact/ActivitySummary.tsx", "sha256": "7108b874c60f7a1ebb818acae0cfb5349097e3d138080e28c5e0ac84a297b055" },
+    { "path": "src/portfolio/impact/ClassificationMarker.tsx", "sha256": "230d13d6318d28fcb0639dc35c8238a1d15ea4d7e4efdc0441f1f01836b0e559" },
+    { "path": "src/portfolio/impact/FieldworkAndLeadership.tsx", "sha256": "62fc2a69054cb414dc60799c1372da19736ff595f33794d9909b3ef5762d752e" },
+    { "path": "src/portfolio/impact/MethodsAndTools.tsx", "sha256": "6ff20bf0ae1d2ee067194f01be171a27378a8180430b1d5443915e2e45d28e4b" },
+    { "path": "src/portfolio/impact/ToolClassificationSummary.tsx", "sha256": "8ecdac0aee867b5deb7e6b465e2cbce9a9acbda5cef5f282e2a82f143c263656" },
+    { "path": "src/portfolio/impact/ToolContextLink.tsx", "sha256": "43bf9eb4bf2a0783a6d9302ef1c7af8c798044dec5e2b876c7b5b9241303ef7b" },
+    { "path": "src/portfolio/impact/ToolsFieldwork.module.css", "sha256": "fe2bfacfc5e702180a8b792bee6b51653376cbe39ba6d9da80bca8563f335cfe" },
+    { "path": "src/portfolio/impact/ToolsFieldworkBodies.test.tsx", "sha256": "043ef8b63a2eb361b59c6ffe0b3a281640497c7d2f1ae2c4b7c8e4abf7e7cd6e" },
+    { "path": "src/portfolio/impact/impact.types.ts", "sha256": "1826efe4c4b9be7f8954eca2ee7f3d32929cfb9fac106723380f11db6e2dbc5d" },
+    { "path": "src/portfolio/impact/index.ts", "sha256": "55d345dcf5e0fdb821631cd78851f99b2911a985817584d53820bd71e1d36233" },
+    { "path": "src/portfolio/impact/sectionBodies.test.tsx", "sha256": "3f71b524a89171d503e545e20cfe5df6d8b8b4c1ac5355427f6f4fb1df1216ff" },
+    { "path": "src/portfolio/impact/sectionBodies.tsx", "sha256": "9fe5c5811270b8eaa5216aa17957a4d8597434056c44f31aeba313f17ebc2bdb" },
+    { "path": "src/portfolio/impact/toolLinkingTable.test.ts", "sha256": "b1cb6f06eedfbfe019e091068aaee20a9019b3cf00f234ee96624367b9abd758" },
+    { "path": "src/portfolio/impact/toolLinkingTable.ts", "sha256": "1880ca5c85abd1b43ccafa7f850819f3bef9964d24a6586bc687e87dd3ddea2d" },
+    { "path": "src/portfolio/impact/toolsFieldworkModel.test.ts", "sha256": "4f937453de55c57d61ad42cad1c9febb411204a7b38126616ca2ae3f2f75d572" },
+    { "path": "src/portfolio/impact/toolsFieldworkModel.ts", "sha256": "dff2b432f05242f9ef0a01ebca002ee5a44312ae714c2fb5b682badc7b29f3fd" },
+    { "path": "src/portfolio/impact/toolsFieldworkStyles.test.ts", "sha256": "d42fb2ca3a742afc12d88ba06f5aaee4ed1203ddd0ab4207d937bd638d78f7cd" }
+  ],
+  "fileCount": 18,
+  "totalBytes": 42705,
+  "diagnostics": {
+    "strictTypes": "passed",
+    "focusedTests": 23,
+    "lint": "passed"
+  },
+  "activeAppSha256": "761f8a588bc2152a81fc970fb743843f566adb82523a837880ffbf2d78b3be8e",
+  "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1"
+}

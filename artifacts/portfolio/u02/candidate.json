@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-14T16:37:52.433Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 185,
+      "gzipBytes": 143
+    },
+    {
+      "path": "assets/index-BgZrKPLn.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 206635,
+      "gzipBytes": 65239
+    },
+    {
+      "path": "assets/index-Cv47udmj.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 9200,
+      "gzipBytes": 2720
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 531,
+      "gzipBytes": 329
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 206635,
+    "cssBytes": 9200,
+    "otherInitialBytes": 531,
+    "evidenceAssetBytes": 0,
+    "deployableBytes": 216551
+  },
+  "budgets": {
+    "javascriptBytes": 307200,
+    "cssBytes": 51200,
+    "regressionReviewPercent": 10
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 893367,
+    "baselineCssBytes": 68577,
+    "javascriptChangePercent": -76.8701,
+    "cssChangePercent": -86.5844
+  },
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true,
+  "qualityGate": {
+    "typescript": "passed",
+    "lint": "passed",
+    "focusedShellTests": { "status": "passed", "files": 11, "tests": 36 },
+    "portfolioTests": { "status": "passed", "files": 19, "tests": 54 },
+    "fullTests": { "status": "passed", "files": 27, "tests": 99 },
+    "candidateBoundary": "passed",
+    "recovery": "passed",
+    "protectedSourceFileCount": 104
+  },
+  "interactionEvidence": {
+    "deliberateStateResponse": "passed-under-100ms-local-test",
+    "stableProgress": "synchronous-pure-derivation-under-200ms-contract",
+    "geometryEvaluationsPerFrame": 1,
+    "observerOrFallbackControllerCount": 1,
+    "listenerCountGrowth": "constant"
+  },
+  "activeGraph": {
+    "candidateEntry": "scripts/portfolio/candidate/main.tsx",
+    "transformedModules": 47,
+    "containsScientificShell": true,
+    "containsChakra": false,
+    "containsTailwindPresentation": false,
+    "containsRejectedTemplates": false,
+    "containsLegacyLayoutHook": false,
+    "containsRawEvidence": false,
+    "containsRuntimeNetworkSurface": false,
+    "containsLaterDomainPresentation": false
+  },
+  "entryState": {
+    "activeEntryUnchanged": true,
+    "candidateReviewedByUser": true,
+    "canSwitch": true
+  }
+}

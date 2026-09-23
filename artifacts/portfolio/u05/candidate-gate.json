@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-17T03:04:53Z",
+  "status": "eligible-for-review",
+  "toolVersions": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0"
+  },
+  "build": {
+    "outputDirectory": "/private/tmp/portfolio-u05-candidate-dist",
+    "modulesTransformed": 105,
+    "durationMilliseconds": 910,
+    "entryJavaScriptBytes": 268429,
+    "entryCssBytes": 42005,
+    "entryHtmlBytes": 525,
+    "javascriptChangePercent": 7.6999,
+    "cssChangePercent": 38.3609,
+    "javascriptBudgetBytes": 274000,
+    "cssBudgetBytes": 43008,
+    "javascriptRegressionBudgetPercent": 10,
+    "absoluteBudgetsPass": true,
+    "javascriptRegressionPass": true
+  },
+  "publication": {
+    "u05PdfCount": 7,
+    "u05PdfBytes": 22866108,
+    "u05ImageCount": 3,
+    "u05ImageBytes": 1251556,
+    "u05EvidenceBytes": 24117664,
+    "inheritedPortraitBytes": 77650,
+    "allEmittedEvidenceBytes": 24195314,
+    "initialEvidenceRequests": 0,
+    "pdfDelivery": "user-initiated native anchors",
+    "imageDelivery": "native loading-lazy images with reserved intrinsic geometry"
+  },
+  "protectedHashes": {
+    "activeAppSha256": "be06360156977349a7147e0f6a5bda3eb47dfb067d719b894482c7fc9f80ea86",
+    "packageLockSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "packageJsonSha256": "6f053af272992ad7d46d55c350d2e8b0f278df2bb6fc9d5fd31b3a6e8bee6941"
+  },
+  "checks": {
+    "typescript": "pass",
+    "academicTests": "18 passed",
+    "researchTests": "19 passed",
+    "identityTests": "18 passed",
+    "shellTests": "39 passed",
+    "portfolioTests": "107 passed",
+    "repositoryTests": "154 passed",
+    "lint": "pass",
+    "candidateBoundaries": "pass",
+    "activeBoundaries": "pass",
+    "recovery": "pass",
+    "priorUnitVerification": "pass",
+    "academicSourceVerification": "pass",
+    "academicCandidateVerification": "pass"
+  },
+  "dispositions": [
+    {
+      "severity": "P1",
+      "code": "MEASUREMENT_BASELINE_SCHEMA",
+      "status": "resolved",
+      "detail": "The first measurement invocation found that the U-05 preflight baseline omitted the entryGraph wrapper expected by the established measurement tool. The baseline was corrected to the established schema and measurement then passed without findings."
+    },
+    {
+      "severity": "P1",
+      "code": "BROWSER_PERFORMANCE_EVIDENCE",
+      "status": "unavailable-before-rendered-review",
+      "detail": "No browser performance trace or mobile timing is claimed in the command-line candidate gate."
+    },
+    {
+      "severity": "P0",
+      "code": "RENDERED_ALIGNMENT",
+      "status": "corrected-and-awaiting-review",
+      "detail": "The first rendered review identified widespread text-alignment defects. Undefined U-05 spacing, font, rule, and surface tokens were replaced with defined U-01 tokens; headers, category navigation, spectrum rows, archive group headers, row indices, document copy, media copy, and actions now use explicit shared alignment rules."
+    },
+    {
+      "severity": "P0",
+      "code": "IGCSE_STRATUM_ALIGNMENT",
+      "status": "corrected-and-awaiting-review",
+      "detail": "The second rendered review identified a completed-stratum-only horizontal offset and an unused final grid column. The offset was removed and the verified-record cell now spans the unused evidence column, with explicit tablet and mobile placement."
+    }
+  ],
+  "p0Findings": [],
+  "canProceedToRenderedReview": true
+}

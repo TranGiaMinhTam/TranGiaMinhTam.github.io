@@ -2,64 +2,43 @@ import type { ExperienceEntry } from '../types/portfolio'
 
 export const experience = [
   {
-    title: 'Mentor',
-    company: 'Self-employed',
-    period: '2025 - Present',
+    title: 'Deputy Head, Science Research & Content',
+    company: 'The Institute of Viéce (TIV)',
+    period: 'Mar 2026 - Sep 2026',
     description: [
-      'Mentored students in-person and online across Math, Science, English, Economics, and Computer Science.',
-      'Prepared students for certifications such as SAT, ACT, GMAT/GRE, IELTS, GCSE/IGCSE, O-levels and A-levels.',
-      'Supported scholarship and entrance exam applications including ASEAN, A*STAR, TestAS, AEIS and UEE into top secondary schools and universities in Singapore or globally.',
-      'Designed new curricula and syllabi to equip students with meaningful and practical skills to prepare for undergraduate studies, higher education and career orientation.',
+      'Led the scientific review and publication process for a 32-member academic team, reviewing research articles for scientific accuracy and coordinating preparation and publication.',
+      'Worked within a leadership team of 1 Head and 3 Deputy Heads to strengthen editorial quality, research communication, and team workflow.',
+      'Contributed to the quality and consistency of content created by the organisation across scientific research and communication activities.',
     ],
   },
   {
-    title: 'Data Engineer',
-    company: 'Torilab Inc.',
-    period: '2025 - Present',
+    title: 'Student Delegate',
+    company: 'Kyoto SDGs Youth Summit, Japan',
+    period: 'Mar 2026 - Present',
     description: [
-      'Built and maintained 40+ data models across multiple company platforms to support executive decision-making.',
-      'Designed pipelines powering analytics workflows and Business Intelligence (BI) dashboards for management and business teams.',
-      'Partnered with cross-functional teams to build a centralise data warehouse and enable self-service analytical reporting.',
-      'Managed entire BI data infrastructure on Google Cloud Platform to ensure reporting consistency, reliability and timeliness'
+      'Selected as one of 9 full-scholarship recipients from 60 applicants to represent Vietnam at the Kyoto SDGs Youth Summit.',
+      'Collaborated with international delegates on sustainable development initiatives and shared perspectives on global sustainability challenges.',
+      'Developed communication, teamwork, and leadership skills through cross-cultural discussion and collaborative project work.',
     ],
   },
   {
-    title: 'Software Engineer',
-    company: 'Rakuten Asia Pte Ltd',
-    period: '2023 - 2025',
+    title: 'Free IGCSE Mathematics Mentor',
+    company: 'Independent Online Teaching',
+    period: 'Feb 2025 - Jun 2025',
     description: [
-      'Maintained mission-critical and revenue-generating ad delivery systems for Rakuten Ichiba Marketplace.',
-      'Managed Couchbase and Hive data platforms operating at hundreds of millions of records to support real-time ads delivery.',
-      'Built scalable backend APIs with Spring, Kafka, Kubernetes, Redis, and caching strategies for cross-department data ingestion and synchronisation.',
+      'Designed and delivered free weekly mathematics lessons for 6 students over 5 months.',
+      'Created structured lesson plans and adapted explanations to students’ learning needs and academic goals.',
+      'Supported students in building confidence and improving their understanding of core mathematical concepts.',
     ],
   },
   {
-    title: 'Data Engineer',
-    company: 'Sea Limited (Garena)',
-    period: 'Jul 2022 - Jul 2023',
+    title: 'Volunteer & Conservation Participant',
+    company: 'Nui Chua National Park and Nam Cat Tien National Park',
+    period: 'Jun 2024 - Jun 2025',
     description: [
-      'Developed batch and real-time ingestion pipelines under the Data Platform team, supporting HQ Finance with data modelling and NYSE financial reporting for Shopee and Garena.',
-      'Monitored and maintained hundreds of terabyte-scale batch and streaming ingestion jobs across major game titles using Bash and Apache Spark.',
-      'Built a self-service ingestion portal that enabled non-technical Finance users to load data from databases, Google Sheets, CSV files, and Kafka into HDFS.',
-    ],
-  },
-  {
-    title: 'Data Analyst Intern',
-    company: 'Sea Limited (Shopee Finance)',
-    period: 'Nov 2021 - May 2022',
-    description: [
-      'Helped the Shopee Finance team build efficient terabyte-scale financial data models for NYSE reporting by researching Spark SQL internals and optimising heavy Spark applications.',
-      'Built an auto-tuning program that evaluated runtime statistics, identified bottlenecks, and suggested optimised model configurations for data users.',
-      'Led optimisation efforts addressing data skew and improper null handling, reducing runtime and resource usage for selected applications by 10 to 50 percent.',
-    ],
-  },
-  {
-    title: 'Data Analytics and Machine Learning Intern',
-    company: 'PSA International',
-    period: 'May 2021 - Nov 2021',
-    description: [
-      'Supported the PSA Analytics team in researching reinforcement learning models designed to reduce reliance on human operators when planning costly port operations.',
-      'Prototyped a container pre-shuffling model using Proximal Policy Optimization to rearrange a container yard within minutes and reduce subsequent vessel-loading planning time and cost.',
+      'Participated in sea turtle conservation activities and local community education during volunteer trips in summer.',
+      'Contributed to biodiversity and wildlife conservation activities while supporting environmental awareness and community engagement.',
+      'Worked hands-on in field-based conservation programs to strengthen teamwork, responsibility, and environmental stewardship.',
     ],
   },
 ] satisfies ExperienceEntry[]

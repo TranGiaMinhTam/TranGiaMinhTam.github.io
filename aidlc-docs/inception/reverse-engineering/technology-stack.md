@@ -1,51 +1,33 @@
 # Technology Stack
 
-## Programming Languages
+## Languages
 
-- **TypeScript 5.9.3** - Application, configuration, data models, and tests.
-- **TSX** - React components and DOM tests.
-- **CSS** - Global and template-scoped visual systems and animations.
-- **Markdown** - Local journal article content and project documentation.
-- **YAML** - GitHub Actions deployment workflow.
+- TypeScript 5.9.3 and TSX for application, models, scripts, and tests.
+- CSS and CSS Modules for tokens, layout, theming, and responsive presentation.
+- Markdown for workflow documentation and the fact-only research note.
+- YAML for GitHub Actions and HTML for the Vite entry document.
 
-## Frameworks and Libraries
+## Runtime Libraries
 
-- **React 19.2.0** - Component rendering and hooks.
-- **React DOM 19.2.0** - Browser rendering.
-- **Chakra UI 3.30.0** - Responsive UI primitives and interactions.
-- **Emotion React 11.14.0** - Chakra styling dependency.
-- **next-themes 0.4.6** - Color mode support.
-- **React Icons 5.5.0** - Interface and social icons.
-- **React Markdown 10.1.0** - CommonMark rendering for in-site journal content.
-- **Tailwind CSS 4.1.18** - Utility CSS layer integrated through Vite.
+- React 19.2.3 and React DOM 19.2.3.
+- React Markdown 10.1.0 for the research note.
+- Browser APIs for hashes, history, storage, scrolling, visibility, and email-client handoff.
+- Chakra UI, Emotion, next-themes, React Icons, and Tailwind remain installed mainly for retained legacy presentation code or build configuration.
 
-## Build Tools
+## Build and Quality Tools
 
-- **Vite 7.2.4** - Development server, static build, asset processing, and test configuration.
-- **React SWC Plugin 4.2.2** - React compilation and fast refresh.
-- **TypeScript Paths Plugin 6.0.3** - Vite path alias resolution.
-- **npm** - Dependency and script runner.
-
-## Testing and Quality Tools
-
-- **Vitest 4.1.9** - Unit and DOM test runner.
-- **Testing Library React 16.3.2** - User-oriented React rendering and interaction tests.
-- **jest-dom 6.9.1** - DOM assertions.
-- **jsdom 29.1.1** - Browser-like test environment.
-- **ESLint 9.39.2** - Static analysis.
-- **typescript-eslint 8.51.0** - TypeScript lint support.
-- **Prettier 3.7.4** - Formatting.
+- npm, Vite 7.3.0, SWC React plugin, TypeScript project references, and vite-tsconfig-paths.
+- ESLint 9.39.2 and Prettier 3.7.4.
+- Vitest 4.1.9, Testing Library React 16.3.2, jest-dom 6.9.1, and jsdom 29.1.1.
 
 ## Infrastructure
 
-- **GitHub Pages** - Static production hosting.
-- **GitHub Actions** - Build and deployment automation.
-- **Node.js 20** - CI runtime and documented minimum for students.
+- GitHub repository, GitHub Actions, GitHub Pages, and Node.js 20 in CI.
 
-## Runtime Model
+## Latest Approved Evidence
 
-- Static browser application only.
-- No backend, database, authentication, or runtime secrets.
-- Hash-based client navigation is compatible with GitHub Pages.
-- Template and layout preferences persist independently in browser local storage.
-- Local content and assets are bundled by Vite; external media and links remain third-party dependencies.
+- Strict TypeScript and ESLint passed.
+- 204 tests across 59 files passed independently.
+- Production build passed at 295,847 initial JavaScript bytes and 50,935 initial CSS bytes.
+- Lazy Journal route measured 3,213 JavaScript bytes and 3,693 CSS bytes.
+- This reverse-engineering refresh did not rerun verification commands.

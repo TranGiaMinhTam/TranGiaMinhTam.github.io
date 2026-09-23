@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "decision": "current-attached-source",
+  "selectedSource": {
+    "bytes": 113775,
+    "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282"
+  },
+  "canonicalBundled": {
+    "relativePath": "src/assets/documents/Tran-Gia-Minh-Tam-Resume.pdf",
+    "bytes": 113775,
+    "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282",
+    "filename": "Tran-Gia-Minh-Tam-Resume.pdf",
+    "mediaType": "application/pdf"
+  },
+  "previousCanonical": {
+    "bytes": 169191,
+    "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6",
+    "recoveryManifest": ".aidlc-recovery/resume-led-content-integration/manifest.json"
+  },
+  "staleUnrelated": {
+    "relativePath": "src/assets/documents/resume.pdf",
+    "bytes": 103033,
+    "sha256": "7ca0d97a208bbb9fd0e026ae51a164792e2efa6b2388c303141c1466853874dd",
+    "activated": false
+  },
+  "externalSourceMutated": false,
+  "copyVerified": true
+}

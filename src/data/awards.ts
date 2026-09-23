@@ -1,47 +1,73 @@
-import nusLogo from '../assets/nus.png'
-import saLogo from '../assets/sa.png'
-import zhonghuaLogo from '../assets/zhonghua.jpg'
+import gysImage from '../assets/minh-tam/gallery/gys.jpg'
+import wicoImage from '../assets/minh-tam/gallery/wico.jpg'
+import debateImage from '../assets/minh-tam/gallery/debate.jpg'
+import nuiChuaImage from '../assets/minh-tam/gallery/nui-chua-certificate.jpg'
+import futureInnovatorImage from '../assets/minh-tam/projects/data-analytics.jpg'
 import type { AwardEntry } from '../types/portfolio'
 
 export const awards: AwardEntry[] = [
   {
-    title: 'ASEAN Secondary Scholarship',
-    organization: "Zhonghua Secondary School - Saint Andrew's Junior College",
-    year: '2014 - 2018',
-    description: 'Full-ride scholarship for secondary and junior college education.',
-    logo: zhonghuaLogo,
-    tag: 'SCHOLARSHIP',
+    title: '1st Place',
+    organization: 'Future Innovator Camp',
+    year: 'July 2024',
+    description: 'Received first place for Cool Ride, a customizable helmet concept with 12 integrated features, a business plan, and an investment pitch.',
+    logo: futureInnovatorImage,
+    tag: 'INNOVATION',
   },
   {
-    title: 'Singapore Youth Festival Choir - Silver Award',
-    organization: 'Zhonghua Secondary School',
-    year: '2015',
-    description: 'Received the Silver Award for choir performance at the Singapore Youth Festival.',
-    logo: zhonghuaLogo,
-    tag: 'ARTS',
+    title: 'Gold Medal',
+    organization: 'Vinschool Science Innovation Challenge (VSIC), Vietnam',
+    year: 'May 2026',
+    description: 'Awarded Gold Medal for a molecular docking model targeting Type II diabetes therapeutic proteins and an interactive visualization platform.',
+    logo: gysImage,
+    tag: 'RESEARCH',
   },
   {
-    title: 'Model Student Award',
-    organization: "Saint Andrew's Junior College",
-    year: '2017',
-    description: 'Recognised for exemplary character and conduct as a model student.',
-    logo: saLogo,
-    tag: 'CHARACTER',
+    title: 'Gold Award',
+    organization: 'International Creative Papers Conference (ICPC), Korea',
+    year: 'March 2026',
+    description: 'Presented a scientific research project through poster, video, and brochure in an international research competition.',
+    logoText: 'ICPC',
+    tag: 'INTERNATIONAL',
   },
   {
-    title: 'ASEAN Undergraduate Scholarship',
-    organization: 'National University of Singapore',
-    year: '2018 - 2022',
-    description: 'Full-ride scholarship for undergraduate studies.',
-    logo: nusLogo,
-    tag: 'SCHOLARSHIP',
+    title: 'Top 20 Finalist',
+    organization: 'Pre-University Adelaide Research Competition for Students',
+    year: 'February 2026',
+    description: 'Selected as a Top 20 Finalist among approximately 64 participants for an original research proposal and presentation.',
+    logoText: 'TOP 20',
+    tag: 'RESEARCH',
   },
   {
-    title: '1st Prize Team | AIxImpact Case Competition',
-    organization: 'QuantumBlack, a McKinsey company',
-    year: '2022',
-    description: 'Best project award in the AIxImpact healthcare case competition track.',
-    logo: nusLogo,
-    tag: 'COMPETITION',
+    title: 'Gold Award',
+    organization: 'World Invention Creativity Olympic (WICO), Korea',
+    year: 'July 2025',
+    description: 'Presented a 34-page research paper and interactive project model before an international judging panel from around 80 countries.',
+    logo: wicoImage,
+    tag: 'INTERNATIONAL',
+  },
+  {
+    title: 'Biology Star Award',
+    organization: 'Vinschool Central Park',
+    year: 'May 2026',
+    description: 'Recognized for outstanding academic performance and excellence in Biology.',
+    logoText: 'BIO',
+    tag: 'ACADEMIC',
+  },
+  {
+    title: 'Silver Medal',
+    organization: 'Vinschool Book Week Debate Competition',
+    year: 'November 2024',
+    description: 'Earned a Silver Medal in an inter-school debate competition through critical thinking, argumentation, and public speaking.',
+    logo: debateImage,
+    tag: 'DEBATE',
+  },
+  {
+    title: 'Sea Turtle Conservation Volunteer',
+    organization: 'Nui Chua National Park, Vietnam',
+    year: 'June 2024 & June 2025',
+    description: 'Contributed to sea turtle conservation activities and community education during annual nesting-season volunteer trips.',
+    logo: nuiChuaImage,
+    tag: 'SERVICE',
   },
 ]

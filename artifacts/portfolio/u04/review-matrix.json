@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-16T12:27:13Z",
+  "candidateUrl": "http://127.0.0.1:4176/",
+  "server": {
+    "status": "available",
+    "host": "127.0.0.1",
+    "port": 4176,
+    "httpStatus": 200
+  },
+  "automatedBrowserVersions": [],
+  "browserAutomation": {
+    "status": "unavailable",
+    "classification": "P1 environment limitation",
+    "detail": "No Chromium, Chrome, Firefox, Playwright, or supported browser executable is installed."
+  },
+  "performance": {
+    "mobileProfileLcp": "not measured",
+    "cls": "not measured",
+    "interactionLatency": "not measured",
+    "classification": "P1 environment limitation"
+  },
+  "matrix": [
+    { "widthCssPixels": 320, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 320, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 768, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 768, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1280, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1280, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1440, "theme": "light", "structuralAutomated": "passed", "visualUserReview": "approved" },
+    { "widthCssPixels": 1440, "theme": "dark", "structuralAutomated": "passed", "visualUserReview": "approved" }
+  ],
+  "automatedEvidence": [
+    "Computational Projects uses an ordered pipeline with tool annotations and evidence terminals.",
+    "Laboratory Research uses a specimen-to-assay bench and explicit prototype boundary.",
+    "Data Stories uses an analytical signal sheet and non-interactive publication status.",
+    "All three structures become a continuous single-column reading order below 48rem.",
+    "All visual relationships have the exact same identifier set and order as adjacent semantic tables.",
+    "Two unspecified roles and one verified team-led contribution are visible as text.",
+    "Three figures are lazy, asynchronously decoded, intrinsically sized, and locally recoverable.",
+    "Three research documents are native user-initiated links; unrelated future-unit documents are absent.",
+    "Reduced-motion, narrow-table, target-size, local overflow, and token-driven theme rules are present.",
+    "Five bodies are finished and five later bodies retain the unchanged temporary fallback."
+  ],
+  "userReview": {
+    "status": "approved-after-fulfilled-condition",
+    "response": "please fix this image from being cut-off, shift it left so that the person in white shirt is centralised. Other than that, approve and continue",
+    "decision": "A",
+    "findings": [
+      "Research text lacks a clear spacing rhythm.",
+      "The laboratory question is constrained to a narrow column and wraps excessively.",
+      "Internal margins and padding do not clearly separate the header, method sequence, and supporting context."
+    ],
+    "approvalCondition": "Shift the portrait crop left and center the person in the white shirt.",
+    "conditionStatus": "fulfilled with object-position: 88% 50%."
+  },
+  "correctedCandidate": {
+    "rebuiltAt": "2026-09-16T12:45:15Z",
+    "status": "approved-after-fulfilled-portrait-condition",
+    "spacingCorrection": "Full-width laboratory layout, editorial two-column specimen header, bounded question measure, larger section gaps, and clearer internal panel padding.",
+    "focusedTests": 19,
+    "javascriptBytes": 249170,
+    "cssBytes": 30359,
+    "automatedP0Findings": []
+  },
+  "canActivate": true
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-15T07:56:12Z",
+  "unit": "U-03 Identity and Questions",
+  "revision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workspace": "/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io",
+  "dirtyEntryCount": 101,
+  "dirtyWorktreeDisposition": "Expected protected work from the restarted workflow and approved U-01/U-02 units; U-03 uses an exact file allowlist.",
+  "dependencies": {
+    "packageJsonSha256": "0e3ba74fe55392865173b0599e3fbd745e0af53ad066f99e0dcbd38f93eaebc8",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1"
+  },
+  "activeEntry": {
+    "appSha256": "7ad11872db509a57395b65ab189f424a56c919551a0199d031f127e21378dd94",
+    "mainSha256": "aa6313594e755d3691569ee1d4b43b64613adf8ec8640c66266e6be3c91f091a",
+    "htmlSha256": "f95f0f2031341499fb126662ef472acdefe31a17d92708e9221fc1fed0e8c3bc",
+    "appContent": "import { PortfolioExperience } from './portfolio/shell/PortfolioExperience'\n\nexport function PortfolioApp() {\n  return <PortfolioExperience />\n}\n\nfunction App() {\n  return <PortfolioApp />\n}\n\nexport default App\n"
+  },
+  "shell": {
+    "productionFilesSha256": "a1b1533e1437b7196b58e41078125f29681ca27c9874f7cabf9bfa246836bce9",
+    "allFilesSha256": "a91db45f9363e084669b969e1ae06a1f18d5e641b9749e68254571486c3fb633"
+  },
+  "protectedEvidenceInventorySha256": "3a97d1102a5fd1a17e1cb9c79f6a07ddc5089b068d342d874ddb54df257970e2",
+  "assets": {
+    "portraitBytes": 77650,
+    "transcriptBytes": 6817646
+  },
+  "tools": {
+    "node": "24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.9"
+  },
+  "baselineBuild": {
+    "status": "passed",
+    "transformedModules": 48,
+    "javascriptBytes": 206703,
+    "cssBytes": 9200
+  },
+  "extensions": {
+    "securityBaseline": "disabled",
+    "propertyBasedTesting": "disabled"
+  },
+  "liveU03Bodies": "temporary",
+  "scopeCompatible": true
+}

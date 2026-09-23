@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-18T13:14:21.110Z",
+  "decision": "accepted-active",
+  "activeEntrySha256": "1cb30e758757ac2ca716686697f59a5da39a804691b6030f85d55727a47d60ad",
+  "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+  "checks": {
+    "typescript": "pass",
+    "lint": "pass",
+    "focusedTests": "14 files, 39 tests passed",
+    "portfolioTests": "51 files, 158 tests passed",
+    "fullTests": "59 files, 204 tests passed on isolated rerun",
+    "activeBoundary": "pass",
+    "activeVerifier": "pass",
+    "priorUnitVerifiers": "pass",
+    "recoveryVerifier": "pass",
+    "productionBuild": "pass",
+    "productionMeasurement": "pass",
+    "legacyRetention": "pass"
+  },
+  "measurements": {
+    "initialJavascriptBytes": 295847,
+    "initialCssBytes": 50935,
+    "journalJavascriptBytes": 3213,
+    "journalCssBytes": 3693,
+    "evidenceAssetBytes": 24195314,
+    "evidenceGrowthBytes": 0
+  },
+  "observations": [
+    "The first full-suite attempt ran concurrently with multiple other worker-heavy checks and two unrelated legacy template tests exceeded their five-second timeout.",
+    "The full suite was rerun independently and all 59 files and 204 tests passed in 21.42 seconds."
+  ],
+  "recoveryInvoked": false,
+  "p0Findings": []
+}

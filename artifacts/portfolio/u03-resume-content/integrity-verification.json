@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "approved": {
+    "bytes": 113775,
+    "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282"
+  },
+  "facts": {
+    "canonical": {
+      "bytes": 113775,
+      "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282",
+      "pdfSignature": true
+    },
+    "external": {
+      "bytes": 113775,
+      "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282",
+      "pdfSignature": true
+    },
+    "stale": {
+      "bytes": 103033,
+      "sha256": "7ca0d97a208bbb9fd0e026ae51a164792e2efa6b2388c303141c1466853874dd",
+      "pdfSignature": true
+    }
+  },
+  "findings": [],
+  "canProceed": true
+}

@@ -1,108 +1,76 @@
-import aixImpactCertificate from '../assets/certificates/aiximpact-certificate.pdf'
-import aixImpactPresentation from '../assets/certificates/aiximpact-final-presentation.pdf'
-import awsCloudPractitioner from '../assets/certificates/aws-cloud-practitioner.pdf'
-import kubernetesApplicationDeveloper from '../assets/certificates/certified-kubernetes-application-developer.pdf'
-import courseraCertificate from '../assets/certificates/coursera-mmpg2mrcsjrt.pdf'
-import databaseSystemFocusArea from '../assets/certificates/database-system-focus-area.pdf'
-import nusBigDataSystemsAward from '../assets/certificates/nus-top-student-for-big-data-systems.pdf'
-import universityCertificate from '../assets/certificates/university.pdf'
+import borsworthScholarship from '../assets/generated/minh-tam/document-preview/borsworth-scholarship-first-2-pages.pdf'
+import gysBrochure from '../assets/minh-tam/certificates/gys-brochure.pdf'
+import proteinDockingResearch from '../assets/minh-tam/gallery/2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf'
+import simLseCertificate from '../assets/minh-tam/certificates/sim-lse-certificate.pdf'
+import wicoPoster from '../assets/minh-tam/certificates/wico-poster.pdf'
+import worthgateScholarship from '../assets/generated/minh-tam/document-preview/worthgate-scholarship-first-2-pages.pdf'
 import type { CertificateEntry } from '../types/portfolio'
 
 export const certificates = [
   {
-    title: 'AIxImpact Competition Certificate',
-    issuer: 'AIxImpact',
+    title: 'SIM-LSE Data Analytics Challenge Certificate',
+    issuer: 'SIM-LSE Data Analytics Challenge',
     kind: 'Competition',
-    description:
-      'Recognition for presenting a feasible and meaningful AI-based solution to the problem of predicting and handling future global pandemics.',
-    file: aixImpactCertificate,
-    logoKey: 'aiximpact',
-    logoLabel: 'AIxImpact competition logo mark',
-    logoAccent: '#0f766e',
-    ariaLabel: 'Open AIxImpact Certificate',
+    description: 'Certificate of participation for leading a team in retail data analysis and dashboard development.',
+    file: simLseCertificate,
+    logoKey: 'tableau',
+    logoLabel: 'Tableau data analytics certificate mark',
+    logoAccent: '#1f7fe2',
+    ariaLabel: 'Open SIM-LSE Data Analytics Challenge certificate',
   },
   {
-    title: 'AIxImpact Final Presentation',
-    issuer: 'AIxImpact',
+    title: 'Molecular Docking Research Publication',
+    issuer: 'Science Research Project',
+    kind: 'Research',
+    description: 'Research publication and conference material for a computational molecular-docking study of Type II diabetes targets.',
+    file: proteinDockingResearch,
+    logoKey: 'python',
+    logoLabel: 'Molecular docking research mark',
+    logoAccent: '#3776ab',
+    ariaLabel: 'Open molecular docking research publication',
+  },
+  {
+    title: 'Global Youth Summit Research Brochure',
+    issuer: 'Global Youth Summit',
+    kind: 'Competition',
+    description: 'Supporting brochure for the finalist cashew testa valorization research project.',
+    file: gysBrochure,
+    logoKey: 'research',
+    logoLabel: 'Global Youth Summit research mark',
+    logoAccent: '#3f7d32',
+    ariaLabel: 'Open Global Youth Summit research brochure',
+  },
+  {
+    title: 'World Invention Creativity Olympic Poster',
+    issuer: 'World Invention Creativity Olympic',
     kind: 'Presentation',
-    description:
-      'Final project deck showing problem framing, solution design, implementation decisions, and justification of our group\'s proposal for the AIxImpact case competition.',
-    file: aixImpactPresentation,
-    logoKey: 'aiximpact',
-    logoLabel: 'AIxImpact presentation logo mark',
-    logoAccent: '#0f766e',
-    ariaLabel: 'Open AIxImpact Final Presentation',
+    description: 'Research poster supporting the international presentation of the cashew testa polyphenol project.',
+    file: wicoPoster,
+    logoKey: 'research',
+    logoLabel: 'World Invention Creativity Olympic research mark',
+    logoAccent: '#1f7fe2',
+    ariaLabel: 'Open World Invention Creativity Olympic poster',
   },
   {
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    kind: 'Certification',
-    description:
-      'Foundational AWS certification covering cloud concepts, core services, security, architecture, pricing, and operational practices.',
-    file: awsCloudPractitioner,
-    logoKey: 'amazonwebservices',
-    logoLabel: 'Amazon Web Services certification logo',
-    logoAccent: '#ff9900',
-    ariaLabel: 'Open AWS Certified Cloud Practitioner certificate',
+    title: '90% A-Level Tuition Scholarship',
+    issuer: 'Worthgate School, UK',
+    kind: 'Scholarship',
+    description: 'International scholarship award recognizing academic achievement and overall candidacy.',
+    file: worthgateScholarship,
+    logoKey: 'scholarship',
+    logoLabel: 'Worthgate School scholarship mark',
+    logoAccent: '#a6d96a',
+    ariaLabel: 'Open Worthgate School scholarship offer',
   },
   {
-    title: 'Certified Kubernetes Application Developer',
-    issuer: 'The Linux Foundation',
-    kind: 'Certification',
-    description:
-      'Cloud-native credential demonstrating hands-on Kubernetes application design, deployment, configuration, and troubleshooting skills.',
-    file: kubernetesApplicationDeveloper,
-    logoKey: 'kubernetes',
-    logoLabel: 'Kubernetes certification logo',
-    logoAccent: '#326ce5',
-    ariaLabel: 'Open Certified Kubernetes Application Developer certificate',
-  },
-  {
-    title: 'Coursera Machine Learning Certificate',
-    issuer: 'Coursera',
-    kind: 'Coursework',
-    description:
-      'Certified completion of the Machine Learning course on Coursera by Deep Learning AI.',
-    file: courseraCertificate,
-    logoKey: 'coursera',
-    logoLabel: 'Coursera logo',
-    logoAccent: '#0056d2',
-    ariaLabel: 'Open Coursera Certificate',
-  },
-  {
-    title: 'Database System Focus Area',
-    issuer: 'National University of Singapore',
-    kind: 'Coursework',
-    description:
-      'Certified completion of the Database Specialisation track from the NUS Computer Science degree.',
-    file: databaseSystemFocusArea,
-    logoKey: 'nus',
-    logoLabel: 'Database coursework logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open Database System Focus Area certificate',
-  },
-  {
-    title: 'NUS Top Student for Big Data Systems',
-    issuer: 'National University of Singapore',
-    kind: 'Award',
-    description:
-      'Academic award recognizing top performance in big data systems, a specialisation module on distributed big data processing.',
-    file: nusBigDataSystemsAward,
-    logoKey: 'nus',
-    logoLabel: 'National University of Singapore award logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open NUS Top Student for Big Data Systems award',
-  },
-  {
-    title: 'University Academic Certificate',
-    issuer: 'Academic',
-    kind: 'National University of Singapore',
-    description:
-      'Official degree scroll for my 4-year undergraduate study in Singapore.',
-    file: universityCertificate,
-    logoKey: 'nus',
-    logoLabel: 'University certificate logo mark',
-    logoAccent: '#ef7c00',
-    ariaLabel: 'Open University certificate',
+    title: '80% A-Level Tuition Scholarship',
+    issuer: 'Borsworth High School, UK',
+    kind: 'Scholarship',
+    description: 'International scholarship award providing substantial tuition support for A-Level study.',
+    file: borsworthScholarship,
+    logoKey: 'scholarship',
+    logoLabel: 'Borsworth High School scholarship mark',
+    logoAccent: '#66d9d0',
+    ariaLabel: 'Open Borsworth High School scholarship offer',
   },
 ] satisfies CertificateEntry[]

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-22T12:27:20Z",
+  "unit": "U-02 Masthead, Theme, and Responsive Alignment",
+  "checks": {
+    "duplicateReplacementFiles": 0,
+    "protectedSourceMutationOrDeletion": 0,
+    "visiblePortfolioTableEmitters": 0,
+    "obsoleteRelationshipOverflowRules": 0,
+    "unexpectedDownstreamActivation": 0,
+    "runtimeDependenciesChanged": false,
+    "developmentDependenciesChanged": false,
+    "activeRenderedCases": 84,
+    "activeRenderedFindings": 0,
+    "recoveryFindings": 0,
+    "privacyFindings": 0
+  },
+  "protectedResume": {
+    "bytes": 169191,
+    "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+  },
+  "manualBrowserStatus": {
+    "firefox": "pending",
+    "safari": "pending",
+    "iosSafari": "pending"
+  },
+  "canPresentCompletionGate": true
+}

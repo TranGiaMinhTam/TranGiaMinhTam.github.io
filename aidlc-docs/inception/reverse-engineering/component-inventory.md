@@ -1,62 +1,61 @@
 # Component Inventory
 
-## Application Packages
+## Application Package
 
-- `my-portfolio` - React/Vite application that renders a configurable student portfolio and local journal.
+- One React/Vite package at the workspace root.
+- Active application: `PortfolioApp`, lazy Journal route, observatory shell, and ten canonical section bodies.
 
-## Infrastructure Packages
+## Active Logical Areas
 
-- `.github/workflows/deploy.yml` - GitHub Actions workflow that builds and deploys the static site to GitHub Pages.
+1. Application composition
+2. Model and verified sources
+3. Shell and navigation
+4. Identity and research questions
+5. Computational, laboratory, and data research
+6. Academic trajectory and evidence
+7. Methods, tools, fieldwork, and leadership
+8. Contact
+9. Journal route and note
+10. Shared accessible primitives
+11. Visualization validation and style foundations
 
-## Shared Packages
+## Infrastructure
 
-- `src/data` - Student-editable typed portfolio and template configuration.
-- `src/types` - Shared data and section contracts.
-- `src/hooks` - Layout and navigation state.
-- `src/utils` - Scroll, route, media, animation, and template-selection helpers.
-- `src/components/shared` - Reusable section, card, action, logo, and portfolio-style primitives.
-- `src/components/ui` - Chakra provider and UI helpers.
-- `src/assets` - Images, logos, resume, and certificate documents.
-- `src/content/journal` - Local Markdown journal bodies.
+- No CDK, Terraform, CloudFormation, server, container, or database package.
+- One GitHub Actions workflow builds and deploys to GitHub Pages.
 
-## Test Packages
+## Retained Legacy Areas
 
-- `src/App.test.tsx` - Application smoke and route behavior.
-- `src/test/data/*.test.ts` - Navigation and content validation.
-- `src/hooks/*.test.ts` - Layout helper behavior.
-- `src/templates/*.test.ts` - Template registry completeness and fallback.
-- `src/utils/*.test.ts` - Journal and template-selection utility behavior.
+- Generic components, Business template files, older data modules, layout utilities, and Chakra helpers remain in the tree but are outside the active `PortfolioApp` composition.
 
-## Total Count
+## Tests and Assets
 
-- **Total Packages**: 1 application package plus deployment configuration.
-- **Source Files**: Current files are tracked directly in `src/`; counts change as students add content and assets.
-- **React Components**: Engineering, Neutral, and Business shells plus shared and template-specific sections.
-- **TypeScript Modules**: Typed data, hooks, utilities, templates, and tests.
-- **Stylesheets**: 2 CSS files.
-- **Bundled Assets and Content**: 24 files, including one Markdown journal post.
-- **Automated Tests**: The active suite covers App, accessibility, layout, registry, data, and template-selection behavior; exact results are recorded in the active code-generation summary.
+- **Total `src` files**: 392.
+- **Active `src/portfolio` files**: 164.
+- **TypeScript, TSX, and CSS files**: 240.
+- **Automated test files**: 59.
+- **Canonical sections**: 10.
+- **Evidence assets**: Local images and documents under `src/assets/minh-tam/`.
+- **Latest approved full suite**: 204 passing tests; not rerun during this documentation refresh.
 
-## User-Facing Components
+## Minh Tam Archive Inventory
 
-- `App` / `PortfolioApp` - Runtime template, route, layout, and visible-section orchestration.
-- `Navbar` - Engineering desktop/mobile navigation and display controls.
-- `EngineeringShell`, `NeutralShell`, and `BusinessShell` - Distinct responsive page structures and headers.
-- `PortfolioStyleSelector` - Shared three-choice style menu present in every shell header.
-- `Hero`, `NeutralHero`, and `BusinessHero` - Template-specific introductions and actions.
-- `About` - Biography and metrics.
-- `Education` - Education records.
-- `Experience` - Work and leadership records.
-- `Awards` - Awards and recognitions.
-- `Projects`, `NeutralProjects`, and `BusinessProjects` - Template-specific project presentations.
-- `Gallery` - Shared visual portfolio and preview.
-- `Journal` - Combined in-site and external writing index.
-- `JournalPostPage` - Local writing detail and not-found states.
-- `Skills` - Skill groups and certificates.
-- `Contact` - Mailto contact form and social actions.
+| Area | Files | Current role |
+| --- | ---: | --- |
+| Curated certificates | 7 | Published PDF evidence |
+| Curated gallery | 6 | Published representative imagery |
+| Curated projects | 3 | Published project figures |
+| Profile | 1 | Published portrait |
+| Generated mark | 1 | Published visual mark |
+| Retained source archive | 104 | Mostly unpublished raw evidence and duplicates |
 
-## Template Differentiation Boundary
+The 122-file archive contains 94 JPEG, 20 PDF, 3 PNG, 3 HEIC, 1 SVG, and 1 DOCX file. Three HEIC files are not universally web-displayable, and the DOCX file has no native consistent browser preview. Several curated files duplicate source material under safer web names.
 
-- **Currently Template-Specific**: Shell/header/navigation structure, Hero, About, Projects, chapter labels, and scoped CSS variables where needed.
-- **Currently Shared**: App-level section ordering, runtime style selector, layout state, Education, Experience, Awards, Gallery, Journal, Skills, Contact, local post detail, and all student data.
-- **Architectural Constraint**: Templates can replace their shell and section components, but App retains the shared section sequence, routing model, runtime template state, and layout ownership.
+## Alignment Targets From Supplied Screenshots
+
+1. Laboratory station cards and wrapped method labels.
+2. Computational-project eyebrow, question, context, and contribution baseline.
+3. Research-question introduction columns and oversized heading balance.
+4. Data-story axis labels, method rows, signal bars, and unused decision column.
+5. Academic-trajectory heading and explanatory note alignment.
+6. Evidence-spectrum tracks, counts, and semantic labels.

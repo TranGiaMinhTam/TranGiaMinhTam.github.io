@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-17T07:59:06.363Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 2722,
+      "gzipBytes": 572
+    },
+    {
+      "path": "assets/academic-transcript-CXsTtN_S.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 6817646,
+      "gzipBytes": 6069866
+    },
+    {
+      "path": "assets/borsworth-scholarship-DjU1eqcL.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 786452,
+      "gzipBytes": 623935
+    },
+    {
+      "path": "assets/cashew-polyphenol-v2LGBwmA.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 164808,
+      "gzipBytes": 161843
+    },
+    {
+      "path": "assets/data-analytics-CoMzTZ5g.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 831243,
+      "gzipBytes": 821014
+    },
+    {
+      "path": "assets/gys-brochure-BdTvVFMK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3099234,
+      "gzipBytes": 3049255
+    },
+    {
+      "path": "assets/index-CkXnoygM.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 42005,
+      "gzipBytes": 7939
+    },
+    {
+      "path": "assets/index-CVceorjB.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 268491,
+      "gzipBytes": 81944
+    },
+    {
+      "path": "assets/molecular-docking-DMJS2jNU.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 255505,
+      "gzipBytes": 254025
+    },
+    {
+      "path": "assets/profile-8eTsEdlD.png",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 77650,
+      "gzipBytes": 77198
+    },
+    {
+      "path": "assets/protein-docking-research-BGZEkTUK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3490329,
+      "gzipBytes": 3074681
+    },
+    {
+      "path": "assets/sim-lse-certificate-B_uXG39D.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 51969,
+      "gzipBytes": 47056
+    },
+    {
+      "path": "assets/wico-poster-QNmcLCLw.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 7702179,
+      "gzipBytes": 7625142
+    },
+    {
+      "path": "assets/worthgate-scholarship-C3JHRWYz.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 918299,
+      "gzipBytes": 793968
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 594,
+      "gzipBytes": 354
+    },
+    {
+      "path": "vite.svg",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 1497,
+      "gzipBytes": 775
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 268491,
+    "cssBytes": 42005,
+    "otherInitialBytes": 594,
+    "evidenceAssetBytes": 24195314,
+    "deployableBytes": 24510623
+  },
+  "budgets": {
+    "javascriptBytes": 274000,
+    "cssBytes": 43008,
+    "javascriptRegressionPercent": 10,
+    "cssRegressionPercent": "not-applicable"
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 249238,
+    "baselineCssBytes": 30359,
+    "javascriptChangePercent": 7.7247,
+    "cssChangePercent": 38.3609
+  },
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true
+}

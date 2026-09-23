@@ -3,72 +3,191 @@
 ## Active Workflow
 
 - **Project**: Brownfield React/Vite static portfolio
-- **Workspace**: `/Users/nhamhhung/nhamhung.github.io`
-- **Change**: Business Color and Two-Theme Refresh
+- **Workspace**: `/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io`
+- **Change**: Header, Content, Evidence, and Resume Refinement
+- **Start date**: 2026-09-19T18:31:21Z
 - **Current phase**: CONSTRUCTION
-- **Current stage**: Code Generation Part 2 - eighteen-step review gate
-- **Workflow status**: Active
-- **Active requirement questions**: `aidlc-docs/inception/requirements/business-youthful-color-refresh-requirement-questions.md`
-- **Active requirements**: `aidlc-docs/inception/requirements/business-youthful-color-refresh-requirements.md`
-- **Active execution plan**: `aidlc-docs/inception/plans/business-youthful-color-refresh-execution-plan.md`
-- **Active code-generation plan**: `aidlc-docs/construction/plans/business-youthful-color-refresh-code-generation-plan.md`
-- **Active approval question**: `aidlc-docs/construction/plans/business-youthful-color-refresh-step-18-approval-questions.md`
-- **Active code-generation summary**: `aidlc-docs/construction/business-youthful-color-refresh/code/code-generation-summary.md`
-- **Next action**: Await explicit Code Generation review before the final Build and Test rerun
+- **Current stage**: U-04 Code Generation Part 1 - planning
+- **Workflow status**: Active - U-04 Code Generation plan complete; twelve decisions awaiting answers and explicit approval
+- **Previous workflow**: Science, Data Science, and Bioinformatics Portfolio Redesign Restart completed on 2026-09-18
+- **Rejected attempt**: Research Atlas implementation; retained temporarily as recoverable uncommitted workspace state
+- **Active requirement questions**: `aidlc-docs/inception/requirements/requirement-verification-questions.md`
+- **Active requirements**: `aidlc-docs/inception/requirements/requirements.md`
+- **Active story plan**: `aidlc-docs/inception/plans/story-generation-plan.md`
+- **Active execution plan**: `aidlc-docs/inception/plans/execution-plan.md`
+- **Active application-design plan**: `aidlc-docs/inception/plans/application-design-plan.md`
+- **Active unit-of-work plan**: `aidlc-docs/inception/plans/unit-of-work-plan.md`
+- **Active unit**: U-04 Complete Archive Discovery
+- **Active functional-design plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-functional-design-plan.md`
+- **Active U-02 functional-design plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-functional-design-plan.md`
+- **Active U-02 NFR requirements plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-nfr-requirements-plan.md`
+- **Active U-02 NFR design plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-nfr-design-plan.md`
+- **Active U-02 code-generation plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-code-generation-plan.md`
+- **Active U-03 functional-design plan**: `aidlc-docs/construction/plans/resume-led-content-integration-functional-design-plan.md`
+- **Active U-03 NFR requirements plan**: `aidlc-docs/construction/plans/resume-led-content-integration-nfr-requirements-plan.md`
+- **Active U-03 NFR design plan**: `aidlc-docs/construction/plans/resume-led-content-integration-nfr-design-plan.md`
+- **Active U-03 code-generation plan**: `aidlc-docs/construction/plans/resume-led-content-integration-code-generation-plan.md`
+- **Active U-04 functional-design plan**: `aidlc-docs/construction/plans/complete-archive-discovery-functional-design-plan.md`
+- **Active U-04 code-generation plan**: `aidlc-docs/construction/plans/complete-archive-discovery-code-generation-plan.md`
+- **Active U-01 NFR requirements plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-nfr-requirements-plan.md`
+- **Active U-01 NFR design plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-nfr-design-plan.md`
+- **Active source-governance code-generation plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-code-generation-plan.md`
+- **Active private-input question**: `aidlc-docs/construction/plans/source-governance-private-input-questions.md`
+- **Active NFR requirements plan**: `aidlc-docs/construction/plans/foundation-safe-migration-nfr-requirements-plan.md`
+- **Active U-02 NFR requirements plan**: `aidlc-docs/construction/plans/scientific-shell-nfr-requirements-plan.md`
+- **Active NFR design plan**: `aidlc-docs/construction/plans/foundation-safe-migration-nfr-design-plan.md`
+- **Active U-02 NFR design plan**: `aidlc-docs/construction/plans/scientific-shell-nfr-design-plan.md`
+- **Active U-01 code-generation plan**: `aidlc-docs/construction/plans/foundation-safe-migration-code-generation-plan.md`; completed and approved on 2026-09-14
+- **Active U-02 code-generation plan**: `aidlc-docs/construction/plans/scientific-shell-code-generation-plan.md`; approved on 2026-09-14
+- **Active U-03 functional-design plan**: `aidlc-docs/construction/plans/identity-questions-functional-design-plan.md`; approved on 2026-09-15
+- **Active U-03 NFR requirements plan**: `aidlc-docs/construction/plans/identity-questions-nfr-requirements-plan.md`; approved on 2026-09-15
+- **Active U-03 NFR design plan**: `aidlc-docs/construction/plans/identity-questions-nfr-design-plan.md`; approved on 2026-09-15
+- **Active U-03 code-generation plan**: `aidlc-docs/construction/plans/identity-questions-code-generation-plan.md`; completed and approved on 2026-09-15
+- **Active U-04 functional-design plan**: `aidlc-docs/construction/plans/research-data-functional-design-plan.md`; completed and approved on 2026-09-15
+- **Active U-04 NFR requirements plan**: `aidlc-docs/construction/plans/research-data-nfr-requirements-plan.md`; completed and approved on 2026-09-16
+- **Active U-04 NFR design plan**: `aidlc-docs/construction/plans/research-data-nfr-design-plan.md`; completed and approved on 2026-09-16
+- **Active U-04 code-generation plan**: `aidlc-docs/construction/plans/research-data-code-generation-plan.md`; completed and approved on 2026-09-16
+- **Active U-05 functional-design plan**: `aidlc-docs/construction/plans/academic-evidence-functional-design-plan.md`; completed and approved on 2026-09-16
+- **Active U-05 NFR requirements plan**: `aidlc-docs/construction/plans/academic-evidence-nfr-requirements-plan.md`; completed and approved on 2026-09-16
+- **Active U-05 NFR design plan**: `aidlc-docs/construction/plans/academic-evidence-nfr-design-plan.md`; completed and approved on 2026-09-16
+- **Active U-05 code-generation plan**: `aidlc-docs/construction/plans/academic-evidence-code-generation-plan.md`; Part 2 executed and completed on 2026-09-17
+- **Next action**: Receive and validate answers in `aidlc-docs/construction/plans/complete-archive-discovery-code-generation-plan.md`, then obtain explicit plan approval
+- **Active U-06 functional-design plan**: `aidlc-docs/construction/plans/tools-fieldwork-functional-design-plan.md`; approved on 2026-09-17
+- **Active U-06 NFR requirements plan**: `aidlc-docs/construction/plans/tools-fieldwork-nfr-requirements-plan.md`; approved on 2026-09-17
+- **Active U-06 NFR design plan**: `aidlc-docs/construction/plans/tools-fieldwork-nfr-design-plan.md`; approved on 2026-09-17
+- **Active U-06 code-generation plan**: `aidlc-docs/construction/plans/tools-fieldwork-code-generation-plan.md`; approved 2026-09-17 and executing Part 2
+- **Active U-07 functional-design plan**: `aidlc-docs/construction/plans/contact-journal-functional-design-plan.md`; approved on 2026-09-17
+- **Active U-07 NFR requirements plan**: `aidlc-docs/construction/plans/contact-journal-nfr-requirements-plan.md`; approved on 2026-09-17
+- **Active U-07 NFR design plan**: `aidlc-docs/construction/plans/contact-journal-nfr-design-plan.md`; approved on 2026-09-18
+- **Active U-07 code-generation plan**: `aidlc-docs/construction/plans/contact-journal-code-generation-plan.md`; completed and approved on 2026-09-18
+- **Build and Test summary**: `aidlc-docs/construction/build-and-test/build-and-test-summary.md`; completed and approved on 2026-09-18
+- **U-06 external-source status**: Unactivated `src/portfolio/impact/` source and preliminary preflight artifacts detected; preserved for plan-governed reconciliation after approval. Preliminary TypeScript, 23 focused tests, and lint pass; no candidate or activation approval is implied.
 
-## Current Scope
+## Workspace State
 
-- Apply the approved blue/mint/cream background palette and taupe/cream/orange text palette to Business.
-- Preserve Business layout, typography, content, routes, interactions, responsive behavior, and certificate previews.
-- Support exactly Engineering and Business across types, registry, selector, persistence, routes, and tests.
-- Remove the retired theme implementation and all non-audit documentation references.
-- Preserve the append-only audit as the required immutable historical record.
-- Make the Business contact email smaller, fully visible, and clearly bordered.
-- Remove the Business video and certificate sequence labels.
-- Brighten dark-mode supporting text toward the approved cream palette.
-- Remove all decorative Business sequence numbering while preserving meaningful numeric content.
-- Replace all three project-cover imports with the supplied PNG assets and accurate alternative text.
-- Keep the supplied PNGs unchanged and display their cover crop from the left edge.
-- Add consistent horizontal padding to Business left-rail navigation labels.
-- Center the bordered Business contact email within its card.
-- Reduce and center the displayed Business profile record without changing the source portrait.
-- Center all Direct Contact card content for optical balance.
-- Reduce the profile record to `20rem` and shorten the portrait frame to `4 / 3`.
-- Lengthen the compact portrait frame slightly to `4 / 3.5`.
-- Add highlighted surfaces and hover feedback to the contact email and three social links.
-- Rewrite the README for a reader making their first-ever VS Code, Git, npm, GitHub Actions, and GitHub Pages contribution.
-- Normalize the Direct Contact card's blue, cream, and mint color roles across light and dark modes.
-- Match the Direct Contact card to the Send message button's background and text colors while retaining readable highlighted email and social controls.
-- Reorder the README into the requested template-first GitHub Pages, trusted instructor collaboration, local-editing, first-push, and deployment-verification journey.
+- **Existing code**: Yes
+- **Project type**: Brownfield single-package static web application
+- **Languages**: TypeScript, TSX, CSS, Markdown, YAML, and HTML
+- **Build system**: npm, TypeScript project references, and Vite
+- **Frameworks**: React 19 and Chakra UI 3
+- **Reverse engineering needed**: Refreshed for the current `src/portfolio` architecture on 2026-09-19
+- **Workspace root**: `/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io`
+
+## Restart Boundary
+
+- Do not continue the rejected implementation plan.
+- Do not treat any previous Research Atlas implementation approval as approval for the restarted workflow.
+- Preserve current uncommitted application changes until a later approved plan determines what to replace or remove.
+- Require every remaining AI-DLC approval gate before advancing.
 
 ## Extension Configuration
 
-| Extension              | Enabled | Decision                                              |
-| ---------------------- | ------- | ----------------------------------------------------- |
-| Security Baseline      | No      | Business Youthful Color Refresh Requirements Analysis |
-| Property-Based Testing | No      | Business Youthful Color Refresh Requirements Analysis |
+| Extension | Enabled | Decision |
+| --- | --- | --- |
+| Security Baseline | Yes | Current Requirements Analysis - Question 17, Option A |
+| Property-Based Testing | Yes | Current Requirements Analysis - Question 18, Option A, full enforcement |
 
-## Active Stage Progress
+## Stage Progress
 
-### Business Color and Two-Theme Refresh
+### Header, Content, Evidence, and Resume Refinement
 
-- [x] Workspace Detection - Brownfield React/Vite workspace and isolated Business style boundary confirmed on 2026-08-25
-- [x] Requirements Analysis - Background palette, text palette, layout preservation, and complete theme-removal requirements approved on 2026-08-25
-- [x] Workflow Planning - Focused execution plan approved on 2026-08-25
-- [x] Code Generation Part 1 - All eighteen steps approved
-- [x] Code Generation Part 2 - All eighteen approved steps implemented and verified
-- [ ] Build and Test - Final eighteen-step rerun required after Code Generation approval
-- [ ] Operations - Placeholder
+- [x] Workspace Detection - Brownfield React/Vite portfolio confirmed; target shell and relationship-summary components located
+- [x] Reverse Engineering - Refreshed and expanded for alignment, 122 assets, four-page resume, PDF previews, and modal detail review on 2026-09-19
+- [x] Requirements Analysis - Comprehensive requirements approved on 2026-09-19
+- [x] User Stories - Five personas and 21 stories generated and approved on 2026-09-19
+- [x] Workflow Planning - Comprehensive execution plan approved on 2026-09-19
+- [x] Application Design - Comprehensive artifacts approved on 2026-09-20
+- [x] Units Generation - Six units and complete traceability approved on 2026-09-20
+- [x] Functional Design - U-01 approved on 2026-09-20
+- [x] NFR Requirements - U-01 approved on 2026-09-20
+- [x] NFR Design - U-01 approved on 2026-09-20
+- [x] Code Generation Part 1 - U-01 plan approved on 2026-09-20
+- [x] Code Generation Part 2 - U-01 approved on 2026-09-20
+- [x] Functional Design - U-02 approved on 2026-09-20
+- [x] NFR Requirements - U-02 approved on 2026-09-21
+- [x] NFR Design - U-02 approved on 2026-09-21
+- [ ] Infrastructure Design - N/A for U-02; no hosting or infrastructure change
+- [x] Code Generation Part 1 - U-02 plan approved on 2026-09-21
+- [x] Code Generation Part 2 - U-02 approved on 2026-09-22
+- [x] Functional Design - U-03 approved on 2026-09-22
+- [x] NFR Requirements - U-03 approved on 2026-09-23
+- [x] NFR Design - U-03 approved on 2026-09-23
+- [ ] Infrastructure Design - N/A for U-03; no hosting or infrastructure change
+- [x] Code Generation Part 1 - U-03 plan approved on 2026-09-23
+- [x] Code Generation Part 2 - U-03 approved on 2026-09-23
+- [x] Functional Design - U-04 approved on 2026-09-23
+- [ ] NFR Requirements - U-04 skipped by explicit user override on 2026-09-23
+- [ ] NFR Design - U-04 skipped by explicit user override on 2026-09-23
+- [ ] Infrastructure Design - N/A for U-04; no hosting or infrastructure change
+- [ ] Code Generation Part 1 - U-04 plan complete; answers and explicit approval pending
+- [ ] Infrastructure Design - Execute for the security/delivery unit; N/A for unaffected units
+- [ ] Code Generation - Execute planning and implementation per generated unit
+- [ ] Build and Test - Execute after all units complete
+- [ ] Operations - Placeholder only
 
-## Reused Foundation
+### Completed Science Portfolio Redesign Workflow
 
-- App owns browser hash, active section, journal route, runtime template selection, and layout state.
-- Template definitions provide shells, journals, chapter labels, and section maps.
-- Shared data, components, routes, layout modes, color mode, and GitHub Pages behavior remain authoritative.
+- [x] Workspace Detection - Brownfield React/Vite workspace and stale reverse-engineering artifacts confirmed
+- [x] Reverse Engineering - Completed on 2026-09-12T09:21:20Z; artifacts refreshed under `aidlc-docs/inception/reverse-engineering/`
+- [x] Requirements Analysis - Comprehensive requirements generated and awaiting approval
+- [x] User Stories - Five personas and 21 stories approved
+- [x] Workflow Planning - Execution plan approved
+- [x] Application Design - Comprehensive design approved on 2026-09-13
+- [x] Units Generation - Seven-unit decomposition approved on 2026-09-13
+- [x] Functional Design - U-01 approved on 2026-09-13
+- [x] NFR Requirements - U-01 approved on 2026-09-13
+- [x] NFR Design - U-01 approved on 2026-09-13
+- [ ] Infrastructure Design - Skipped for U-01 because deployment architecture is unchanged
+- [x] Code Generation - U-01 approved on 2026-09-14
+- [x] Functional Design - U-02 approved on 2026-09-14
+- [x] NFR Requirements - U-02 approved on 2026-09-14
+- [x] NFR Design - U-02 approved on 2026-09-14
+- [ ] Infrastructure Design - Skipped for U-02 because GitHub Pages deployment architecture is unchanged
+- [x] Code Generation Part 1 - U-02 plan approved on 2026-09-14
+- [x] Code Generation - U-02 approved on 2026-09-15
+- [x] Functional Design - U-03 approved on 2026-09-15
+- [x] NFR Requirements - U-03 approved on 2026-09-15
+- [x] NFR Design - U-03 approved on 2026-09-15
+- [ ] Infrastructure Design - Skipped for U-03 because deployment architecture is unchanged
+- [x] Code Generation Part 1 - U-03 complete plan approved on 2026-09-15
+- [x] Code Generation - U-03 approved on 2026-09-15
+- [x] Functional Design - U-04 approved on 2026-09-15
+- [x] NFR Requirements - U-04 approved on 2026-09-16
+- [x] NFR Design - U-04 approved on 2026-09-16
+- [ ] Infrastructure Design - Skipped for U-04 because GitHub Pages deployment architecture is unchanged
+- [x] Code Generation Part 1 - U-04 complete plan approved on 2026-09-16
+- [x] Code Generation - U-04 approved on 2026-09-16
+- [x] Construction - U-04 Research and Data active
+- [x] Functional Design - U-05 approved on 2026-09-16
+- [x] NFR Requirements - U-05 approved on 2026-09-16
+- [x] NFR Design - U-05 approved on 2026-09-16
+- [ ] Infrastructure Design - Skipped for U-05 because GitHub Pages deployment architecture is unchanged
+- [x] Code Generation Part 1 - U-05 complete plan approved on 2026-09-16
+- [x] Code Generation - U-05 approved on 2026-09-17
+- [x] Construction - U-05 Academic and Evidence active
+- [x] Functional Design - U-06 approved on 2026-09-17
+- [x] NFR Requirements - U-06 approved on 2026-09-17
+- [x] NFR Design - U-06 approved on 2026-09-17
+- [ ] Infrastructure Design - Skipped for U-06 because GitHub Pages deployment architecture is unchanged
+- [x] Code Generation Part 1 - U-06 Tools and Fieldwork - Plan approved 2026-09-17
+- [x] Code Generation - U-06 approved on 2026-09-17
+- [x] Functional Design - U-07 approved on 2026-09-17
+- [x] NFR Requirements - U-07 approved on 2026-09-17
+- [x] NFR Design - U-07 approved on 2026-09-18
+- [ ] Infrastructure Design - Skipped for U-07 because hosting and deployment architecture are unchanged
+- [x] Code Generation Part 1 - U-07 complete plan approved on 2026-09-18
+- [x] Code Generation - U-07 Contact and Journal approved on 2026-09-18
+- [x] Build and Test - Completed and approved on 2026-09-18
+- [x] Operations - Placeholder reached on 2026-09-18; no deployment or monitoring action defined
+
+## Code Location Rules
+
+- **Application code**: Workspace root; never under `aidlc-docs/`
+- **Documentation**: `aidlc-docs/` only
+- **Current code safety**: No source deletion or rollback during Inception without an approved plan
 
 ## Documentation Controls
 
 - Active index: `aidlc-docs/README.md`.
 - Update active artifacts instead of creating duplicate revisions.
-- Keep application code at the workspace root and documentation under `aidlc-docs/`.
 - Keep `audit.md` append-only and complete.

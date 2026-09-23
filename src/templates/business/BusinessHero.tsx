@@ -19,7 +19,7 @@ function BusinessHero() {
   return (
     <Box
       id="home"
-      className="business-hero business-casebook-cover"
+      className="business-hero business-casebook-cover clinical-hero quarto-title-block"
       data-presentation="business-home"
       py={{ base: 12, md: 18 }}
     >
@@ -39,14 +39,14 @@ function BusinessHero() {
               fontWeight={800}
               textTransform="uppercase"
             >
-              Editorial casebook
+              BIOINFORMATICS / RESEARCH PROFILE
             </Text>
             <Text mt={2} color="var(--text-300)" fontSize="sm">
-              A quick introduction and a few things I have made
+              A student-led publication in molecular science, data, and sustainability
             </Text>
           </Box>
           <Text color="var(--text-300)" fontSize="xs" textAlign="right">
-            Current edition
+            Version 1.0 · September 2026
           </Text>
         </Flex>
 
@@ -97,7 +97,7 @@ function BusinessHero() {
                 fontWeight={800}
                 textTransform="uppercase"
               >
-                Hello, here is what I am learning
+                Abstract
               </Text>
               <Heading
                 as="h2"

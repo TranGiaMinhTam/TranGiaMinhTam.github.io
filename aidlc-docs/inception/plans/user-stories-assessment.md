@@ -2,32 +2,35 @@
 
 ## Request Analysis
 
-- **Original Request**: Convert the existing portfolio into a student-friendly baseline template with detailed GitHub Pages setup instructions, maintainable code, and lightweight tests.
-- **User Impact**: Direct. Students will customize, run, test, and deploy the template; visitors will experience the resulting portfolio.
-- **Complexity Level**: Moderate to comprehensive.
-- **Stakeholders**:
-  - Student template user.
-  - Portfolio visitor such as recruiter, mentor, peer, or reviewer.
-  - Template maintainer.
+- **Original request**: Refine the shell and alignment, restructure complete content from the resume, represent the full Minh Tam archive, and provide accessible PDF and image detail viewing.
+- **User impact**: Direct. Visitors receive new navigation actions, richer content, archive discovery, downloads, previews, dialogs, and responsive layouts.
+- **Complexity level**: Complex multi-component user experience and content-governance change.
+- **Stakeholders**: Minh Tam, admissions and scholarship reviewers, research mentors, keyboard and screen-reader users, mobile visitors, and future portfolio maintainers.
 
 ## Assessment Criteria Met
 
-- [x] High Priority: User experience changes affect student customization and deployment workflows.
-- [x] High Priority: Multi-persona system with students, visitors, and maintainers.
-- [x] High Priority: New template capability changes how users interact with the project.
-- [x] Medium Priority: Changes span multiple components, documentation, tests, and deployment configuration.
-- [x] Medium Priority: User acceptance criteria are valuable for validating beginner-readability and deployment success.
-- [x] Benefits: Stories clarify what "student-friendly" means in concrete workflows.
+- [x] High Priority - New visitor-facing resume, archive, and document-viewer features.
+- [x] High Priority - Changes to masthead, navigation-adjacent controls, content structure, and evidence workflows.
+- [x] High Priority - Multiple personas with different discovery, accessibility, and maintenance needs.
+- [x] High Priority - Complex source-authority, privacy, deduplication, and fallback rules.
+- [x] Medium Priority - Changes span shell, six layout examples, ten sections, evidence models, media viewers, and build/security controls.
+- [x] Medium Priority - User acceptance review is required across widths, themes, keyboard use, PDFs, images, and failure states.
+- [x] Benefits - Stories will separate visitor value from maintainer controls and create testable acceptance boundaries.
 
 ## Decision
 
-**Execute User Stories**: Yes
+**Execute User Stories**: Yes.
 
-**Reasoning**: User stories add value because the refactor is not just internal cleanup. It changes how students find editable content, customize assets, verify the site locally, and deploy through GitHub Pages. Stories will help keep the code refactor and documentation grounded in real user journeys.
+**Reasoning**: This request is not an isolated styling fix. It adds multiple visitor workflows, changes how personal evidence is trusted and presented, and introduces significant accessibility, privacy, security, and performance acceptance needs. User stories provide clear vertical slices and prevent archive/tooling concerns from obscuring visitor outcomes.
 
 ## Expected Outcomes
 
-- Define personas for students, visitors, and maintainers.
-- Translate template requirements into testable user stories.
-- Provide acceptance criteria for customization, deployment, maintainability, accessibility, and testing.
-- Improve shared understanding before workflow planning and implementation.
+- Shared personas for content discovery, evidence review, accessible use, and maintenance.
+- INVEST-aligned stories mapped to requirements and personas.
+- Explicit acceptance criteria for successful, fallback, misuse, responsive, and assistive-technology scenarios.
+- Clear separation between visitor-facing outcomes and maintainer-only inventory/provenance controls.
+
+## Extension Compliance
+
+- **Security Baseline**: Compliant. The assessment identifies privacy, unsafe media, failure handling, and supply-chain concerns that must appear in stories.
+- **Property-Based Testing**: N/A at this stage. User Stories define outcomes; PBT property identification begins during Functional Design.

@@ -106,13 +106,30 @@ export type ProjectEntry = {
   id: string;
   title: string;
   description: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
   logoKey: string;
   logoLabel: string;
   logoAccent?: string;
   technologies: string[];
   actions: ExternalLink[];
+};
+
+export type ResearchEvidence = {
+  label: string;
+  kind: "publication" | "poster" | "certificate" | "presentation";
+  href: string;
+};
+
+export type ResearchProject = {
+  id: string;
+  researchQuestion: string;
+  abstract: string;
+  domain: string;
+  methods: string[];
+  tools: string[];
+  timeline: string;
+  evidence: ResearchEvidence[];
 };
 
 export type GalleryItem = {
@@ -195,6 +212,7 @@ export type Portfolio = {
   experience: ExperienceEntry[];
   awards: AwardEntry[];
   projects: ProjectEntry[];
+  researchProjects: ResearchProject[];
   gallery: GalleryItem[];
   videos: VideoEntry[];
   blog: BlogEntry[];

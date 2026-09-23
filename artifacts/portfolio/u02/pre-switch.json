@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-14T16:26:32Z",
+  "unit": "U-02 Scientific Shell",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workspace": {
+    "root": "/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io",
+    "projectType": "brownfield-react-vite-static",
+    "dirty": true,
+    "statusEntryCount": 93,
+    "statusPorcelainSha256": "7443d3454da23726ca6242ac17dfe6d6b6b407cc41f3b96587d3739e6b9586f2",
+    "deletedEntryCount": 8,
+    "disposition": "Pre-existing rejected-presentation and AI-DLC work is protected by the verified U-01 recovery package; U-02 will touch only its approved allowlist."
+  },
+  "activeEntry": {
+    "appSha256": "90ec7759a5e7c1390bc40bdb04fd787d1f969556dc4c50fe1ae5a7be0ff824da",
+    "mainSha256": "1a718f12b4761952bf7b8fd3d6cc4cd1c54d9fcf79a38c3b1931d03d60aafd2a",
+    "htmlSha256": "42ca4489480192b0647590249ec5c57a56f8a939306a381cece6330bcd06024c"
+  },
+  "dependencies": {
+    "packageJsonSha256": "778167110dc82baa0825ea043479caf8895712bd364a48200b90171f1a082a07",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "dependencyChangesAuthorized": false
+  },
+  "environment": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "typescript": "5.9.3"
+  },
+  "recovery": {
+    "command": "npm run verify:recovery",
+    "canProceed": true,
+    "payloadHashesMatched": true,
+    "archiveMemberCount": 19,
+    "protectedSourceFileCount": 104,
+    "protectedSourceInventorySha256": "32f3a6023fe84f865f95843e128030783d9705458353e45f74d2f48cddcd335a"
+  },
+  "baseline": {
+    "javascriptBytes": 893367,
+    "cssBytes": 68577,
+    "deployableBytes": 38568442
+  },
+  "switchTargets": [
+    "src/App.tsx",
+    "src/main.tsx",
+    "index.html"
+  ],
+  "canGenerateInactiveCandidate": true,
+  "canSwitchActiveEntry": false
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Biomedical research mark</title>
+  <desc id="desc">Generated teal biomedical research mark with a molecule and leaf motif</desc>
+  <rect width="160" height="160" rx="28" fill="#126b73"/>
+  <circle cx="80" cy="78" r="18" fill="none" stroke="#b8ed78" stroke-width="8"/>
+  <circle cx="43" cy="45" r="11" fill="#63d8c4"/>
+  <circle cx="119" cy="45" r="11" fill="#63d8c4"/>
+  <circle cx="43" cy="111" r="11" fill="#63d8c4"/>
+  <circle cx="119" cy="111" r="11" fill="#63d8c4"/>
+  <path d="M54 52 68 68M106 52 92 68M54 104 68 88M106 104 92 88" fill="none" stroke="#63d8c4" stroke-width="6" stroke-linecap="round"/>
+  <path d="M81 78c13-25 34-22 39-16-4 22-19 33-39 16Z" fill="#b8ed78"/>
+</svg>

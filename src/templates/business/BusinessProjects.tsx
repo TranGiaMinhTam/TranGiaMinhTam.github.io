@@ -11,13 +11,17 @@ import {
 
 import ExternalAction from "../../components/shared/ExternalAction";
 import LogoMark from "../../components/shared/LogoMark";
-import { projects, sectionContent } from "../../data/portfolio";
+import {
+  projects,
+  researchProjectById,
+  sectionContent,
+} from "../../data/portfolio";
 
 function BusinessProjects() {
   return (
     <Box
       id="projects"
-      className="business-projects business-casebook-section business-case-study-series"
+      className="business-projects business-casebook-section business-case-study-series quarto-research-records"
       data-presentation="business-projects"
       py={{ base: 16, md: 24 }}
       data-testid="projects-section"
@@ -62,6 +66,8 @@ function BusinessProjects() {
           borderColor="var(--line-700)"
         >
           {projects.map((project) => {
+            const research = researchProjectById[project.id];
+
             return (
               <Box
                 key={project.id}
@@ -109,28 +115,137 @@ function BusinessProjects() {
                   >
                     {project.title}
                   </Heading>
-                  <Box>
+                  <Box
+                    className="research-question-block"
+                    data-testid={`research-question-${project.id}`}
+                  >
                     <Text
                       color="var(--accent-300)"
                       fontSize="xs"
                       fontWeight={800}
                       textTransform="uppercase"
                     >
-                      What I made
+                      Research question
+                    </Text>
+                    <Text
+                      mt={3}
+                      color="var(--text-100)"
+                      fontFamily="Georgia, 'Times New Roman', serif"
+                      fontSize={{ base: "lg", md: "xl" }}
+                      lineHeight="1.55"
+                    >
+                      {research.researchQuestion}
+                    </Text>
+                  </Box>
+
+                  <Box
+                    className="research-abstract-block"
+                    data-testid={`research-abstract-${project.id}`}
+                  >
+                    <Text
+                      color="var(--accent-300)"
+                      fontSize="xs"
+                      fontWeight={800}
+                      textTransform="uppercase"
+                    >
+                      Abstract
                     </Text>
                     <Text mt={3} color="var(--text-300)" lineHeight="1.9">
+                      {research.abstract}
+                    </Text>
+                    <Text mt={3} color="var(--text-300)" fontSize="sm">
                       {project.description}
                     </Text>
                   </Box>
-                  <Box>
-                    <Text
-                      color="var(--accent-300)"
-                      fontSize="xs"
-                      fontWeight={800}
-                      textTransform="uppercase"
-                    >
-                      Skills practised
+
+                  <Box
+                    className="research-metadata-grid"
+                    display="grid"
+                    gridTemplateColumns={{ base: "1fr", sm: "1fr 1fr" }}
+                    gap={3}
+                  >
+                    <Box data-testid={`research-domain-${project.id}`}>
+                      <Text className="research-data-label">Domain</Text>
+                      <Text className="research-data-value">
+                        {research.domain}
+                      </Text>
+                    </Box>
+                    <Box data-testid={`research-timeline-${project.id}`}>
+                      <Text className="research-data-label">Timeline</Text>
+                      <Text className="research-data-value">
+                        {research.timeline}
+                      </Text>
+                    </Box>
+                  </Box>
+
+                  <Box
+                    className="research-protocol-grid"
+                    display="grid"
+                    gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }}
+                    gap={5}
+                  >
+                    <Box data-testid={`research-methods-${project.id}`}>
+                      <Text className="research-data-label">Methods</Text>
+                      <VStack
+                        as="ul"
+                        className="research-list"
+                        align="stretch"
+                        gap={2}
+                      >
+                        {research.methods.map((method) => (
+                          <Text as="li" key={method}>
+                            {method}
+                          </Text>
+                        ))}
+                      </VStack>
+                    </Box>
+                    <Box data-testid={`research-tools-${project.id}`}>
+                      <Text className="research-data-label">
+                        Tools &amp; systems
+                      </Text>
+                      <Flex gap={2} wrap="wrap" mt={3}>
+                        {research.tools.map((tool) => (
+                          <Badge
+                            key={tool}
+                            className="research-tool-chip"
+                            px={2.5}
+                            py={1}
+                            borderRadius="sm"
+                            bg="var(--control-bg-soft)"
+                            color="var(--text-300)"
+                            border="1px solid"
+                            borderColor="var(--line-700)"
+                          >
+                            {tool}
+                          </Badge>
+                        ))}
+                      </Flex>
+                    </Box>
+                  </Box>
+
+                  <Box
+                    className="research-evidence-block"
+                    data-testid={`research-evidence-${project.id}`}
+                  >
+                    <Text className="research-data-label">
+                      Evidence archive
                     </Text>
+                    <HStack gap={4} mt={3} wrap="wrap">
+                      {research.evidence.map((evidence, evidenceIndex) => (
+                        <ExternalAction
+                          key={`${evidence.kind}-${evidence.href}`}
+                          href={evidence.href}
+                          label={evidence.label}
+                          ariaLabel={`Open ${evidence.label.toLowerCase()} for ${project.title}`}
+                          variant="link"
+                          testId={`research-evidence-${project.id}-${evidenceIndex}`}
+                        />
+                      ))}
+                    </HStack>
+                  </Box>
+
+                  <Box>
+                    <Text className="research-data-label">Keywords</Text>
                     <Flex gap={2} wrap="wrap" mt={3}>
                       {project.technologies.map((technology) => (
                         <Badge
@@ -159,11 +274,10 @@ function BusinessProjects() {
                       fontWeight={800}
                       textTransform="uppercase"
                     >
-                      Explore the project
+                      Related portfolio records
                     </Text>
                     <Text mt={2} color="var(--text-300)" fontSize="sm">
-                      Open the project links to see the code, notes, and how it
-                      came together.
+                      Follow the connected project and recognition entries.
                     </Text>
                     <HStack gap={3} mt={4} wrap="wrap">
                       {project.actions.map((action, actionIndex) => (
@@ -180,7 +294,7 @@ function BusinessProjects() {
                   </Box>
                 </VStack>
 
-                <Box
+                {project.image && project.imageAlt ? <Box
                   className="business-case-visual"
                   display={{ base: "block", md: "none", xl: "block" }}
                   p={{ base: 0, xl: 7 }}
@@ -197,7 +311,7 @@ function BusinessProjects() {
                   <Text mt={3} color="var(--text-300)" fontSize="xs">
                     Project image / {project.title}
                   </Text>
-                </Box>
+                </Box> : null}
               </Box>
             );
           })}

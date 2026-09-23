@@ -1,51 +1,54 @@
 # Performance Test Instructions
 
-## Purpose
+## Static Bundle Gate
 
-Track build output and browser-delivery risks appropriate to a static GitHub Pages portfolio. Server load, throughput, concurrent-user, and API stress testing are not applicable because the project has no application server or API.
-
-## Performance Requirements
-
-- The production build must complete successfully.
-- Decorative theme work must not add a large external download or materially regress startup size.
-- The built entry page and assets must be servable from the local production preview.
-- Background decoration must remain CSS-based, pointer-inert, and free of scroll-linked processing.
-
-## Execute the Static Performance Check
+Build first:
 
 ```bash
 npm run build
 ```
 
-Record the JavaScript and CSS sizes printed by Vite and compare them with the current baseline.
+Then run the final U-07 measurement contract:
 
-## Verified Baseline
+```bash
+node scripts/portfolio/measure-build.mjs \
+  --dist dist \
+  --baseline artifacts/portfolio/u07/measurement-baseline.json \
+  --javascript-budget 296000 \
+  --css-budget 51200 \
+  --javascript-regression-percent 6 \
+  --css-regression-percent none \
+  --lazy-entry JournalRouteEntry \
+  --lazy-javascript-budget 18432 \
+  --lazy-css-budget 6144 \
+  --evidence-growth-budget 0 \
+  --output artifacts/portfolio/u07/active.json
+```
 
-| Measure          | Observed result                                            |
-| ---------------- | ---------------------------------------------------------- |
-| Vite build time  | Approximately 6.00 seconds on the verification machine     |
-| Main JavaScript  | 975.76 kB minified; 296.49 kB gzip                         |
-| Main CSS         | 34.61 kB minified; 7.43 kB gzip                            |
-| Complete `dist/` | Approximately 9.4 MB including images and PDF certificates |
-| Preview response | HTTP 200 for `/` on the local Vite production preview      |
+## Verified Production Result
 
-The main JavaScript remains above Vite's 500 kB warning threshold. This is a tracked, non-blocking warning; the current bundle is smaller than the previous recorded baseline.
+| Metric                  |        Actual |                            Ceiling | Result |
+| ----------------------- | ------------: | ---------------------------------: | ------ |
+| Initial JavaScript      | 295,847 bytes | 296,000 bytes and 6-percent growth | Pass   |
+| Initial CSS             |  50,935 bytes |                       51,200 bytes | Pass   |
+| Lazy Journal JavaScript |   3,213 bytes |                       18,432 bytes | Pass   |
+| Lazy Journal CSS        |   3,693 bytes |                        6,144 bytes | Pass   |
+| U-07 evidence growth    |       0 bytes |                            0 bytes | Pass   |
 
-## Optional Browser Measurement
+The manifest confirms `JournalRouteEntry.tsx` is not in the initial static closure.
 
-For a future performance-focused change, run Lighthouse against `npm run preview` and record mobile performance, accessibility, and largest-contentful-paint results on the same machine and network profile. No Lighthouse threshold is claimed for this change because a controlled browser performance run was not part of the approved scope.
+## Browser Timing Procedure
 
-## Optimization Candidates if the Baseline Regresses
+No controlled browser timing was available during the approved implementation, so no Lighthouse, Largest Contentful Paint, Interaction to Next Paint, or Cumulative Layout Shift result is claimed.
 
-1. Split theme code with dynamic imports.
-2. Compress the largest local images.
-3. Review whether all PDFs must ship in the initial static artifact.
-4. Lazy-load media below the fold.
-5. Rebuild and compare the same Vite output fields.
+For a future browser performance run:
+
+1. Run `npm run build` and `npm run preview`.
+2. Use a fixed browser version, viewport, CPU profile, and network profile.
+3. Run at least three Lighthouse passes against the production preview.
+4. Record the median values and the exact environment.
+5. Treat new failures or visible loading regressions as release findings; do not replace the byte gates with a single Lighthouse score.
 
 ## Not Applicable
 
-- Server response-time objectives under load.
-- Requests per second or concurrent-user targets.
-- API, database, queue, or cache throughput.
-- Stress testing or autoscaling validation.
+Load, stress, throughput, database, cache, queue, and autoscaling tests are not applicable to this static site because it has no runtime application server.

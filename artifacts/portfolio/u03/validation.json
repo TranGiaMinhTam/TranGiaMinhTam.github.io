@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-09-15T16:55:43Z",
+  "unit": "U-03 Identity and Questions",
+  "result": "passed",
+  "checks": [
+    { "name": "strict TypeScript", "command": "npx tsc -b", "status": "passed" },
+    { "name": "portfolio tests", "command": "npm run test:portfolio", "status": "passed", "files": 26, "tests": 75 },
+    { "name": "complete tests", "command": "npm test", "status": "passed", "files": 34, "tests": 121 },
+    { "name": "lint", "command": "npm run lint", "status": "passed" },
+    { "name": "production build", "command": "npm run build", "status": "passed", "transformedModules": 69 },
+    { "name": "active portfolio boundary", "command": "npm run check:portfolio", "status": "passed", "findings": 0 },
+    { "name": "active U-03 boundary", "command": "node scripts/portfolio/check-boundaries.mjs --mode identity-active", "status": "passed", "findings": 0 },
+    { "name": "U-01 recovery", "command": "npm run verify:recovery", "status": "passed", "findings": 0 },
+    { "name": "U-02 active shell", "command": "npm run verify:shell -- --phase active", "status": "passed", "findings": 0 },
+    { "name": "U-03 active verification", "command": "npm run verify:identity:active", "status": "passed", "findings": 0 },
+    { "name": "production measurement", "command": "npm run measure:portfolio", "status": "passed" }
+  ],
+  "stories": {
+    "ST-001": "passed",
+    "ST-004": "passed",
+    "ST-014": "passed-with-user-approved-pending-cv-amendment"
+  },
+  "limitations": [
+    {
+      "severity": "P1",
+      "area": "browser performance automation",
+      "disposition": "No supported browser executable was available; structural safeguards and user-rendered candidate approval were recorded."
+    }
+  ],
+  "p0Findings": [],
+  "canCompleteUnit": true
+}

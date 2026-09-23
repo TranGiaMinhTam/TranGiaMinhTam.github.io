@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "phase": "active-before-u02",
+  "entry": {
+    "source": "index.html",
+    "files": [
+      {
+        "path": "assets/index-U8qTOIT0.js",
+        "bytes": 295847
+      },
+      {
+        "path": "assets/index-BJVkNxeu.css",
+        "bytes": 50935
+      }
+    ],
+    "javascriptBytes": 295847,
+    "cssBytes": 50935,
+    "initialRequestCount": 3
+  },
+  "sourceScan": {
+    "visibleTableOwnerCount": 4,
+    "tableOwners": [
+      "src/portfolio/academics/AcademicRelationshipSummary.tsx",
+      "src/portfolio/identity/RelationshipSummary.tsx",
+      "src/portfolio/research/ResearchRelationshipSummary.tsx",
+      "src/portfolio/visualization/AccessibleDataSummary.tsx"
+    ],
+    "overflowOwnerCount": 5,
+    "overflowOwners": [
+      "src/portfolio/academics/AcademicEvidence.module.css",
+      "src/portfolio/identity/IdentityQuestions.module.css",
+      "src/portfolio/research/ResearchData.module.css",
+      "src/portfolio/shell/Shell.module.css",
+      "src/portfolio/shell/shellStyles.test.ts"
+    ]
+  },
+  "sourceIntegrity": {
+    "sourceFileCount": 122,
+    "canonicalItemCount": 104,
+    "resumeBytes": 169191,
+    "resumeSha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6",
+    "privacyCanProceed": true,
+    "privacyBlockingCount": 0,
+    "privacyMarkerSource": "ephemeral-local-extraction"
+  },
+  "reviewCapabilities": {
+    "chrome": "automated-local",
+    "firefox": "manual-pending",
+    "safari": "manual-pending",
+    "iosSafari": "manual-pending"
+  },
+  "suppliedDefects": [
+    "laboratory-station-grid",
+    "computational-project-heading",
+    "research-question-introduction",
+    "data-signal-sheet",
+    "academic-trajectory-heading",
+    "evidence-count-spectrum"
+  ]
+}

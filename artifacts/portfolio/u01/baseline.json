@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-13T16:27:29Z",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+  "environment": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "typescript": "5.9.3"
+  },
+  "build": {
+    "command": "npm run build",
+    "basePath": "/",
+    "status": "passed",
+    "elapsedSeconds": 8.0,
+    "viteElapsedSeconds": 3.78,
+    "transformedModules": 1589,
+    "warningCount": 1,
+    "warnings": ["Initial JavaScript chunk exceeds Vite's 500 kB warning threshold."]
+  },
+  "entryGraph": {
+    "html": {"path": "index.html", "bytes": 459},
+    "javascript": {"path": "assets/index-JOFUvrr5.js", "bytes": 893367, "gzipBytes": 272286},
+    "css": {"path": "assets/index-BUruQSqb.css", "bytes": 68577, "gzipBytes": 12412},
+    "otherInitialBytes": 459,
+    "evidenceAssetBytes": 37604542,
+    "staticPublicBytes": 1497,
+    "totalDeployableBytes": 38568442
+  },
+  "budgets": {
+    "javascriptBytes": 460800,
+    "cssBytes": 76800,
+    "javascriptWithinBudget": false,
+    "cssWithinBudget": true,
+    "regressionReviewPercent": 10
+  },
+  "measurementMethod": "Parse eager script and stylesheet references from dist/index.html, measure emitted bytes with stat, and calculate deterministic gzip level 9 values for supplemental reporting."
+}

@@ -11,7 +11,7 @@ function BusinessSectionHeading({ sectionId }: BusinessSectionHeadingProps) {
   const copy = sectionContent[sectionId];
 
   return (
-    <Box className="business-chapter-heading">
+    <Box className="business-chapter-heading clinical-panel-heading quarto-section-heading">
       <Box className="business-chapter-kicker">
         <Text as="span">{copy.eyebrow}</Text>
       </Box>

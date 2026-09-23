@@ -1,0 +1,216 @@
+.contactSignal {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 4rem);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: var(--border-strong) solid var(--color-accent);
+  box-shadow: 0.75rem 0.75rem 0 var(--color-surface-elevated);
+}
+
+.header {
+  align-self: start;
+}
+
+.header > p:first-child,
+.recipient > span,
+.formIntro > span,
+.field > label {
+  color: var(--color-accent);
+  font: 750 0.75rem/1.4 var(--font-mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header h3 {
+  max-width: 13ch;
+  margin: var(--space-4) 0;
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  overflow-wrap: break-word;
+}
+
+.header > p:last-child {
+  max-width: 46ch;
+  color: var(--color-text-secondary);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.recipient {
+  grid-column: 2;
+  display: grid;
+  gap: var(--space-2);
+  align-self: end;
+  padding: var(--space-5);
+  border-block-start: var(--border-strong) solid var(--color-rule);
+}
+
+.recipient strong {
+  font-size: 1.15rem;
+}
+
+.recipient a {
+  width: fit-content;
+  color: var(--color-accent);
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.24em;
+  overflow-wrap: anywhere;
+}
+
+.recipient p {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-secondary);
+}
+
+.composer {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: var(--color-surface-elevated);
+  border-block-start: var(--border-strong) solid var(--color-data-positive);
+}
+
+.formIntro,
+.message,
+.submit,
+.handoffNote {
+  grid-column: 1 / -1;
+}
+
+.formIntro {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-block-end: var(--space-4);
+  border-block-end: var(--border-thin) solid var(--color-rule);
+}
+
+.formIntro p,
+.handoffNote {
+  max-width: 54ch;
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  min-height: 3rem;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: var(--border-thin) solid var(--color-rule);
+  border-radius: 0;
+  font: inherit;
+}
+
+.field textarea {
+  min-height: 10rem;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible,
+.submit:focus-visible,
+.recipient a:focus-visible {
+  outline: 0.2rem solid var(--color-focus);
+  outline-offset: 0.2rem;
+}
+
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border: var(--border-strong) solid var(--color-data-caution);
+}
+
+.field small {
+  color: var(--color-data-caution);
+  font-weight: 700;
+}
+
+.counter {
+  justify-self: end;
+  color: var(--color-text-secondary);
+  font: 650 0.72rem/1.4 var(--font-mono);
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.25rem;
+  padding: var(--space-3) var(--space-5);
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+  border: var(--border-strong) solid var(--color-accent);
+  font-weight: 800;
+  cursor: pointer;
+  justify-self: start;
+  inline-size: min(100%, 22rem);
+}
+
+.submit:hover {
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+}
+
+.handoffNote {
+  font-size: 0.9rem;
+}
+
+.failure {
+  padding: var(--space-8);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: var(--border-strong) solid var(--color-data-caution);
+}
+
+@media (max-width: 48rem) {
+  .contactSignal {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .recipient,
+  .composer {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .composer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .formIntro {
+    display: grid;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contactSignal {
+    padding: var(--space-4);
+    box-shadow: none;
+  }
+
+  .composer,
+  .recipient {
+    padding: var(--space-4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .submit {
+    transition: none;
+  }
+}

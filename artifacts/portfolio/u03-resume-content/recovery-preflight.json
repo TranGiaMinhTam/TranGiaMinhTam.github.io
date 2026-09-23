@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "unit": "U-03 Resume-Led Content Integration",
+  "targetCount": 54,
+  "existingTargetCount": 36,
+  "absentTargetCount": 18,
+  "targetStates": [
+    {
+      "path": "src/assets/documents/Tran-Gia-Minh-Tam-Resume.pdf",
+      "exists": true,
+      "bytes": 169191,
+      "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+    },
+    {
+      "path": "src/assets/documents/resume.pdf",
+      "exists": true,
+      "bytes": 103033,
+      "sha256": "7ca0d97a208bbb9fd0e026ae51a164792e2efa6b2388c303141c1466853874dd"
+    },
+    {
+      "path": "src/App.tsx",
+      "exists": true,
+      "bytes": 902,
+      "sha256": "1cb30e758757ac2ca716686697f59a5da39a804691b6030f85d55727a47d60ad"
+    },
+    {
+      "path": "src/portfolio/resume/resume.types.ts",
+      "exists": true,
+      "bytes": 385,
+      "sha256": "da956d4cc38f86b17301becf652c6f758acc756d3f563f5b44417b6924e7e134"
+    },
+    {
+      "path": "src/portfolio/resume/resumeSource.ts",
+      "exists": true,
+      "bytes": 584,
+      "sha256": "58d3453803941c778611a263ce1771fb0e9cf8f3349f34d253a400ac442fe947"
+    },
+    {
+      "path": "src/portfolio/resume/resumeSource.test.ts",
+      "exists": true,
+      "bytes": 634,
+      "sha256": "981da4195769b58404ba530ea20909a250827df00ceb8178b91048d1b6576532"
+    },
+    {
+      "path": "src/portfolio/resume/index.ts",
+      "exists": true,
+      "bytes": 62,
+      "sha256": "2062127b45768cc5e2ae172723cdcd9168d7bcda105167f56bba9dd8b43a6e9a"
+    },
+    {
+      "path": "src/portfolio/model/portfolio.types.ts",
+      "exists": true,
+      "bytes": 3864,
+      "sha256": "68e781ff52fb78b791291688d966a8ccd9ad52b957941d546be6067d11fe187d"
+    },
+    {
+      "path": "src/portfolio/identity/identity.types.ts",
+      "exists": true,
+      "bytes": 3237,
+      "sha256": "88314d77cb27c3e4aeee644edf20608f19652b40c0072c494a3217ee87f1c007"
+    },
+    {
+      "path": "src/portfolio/identity/identityQuestionsModel.ts",
+      "exists": true,
+      "bytes": 8517,
+      "sha256": "ea9861ce549434a2358f27ce4a457d1fadecb564e1d03654ddcb484fb927ccff"
+    },
+    {
+      "path": "src/portfolio/identity/IdentityActions.tsx",
+      "exists": true,
+      "bytes": 1255,
+      "sha256": "96684edcda14446a511191f5193e210f5bda5661b00937b7fe9754f33149b895"
+    },
+    {
+      "path": "src/portfolio/identity/ResearchIdentity.tsx",
+      "exists": true,
+      "bytes": 1446,
+      "sha256": "7b42e1ba75312db8fd8ca7a292d344c20c1886351199015e12672edd9f278bfc"
+    },
+    {
+      "path": "src/portfolio/identity/sectionBodies.tsx",
+      "exists": true,
+      "bytes": 1266,
+      "sha256": "f466f5c9f4c36ae1a504792a0b9616548d4a303c51f01591392320d6c007d56f"
+    },
+    {
+      "path": "src/portfolio/identity/IdentityQuestions.module.css",
+      "exists": true,
+      "bytes": 8590,
+      "sha256": "cf0131af451ba7dced34635e19fc409eb87a35bb3ffdfd6ddb07f656a0bf61dc"
+    },
+    {
+      "path": "src/portfolio/research/sectionBodies.tsx",
+      "exists": true,
+      "bytes": 2008,
+      "sha256": "ffec3be051b5ed79a0be62133643d3bb17e14c5073ae210b5f170292152c1318"
+    },
+    {
+      "path": "src/portfolio/research/ComputationalProjects.tsx",
+      "exists": true,
+      "bytes": 2443,
+      "sha256": "9cb988b0f3d917038e74003d8e79b460b34060af3b67ce5cc0c99caa958f0b4b"
+    },
+    {
+      "path": "src/portfolio/research/LaboratoryResearch.tsx",
+      "exists": true,
+      "bytes": 2544,
+      "sha256": "3bf37efddf3a76d1daa6e1c7ca9978b966bac28595829740795bdc6ae2bc3136"
+    },
+    {
+      "path": "src/portfolio/research/DataStories.tsx",
+      "exists": true,
+      "bytes": 2611,
+      "sha256": "dc9b9e77450c599add9f24a7c9c7690d8d953c30de7b37b2df549505dd82f3e8"
+    },
+    {
+      "path": "src/portfolio/research/ResearchData.module.css",
+      "exists": true,
+      "bytes": 11166,
+      "sha256": "fad321aad1573227ae7a311a3370edd26d2adc02ccd9ac511a17ad1885b1f57a"
+    },
+    {
+      "path": "src/portfolio/academics/sectionBodies.tsx",
+      "exists": true,
+      "bytes": 1225,
+      "sha256": "5bffc0b29332643281b3b619de2ba9cb4778d140dadd7e3a3b31cec5e0192a3d"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicTrajectory.tsx",
+      "exists": true,
+      "bytes": 2645,
+      "sha256": "3816885d77a5e9d2bc4f3fa9884bdf3637519ec19c0807303459ea0c5bbe7d68"
+    },
+    {
+      "path": "src/portfolio/academics/EvidenceLibrary.tsx",
+      "exists": true,
+      "bytes": 1987,
+      "sha256": "99399719e0df257f236f4539d33b26e3e3bd567bd8e1a278bbc19656951f8b97"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicEvidence.module.css",
+      "exists": true,
+      "bytes": 11062,
+      "sha256": "033fdc2431a7523262f30f879e369461025f1776ae20b67d099a1d05498fc436"
+    },
+    {
+      "path": "src/portfolio/impact/sectionBodies.tsx",
+      "exists": true,
+      "bytes": 1128,
+      "sha256": "9fe5c5811270b8eaa5216aa17957a4d8597434056c44f31aeba313f17ebc2bdb"
+    },
+    {
+      "path": "src/portfolio/impact/MethodsAndTools.tsx",
+      "exists": true,
+      "bytes": 1786,
+      "sha256": "dad285539c84adb8212ff6b973ae93e0aa45993d9d3b6803dc73b5abb04ff33d"
+    },
+    {
+      "path": "src/portfolio/impact/FieldworkAndLeadership.tsx",
+      "exists": true,
+      "bytes": 1317,
+      "sha256": "c1271e596873d31a46a132bdc6aa5ca1b13973ce8746a33038eaddbf431c1f08"
+    },
+    {
+      "path": "src/portfolio/impact/ToolsFieldwork.module.css",
+      "exists": true,
+      "bytes": 4271,
+      "sha256": "d2a414ce5338a610cbe0a2756d70945dc98aa6f33fe23f5508315038bc97cd20"
+    },
+    {
+      "path": "src/portfolio/contact/sectionBodies.tsx",
+      "exists": true,
+      "bytes": 235,
+      "sha256": "d0528ea68c40207cedc97f8b933dba91b367071ae4ef50531ce4daf0e590bc2d"
+    },
+    {
+      "path": "src/portfolio/contact/ContactSignal.tsx",
+      "exists": true,
+      "bytes": 6053,
+      "sha256": "84e7f466c02b31385673e75a05b61ef1e39671ae1299f0929a365ef8bdcd929c"
+    },
+    {
+      "path": "src/portfolio/contact/Contact.module.css",
+      "exists": true,
+      "bytes": 4304,
+      "sha256": "e851d1be85c6e736054c3b8c67c859605d835be2bf5c0aefce72fe3bc9ce115d"
+    },
+    {
+      "path": "src/portfolio/shell/PortfolioExperience.tsx",
+      "exists": true,
+      "bytes": 836,
+      "sha256": "4168a10257139a04f2b60225c0a5b3c20c4b0fb2c7f24fbdb617a01df90e10a9"
+    },
+    {
+      "path": "src/portfolio/shell/PortfolioExperience.test.tsx",
+      "exists": true,
+      "bytes": 1191,
+      "sha256": "e93d3ff8e0050c85d90195d29869e25e6b71a9fd2962141f3acf5e3a1088e97c"
+    },
+    {
+      "path": "src/portfolio/boundaries.test.ts",
+      "exists": true,
+      "bytes": 5419,
+      "sha256": "223beffba43e40af73b42dce2157fa1f26fc8a6e40e17e9c88672b963fd1a5a0"
+    },
+    {
+      "path": "src/portfolio/sourceGovernanceBoundaries.test.ts",
+      "exists": true,
+      "bytes": 602,
+      "sha256": "8f0e9d777ed00bd5033c4624a7de9e1d3e31a308ea31b50d6bb84998b44ba13e"
+    },
+    {
+      "path": "scripts/portfolio/check-boundaries.mjs",
+      "exists": true,
+      "bytes": 23294,
+      "sha256": "5f14c0acce9a7bcf7161741889e7df3441c01ace9c8a068d69bbd71cf2ac086c"
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "bytes": 10025,
+      "sha256": "2f387ecc59eea26ec5b8c6475fb2dc5403d7fc7dea9d0cb6e1a19e48376c45dc"
+    },
+    {
+      "path": "src/portfolio/resume/resumeClaims.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeReconciliation.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeSectionMap.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeContentModel.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/ResumeAction.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/ResumeContentGroup.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/ResumeContent.module.css",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeReconciliation.test.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeContentModel.test.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/resume/resumeContentModel.pbt.test.ts",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-candidate/index.html",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-candidate/main.tsx",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-candidate/vite.config.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-review/cases.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-review/review.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-review/privacy.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-review/integrity.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/resume-content-review/verify-recovery.mjs",
+      "exists": false
+    }
+  ],
+  "trackedDiff": {
+    "path": "tracked-targets.patch",
+    "bytes": 13923,
+    "sha256": "446cc191d880dec119343e4e271f272d55b47d4a11e742b22ea06ce8efe6253d"
+  },
+  "sourceAuthority": {
+    "externalResume": {
+      "path": "/Users/nhamhhung/ASEAN/Resume_Minh Tam.pdf",
+      "exists": true,
+      "bytes": 113775,
+      "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282"
+    },
+    "canonicalBefore": {
+      "path": "src/assets/documents/Tran-Gia-Minh-Tam-Resume.pdf",
+      "exists": true,
+      "bytes": 169191,
+      "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+    },
+    "staleUnrelated": {
+      "path": "src/assets/documents/resume.pdf",
+      "exists": true,
+      "bytes": 103033,
+      "sha256": "7ca0d97a208bbb9fd0e026ae51a164792e2efa6b2388c303141c1466853874dd"
+    }
+  },
+  "protectedSources": {
+    "protectedManifest": {
+      "path": ".aidlc-recovery/source-governance-safe-foundation/protected-archive-sha256.txt",
+      "exists": true,
+      "bytes": 18622,
+      "sha256": "0b1015a9a270a9bea4e1607cdcdfc1375fd77c35fa5349341acd0a3cfa4fc0d4"
+    }
+  },
+  "restoration": {
+    "isolated": true,
+    "findings": [],
+    "passed": true
+  },
+  "canProceed": true
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "decidedAt": "2026-09-17T08:23:49Z",
+  "response": "please make sure the sections are aligned properly. Then, approve and continue",
+  "decision": "A",
+  "disposition": "approved-after-readability-and-alignment-corrections",
+  "priorResponse": "the background and text is too hard to see",
+  "conditions": [
+    "Use opaque theme-aware reading surfaces and explicit high-contrast body typography.",
+    "Align the tool name, classification marker, and context-link box consistently in every capability row."
+  ],
+  "conditionStatus": "fulfilled",
+  "postConditionValidation": {
+    "strictTypes": "passed",
+    "focusedToolsFieldworkTests": 28,
+    "completeTests": 180,
+    "lint": "passed",
+    "candidateBoundaries": "passed",
+    "candidateBuild": "passed",
+    "candidateMeasurement": "passed",
+    "candidateVerification": "passed",
+    "javascriptBytes": 281127,
+    "cssBytes": 46045,
+    "p0Findings": []
+  },
+  "limitations": [
+    "No automated browser-version matrix or mobile performance timing is claimed; rendered observations and approval were supplied by the user."
+  ],
+  "canActivate": true,
+  "liveEntryChanged": true,
+  "activatedAt": "2026-09-17T08:25:30Z",
+  "activeAppSha256": "4078f40a9f9cc9b8f3b3f748ffabf2705b90ad9d51464a97abe3bc943881ece5"
+}

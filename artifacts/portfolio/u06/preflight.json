@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T06:46:50Z",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "activeEntry": {
+    "path": "src/App.tsx",
+    "sha256": "761f8a588bc2152a81fc970fb743843f566adb82523a837880ffbf2d78b3be8e"
+  },
+  "approvedRegistry": {
+    "path": "src/portfolio/academics/sectionBodies.tsx",
+    "sha256": "5bffc0b29332643281b3b619de2ba9cb4778d140dadd7e3a3b31cec5e0192a3d",
+    "finishedBodyCount": 7,
+    "temporaryBodyCount": 3
+  },
+  "dependencies": {
+    "packageJsonSha256": "6f053af272992ad7d46d55c350d2e8b0f278df2bb6fc9d5fd31b3a6e8bee6941",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "dependencyDeclarationsSha256": "bfc60b12c6fe1082dd3c54cecb42c60dd301a294b77e36c1df356daa5a4a9e82",
+    "devDependencyDeclarationsSha256": "8758c3660ecb24479ecd68e22a399d45f2aab99895a0ba7385aa1398f4d9461d"
+  },
+  "versions": {
+    "node": "v24.0.0",
+    "npm": "11.3.0",
+    "vite": "7.3.0",
+    "vitest": "4.1.9"
+  },
+  "baselineBuild": {
+    "javascriptBytes": 268491,
+    "javascriptGzipBytes": 82080,
+    "cssBytes": 42005,
+    "cssGzipBytes": 7990
+  },
+  "evidenceInventory": {
+    "u06EligibleBytes": 0
+  },
+  "externalSource": {
+    "inventory": "artifacts/portfolio/u06/external-source-inventory.json",
+    "fileCount": 18,
+    "totalBytes": 42705,
+    "status": "preserved-unactivated-input"
+  },
+  "excludedLegacyHashes": {
+    "src/data/awards.ts": "eaa49a9aea1da82569d537c05fd84a31284d32ff35e979538427e47f2f946c3b",
+    "src/data/gallery.ts": "035f71dc6641b6c992aa13c16ac9de087bcadde9ab1211a752384327105d67c4",
+    "src/data/videos.ts": "d13f4308f1052b97867803c703d90bdc869982ea26d3b4e75cfb3b305343f643",
+    "src/components/Awards.tsx": "0b09a521d0c512e0bff4dc4d82975fc6717733a6ce4389e10167c969ac77985c"
+  },
+  "tests": {
+    "academic": 18,
+    "research": 19,
+    "identity": 18,
+    "shell": 39,
+    "portfolioIncludingExternalU06": 131,
+    "completeIncludingExternalU06": 177
+  },
+  "checks": {
+    "strictTypes": "passed",
+    "lint": "passed",
+    "activeBoundaries": "passed",
+    "recovery": "passed",
+    "shell": "passed",
+    "identity": "passed",
+    "research": "passed",
+    "academic": "passed",
+    "productionBuild": "passed",
+    "measurement": "passed"
+  },
+  "findings": [],
+  "canProceed": true
+}

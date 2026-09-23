@@ -1,0 +1,12 @@
+{
+  "markerProvided": true,
+  "markerSource": "ephemeral-local-extraction",
+  "report": {
+    "blockingCount": 0,
+    "canProceed": true,
+    "findings": [],
+    "warningCount": 0
+  },
+  "scannedFileCount": 336,
+  "schemaVersion": 1
+}

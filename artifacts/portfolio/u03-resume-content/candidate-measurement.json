@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-23T17:16:18.695Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 4931,
+      "gzipBytes": 911
+    },
+    {
+      "path": "assets/7381606024551-guV8mhgi.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 335167,
+      "gzipBytes": 334065
+    },
+    {
+      "path": "assets/borsworth-scholarship-first-2-pages-CjiNU2xi.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 191037,
+      "gzipBytes": 132992
+    },
+    {
+      "path": "assets/cashew-polyphenol-v2LGBwmA.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 164808,
+      "gzipBytes": 161843
+    },
+    {
+      "path": "assets/data-analytics-CoMzTZ5g.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 831243,
+      "gzipBytes": 821014
+    },
+    {
+      "path": "assets/gys-brochure-BdTvVFMK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3099234,
+      "gzipBytes": 3049255
+    },
+    {
+      "path": "assets/IMG_4206-DGqnKKzP.JPG",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 600751,
+      "gzipBytes": 585858
+    },
+    {
+      "path": "assets/IMG_4207-CcdU6L_N.JPG",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 458130,
+      "gzipBytes": 437630
+    },
+    {
+      "path": "assets/IMG_4208-BhMI-myk.JPG",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 1055975,
+      "gzipBytes": 1020369
+    },
+    {
+      "path": "assets/IMG_4213-CVnYBAYM.JPG",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 230055,
+      "gzipBytes": 222616
+    },
+    {
+      "path": "assets/index-DTcezlsO.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 53473,
+      "gzipBytes": 9707
+    },
+    {
+      "path": "assets/index-ib-KQiYz.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 313873,
+      "gzipBytes": 97004
+    },
+    {
+      "path": "assets/JournalRouteEntry-Be31QMai.css",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 3772,
+      "gzipBytes": 1129
+    },
+    {
+      "path": "assets/JournalRouteEntry-CTF90yiC.js",
+      "category": "lazy-javascript",
+      "initial": false,
+      "bytes": 3164,
+      "gzipBytes": 1241
+    },
+    {
+      "path": "assets/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted)-BGZEkTUK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3490329,
+      "gzipBytes": 3074681
+    },
+    {
+      "path": "assets/profile_pic-CFInx4sJ.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 1265478,
+      "gzipBytes": 1264893
+    },
+    {
+      "path": "assets/sim-lse-certificate-B_uXG39D.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 51969,
+      "gzipBytes": 47056
+    },
+    {
+      "path": "assets/Tran-Gia-Minh-Tam-Resume-CWJD25Bh.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 113775,
+      "gzipBytes": 73882
+    },
+    {
+      "path": "assets/wico-poster-QNmcLCLw.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 7702179,
+      "gzipBytes": 7625142
+    },
+    {
+      "path": "assets/worthgate-scholarship-first-2-pages-l-h5bbev.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 209148,
+      "gzipBytes": 150666
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 541,
+      "gzipBytes": 340
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 313873,
+    "cssBytes": 53473,
+    "lazyJavascriptBytes": 0,
+    "lazyCssBytes": 0,
+    "otherInitialBytes": 541,
+    "evidenceAssetBytes": 19799278,
+    "deployableBytes": 20179032
+  },
+  "budgets": {
+    "javascriptBytes": 327680,
+    "cssBytes": 61440,
+    "javascriptRegressionPercent": 8,
+    "cssRegressionPercent": 12,
+    "lazyJavascriptBytes": "not-applicable",
+    "lazyCssBytes": "not-applicable",
+    "evidenceGrowthBytes": "not-applicable"
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 297578,
+    "baselineCssBytes": 50665,
+    "baselineEvidenceAssetBytes": 19799278,
+    "javascriptChangePercent": 5.4759,
+    "cssChangePercent": 5.5423,
+    "evidenceGrowthBytes": 0
+  },
+  "lazyEntry": "not-applicable",
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true
+}

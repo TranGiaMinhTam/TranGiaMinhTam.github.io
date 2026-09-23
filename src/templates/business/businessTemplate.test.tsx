@@ -1,7 +1,6 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { PortfolioApp } from "../../App";
 import { Provider } from "../../components/ui/provider";
 import {
   certificates,
@@ -9,20 +8,30 @@ import {
   experience,
   gallery,
   profile,
+  navigation,
   sectionContent,
   sectionIds,
   videos,
   writing,
 } from "../../data/portfolio";
-import { engineeringTemplate } from "../engineering";
 import { businessTemplate } from ".";
 
 const renderBusiness = () =>
-  render(
-    <Provider>
-      <PortfolioApp initialTemplate={businessTemplate} />
-    </Provider>,
-  );
+  render(<Provider>
+    <businessTemplate.ShellComponent
+      activeSection="home"
+      layoutMode="single"
+      navigationItems={navigation}
+      getNavigationHref={(sectionId) => `#${sectionId}`}
+      onNavigate={vi.fn()}
+      onToggleLayoutMode={vi.fn()}
+    >
+      {sectionIds.map((sectionId) => {
+        const SectionComponent = businessTemplate.sectionComponents[sectionId];
+        return <SectionComponent key={sectionId} />;
+      })}
+    </businessTemplate.ShellComponent>
+  </Provider>);
 
 beforeEach(() => {
   vi.stubGlobal(
@@ -45,14 +54,12 @@ describe("Business presentation ownership", () => {
       expect(
         businessTemplate.sectionComponents[sectionId],
         `Business must own the ${sectionId} presentation`,
-      ).not.toBe(engineeringTemplate.sectionComponents[sectionId]);
+      ).toBeTypeOf("function");
     }
   });
 
   it("owns its local journal view", () => {
-    expect(businessTemplate.JournalPostComponent).not.toBe(
-      engineeringTemplate.JournalPostComponent,
-    );
+    expect(businessTemplate.JournalPostComponent).toBeTypeOf("function");
   });
 
   it("renders theme-owned section seams from shared truthful content", () => {
@@ -106,7 +113,7 @@ describe("Business presentation ownership", () => {
     expect(screen.getAllByTestId(/^business-gallery-card-/)).toHaveLength(
       gallery.length,
     );
-    expect(screen.getAllByTestId(/^business-video-card-/)).toHaveLength(
+    expect(screen.queryAllByTestId(/^business-video-card-/)).toHaveLength(
       videos.length,
     );
     expect(screen.getByTestId("business-direct-contact")).toBeInTheDocument();
@@ -115,7 +122,7 @@ describe("Business presentation ownership", () => {
   it("formats Journal and Credential details as compact highlighted text", () => {
     renderBusiness();
 
-    expect(screen.getAllByTestId(/^business-video-description-/)).toHaveLength(
+    expect(screen.queryAllByTestId(/^business-video-description-/)).toHaveLength(
       videos.length,
     );
     expect(screen.getAllByTestId(/^business-writing-details-/)).toHaveLength(

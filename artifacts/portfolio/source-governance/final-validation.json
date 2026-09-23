@@ -1,0 +1,49 @@
+{
+  "canProceed": true,
+  "derivatives": {
+    "readyCount": 107,
+    "twiceRunEquivalent": true,
+    "unavailableCount": 1
+  },
+  "inventory": {
+    "elapsedMs": 422,
+    "physicalFileCount": 122,
+    "rssAfterBytes": 127598592,
+    "rssBeforeBytes": 48562176,
+    "totalBytes": 307351000,
+    "withinCapacity": true
+  },
+  "privacy": {
+    "canProceed": true,
+    "findingCount": 0,
+    "markerSource": "ephemeral-local-extraction",
+    "scannedFileCount": 333
+  },
+  "promotion": {
+    "canProceed": true,
+    "canonicalItemCount": 104,
+    "derivativeOutcomeCount": 108,
+    "manifestSha256": "2d1503a1e20dd736db1a26b0d5247caf49430f222a37218f850d0448d5af238a",
+    "physicalFileCount": 122,
+    "readyDerivativeCount": 107,
+    "resumeSha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6",
+    "schemaVersion": 1,
+    "twiceRunByteIdentical": true,
+    "unavailableDerivativeCount": 1
+  },
+  "recovery": {
+    "canProceed": true,
+    "findingCount": 0,
+    "withinThirtyMinutes": true
+  },
+  "resume": {
+    "byteIdentical": true,
+    "bytes": 169191,
+    "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+  },
+  "schemaVersion": 1,
+  "sourcePreservation": {
+    "changedCount": 0,
+    "missingCount": 0
+  }
+}

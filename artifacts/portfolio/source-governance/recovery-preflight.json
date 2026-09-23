@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-20T12:05:29.386Z",
+  "revision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "statusSha256": "d990d15be8e990dc811e0dab66d8d55b328c6eee9d47acfe546d9773903f83ce",
+  "trackedDiff": {
+    "path": "tracked-targets.patch",
+    "bytes": 8023,
+    "sha256": "4cce3f05b3b1d96bf226eca4500a63e240f6f651ca1b338b47d6a782e0d213b1"
+  },
+  "targetStates": [
+    {
+      "path": ".gitignore",
+      "existed": true,
+      "kind": "file",
+      "bytes": 270,
+      "sha256": "136cd41e1e8bb92f9eb86080bf8eb7a9272b75b679198b078b5418f0b7e504ac"
+    },
+    {
+      "path": "package.json",
+      "existed": true,
+      "kind": "file",
+      "bytes": 8760,
+      "sha256": "5b024c2799cea785aff30a668f6a30f72d771d264ba233826c20cb686c25574b"
+    },
+    {
+      "path": "package-lock.json",
+      "existed": true,
+      "kind": "file",
+      "bytes": 344179,
+      "sha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "existed": true,
+      "kind": "file",
+      "bytes": 1365,
+      "sha256": "a58f0ba695d5ce4b1b94cc1b471b0c6658c33e920a9a4696065b980bb9ebeeb7"
+    },
+    {
+      "path": "src/portfolio/index.ts",
+      "existed": true,
+      "kind": "file",
+      "bytes": 735,
+      "sha256": "edcd8ead4b16e796ca1de53491e30f9053d993594c6a30619895ecd916e7313e"
+    },
+    {
+      "path": "scripts/portfolio/check-boundaries.mjs",
+      "existed": true,
+      "kind": "file",
+      "bytes": 21957,
+      "sha256": "8b454fa08b870969690c542e6db0e6a38fb6b249b4f5a09b22a06d0a7009d429"
+    },
+    {
+      "path": "src/portfolio/archive",
+      "existed": false
+    },
+    {
+      "path": "src/portfolio/resume",
+      "existed": false
+    },
+    {
+      "path": "scripts/portfolio/source-governance",
+      "existed": false
+    },
+    {
+      "path": "src/assets/generated/minh-tam",
+      "existed": false
+    },
+    {
+      "path": "src/assets/documents/Tran-Gia-Minh-Tam-Resume.pdf",
+      "existed": false
+    },
+    {
+      "path": "artifacts/portfolio/source-governance",
+      "existed": true,
+      "kind": "directory"
+    },
+    {
+      "path": "aidlc-docs/construction/source-governance-safe-foundation/code",
+      "existed": false
+    }
+  ],
+  "protectedArchive": {
+    "root": "src/assets/minh-tam",
+    "fileCount": 122,
+    "totalBytes": 307351000,
+    "inventorySha256": "0b1015a9a270a9bea4e1607cdcdfc1375fd77c35fa5349341acd0a3cfa4fc0d4"
+  },
+  "externalResume": {
+    "bytes": 169191,
+    "sha256": "c9cca8a890cff3e0a6836539312b4eb8313732426aa207143a9f8f4d3179e8d6"
+  },
+  "restoration": {
+    "strategy": "Restore existing target files from payload by exact relative path; remove only plan-created targets after confirming the manifest; never reset the workspace or protected sources.",
+    "rehearsalChecks": [
+      {
+        "path": ".gitignore",
+        "matches": true
+      },
+      {
+        "path": "package.json",
+        "matches": true
+      },
+      {
+        "path": "package-lock.json",
+        "matches": true
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "matches": true
+      },
+      {
+        "path": "src/portfolio/index.ts",
+        "matches": true
+      },
+      {
+        "path": "scripts/portfolio/check-boundaries.mjs",
+        "matches": true
+      }
+    ],
+    "elapsedMs": 517,
+    "withinThirtyMinutes": true
+  },
+  "findings": [],
+  "canProceed": true
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-15T00:44:14.611Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 185,
+      "gzipBytes": 142
+    },
+    {
+      "path": "assets/index-Cv47udmj.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 9200,
+      "gzipBytes": 2720
+    },
+    {
+      "path": "assets/index-inXSnNt0.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 206703,
+      "gzipBytes": 65253
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 594,
+      "gzipBytes": 355
+    },
+    {
+      "path": "vite.svg",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 1497,
+      "gzipBytes": 775
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 206703,
+    "cssBytes": 9200,
+    "otherInitialBytes": 594,
+    "evidenceAssetBytes": 0,
+    "deployableBytes": 218179
+  },
+  "budgets": {
+    "javascriptBytes": 307200,
+    "cssBytes": 51200,
+    "regressionReviewPercent": 10
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 893367,
+    "baselineCssBytes": 68577,
+    "javascriptChangePercent": -76.8625,
+    "cssChangePercent": -86.5844
+  },
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true,
+  "qualityGate": {
+    "typescriptAndProductionBuild": "passed",
+    "transformedModules": 48,
+    "fullTests": { "status": "passed", "files": 27, "tests": 100 },
+    "lint": "passed",
+    "activeBoundary": "passed-zero-findings",
+    "shellVerification": "passed-zero-findings",
+    "recovery": "passed-zero-findings",
+    "lockfileUnchanged": true,
+    "protectedSourceFileCount": 104
+  },
+  "migration": {
+    "firstAttempt": "rolled-back-after-stale-u01-test",
+    "scopeAmendment": "explicitly-approved",
+    "retry": "passed",
+    "activeShell": true,
+    "rejectedFilesDeleted": false,
+    "dependenciesChanged": false,
+    "rawEvidenceChanged": false
+  }
+}

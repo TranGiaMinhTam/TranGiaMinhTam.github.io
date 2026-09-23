@@ -1,0 +1,187 @@
+.tools,
+.activity {
+  --impact-accent: var(--color-accent);
+  padding: clamp(var(--space-4), 2vw, var(--space-6));
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  inline-size: 100%;
+  text-align: start;
+}
+
+.validationFailure { padding: var(--space-6); border: var(--border-thin) solid var(--color-rule); }
+
+.toolsHeader,
+.activityHeader {
+  display: grid;
+  grid-template-columns: minmax(24rem, 1fr) minmax(20rem, 0.6fr);
+  gap: clamp(var(--space-6), 4vw, 3rem);
+  align-items: end;
+  margin-block-end: clamp(var(--space-8), 5vw, 4rem);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font: 700 0.76rem/1.4 var(--font-mono);
+  letter-spacing: 0.12em;
+}
+
+.toolsHeader h2,
+.activityHeader h2 {
+  max-inline-size: 22ch;
+  margin: var(--space-3) 0 0;
+  font-size: clamp(2.1rem, 5.2vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.headerNote {
+  margin: 0;
+  color: var(--color-text-primary);
+  font: 400 1rem/1.6 var(--font-body);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(var(--space-6), 3vw, var(--space-8));
+}
+
+.category {
+  min-inline-size: 0;
+  padding-block-start: var(--space-6);
+  border-block-start: 2px solid var(--impact-accent);
+}
+
+.category h3 {
+  margin: 0 0 var(--space-4);
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
+}
+
+.toolList {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toolList li {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.65fr) minmax(10rem, 0.42fr) minmax(16rem, 1fr);
+  gap: var(--space-3);
+  align-items: start;
+  min-inline-size: 0;
+  padding-block: var(--space-3);
+  border-block-end: var(--border-thin) solid var(--color-rule);
+}
+
+.toolTitle { padding-block-start: 0.7rem; font-weight: 700; }
+
+.classificationMarker {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  min-block-size: 2.5rem;
+  padding: 0.3rem 0.55rem;
+  border: var(--border-thin) solid currentColor;
+  color: var(--impact-accent);
+  font: 700 0.68rem/1 var(--font-mono);
+}
+
+.classificationMarker[data-classification='interest'] { color: var(--color-text-secondary); }
+
+.toolConnections { display: grid; gap: var(--space-2); min-inline-size: 0; }
+
+.contextLink {
+  display: inline-flex;
+  gap: var(--space-2);
+  align-items: center;
+  min-block-size: 2.5rem;
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-thin) solid var(--color-rule);
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.contextLink:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+
+.toolSemantic,
+.activitySemantic {
+  display: grid;
+  margin: clamp(var(--space-8), 5vw, 4rem) 0 0;
+}
+
+.semanticGroup {
+  padding-block: var(--space-3);
+  border-block-end: var(--border-thin) solid var(--color-rule);
+}
+
+.semanticGroup > dt { font-weight: 700; }
+.semanticGroup > dd { margin: var(--space-2) 0 0; color: var(--color-text-secondary); }
+
+.groups {
+  display: grid;
+  gap: clamp(var(--space-8), 5vw, 4rem);
+}
+
+.group {
+  padding-block-start: var(--space-6);
+  border-block-start: 2px solid var(--impact-accent);
+}
+
+.group h3 {
+  display: flex;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-6);
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+}
+
+.groupRecords {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.activityRecord {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(var(--space-4), 3vw, var(--space-8));
+  align-items: start;
+  min-inline-size: 0;
+  padding: clamp(var(--space-4), 2.5vw, var(--space-8));
+  border: var(--border-thin) solid var(--color-rule);
+}
+
+.period {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.activityRecord h3 {
+  margin: var(--space-2) 0;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.organization {
+  margin: 0 0 var(--space-4);
+}
+
+.activityRecord ul { margin: 0; }
+
+.activityRecord li {
+  padding-inline-start: var(--space-4);
+  border-inline-start: 3px solid var(--impact-accent);
+}
+
+@media (max-width: 760px) {
+  .toolsHeader,
+  .activityHeader { grid-template-columns: 1fr; }
+  .toolsHeader h2,
+  .activityHeader h2 { max-inline-size: 18ch; }
+  .categories { grid-template-columns: 1fr; }
+  .toolList li,
+  .activityRecord { grid-template-columns: 1fr; }
+}

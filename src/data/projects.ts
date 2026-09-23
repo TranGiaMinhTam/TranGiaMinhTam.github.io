@@ -1,89 +1,79 @@
-import type { ProjectEntry } from "../types/portfolio";
+import type { ProjectEntry } from '../types/portfolio'
 
-import courseworkCertificatesImage from "../assets/projects/coursework_and_certificates.png";
-import javaResumeApplicationImage from "../assets/projects/java_resume_application.png";
-import programAnalyzerImage from "../assets/projects/program_analyzer.png";
+import molecularDockingImage from '../assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG'
+import cashewPolyphenolImage from '../assets/minh-tam/projects/cashew-polyphenol.jpg'
 
 export const projects = [
   {
-    id: "coursework-certificates",
-    title: "Coursework and Certificates",
+    id: 'molecular-docking-model',
+    title: 'Molecular Docking Model for Type II Diabetes Targets',
     description:
-      "A curated academic archive covering everything I have learnt over the years.",
-    image: courseworkCertificatesImage,
+      'Built a computational molecular-docking workflow across five therapeutic protein targets, integrating protein selection, active-site optimization, docking simulations, and interactive ligand-visualization support.',
+    image: molecularDockingImage,
     imageAlt:
-      "Coursework and Certificates screenshot listing deep learning, machine learning, natural language processing, and reinforcement learning courses",
-    logoKey: "jupyter",
-    logoLabel: "Jupyter Notebook project logo",
-    logoAccent: "#f37626",
-    technologies: [
-      "Jupyter Notebook",
-      "Python",
-      "PyTorch",
-      "AWS",
-      "Kubernetes",
-    ],
+      'Molecular docking project screenshot showing therapeutic protein targets and molecular interaction analysis',
+    logoKey: 'python',
+    logoLabel: 'Python project logo',
+    logoAccent: '#3776ab',
+    technologies: ['AutoDock Vina', 'Drug Screening', 'Molecular Biology', 'Data Analysis'],
     actions: [
       {
-        label: "Repository",
-        href: "https://github.com/nhamhung/Coursework-and-Certificates",
-        ariaLabel: "Open Coursework and Certificates repository",
+        label: 'Overview',
+        href: '#/projects',
+        ariaLabel: 'View the molecular docking project overview',
       },
       {
-        label: "README",
-        href: "https://github.com/nhamhung/Coursework-and-Certificates#readme",
-        ariaLabel: "Read Coursework and Certificates repository README",
+        label: 'Award',
+        href: '#/awards',
+        ariaLabel: 'View related project awards',
       },
     ],
   },
   {
-    id: "program-analyzer",
-    title: "Program Analyzer",
+    id: 'cashew-testa-research',
+    title: 'Cashew Testa Bioactive Polyphenol Research',
     description:
-      "A C++ static program analyzer built to answer developers' queries about source-code relationships.",
-    image: programAnalyzerImage,
+      'Investigated the valorization of cashew testa through ultrasound-assisted extraction, antioxidant and antimicrobial testing, and prototype skincare formulation development.',
+    image: cashewPolyphenolImage,
     imageAlt:
-      "Program Analyzer architecture diagram connecting the user, SPA, source processor, query processor, design extractor, and program knowledge base",
-    logoKey: "cplusplus",
-    logoLabel: "C++ project logo",
-    logoAccent: "#659ad2",
-    technologies: ["C++", "Static Analysis", "Query Engine", "Team Project"],
+      'Cashew testa research diagram showing extraction, antioxidant testing, and formulation workflow',
+    logoKey: 'pytorch',
+    logoLabel: 'Research project logo',
+    logoAccent: '#ee4c2c',
+    technologies: ['Ultrasound Extraction', 'DPPH', 'ABTS', 'MIC Testing', 'Formulation'],
     actions: [
       {
-        label: "Repository",
-        href: "https://github.com/nhamhung/Program-Analyzer",
-        ariaLabel: "Open Program Analyzer repository",
+        label: 'Overview',
+        href: '#/projects',
+        ariaLabel: 'View the cashew testa research overview',
       },
       {
-        label: "README",
-        href: "https://github.com/nhamhung/Program-Analyzer#readme",
-        ariaLabel: "Read Program Analyzer repository README",
+        label: 'Research',
+        href: '#/experience',
+        ariaLabel: 'View related research and leadership experience',
       },
     ],
   },
   {
-    id: "java-resume-application",
-    title: "Java Resume Application",
+    id: 'sim-lse-data-analytics',
+    title: 'SIM-LSE Data Analytics Challenge',
     description:
-      "A Java desktop application for managing, customizing, and exporting resume versions from a centralized command-line workflow.",
-    image: javaResumeApplicationImage,
-    imageAlt:
-      "Java Resume Application screenshot showing a desktop interface for profile data, tasks, experience entries, and resume details",
-    logoKey: "openjdk",
-    logoLabel: "Java project logo",
-    logoAccent: "#e76f00",
-    technologies: ["Java", "JavaFX", "Gradle", "JUnit 5", "PDFBox"],
+      'Led retail data analysis and dashboard design using Tableau, translating patterns into actionable recommendations for a business-facing presentation.',
+    logoKey: 'tableau',
+    logoLabel: 'Tableau project logo',
+    logoAccent: '#1f7fe2',
+    technologies: ['Tableau', 'Dashboard Design', 'Business Insights', 'Data Analysis'],
     actions: [
       {
-        label: "Repository",
-        href: "https://github.com/nhamhung/Java-Resume-Application",
-        ariaLabel: "Open Java Resume Application repository",
+        label: 'Overview',
+        href: '#/projects',
+        ariaLabel: 'View the data analytics challenge overview',
       },
       {
-        label: "README",
-        href: "https://github.com/nhamhung/Java-Resume-Application/blob/master/README.adoc",
-        ariaLabel: "Read Java Resume Application README",
+        label: 'Result',
+        href: '#/awards',
+        ariaLabel: 'View analytics challenge recognition',
       },
     ],
   },
-] satisfies ProjectEntry[];
+] satisfies ProjectEntry[]

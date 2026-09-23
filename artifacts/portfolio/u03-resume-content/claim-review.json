@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "bytes": 113775,
+    "sha256": "8de5fc42ca8c443a7dcad6daa2766d7cd5f3a596369a463e54a74b101ec49282",
+    "pages": 2
+  },
+  "review": {
+    "claimCount": 21,
+    "categoryCount": 12,
+    "reviewedPublicClaims": 21,
+    "unreviewedClaims": 0,
+    "persistedRawTranscript": false,
+    "persistedDocumentOnlyValues": false,
+    "manualComparisonComplete": true
+  },
+  "canProceed": true
+}

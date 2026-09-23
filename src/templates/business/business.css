@@ -1,64 +1,96 @@
 .portfolio-template-business {
-  --bg-900: #10283f;
-  --bg-800: #153652;
-  --bg-700: #1f4a70;
-  --surface-900: rgba(21, 54, 82, 0.88);
-  --surface-800: rgba(31, 74, 112, 0.94);
-  --line-700: rgba(102, 163, 191, 0.24);
-  --line-500: rgba(200, 223, 219, 0.46);
-  --text-100: #fcf2e5;
-  --text-300: #e8e0d5;
-  --accent-300: #ffa083;
-  --accent-400: #66a3bf;
-  --accent-500: #3368a0;
-  --primary-bg: #c8dfdb;
-  --primary-hover-bg: #fcf2e5;
-  --primary-text: #524646;
-  --control-bg: rgba(21, 54, 82, 0.9);
-  --control-bg-soft: rgba(51, 104, 160, 0.28);
-  --control-hover-bg: rgba(51, 104, 160, 0.58);
-  --active-nav-bg: rgba(102, 163, 191, 0.16);
-  --active-nav-border: rgba(200, 223, 219, 0.64);
-  --accent-control-bg: rgba(102, 163, 191, 0.13);
-  --input-bg: rgba(16, 40, 63, 0.78);
-  --media-shell-bg: #10283f;
-  --modal-overlay-bg: rgba(8, 23, 36, 0.86);
-  --focus-border: #c8dfdb;
-  --focus-ring: 0 0 0 3px rgba(102, 163, 191, 0.34);
+  --bg-900: #07131b;
+  --bg-800: #0b2029;
+  --bg-700: #123a43;
+  --surface-900: rgba(11, 32, 41, 0.9);
+  --surface-800: rgba(16, 48, 55, 0.96);
+  --line-700: rgba(93, 210, 196, 0.22);
+  --line-500: rgba(131, 235, 211, 0.5);
+  --text-100: #f2fbef;
+  --text-300: #b5d0c9;
+  --accent-300: #b8ed78;
+  --accent-400: #63d8c4;
+  --accent-500: #126b73;
+  --primary-bg: #8edbca;
+  --primary-hover-bg: #b8ed78;
+  --primary-text: #082027;
+  --control-bg: rgba(16, 48, 55, 0.92);
+  --control-bg-soft: rgba(33, 155, 157, 0.24);
+  --control-hover-bg: rgba(33, 155, 157, 0.5);
+  --active-nav-bg: rgba(99, 216, 196, 0.14);
+  --active-nav-border: rgba(184, 237, 120, 0.72);
+  --accent-control-bg: rgba(184, 237, 120, 0.12);
+  --input-bg: rgba(7, 19, 27, 0.82);
+  --media-shell-bg: #07131b;
+  --modal-overlay-bg: rgba(3, 13, 18, 0.88);
+  --focus-border: #b8ed78;
+  --focus-ring: 0 0 0 3px rgba(99, 216, 196, 0.4);
   position: relative;
   overflow: clip;
   color: var(--text-100);
-  background: linear-gradient(145deg, var(--bg-900), var(--bg-800));
-  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg-900);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
 .light .portfolio-template-business {
-  --bg-900: #f2efe7;
-  --bg-800: #c8dfdb;
-  --bg-700: #a8ccc9;
-  --surface-900: rgba(242, 239, 231, 0.9);
-  --surface-800: rgba(200, 223, 219, 0.94);
-  --line-700: rgba(51, 104, 160, 0.22);
-  --line-500: rgba(51, 104, 160, 0.48);
-  --text-100: #524646;
-  --text-300: #6a665c;
-  --accent-300: #b83d22;
-  --accent-400: #285681;
-  --accent-500: #1f4a70;
-  --primary-bg: #3368a0;
-  --primary-hover-bg: #285681;
-  --primary-text: #fcf2e5;
-  --control-bg: rgba(242, 239, 231, 0.94);
-  --control-bg-soft: rgba(200, 223, 219, 0.62);
-  --control-hover-bg: rgba(200, 223, 219, 0.94);
-  --active-nav-bg: rgba(102, 163, 191, 0.18);
-  --active-nav-border: rgba(51, 104, 160, 0.48);
-  --accent-control-bg: rgba(102, 163, 191, 0.13);
-  --input-bg: rgba(242, 239, 231, 0.96);
-  --media-shell-bg: #c8dfdb;
-  --modal-overlay-bg: rgba(16, 40, 63, 0.5);
-  --focus-border: #3368a0;
-  --focus-ring: 0 0 0 3px rgba(102, 163, 191, 0.38);
+  --bg-900: #f2f9f3;
+  --bg-800: #dcefe7;
+  --bg-700: #bddfd4;
+  --surface-900: rgba(248, 253, 248, 0.94);
+  --surface-800: rgba(231, 246, 239, 0.98);
+  --line-700: rgba(21, 88, 93, 0.22);
+  --line-500: rgba(21, 88, 93, 0.48);
+  --text-100: #102f36;
+  --text-300: #42646a;
+  --accent-300: #397b32;
+  --accent-400: #177c83;
+  --accent-500: #15585d;
+  --primary-bg: #176f78;
+  --primary-hover-bg: #15585d;
+  --primary-text: #f2f9f3;
+  --control-bg: rgba(248, 253, 248, 0.96);
+  --control-bg-soft: rgba(189, 223, 212, 0.68);
+  --control-hover-bg: rgba(189, 223, 212, 0.98);
+  --active-nav-bg: rgba(23, 124, 131, 0.12);
+  --active-nav-border: rgba(21, 88, 93, 0.58);
+  --accent-control-bg: rgba(57, 123, 50, 0.12);
+  --input-bg: rgba(248, 253, 248, 0.98);
+  --media-shell-bg: #dcefe7;
+  --modal-overlay-bg: rgba(16, 47, 54, 0.48);
+  --focus-border: #397b32;
+  --focus-ring: 0 0 0 3px rgba(23, 124, 131, 0.3);
+}
+
+/* Research notebook paper: ruled pages, a red observation margin, and ink-like panels. */
+.portfolio-template-business {
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 0 4.5rem,
+      rgba(201, 92, 92, 0.2) 4.5rem 4.56rem,
+      transparent 4.56rem
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 2rem,
+      var(--line-700) 2rem 2.0625rem
+    );
+  background-attachment: fixed;
+}
+
+.light .portfolio-template-business {
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 0 4.5rem,
+      rgba(190, 79, 79, 0.22) 4.5rem 4.56rem,
+      transparent 4.56rem
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 2rem,
+      rgba(21, 88, 93, 0.12) 2rem 2.0625rem
+    );
 }
 
 .portfolio-template-business .business-background {
@@ -75,11 +107,13 @@
   opacity: 0.34;
   transform: perspective(750px) rotateX(62deg) translateY(-18%);
   transform-origin: center top;
-  background-image:
-    linear-gradient(var(--line-700) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line-700) 1px, transparent 1px);
-  background-size: 72px 72px;
-  mask-image: linear-gradient(to bottom, black, transparent 82%);
+  background-image: radial-gradient(
+    circle,
+    var(--line-700) 1px,
+    transparent 1.5px
+  );
+  background-size: 24px 24px;
+  mask-image: linear-gradient(to bottom, black, transparent 70%);
 }
 
 .portfolio-template-business .business-background-glow {
@@ -101,12 +135,61 @@
   left: -24rem;
   opacity: 0.1;
 }
+
+.portfolio-template-business .business-background-glow {
+  border-radius: 18%;
+  filter: blur(110px);
+  transform: rotate(24deg);
+}
+
+.portfolio-template-business .business-background-glow-a {
+  background: var(--accent-500);
+}
+
+.portfolio-template-business .business-background-glow-b {
+  background: var(--accent-300);
+}
+
+.portfolio-template-business .business-background::before,
+.portfolio-template-business .business-background::after {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid var(--line-500);
+  border-radius: 50%;
+  opacity: 0.28;
+}
+
+.portfolio-template-business .business-background::before {
+  top: 16%;
+  right: 8%;
+  box-shadow:
+    0 0 0 2rem transparent,
+    3rem 2rem 0 -1.25rem var(--accent-300),
+    -4rem 5rem 0 -1.25rem var(--accent-400);
+}
+
+.portfolio-template-business .business-background::after {
+  bottom: 12%;
+  left: 5%;
+  width: 10rem;
+  height: 10rem;
+  border-style: dashed;
+}
 .portfolio-template-business .business-casebook-header,
 .portfolio-template-business .business-casebook-rail {
   backdrop-filter: blur(18px);
 }
 .portfolio-template-business .business-casebook-header {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.02em;
+  background: color-mix(
+    in srgb,
+    var(--surface-900) 94%,
+    transparent
+  ) !important;
+  border-top: 5px solid var(--accent-500);
 }
 .portfolio-template-business .business-casebook-layout {
   position: relative;
@@ -147,7 +230,7 @@
 .portfolio-template-business .business-casebook-section {
   width: min(100%, 1180px);
   margin-inline: auto;
-  padding: clamp(5rem, 9vw, 9rem) clamp(1rem, 4vw, 3.5rem);
+  padding: clamp(4rem, 7vw, 7rem) clamp(1rem, 4vw, 3.5rem);
 }
 
 .portfolio-template-business .business-subject-record {
@@ -160,7 +243,9 @@
   display: grid;
   grid-template-columns: 9rem minmax(0, 1fr);
   gap: 1.5rem 3rem;
-  border-bottom: 2px solid var(--text-100);
+  border-bottom: 1px solid var(--line-500);
+  border-top: 4px solid var(--accent-500);
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
 .portfolio-template-business .business-chapter-kicker {
@@ -178,7 +263,8 @@
 .portfolio-template-business .business-section-title {
   font-size: clamp(2.35rem, 4.8vw, 4.5rem) !important;
   line-height: 0.96 !important;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.02em;
+  font-weight: 650;
 }
 .portfolio-template-business .business-chapter-intro {
   max-width: 48rem;
@@ -290,7 +376,10 @@
 .portfolio-template-business .business-award-mark {
   width: 3rem;
   height: 3rem;
+  flex: 0 0 3rem;
   object-fit: contain;
+  border-radius: 0.5rem;
+  background: var(--surface-800);
 }
 .portfolio-template-business .business-award-tag,
 .portfolio-template-business .business-award-year {
@@ -910,6 +999,103 @@
   }
 }
 
+@media (max-width: 60rem) {
+  .portfolio-template-business .business-award-row {
+    grid-template-columns: 3.5rem minmax(0, 1fr) !important;
+    align-items: start;
+    gap: 0.8rem 1rem;
+    padding: 1.25rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--line-700);
+    border-radius: 0.7rem;
+  }
+
+  .portfolio-template-business .business-award-title,
+  .portfolio-template-business .business-award-year,
+  .portfolio-template-business .business-award-tag,
+  .portfolio-template-business .business-award-description {
+    grid-column: 2 !important;
+    min-width: 0;
+  }
+
+  .portfolio-template-business .business-award-title h3,
+  .portfolio-template-business .business-award-title p,
+  .portfolio-template-business .business-award-description {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .portfolio-template-business .business-award-mark {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+  }
+}
+
+.portfolio-template-business
+  :is(
+    .business-ledger-logo,
+    .business-case-image,
+    .business-gallery-image-wrap img,
+    .business-certificate-preview
+  ) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.portfolio-template-business .business-casebook-section {
+  position: relative;
+}
+
+.portfolio-template-business .business-casebook-section::before {
+  content: "";
+  position: absolute;
+  inset: 2.5rem 1rem auto;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent-500), transparent 72%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.portfolio-template-business .business-ledger-row,
+.portfolio-template-business .business-experience-entry,
+.portfolio-template-business .business-award-row {
+  border-bottom-color: var(--line-700);
+}
+
+.portfolio-template-business .business-detail-item,
+.portfolio-template-business .business-gallery-plate,
+.portfolio-template-business .business-writing-entry,
+.portfolio-template-business .business-skill-row,
+.portfolio-template-business .business-certificate-card,
+.portfolio-template-business .business-contact-card {
+  border-radius: 0.65rem;
+  box-shadow: 0 12px 32px rgba(3, 18, 24, 0.12);
+}
+
+.portfolio-template-business .business-detail-label,
+.portfolio-template-business .business-chapter-kicker,
+.portfolio-template-business .business-subsection-heading,
+.portfolio-template-business .business-contact-label {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+}
+
+.portfolio-template-business .business-subject-record {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--surface-800);
+  box-shadow: 0 24px 60px rgba(3, 18, 24, 0.2);
+}
+
+.portfolio-template-business .business-subject-record > img {
+  filter: saturate(0.82) contrast(1.05);
+}
+
+.portfolio-template-business .business-case-image,
+.portfolio-template-business .business-gallery-image-wrap img {
+  filter: saturate(0.88) contrast(1.04);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .portfolio-template-business *,
   .portfolio-template-business *::before,
@@ -917,5 +1103,1372 @@
     scroll-behavior: auto !important;
     animation: none !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Clinical console composition: a denser research workspace than the former editorial layout. */
+.clinical-research-shell {
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 8%,
+      rgba(99, 216, 196, 0.035) 8% 8.1%,
+      transparent 8.1% 100%
+    ),
+    var(--bg-900);
+}
+
+.clinical-topbar {
+  border-bottom: 1px solid var(--line-500) !important;
+  box-shadow: 0 8px 28px rgba(3, 18, 24, 0.16);
+}
+
+.clinical-topbar::after {
+  content: "BIOMED / ACTIVE PROFILE";
+  position: absolute;
+  right: 1rem;
+  bottom: -1.35rem;
+  color: var(--accent-300);
+  font:
+    700 0.58rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.12em;
+  opacity: 0.72;
+}
+
+.clinical-console {
+  grid-template-columns: 220px minmax(0, 1fr) !important;
+  max-width: 1680px !important;
+}
+
+.clinical-sidebar {
+  top: 64px !important;
+  padding: 2rem 1rem !important;
+  border-right: 1px solid var(--line-500) !important;
+  background: color-mix(
+    in srgb,
+    var(--surface-800) 82%,
+    transparent
+  ) !important;
+}
+
+.clinical-sidebar::before {
+  content: "SPECIMEN / TGT-2026";
+  display: block;
+  margin-bottom: 1.5rem;
+  padding: 0.55rem 0.7rem;
+  color: var(--accent-300);
+  border: 1px solid var(--line-500);
+  border-radius: 0.45rem;
+  font:
+    700 0.62rem/1.4 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.08em;
+}
+
+.clinical-sidebar .business-casebook-rail,
+.clinical-sidebar a {
+  border-radius: 0.45rem;
+}
+
+.clinical-workspace {
+  padding: 0 0 4rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface-900) 76%, transparent),
+      transparent 18%
+    ),
+    var(--bg-900) !important;
+}
+
+.clinical-hero {
+  width: min(100%, 1360px) !important;
+  padding: clamp(3rem, 5vw, 5rem) clamp(1rem, 4vw, 4rem) !important;
+}
+
+.clinical-hero .business-cover-grid {
+  grid-template-columns: minmax(0, 1.5fr) minmax(250px, 0.7fr) !important;
+  gap: 1.5rem !important;
+  align-items: stretch !important;
+}
+
+.clinical-hero .business-cover-grid > :first-child {
+  padding: clamp(1.5rem, 3vw, 3rem);
+  border: 1px solid var(--line-500);
+  border-radius: 0.8rem;
+  background: linear-gradient(
+    145deg,
+    var(--surface-800),
+    color-mix(in srgb, var(--surface-900) 78%, transparent)
+  );
+  box-shadow: 0 24px 60px rgba(3, 18, 24, 0.18);
+}
+
+.clinical-hero .business-subject-record {
+  max-width: none;
+  border: 1px solid var(--line-500);
+  border-top: 4px solid var(--accent-300);
+  border-radius: 0.8rem;
+}
+
+.clinical-hero .business-opening-statement {
+  padding: 1.1rem 0 1.1rem 1.25rem;
+  border-left-width: 2px;
+  background: color-mix(in srgb, var(--accent-500) 12%, transparent);
+}
+
+.clinical-hero .business-capability-register,
+.clinical-hero .business-evidence-register {
+  margin-top: 1.5rem;
+  border: 1px solid var(--line-500);
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--surface-800) 72%, transparent);
+}
+
+.clinical-panel-heading {
+  grid-template-columns: 7rem minmax(0, 1fr) !important;
+  gap: 1rem 1.5rem !important;
+  padding: 1.25rem !important;
+  border: 1px solid var(--line-500) !important;
+  border-left: 5px solid var(--accent-500) !important;
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--surface-800) 72%, transparent);
+}
+
+.clinical-panel-heading .business-section-title {
+  font-size: clamp(2rem, 3.6vw, 3.5rem) !important;
+}
+
+.clinical-research-shell .business-ledger,
+.clinical-research-shell .business-awards-table,
+.clinical-research-shell .business-experience-index,
+.clinical-research-shell .business-gallery-grid,
+.clinical-research-shell .business-project-grid,
+.clinical-research-shell .business-skill-table,
+.clinical-research-shell .business-certificate-gallery {
+  gap: 0.8rem;
+}
+
+.clinical-research-shell .business-ledger-row,
+.clinical-research-shell .business-experience-entry,
+.clinical-research-shell .business-award-row,
+.clinical-research-shell .business-writing-entry,
+.clinical-research-shell .business-skill-row {
+  padding: 1.2rem;
+  border: 1px solid var(--line-700);
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--surface-800) 65%, transparent);
+}
+
+.clinical-research-shell .business-gallery-plate,
+.clinical-research-shell .business-case-file,
+.clinical-research-shell .business-certificate-card {
+  border-color: var(--line-500);
+  border-radius: 0.7rem;
+  background: var(--surface-800);
+}
+
+@media (max-width: 991px) {
+  .clinical-console {
+    grid-template-columns: 1fr !important;
+  }
+
+  .clinical-topbar::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .clinical-hero .business-cover-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .clinical-panel-heading {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Section-by-section publication systems. Each section gets its own visual grammar. */
+.quarto-publication-shell [data-presentation="business-about"],
+.quarto-publication-shell [data-presentation="business-education"],
+.quarto-publication-shell [data-presentation="business-experience"],
+.quarto-publication-shell [data-presentation="business-awards"],
+.quarto-publication-shell [data-presentation="business-projects"],
+.quarto-publication-shell [data-presentation="business-gallery"],
+.quarto-publication-shell [data-presentation="business-journal"],
+.quarto-publication-shell [data-presentation="business-skills"],
+.quarto-publication-shell [data-presentation="business-contact"] {
+  width: min(100%, 1120px) !important;
+  color: var(--ink);
+}
+
+/* About: author profile + methods abstract. */
+.quarto-publication-shell [data-presentation="business-about"] {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--data-blue) 8%, transparent),
+    transparent 42%
+  );
+}
+
+.quarto-publication-shell
+  [data-presentation="business-about"]
+  .business-summary-grid {
+  grid-template-columns: minmax(0, 1fr) 18rem !important;
+  gap: 3rem !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-about"]
+  .business-summary-grid
+  > :first-child {
+  padding: 2rem;
+  border-left: 4px solid var(--data-blue);
+  background: var(--code-bg);
+}
+
+.quarto-publication-shell
+  [data-presentation="business-about"]
+  .business-capability-table {
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--data-green);
+  padding: 1rem;
+  background: var(--paper-deep);
+}
+
+/* Education: vertical academic timeline. */
+.quarto-publication-shell
+  [data-presentation="business-education"]
+  .business-ledger {
+  position: relative;
+  border: 0;
+  padding-left: 2rem;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-education"]
+  .business-ledger::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0.55rem;
+  width: 2px;
+  background: var(--data-blue);
+}
+
+.quarto-publication-shell
+  [data-presentation="business-education"]
+  .business-ledger-row {
+  position: relative;
+  grid-template-columns: 4.5rem minmax(0, 1fr) !important;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.5rem !important;
+  background: var(--paper-deep) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-education"]
+  .business-ledger-row::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 1.5rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 3px solid var(--paper);
+  border-radius: 50%;
+  background: var(--data-blue);
+  box-shadow: 0 0 0 2px var(--data-blue);
+}
+
+/* Experience: experimental lab log with numbered evidence strips. */
+.quarto-publication-shell
+  [data-presentation="business-experience"]
+  .business-experience-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  counter-reset: lab-entry;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-experience"]
+  .business-experience-entry {
+  display: grid;
+  grid-template-columns: 1fr !important;
+  gap: 1rem;
+  min-height: 15rem;
+  padding: 1.5rem !important;
+  counter-increment: lab-entry;
+  background: var(--paper-deep) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-experience"]
+  .business-experience-entry::before {
+  content: "LAB LOG " counter(lab-entry, decimal-leading-zero);
+  color: var(--data-coral);
+  font:
+    700 0.62rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.1em;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-experience"]
+  .business-detail-list {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+/* Awards: citation wall rather than a ledger. */
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-awards-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-award-row {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) !important;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  min-height: 12rem;
+  padding: 1.25rem !important;
+  background: var(--paper) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-award-year,
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-award-tag,
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-award-description {
+  grid-column: 2 !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-awards"]
+  .business-award-description {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+/* Projects: computational analysis board. */
+.quarto-publication-shell
+  [data-presentation="business-projects"]
+  .business-case-study-series,
+.quarto-publication-shell
+  [data-presentation="business-projects"]
+  .business-case-file {
+  background: transparent !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-projects"]
+  .business-case-file {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--rule) !important;
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--data-blue) 12%, transparent);
+}
+
+.quarto-publication-shell
+  [data-presentation="business-projects"]
+  .business-case-file
+  > :first-child {
+  padding: 1.75rem !important;
+  background: var(--paper) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-projects"]
+  .business-case-visual {
+  min-height: 100%;
+  padding: 1.75rem !important;
+  background: var(--code-bg) !important;
+}
+
+.quarto-publication-shell .research-question-block {
+  padding: 1.25rem 1.4rem;
+  border-left: 4px solid var(--data-coral);
+  background: color-mix(in srgb, var(--data-coral) 8%, var(--paper-deep));
+}
+
+.quarto-publication-shell .research-abstract-block {
+  padding-block: 0.25rem;
+}
+
+.quarto-publication-shell .research-metadata-grid > div,
+.quarto-publication-shell .research-protocol-grid > div,
+.quarto-publication-shell .research-evidence-block {
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  background: var(--paper-deep);
+}
+
+.quarto-publication-shell .research-data-label {
+  color: var(--data-blue);
+  font:
+    700 0.64rem/1.3 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.quarto-publication-shell .research-data-value {
+  margin-top: 0.55rem;
+  color: var(--ink);
+  font:
+    600 0.82rem/1.55 "JetBrains Mono",
+    monospace;
+}
+
+.quarto-publication-shell .research-list {
+  margin-top: 0.8rem;
+  padding-left: 1.1rem;
+  color: var(--ink-muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.quarto-publication-shell .research-list li::marker {
+  color: var(--data-coral);
+}
+
+.quarto-publication-shell .research-tool-chip {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.025em;
+}
+
+.quarto-publication-shell .research-evidence-block a {
+  border-bottom: 1px solid var(--data-blue);
+  text-decoration: none;
+}
+
+/* Gallery: figure panel with caption-first composition. */
+.quarto-publication-shell
+  [data-presentation="business-gallery"]
+  .business-gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem !important;
+  background: var(--paper-deep) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-gallery"]
+  .business-gallery-plate {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-gallery"]
+  .business-gallery-plate
+  h3 {
+  margin-top: 0.8rem;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-gallery"]
+  .business-gallery-plate
+  > p {
+  margin-top: 0.4rem;
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+}
+
+/* Journal: long-form paper reading column. */
+.quarto-publication-shell
+  [data-presentation="business-journal"]
+  .business-journal-masthead,
+.quarto-publication-shell
+  [data-presentation="business-journal"]
+  .business-writing-index,
+.quarto-publication-shell
+  [data-presentation="business-journal"]
+  .business-journal-lead {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-journal"]
+  .business-writing-entry {
+  grid-template-columns: 9rem minmax(0, 1fr) !important;
+  padding: 1.25rem 0 !important;
+  border-width: 0 0 1px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Skills: reproducibility matrix with code-like labels. */
+.quarto-publication-shell
+  [data-presentation="business-skills"]
+  .business-skill-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-skills"]
+  .business-skill-row {
+  display: block;
+  padding: 1.25rem !important;
+  border-radius: 0 !important;
+  background: var(--code-bg) !important;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-skills"]
+  .business-skill-row
+  > h3 {
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--data-blue);
+  font:
+    700 0.7rem/1.2 "JetBrains Mono",
+    monospace;
+  text-transform: uppercase;
+}
+
+/* Contact: corresponding-author callout. */
+.quarto-publication-shell
+  [data-presentation="business-contact"]
+  .business-contact-layout {
+  grid-template-columns: 0.75fr 1.25fr !important;
+  gap: 2rem !important;
+  align-items: start;
+}
+
+.quarto-publication-shell
+  [data-presentation="business-contact"]
+  .business-contact-card {
+  border: 0 !important;
+  border-top: 4px solid var(--data-blue) !important;
+  border-radius: 0 !important;
+  background: var(--code-bg) !important;
+}
+
+@media (max-width: 900px) {
+  .quarto-publication-shell
+    [data-presentation="business-experience"]
+    .business-experience-index,
+  .quarto-publication-shell
+    [data-presentation="business-awards"]
+    .business-awards-table,
+  .quarto-publication-shell
+    [data-presentation="business-skills"]
+    .business-skill-table {
+    grid-template-columns: 1fr;
+  }
+
+  .quarto-publication-shell
+    [data-presentation="business-gallery"]
+    .business-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .quarto-publication-shell
+    [data-presentation="business-gallery"]
+    .business-gallery-grid,
+  .quarto-publication-shell
+    [data-presentation="business-contact"]
+    .business-contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Quarto-inspired publication layer: readable manuscript typography, metadata, and data-ink panels. */
+.quarto-publication-shell {
+  --paper: #f7f7f2;
+  --paper-deep: #e8ece6;
+  --ink: #17242b;
+  --ink-muted: #52646b;
+  --rule: #c9d4d0;
+  --data-blue: #126b73;
+  --data-green: #397b32;
+  --data-coral: #bd5d52;
+  --code-bg: #e8f0ec;
+  background: var(--paper) !important;
+  color: var(--ink);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.light .quarto-publication-shell {
+  --paper: #f7f7f2;
+  --paper-deep: #e8ece6;
+  --ink: #17242b;
+  --ink-muted: #52646b;
+  --rule: #c9d4d0;
+  --data-blue: #126b73;
+  --data-green: #397b32;
+  --data-coral: #bd5d52;
+  --code-bg: #e8f0ec;
+}
+
+.quarto-publication-shell:not(.light) {
+  --paper: #111b22;
+  --paper-deep: #172830;
+  --ink: #eff7f1;
+  --ink-muted: #adc1bc;
+  --rule: #385057;
+  --data-blue: #73d2cf;
+  --data-green: #b8ed78;
+  --data-coral: #f09a86;
+  --code-bg: #1c3337;
+}
+
+.quarto-publication-shell .business-background {
+  opacity: 0.35;
+}
+
+.quarto-publication-shell .business-background-grid {
+  transform: none;
+  inset: 0;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px),
+    linear-gradient(var(--rule) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 55%);
+}
+
+.quarto-publication-shell .business-background-glow {
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.08;
+}
+
+.quarto-publication-shell .business-background-glow-a {
+  background: var(--data-blue);
+}
+
+.quarto-publication-shell .business-background-glow-b {
+  background: var(--data-green);
+}
+
+.quarto-topbar {
+  min-height: 4.25rem !important;
+  background: color-mix(in srgb, var(--paper) 94%, transparent) !important;
+  border-top: 0 !important;
+  border-bottom: 1px solid var(--rule) !important;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--data-blue) 20%, transparent) !important;
+  color: var(--ink);
+}
+
+.quarto-topbar::before {
+  display: none;
+}
+
+.quarto-topbar::after {
+  content: "quarto-style · computational publication";
+  right: 1.5rem;
+  bottom: -1.35rem;
+  color: var(--ink-muted);
+  font:
+    500 0.58rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
+.quarto-topbar .business-casebook-header,
+.quarto-topbar * {
+  color: var(--ink);
+}
+
+.quarto-topbar button,
+.quarto-topbar [data-testid="business-theme-toggle"],
+.quarto-topbar [data-testid="business-layout-toggle"],
+.quarto-topbar [data-testid="business-menu-toggle"] {
+  border-color: var(--rule) !important;
+  background: var(--paper-deep) !important;
+  color: var(--ink) !important;
+}
+
+.quarto-sidebar {
+  top: 4.25rem !important;
+  height: calc(100vh - 4.25rem) !important;
+  padding: 2.25rem 1.25rem !important;
+  border-right: 1px solid var(--rule) !important;
+  background: color-mix(in srgb, var(--paper) 97%, transparent) !important;
+  color: var(--ink);
+}
+
+.quarto-sidebar::before {
+  content: "CONTENTS\A Bioinformatics profile\A v1.0 / HTML";
+  color: var(--ink-muted);
+  border: 0;
+  border-left: 3px solid var(--data-blue);
+  border-radius: 0;
+  background: var(--paper-deep);
+  font:
+    600 0.62rem/1.8 "JetBrains Mono",
+    monospace;
+}
+
+.quarto-sidebar .business-casebook-rail,
+.quarto-sidebar a {
+  color: var(--ink-muted) !important;
+}
+
+.quarto-sidebar a {
+  min-height: 2.25rem;
+  padding: 0.5rem 0.6rem !important;
+  border: 0 !important;
+  border-left: 2px solid transparent !important;
+  border-radius: 0 !important;
+  font:
+    500 0.68rem/1.2 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.02em;
+}
+
+.quarto-sidebar a:hover,
+.quarto-sidebar a[aria-current="page"] {
+  color: var(--ink) !important;
+  background: color-mix(in srgb, var(--data-blue) 10%, transparent) !important;
+  border-left-color: var(--data-blue) !important;
+}
+
+.quarto-sidebar a[aria-current="page"]::before {
+  color: var(--data-coral);
+}
+
+.quarto-article {
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 4rem,
+      color-mix(in srgb, var(--data-coral) 16%, transparent) 4rem 4.06rem,
+      transparent 4.06rem
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 2.1rem,
+      color-mix(in srgb, var(--rule) 40%, transparent) 2.1rem 2.14rem
+    ),
+    var(--paper) !important;
+  color: var(--ink);
+}
+
+.quarto-title-block {
+  width: min(100%, 1120px) !important;
+  padding: clamp(5rem, 8vw, 8rem) clamp(2rem, 7vw, 7rem) !important;
+}
+
+.quarto-title-block > .chakra-container {
+  max-width: 940px !important;
+}
+
+.quarto-title-block > .chakra-container::before {
+  content: "Tran Gia Minh Tam · student researcher · bioinformatics / data science";
+  color: var(--ink-muted);
+  font:
+    500 0.67rem/1.4 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.035em;
+  text-transform: none;
+}
+
+.quarto-title-block .business-cover-grid {
+  grid-template-columns: minmax(0, 1fr) 15rem !important;
+  gap: 3rem !important;
+  padding-block: 3.5rem 2.5rem !important;
+}
+
+.quarto-title-block .business-cover-grid > :first-child {
+  padding: 0 0 2rem !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.quarto-title-block .business-cover-grid > :first-child h1,
+.quarto-title-block .business-cover-grid > :first-child h2,
+.quarto-title-block .business-section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.quarto-title-block .business-cover-grid > :first-child h1 {
+  max-width: 11ch;
+  color: var(--ink) !important;
+  font-size: clamp(3.25rem, 8vw, 6.5rem) !important;
+  line-height: 0.98;
+}
+
+.quarto-title-block .business-opening-statement {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem !important;
+  border-left: 3px solid var(--data-blue) !important;
+  background: var(--code-bg) !important;
+}
+
+.quarto-title-block .business-subject-record {
+  border: 1px solid var(--rule) !important;
+  border-top: 0 !important;
+  border-radius: 0 !important;
+  background: var(--paper-deep);
+  box-shadow: none !important;
+}
+
+.quarto-title-block .business-subject-record > img {
+  filter: grayscale(0.25) saturate(0.8) contrast(1.04);
+}
+
+.quarto-title-block .business-capability-register,
+.quarto-title-block .business-evidence-register {
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  background: var(--paper-deep) !important;
+  box-shadow: none !important;
+}
+
+.quarto-title-block .business-capability-register::before {
+  content: "Key variables";
+  display: block;
+  grid-column: 1 / -1;
+  padding: 0.75rem 1rem 0;
+  color: var(--ink-muted);
+  font:
+    600 0.65rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quarto-section-heading {
+  grid-template-columns: 8rem minmax(0, 1fr) !important;
+  gap: 0.8rem 2rem !important;
+  padding: 1.25rem 0 1.5rem !important;
+  border: 0 !important;
+  border-top: 2px solid var(--ink) !important;
+  border-bottom: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.quarto-section-heading .business-chapter-kicker {
+  color: var(--data-blue);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.quarto-section-heading .business-chapter-kicker::before {
+  content: "# ";
+}
+
+.quarto-section-heading .business-chapter-kicker::after {
+  content: "section";
+  color: var(--ink-muted);
+  font-size: 0.52rem;
+}
+
+.quarto-section-heading .business-section-title {
+  color: var(--ink) !important;
+  font-size: clamp(2.25rem, 5vw, 4.5rem) !important;
+}
+
+.quarto-section-heading .business-chapter-intro {
+  grid-column: 2;
+  max-width: 50rem;
+  color: var(--ink-muted);
+}
+
+.quarto-publication-shell .business-casebook-section {
+  color: var(--ink);
+}
+
+.quarto-publication-shell .business-case-file,
+.quarto-publication-shell .business-award-row,
+.quarto-publication-shell .business-ledger-row,
+.quarto-publication-shell .business-experience-entry,
+.quarto-publication-shell .business-writing-entry,
+.quarto-publication-shell .business-skill-row,
+.quarto-publication-shell .business-contact-card {
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  background: color-mix(
+    in srgb,
+    var(--paper) 92%,
+    var(--paper-deep)
+  ) !important;
+  box-shadow: none !important;
+  color: var(--ink);
+}
+
+.quarto-publication-shell .business-case-file::after {
+  content: "FIGURE / ANALYSIS";
+  color: var(--ink-muted);
+  font-size: 0.5rem;
+}
+
+.quarto-publication-shell .business-gallery-grid {
+  padding: 1rem !important;
+  border: 1px solid var(--rule) !important;
+  background: var(--paper-deep) !important;
+}
+
+.quarto-publication-shell .business-gallery-plate,
+.quarto-publication-shell .business-certificate-card {
+  border: 1px solid var(--rule) !important;
+  border-radius: 0 !important;
+  background: var(--paper) !important;
+  transform: none !important;
+}
+
+.quarto-publication-shell .business-gallery-plate::before {
+  content: "FIG. 01";
+  color: var(--data-blue);
+  background: var(--paper);
+  border-color: var(--rule);
+}
+
+.quarto-publication-shell .business-gallery-plate:nth-child(2)::before {
+  content: "FIG. 02";
+}
+
+.quarto-publication-shell .business-gallery-plate:nth-child(3)::before {
+  content: "FIG. 03";
+}
+
+.quarto-publication-shell .business-gallery-plate:nth-child(4)::before {
+  content: "FIG. 04";
+}
+
+.quarto-publication-shell .business-gallery-plate:nth-child(5)::before {
+  content: "FIG. 05";
+}
+
+.quarto-publication-shell .business-gallery-plate:nth-child(6)::before {
+  content: "FIG. 06";
+}
+
+.quarto-publication-shell .business-gallery-image-wrap {
+  border: 0 !important;
+}
+
+.quarto-publication-shell
+  :is(
+    .business-award-title h3,
+    .business-ledger-title h3,
+    .business-experience-role h3,
+    .business-case-file h3
+  ) {
+  color: var(--ink) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+.quarto-publication-shell
+  :is(
+    .business-award-title p,
+    .business-ledger-title p,
+    .business-award-description,
+    .business-detail-value,
+    .business-experience-role p,
+    .business-chapter-intro
+  ) {
+  color: var(--ink-muted) !important;
+}
+
+.quarto-publication-shell
+  :is(
+    .business-award-year,
+    .business-award-tag,
+    .business-ledger-meta,
+    .business-detail-label,
+    .business-contact-label
+  ) {
+  color: var(--data-blue) !important;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.quarto-publication-shell .business-detail-item {
+  background: var(--code-bg) !important;
+  border-left: 3px solid var(--data-blue) !important;
+}
+
+.quarto-publication-shell .business-case-visual {
+  background: var(--paper-deep) !important;
+}
+
+@media (max-width: 767px) {
+  .quarto-title-block {
+    padding-inline: 1.25rem !important;
+  }
+
+  .quarto-title-block .business-cover-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .quarto-section-heading {
+    grid-template-columns: 1fr !important;
+  }
+
+  .quarto-section-heading .business-chapter-intro {
+    grid-column: 1;
+  }
+}
+
+/* Notebook-specific geometry layered over the shared section components. */
+.clinical-research-shell {
+  background-color: var(--bg-900);
+}
+
+.clinical-topbar {
+  position: relative;
+  min-height: 4.75rem !important;
+  border-top: 0 !important;
+  border-bottom: 2px solid var(--line-500) !important;
+  box-shadow: 0 5px 0 color-mix(in srgb, var(--accent-300) 22%, transparent);
+}
+
+.clinical-topbar::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: -0.42rem;
+  height: 0.72rem;
+  background: radial-gradient(
+      circle,
+      var(--accent-300) 0 0.17rem,
+      transparent 0.2rem
+    )
+    0 0 / 2rem 100%;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.clinical-topbar::after {
+  content: "LAB NOTEBOOK / OPEN";
+  bottom: -2rem;
+  right: 1.5rem;
+  color: var(--accent-400);
+  font-size: 0.56rem;
+}
+
+.clinical-console {
+  grid-template-columns: 240px minmax(0, 1fr) !important;
+}
+
+.clinical-sidebar {
+  border-right: 2px solid var(--line-500) !important;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface-800) 84%, transparent),
+      transparent
+    ),
+    var(--surface-900) !important;
+}
+
+.clinical-sidebar::before {
+  content: "RESEARCH NOTEBOOK\A TGT / 2026\A STATUS: ACTIVE";
+  white-space: pre;
+  line-height: 1.8;
+  border: 0;
+  border-left: 3px solid var(--accent-300);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--accent-300) 10%, transparent);
+}
+
+.clinical-sidebar a {
+  border-radius: 0 !important;
+  border-bottom: 1px dashed var(--line-700) !important;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+}
+
+.clinical-sidebar a[aria-current="page"]::before {
+  content: ">";
+  margin-right: 0.5rem;
+  color: var(--accent-300);
+}
+
+.clinical-sidebar a::after {
+  content: "↗";
+  justify-self: end;
+  color: var(--line-500);
+  font-size: 0.72rem;
+}
+
+.clinical-workspace {
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 3rem,
+      color-mix(in srgb, var(--accent-500) 8%, transparent) 3rem 3.05rem,
+      transparent 3.05rem
+    ),
+    transparent !important;
+}
+
+.clinical-hero {
+  padding-top: clamp(5rem, 8vw, 8rem) !important;
+}
+
+.clinical-hero > .chakra-container {
+  position: relative;
+}
+
+.clinical-hero > .chakra-container::before {
+  content: "OBSERVATION LOG / 001";
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent-300);
+  font:
+    700 0.68rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.1em;
+}
+
+.clinical-hero .business-cover-grid > :first-child,
+.clinical-hero .business-subject-record,
+.clinical-hero .business-capability-register,
+.clinical-hero .business-evidence-register,
+.clinical-panel-heading {
+  border-radius: 0.2rem;
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--accent-500) 22%, transparent);
+}
+
+.clinical-hero .business-cover-grid > :first-child {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 2rem,
+      color-mix(in srgb, var(--line-700) 55%, transparent) 2rem 2.06rem
+    ),
+    var(--surface-800);
+}
+
+.clinical-hero .business-opening-statement {
+  border-left-color: var(--accent-300);
+  background: transparent;
+}
+
+.clinical-panel-heading {
+  border-left-width: 3px !important;
+  border-radius: 0.2rem;
+  background: var(--surface-800);
+}
+
+.clinical-panel-heading .business-chapter-kicker::before {
+  content: "[ ] ";
+  color: var(--accent-300);
+}
+
+.clinical-panel-heading .business-chapter-kicker::after {
+  content: "PROTOCOL";
+  margin-top: 0.65rem;
+  color: var(--accent-400);
+  font-size: 0.55rem;
+  letter-spacing: 0.14em;
+}
+
+.clinical-research-shell .business-ledger-row,
+.clinical-research-shell .business-experience-entry,
+.clinical-research-shell .business-award-row,
+.clinical-research-shell .business-writing-entry,
+.clinical-research-shell .business-skill-row,
+.clinical-research-shell .business-gallery-plate,
+.clinical-research-shell .business-case-file,
+.clinical-research-shell .business-certificate-card,
+.clinical-research-shell .business-contact-card {
+  border-radius: 0.2rem;
+  box-shadow: 3px 3px 0 color-mix(in srgb, var(--accent-500) 17%, transparent);
+}
+
+.clinical-research-shell .business-award-row,
+.clinical-research-shell .business-ledger-row,
+.clinical-research-shell .business-experience-entry {
+  background: color-mix(in srgb, var(--surface-800) 76%, transparent);
+}
+
+.clinical-research-shell .business-detail-item,
+.clinical-research-shell .business-inline-detail {
+  border-left-style: dashed;
+}
+
+.clinical-research-shell .business-gallery-grid {
+  position: relative;
+  padding: 1.25rem;
+  border: 1px dashed var(--line-500);
+  background:
+    linear-gradient(
+      135deg,
+      transparent 0 49%,
+      color-mix(in srgb, var(--accent-400) 8%, transparent) 49% 51%,
+      transparent 51%
+    ),
+    color-mix(in srgb, var(--surface-800) 42%, transparent);
+}
+
+.clinical-research-shell .business-gallery-plate {
+  position: relative;
+  padding: 0.85rem;
+  transform: rotate(-0.45deg);
+}
+
+.clinical-research-shell .business-gallery-plate:nth-child(even) {
+  transform: rotate(0.55deg);
+}
+
+.clinical-research-shell .business-gallery-plate::before {
+  content: "SPECIMEN";
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  z-index: 1;
+  padding: 0.25rem 0.35rem;
+  color: var(--accent-300);
+  background: color-mix(in srgb, var(--bg-900) 78%, transparent);
+  border: 1px solid var(--line-500);
+  font:
+    700 0.52rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.1em;
+}
+
+.clinical-research-shell .business-gallery-image-wrap {
+  border: 1px solid var(--line-500);
+  background: var(--bg-800);
+}
+
+.clinical-research-shell .business-case-file {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 1rem,
+      color-mix(in srgb, var(--accent-300) 12%, transparent) 1rem 1.08rem,
+      transparent 1.08rem
+    ),
+    var(--surface-800);
+}
+
+.clinical-research-shell .business-case-file::after {
+  content: "RESEARCH RECORD";
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  color: var(--accent-400);
+  font:
+    700 0.53rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.clinical-research-shell .business-case-visual {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 25% 20%,
+      var(--accent-300) 0 0.12rem,
+      transparent 0.15rem
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 1.5rem,
+      var(--line-700) 1.5rem 1.54rem
+    );
+  background-size:
+    100% 100%,
+    100% 100%;
+}
+
+.clinical-research-shell .business-case-image {
+  border: 1px solid var(--line-500);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--accent-500) 22%, transparent);
+}
+
+.clinical-research-shell .business-award-row::before,
+.clinical-research-shell .business-ledger-row::before {
+  content: "●";
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  color: var(--accent-300);
+  font-size: 0.65rem;
+}
+
+.clinical-research-shell .business-award-row,
+.clinical-research-shell .business-ledger-row {
+  position: relative;
+}
+
+.clinical-research-shell .business-certificate-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.clinical-research-shell .business-certificate-card::after {
+  content: "VERIFIED RECORD";
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  color: var(--accent-300);
+  font:
+    700 0.5rem/1 "JetBrains Mono",
+    monospace;
+  letter-spacing: 0.1em;
+  opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+  .portfolio-template-business {
+    background-image:
+      linear-gradient(
+        90deg,
+        transparent 0 1.1rem,
+        rgba(201, 92, 92, 0.18) 1.1rem 1.16rem,
+        transparent 1.16rem
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent 0 2rem,
+        var(--line-700) 2rem 2.06rem
+      );
+  }
+
+  .clinical-console {
+    grid-template-columns: 1fr !important;
+  }
+
+  .clinical-topbar::before,
+  .clinical-topbar::after {
+    display: none;
+  }
+
+  .clinical-hero > .chakra-container::before {
+    margin-top: 0.5rem;
   }
 }

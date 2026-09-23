@@ -1,6 +1,7 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 
 import { awards } from "../../data/portfolio";
+import biomedicalMark from "../../assets/minh-tam/generated/biomedical-mark.svg";
 import BusinessSectionHeading from "./BusinessSectionHeading";
 
 function BusinessAwards() {
@@ -20,9 +21,11 @@ function BusinessAwards() {
             key={`${award.title}-${award.year}`}
             className="business-award-row"
           >
-            {award.logo ? (
-              <Image src={award.logo} alt="" className="business-award-mark" />
-            ) : null}
+            <Image
+              src={award.logo ?? biomedicalMark}
+              alt={`${award.organization} generated mark`}
+              className="business-award-mark"
+            />
             <Box className="business-award-title">
               <Text as="h3">{award.title}</Text>
               <Text>{award.organization}</Text>

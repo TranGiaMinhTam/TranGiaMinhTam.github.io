@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-16T17:43:30Z",
+  "entryGraph": {
+    "javascript": { "bytes": 249238 },
+    "css": { "bytes": 30359 }
+  },
+  "source": "active U-04 production build"
+}

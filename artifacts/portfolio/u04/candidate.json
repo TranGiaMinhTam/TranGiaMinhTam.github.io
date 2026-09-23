@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-16T12:59:54.389Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 2149,
+      "gzipBytes": 465
+    },
+    {
+      "path": "assets/academic-transcript-CXsTtN_S.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 6817646,
+      "gzipBytes": 6069866
+    },
+    {
+      "path": "assets/cashew-polyphenol-v2LGBwmA.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 164808,
+      "gzipBytes": 161843
+    },
+    {
+      "path": "assets/data-analytics-CoMzTZ5g.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 831243,
+      "gzipBytes": 821014
+    },
+    {
+      "path": "assets/index-CKSDKDmT.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 30359,
+      "gzipBytes": 6153
+    },
+    {
+      "path": "assets/index-MjArhsr5.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 249170,
+      "gzipBytes": 77570
+    },
+    {
+      "path": "assets/molecular-docking-DMJS2jNU.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 255505,
+      "gzipBytes": 254025
+    },
+    {
+      "path": "assets/profile-8eTsEdlD.png",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 77650,
+      "gzipBytes": 77198
+    },
+    {
+      "path": "assets/protein-docking-research-BGZEkTUK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3490329,
+      "gzipBytes": 3074681
+    },
+    {
+      "path": "assets/sim-lse-certificate-B_uXG39D.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 51969,
+      "gzipBytes": 47056
+    },
+    {
+      "path": "assets/wico-poster-QNmcLCLw.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 7702179,
+      "gzipBytes": 7625142
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 517,
+      "gzipBytes": 315
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 249170,
+    "cssBytes": 30359,
+    "otherInitialBytes": 517,
+    "evidenceAssetBytes": 19391329,
+    "deployableBytes": 19673524
+  },
+  "budgets": {
+    "javascriptBytes": 250000,
+    "cssBytes": 30720,
+    "javascriptRegressionPercent": 12,
+    "cssRegressionPercent": "not-applicable"
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 223999,
+    "baselineCssBytes": 19150,
+    "javascriptChangePercent": 11.2371,
+    "cssChangePercent": 58.5326
+  },
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true
+}

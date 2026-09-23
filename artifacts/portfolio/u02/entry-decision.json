@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "decidedAt": "2026-09-14T17:09:13Z",
+  "candidate": "scientific-shell",
+  "decision": "approved",
+  "userResponse": "approve and continue",
+  "candidateChecks": {
+    "recovery": true,
+    "protectedSource": true,
+    "lockfileUnchanged": true,
+    "typescript": true,
+    "lint": true,
+    "focusedTests": true,
+    "fullTests": true,
+    "boundaries": true,
+    "javascriptBudget": true,
+    "cssBudget": true,
+    "responsiveThemeReview": true
+  },
+  "preSwitchHashesReconfirmed": true,
+  "postSwitchAttempt": {
+    "build": "passed",
+    "lint": "passed",
+    "recovery": "passed",
+    "fullTests": "failed-one-stale-u01-boundary-expectation",
+    "failedTarget": "src/portfolio/boundaries.test.ts",
+    "entryRollback": "completed-and-hash-verified"
+  },
+  "scopeAmendment": {
+    "approvedAt": "2026-09-15T00:42:52Z",
+    "file": "src/portfolio/boundaries.test.ts",
+    "safetyAssertionsPreserved": true
+  },
+  "retry": {
+    "fullTests": "passed-100-of-100",
+    "build": "passed",
+    "lint": "passed",
+    "boundaries": "passed-zero-findings",
+    "recovery": "passed-zero-findings",
+    "manifestBudgets": "passed",
+    "activeEntry": "scientific-shell"
+  },
+  "canSwitch": true,
+  "blocker": null
+}

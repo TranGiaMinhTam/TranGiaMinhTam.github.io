@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "decidedAt": "2026-09-17T03:14:30Z",
+  "response": "approve and continue",
+  "decision": "A",
+  "disposition": "approved-after-two-alignment-correction-cycles",
+  "priorResponses": [
+    "please fix all the text alignments. I can spot them across many places:",
+    "the IGCSE part is misaligned, please check"
+  ],
+  "corrections": [
+    "Replace undefined U-05 design-token references and unify text alignment across the candidate.",
+    "Remove the IGCSE-only horizontal offset and expand its verified-record region through the unused evidence column."
+  ],
+  "correctionStatus": "fulfilled",
+  "postCorrectionValidation": {
+    "strictTypes": "passed",
+    "focusedAcademicTests": 18,
+    "completeTests": 154,
+    "lint": "passed",
+    "candidateBuild": "passed",
+    "candidateMeasurement": "passed",
+    "candidateVerification": "passed",
+    "javascriptBytes": 268429,
+    "cssBytes": 42005,
+    "p0Findings": []
+  },
+  "limitations": [
+    "No automated browser-version matrix or mobile performance timing is claimed; rendered observations and approval were supplied by the user."
+  ],
+  "canActivate": true,
+  "liveEntryChanged": true
+}

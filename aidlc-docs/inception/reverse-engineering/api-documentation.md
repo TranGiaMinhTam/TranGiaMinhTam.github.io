@@ -1,86 +1,81 @@
 # API Documentation
 
-## REST APIs
+## External APIs
 
-No REST APIs are implemented. The portfolio is a static client-side application with no backend or database.
+No REST, GraphQL, RPC, database, or authenticated service API exists.
 
-## Internal APIs
+## Primary Internal APIs
 
-### Template Registry
-- **`getPortfolioTemplate(templateId: PortfolioTemplateId | string): PortfolioTemplate`**: Resolves a registered template and falls back to Engineering.
-- **`activePortfolioTemplate: PortfolioTemplate`**: Compatibility export for the source default selected by `src/data/template.ts`; runtime App rendering derives its active template from state.
-- **`portfolioTemplates: PortfolioTemplate[]`**: Registered Engineering, Neutral, and Business templates.
+### `PortfolioApp()`
 
-### `PortfolioTemplate`
-- **Fields**: `id`, `label`, `description`, `ShellComponent`, `JournalPostComponent`, `chapterLabels`, and `sectionComponents`.
-- **Section Contract**: `sectionComponents` is a complete `Record<SectionId, ComponentType>`.
-- **Current IDs**: `engineering`, `neutral`, and `business`.
+- Composes identity, research, academic, impact, and contact registries.
+- Wraps `PortfolioExperience` in `JournalRoute`.
 
-### App Shell
-- **`PortfolioApp({ initialTemplate? }): JSX.Element`**: Owns the active runtime template ID and resolves enabled navigation, template sections, layout mode, current hash, and local journal routes.
-- **`App(): JSX.Element`**: Renders `PortfolioApp` with the source default and any valid saved visitor preference.
-- **Journal Behavior**: A `#/journal/{slug}` hash renders `JournalPostPage`; otherwise App renders all enabled sections or the active multi-page section.
+### `PortfolioExperience({ sectionBodies })`
 
-### Runtime Template Selection
-- **`isPortfolioTemplateId(value): value is PortfolioTemplateId`**: Accepts only the three registered IDs.
-- **`getInitialPortfolioTemplateId(defaultTemplateId, storage?): PortfolioTemplateId`**: Restores a valid visitor choice, uses the source default when no choice exists, falls back to Engineering for corrupted state, and tolerates unavailable storage.
-- **`persistPortfolioTemplateId(templateId, storage?): void`**: Saves a valid visitor choice without allowing storage failures to block rendering.
-- **`PortfolioStyleSelector`**: Shared Chakra Menu radio selector rendered by every template shell.
-- **Storage key**: `portfolio-template-id`.
+- Reads theme and section-progress state.
+- Supplies navigation, registration, theme, findings, and bodies to `ObservatoryShell`.
 
-### `PortfolioShellProps`
-- **State**: `activeSection`, `activeTemplateId`, and `layoutMode`.
-- **Actions**: Section navigation, layout toggling, and typed template selection.
-- **Content**: Enabled navigation items, navigation-href resolver, and rendered section children.
+### `ObservatoryShell(props)`
 
-### Layout Hook
-- **`usePortfolioLayout(enabledSectionIds, scrollActiveSection): PortfolioLayoutState`**: Coordinates layout mode and navigation.
-- **`createSectionHash(sectionId): string`**: Returns a multi-page hash such as `#/projects`.
-- **`createAnchorHash(sectionId): string`**: Returns a single-page anchor such as `#projects`.
-- **`parseSectionHash(hash, enabledSectionIds): SectionId | undefined`**: Validates a section hash.
-- **`resolveSectionId(sectionId, enabledSectionIds, fallback): SectionId`**: Resolves unknown IDs safely.
-- **`readStoredLayoutMode` / `writeStoredLayoutMode`**: Access layout preference with storage failure fallbacks.
+- Inputs: active section, progress, theme, findings, navigation callbacks, registration callback, theme callback, and optional section-body registry.
+- Output: masthead, sticky navigation band, progress, ten registered sections, status note, and footer.
 
-### Navigation and Scroll Utilities
-- **`getEnabledNavigationItems(items)`**: Narrows navigation to enabled entries.
-- **`getEnabledSectionIds(items)`**: Returns enabled section IDs.
-- **`scrollToSection(sectionId)`**: Smooth-scrolls to a section.
-- **`useActiveSection(sectionIds, offset)`**: Tracks the active section from viewport geometry.
+### `SpecimenMasthead()`
 
-### Journal Utilities
-- **`createJournalPostHref(slug): string`**: Creates `#/journal/{slug}`.
-- **`parseJournalPostHash(hash): string | undefined`**: Extracts a local post slug from the hash.
+- Output: specimen code, Minh Tam brand name, research-field label, and active-profile signal.
+- Current limitation: accepts no theme-control slot or action props.
 
-### Shared UI APIs
-- **`ExternalAction`**: Renders accessible internal, external, mail, and download actions.
-- **`SectionShell`**: Frames shared section headings, descriptions, content, and next-section navigation.
-- **`ContentCard`**: Provides shared card surface behavior.
-- **`LogoMark`**: Resolves configured logo keys into visual marks.
-- **`PortfolioStyleSelector`**: Displays the current portfolio style and emits one of the three typed IDs.
+### `ThemeControl({ theme, onToggle })`
 
-## Data Models
+- Inputs: current `ThemeState` and toggle callback.
+- Behavior: exposes an accessible button naming the next theme and displays the current field label.
 
-### Portfolio Root
-- **Fields**: `profile`, `hero`, `navigation`, `about`, `education`, `experience`, `awards`, `projects`, `gallery`, `videos`, `blog`, `journalPosts`, `writing`, `skills`, and `certificates`.
-- **Validation**: Constructed with TypeScript `satisfies Portfolio`; tests verify key fields and links.
+### `ResearchRelationshipSummary({ domain, rows })`
 
-### Navigation and Sections
-- **`SectionId`**: Union of `home`, `about`, `education`, `experience`, `awards`, `projects`, `gallery`, `journal`, `skills`, and `contact`.
-- **`NavigationItem`**: `id`, `label`, and `enabled`.
+- Inputs: domain identifier and verified semantic rows.
+- Output: a visible captioned HTML table with marker, relationship, and verified-target columns.
 
-### Writing
-- **`WordPressWritingPost`**: External WordPress title, URL, image, date, category, summary, and topics.
-- **`LocalJournalPost`**: Local slug, hash URL, image, date, metadata, and imported Markdown content.
-- **`WritingEntry`**: Union of WordPress and local writing entries.
+### `RelationshipSummary({ rows, emphasizedQuestionId })`
 
-### Portfolio Evidence
-- **Models**: `Profile`, `HeroSection`, `AboutSection`, `EducationEntry`, `ExperienceEntry`, `AwardEntry`, `ProjectEntry`, `GalleryItem`, `VideoEntry`, `SkillCategory`, and `CertificateEntry`.
-- **Relationships**: Templates consume these shared records; actions use `ExternalLink` or `DownloadLink`; project and media arrays feed repeated presentation components.
+- Inputs: identity relationship rows and optional emphasized question.
+- Output: a visible captioned semantic table synchronized with the visual question constellation.
 
-## External Browser APIs
+### `TextDocumentPreview({ capability })`
 
-- `window.history.pushState` and hash events for static routing.
-- `window.localStorage` for layout and portfolio-style preferences.
-- `document.getElementById` and `scrollIntoView` for single-page navigation.
-- `window.location.href` with `mailto:` for contact submission.
-- Dialog, iframe, image, and PDF browser capabilities for media previews.
+- Current output: document glyph, kind, title, caption, provenance, and an external link.
+- Current constraint: it does not embed a PDF preview and exposes no modal state.
+
+### Legacy certificate preview contract
+
+- `Skills.tsx` uses a non-interactive first-page `<object>` preview inside a keyboard-activatable card.
+- Selecting a certificate opens a viewport-sized overlay with an `<iframe>`, close action, and new-tab action.
+- This is retained source evidence for the requested active-portfolio PDF experience, not an instruction to reactivate the legacy component.
+
+### Proposed shared media-viewer boundary
+
+- Input: published evidence record, title, caption, media kind, and source URL.
+- Behavior: render a lightweight preview; open a focus-managed dialog; support close, Escape, backdrop, and new-tab/download actions; restore focus to the trigger.
+- Fallback: present metadata and a direct action when embedded PDF or image rendering is unavailable.
+
+### `composePortfolioBodyRegistries(...registries)`
+
+- Inputs: distinct partial section-body registries.
+- Output: one immutable body registry.
+- Validation: duplicate section ownership is rejected.
+
+## Core Data Models
+
+- `SectionDefinition` and `SectionId` define the ten canonical sections.
+- `ThemeState` defines the selected theme, source, and explicit-choice state.
+- Domain catalog and selection types define verified identity, research, academic, tool, fieldwork, contact, and journal content.
+- Validation findings distinguish blocking source failures from recoverable presentation states.
+
+## Browser Contracts
+
+- Section routes use canonical hash identifiers such as `#identity` and `#laboratory-research`.
+- Journal uses a constrained lazy hash route.
+- Theme preference is stored locally when available.
+- Contact submission opens an encoded `mailto:` URL and stores no form data.
+- Resume download requires a local bundled PDF and an explicit download filename.
+- Document detail viewing must not navigate away by default and must remain usable by keyboard and screen reader.

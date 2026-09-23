@@ -46,8 +46,8 @@ const businessShellSource = readFileSync(
   "utf8",
 );
 
-const businessPalette = ["#3368a0", "#66a3bf", "#c8dfdb", "#f2efe7"];
-const businessTextPalette = ["#524646", "#fcf2e5"];
+const businessPalette = ["#07131b", "#0b2029", "#123a43", "#f2f9f3"];
+const businessTextPalette = ["#f2fbef", "#102f36", "#b8ed78", "#397b32"];
 const legacyBusinessColors = [
   "#100f14",
   "#18161c",
@@ -180,7 +180,7 @@ describe("portfolio theme accessibility safeguards", () => {
       ".portfolio-template-business .business-subject-record",
     );
 
-    expect(getHexToken(darkTheme, "text-300").toLowerCase()).toBe("#e8e0d5");
+    expect(getHexToken(darkTheme, "text-300").toLowerCase()).toBe("#b5d0c9");
     expect(emailRule).toContain("display: inline-flex;");
     expect(emailRule).toContain("align-self: center;");
     expect(emailRule).toContain("width: fit-content;");

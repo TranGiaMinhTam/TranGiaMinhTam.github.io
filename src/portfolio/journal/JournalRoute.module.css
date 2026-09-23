@@ -1,0 +1,204 @@
+.note {
+  width: min(calc(100% - clamp(2rem, 6vw, 6rem)), 82rem);
+  margin: clamp(2rem, 6vw, 6rem) auto;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: var(--border-thin) solid var(--color-rule);
+}
+
+.noteHeader {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.5rem, 5vw, 5rem);
+  border-block-end: var(--border-strong) solid var(--color-accent);
+}
+
+.indexBlock {
+  display: grid;
+  align-content: space-between;
+  min-height: 10rem;
+  padding: var(--space-4);
+  color: var(--color-accent-contrast);
+  background: var(--color-accent);
+  font-family: var(--font-mono);
+}
+
+.indexBlock strong {
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.8;
+}
+
+.noteHeader p:first-child,
+.notFound > p:first-child {
+  margin: 0;
+  color: var(--color-accent);
+  font: 750 0.76rem/1.4 var(--font-mono);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.noteHeader h1 {
+  max-width: 18ch;
+  margin: var(--space-4) 0;
+  font-size: clamp(2.4rem, 6vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  overflow-wrap: break-word;
+}
+
+.noteHeader > div:last-child > p:last-child {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.noteBody {
+  padding: 0 clamp(1.5rem, 5vw, 5rem) clamp(2rem, 6vw, 6rem);
+}
+
+.noteSection {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.3fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 4.5rem) 0;
+  border-block-end: var(--border-thin) solid var(--color-rule);
+}
+
+.sectionIndex {
+  display: grid;
+  align-content: start;
+  grid-template-columns: 3rem 1fr;
+  gap: var(--space-3);
+}
+
+.sectionIndex span {
+  color: var(--color-accent);
+  font: 800 0.8rem/1.5 var(--font-mono);
+}
+
+.sectionIndex h2 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+.prose,
+.valueList,
+.evidenceList,
+.omission {
+  width: min(100%, 68ch);
+  margin: 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.75;
+}
+
+.valueList,
+.evidenceList {
+  padding: 0;
+  list-style: none;
+}
+
+.valueList li {
+  padding: var(--space-3) 0;
+  border-block-end: var(--border-thin) solid var(--color-rule);
+}
+
+.valueList li::before {
+  content: "→";
+  margin-inline-end: var(--space-3);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+}
+
+.evidenceList {
+  display: grid;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.evidenceList li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface-elevated);
+  border-block-start: var(--border-thin) solid var(--color-data-positive);
+}
+
+.evidenceList p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
+.evidenceList a,
+.notFound a {
+  color: var(--color-accent);
+  font-weight: 750;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.notFound,
+.failure {
+  max-width: 60rem;
+  margin: clamp(3rem, 10vh, 8rem) auto;
+  padding: clamp(1.5rem, 5vw, 5rem);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border-block-start: 0.5rem solid var(--color-data-caution);
+}
+
+.notFound h1,
+.failure h1 {
+  max-width: 18ch;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1;
+  overflow-wrap: break-word;
+}
+
+.notFound code {
+  overflow-wrap: anywhere;
+}
+
+.noteHeader h1:focus,
+.notFound h1:focus {
+  outline: 0.2rem solid var(--color-focus);
+  outline-offset: 0.3rem;
+}
+
+@media (max-width: 48rem) {
+  .noteHeader,
+  .noteSection {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .indexBlock {
+    min-height: 0;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  .indexBlock strong {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .note {
+    width: calc(100% - 2rem);
+    margin-block: var(--space-5);
+  }
+
+  .noteHeader,
+  .noteBody {
+    padding-inline: var(--space-4);
+  }
+
+  .evidenceList li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

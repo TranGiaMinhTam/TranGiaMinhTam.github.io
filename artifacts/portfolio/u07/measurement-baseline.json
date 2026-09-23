@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T17:17:54.291Z",
+  "entryGraph": {
+    "javascript": { "bytes": 281183 },
+    "css": { "bytes": 46045 }
+  },
+  "evidenceAssetBytes": 24195314,
+  "appHash": "4078f40a9f9cc9b8f3b3f748ffabf2705b90ad9d51464a97abe3bc943881ece5",
+  "lockfileHash": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+  "source": "active U-06 production build"
+}

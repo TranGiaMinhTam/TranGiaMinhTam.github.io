@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-23T13:32:21.581Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 3448,
+      "gzipBytes": 714
+    },
+    {
+      "path": "assets/academic-transcript-CXsTtN_S.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 6817646,
+      "gzipBytes": 6069866
+    },
+    {
+      "path": "assets/borsworth-scholarship-DjU1eqcL.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 786452,
+      "gzipBytes": 623935
+    },
+    {
+      "path": "assets/cashew-polyphenol-v2LGBwmA.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 164808,
+      "gzipBytes": 161843
+    },
+    {
+      "path": "assets/data-analytics-CoMzTZ5g.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 831243,
+      "gzipBytes": 821014
+    },
+    {
+      "path": "assets/gys-brochure-BdTvVFMK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3099234,
+      "gzipBytes": 3049255
+    },
+    {
+      "path": "assets/index-Bu_evGSS.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 311030,
+      "gzipBytes": 95642
+    },
+    {
+      "path": "assets/index-CtQZhl5f.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 53435,
+      "gzipBytes": 9694
+    },
+    {
+      "path": "assets/JournalRouteEntry-5boNPNC9.js",
+      "category": "lazy-javascript",
+      "initial": false,
+      "bytes": 3213,
+      "gzipBytes": 1255
+    },
+    {
+      "path": "assets/JournalRouteEntry-Be31QMai.css",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 3772,
+      "gzipBytes": 1129
+    },
+    {
+      "path": "assets/molecular-docking-DMJS2jNU.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 255505,
+      "gzipBytes": 254025
+    },
+    {
+      "path": "assets/profile_pic-CFInx4sJ.jpg",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 1265478,
+      "gzipBytes": 1264893
+    },
+    {
+      "path": "assets/protein-docking-research-BGZEkTUK.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 3490329,
+      "gzipBytes": 3074681
+    },
+    {
+      "path": "assets/sim-lse-certificate-B_uXG39D.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 51969,
+      "gzipBytes": 47056
+    },
+    {
+      "path": "assets/Tran-Gia-Minh-Tam-Resume-CWJD25Bh.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 113775,
+      "gzipBytes": 73882
+    },
+    {
+      "path": "assets/wico-poster-QNmcLCLw.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 7702179,
+      "gzipBytes": 7625142
+    },
+    {
+      "path": "assets/worthgate-scholarship-C3JHRWYz.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 918299,
+      "gzipBytes": 793968
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 594,
+      "gzipBytes": 357
+    },
+    {
+      "path": "vite.svg",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 1497,
+      "gzipBytes": 775
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 311030,
+    "cssBytes": 53435,
+    "lazyJavascriptBytes": 0,
+    "lazyCssBytes": 0,
+    "otherInitialBytes": 594,
+    "evidenceAssetBytes": 25496917,
+    "deployableBytes": 25873906
+  },
+  "budgets": {
+    "javascriptBytes": 327680,
+    "cssBytes": 61440,
+    "javascriptRegressionPercent": 8,
+    "cssRegressionPercent": 12,
+    "lazyJavascriptBytes": "not-applicable",
+    "lazyCssBytes": "not-applicable",
+    "evidenceGrowthBytes": "not-applicable"
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 297578,
+    "baselineCssBytes": 50665,
+    "baselineEvidenceAssetBytes": 25496917,
+    "javascriptChangePercent": 4.5205,
+    "cssChangePercent": 5.4673,
+    "evidenceGrowthBytes": 0
+  },
+  "lazyEntry": "not-applicable",
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "measuredAt": "2026-09-15T16:54:23.932Z",
+  "manifest": ".vite/manifest.json",
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "category": "other-deployable",
+      "initial": false,
+      "bytes": 655,
+      "gzipBytes": 256
+    },
+    {
+      "path": "assets/academic-transcript-CXsTtN_S.pdf",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 6817646,
+      "gzipBytes": 6069866
+    },
+    {
+      "path": "assets/index-BAwpMBRC.css",
+      "category": "initial-css",
+      "initial": true,
+      "bytes": 19150,
+      "gzipBytes": 4586
+    },
+    {
+      "path": "assets/index-CXHwjl07.js",
+      "category": "initial-javascript",
+      "initial": true,
+      "bytes": 223931,
+      "gzipBytes": 70684
+    },
+    {
+      "path": "assets/profile-8eTsEdlD.png",
+      "category": "evidence-asset",
+      "initial": false,
+      "bytes": 77650,
+      "gzipBytes": 77198
+    },
+    {
+      "path": "index.html",
+      "category": "other-initial",
+      "initial": true,
+      "bytes": 536,
+      "gzipBytes": 328
+    }
+  ],
+  "totals": {
+    "javascriptBytes": 223931,
+    "cssBytes": 19150,
+    "otherInitialBytes": 536,
+    "evidenceAssetBytes": 6895296,
+    "deployableBytes": 7139568
+  },
+  "budgets": {
+    "javascriptBytes": 256000,
+    "cssBytes": 24576,
+    "regressionReviewPercent": 10
+  },
+  "comparison": {
+    "baselineJavascriptBytes": 893367,
+    "baselineCssBytes": 68577,
+    "javascriptChangePercent": -74.934,
+    "cssChangePercent": -72.0752
+  },
+  "findings": [],
+  "absoluteBudgetsPass": true,
+  "noRegression": true
+}

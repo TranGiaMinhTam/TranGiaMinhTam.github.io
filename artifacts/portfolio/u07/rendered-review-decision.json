@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-18T13:11:39Z",
+  "decision": "approved-for-activation",
+  "response": "Option A for all 12 questions",
+  "answers": {
+    "contactComposition": "A",
+    "contactReadabilityAlignment": "A",
+    "contactBehaviorHonesty": "A",
+    "dataStoriesDiscovery": "A",
+    "researchNoteComposition": "A",
+    "researchNoteContent": "A",
+    "routeStatesReturn": "A",
+    "wideResponsiveReview": "A",
+    "narrowResponsiveReview": "A",
+    "themeContrastReview": "A",
+    "accessibilityStressReview": "A",
+    "activationDecision": "A"
+  },
+  "correctionsRequested": [],
+  "activationAuthorized": true
+}

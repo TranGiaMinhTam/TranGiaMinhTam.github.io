@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "phase": "active-before-u03-resume-content",
+  "entryGraph": {
+    "javascript": {
+      "bytes": 297578
+    },
+    "css": {
+      "bytes": 50665
+    },
+    "initialRequestCount": 3
+  }
+}

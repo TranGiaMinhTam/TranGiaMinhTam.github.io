@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-09-16T13:05:24Z",
+  "content": {
+    "markdownSyntax": "passed",
+    "tables": "passed",
+    "paths": "passed",
+    "specialCharacters": "passed",
+    "whitespace": "passed",
+    "mermaidDiagrams": "not-applicable",
+    "asciiDiagrams": "not-applicable"
+  },
+  "workspace": {
+    "duplicateBrownfieldFiles": [],
+    "unplannedU04ApplicationFiles": [],
+    "dependencyChanges": false,
+    "infrastructureArtifacts": false,
+    "nonMarkdownFilesUnderDocumentation": false
+  },
+  "extensionCompliance": {
+    "securityBaseline": "disabled",
+    "propertyBasedTesting": "disabled",
+    "u04SecurityControls": "passed"
+  },
+  "findings": [],
+  "canProceed": true
+}

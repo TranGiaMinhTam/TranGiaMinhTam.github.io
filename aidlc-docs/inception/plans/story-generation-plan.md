@@ -1,132 +1,144 @@
-# Story Generation Plan
+# Header, Content, Evidence, and Resume Story Generation Plan
 
-## Purpose
+## Status
 
-Create user stories and personas for the student portfolio template work using the approved requirements in `aidlc-docs/inception/requirements/requirements.md`.
+**Completed: Part 1 approved and Part 2 generated on 2026-09-19. Personas and stories are awaiting final User Stories approval.**
 
-## Recommended Approach
+## Context
 
-Use a hybrid story breakdown:
+- Requirements source: `aidlc-docs/inception/requirements/requirements.md`.
+- Reverse-engineering source: `aidlc-docs/inception/reverse-engineering/`.
+- Enabled extensions: Security Baseline and full Property-Based Testing.
+- Required outputs: `aidlc-docs/inception/user-stories/personas.md` and `aidlc-docs/inception/user-stories/stories.md`.
 
-- **User Journey-Based** for student customization and GitHub Pages deployment.
-- **Feature-Based** for code maintainability, tests, accessibility, and documentation requirements.
-- **Persona-Based** for distinguishing student users, portfolio visitors, and template maintainers.
+## Story Approach Options
 
-This hybrid keeps stories close to real workflows while still covering technical template features that students and maintainers depend on.
+### A. Hybrid Journey and Feature Approach
 
-## Story Breakdown Options
+Organize stories around visitor journeys—orient, discover, inspect, download, contact—then group supporting archive, accessibility, performance, and maintainer capabilities beneath those journeys. This keeps user value visible while giving complex media controls clear ownership. **Recommended.**
 
-### User Journey-Based
+### B. Feature-Based Approach
 
-- **Benefits**: Best for beginner setup, customization, local run, and deployment flows.
-- **Trade-off**: Technical refactor requirements may need separate support stories.
+Group stories by masthead, resume content, archive, PDF viewer, image viewer, and responsive alignment. This maps directly to components but can fragment end-to-end visitor workflows.
 
-### Feature-Based
+### C. Persona-Based Approach
 
-- **Benefits**: Maps directly to requirements such as typed data files, shared navigation config, tests, and deployment base path handling.
-- **Trade-off**: Can feel less user-centered if used alone.
+Group stories under admissions reviewer, research mentor, assistive-technology visitor, mobile visitor, and maintainer. This emphasizes user needs but may duplicate shared capabilities across personas.
 
-### Persona-Based
+### D. Domain-Based Approach
 
-- **Benefits**: Highlights different needs for students, visitors, and maintainers.
-- **Trade-off**: Can duplicate stories across personas.
+Group stories under shell, identity, research, academics, evidence, impact, and contact. This aligns with code ownership but is less intuitive for stakeholder review.
 
-### Domain-Based
+### E. Epic-Based Approach
 
-- **Benefits**: Separates content, UI, deployment, and testing domains cleanly.
-- **Trade-off**: Less intuitive for non-technical reviewers.
-
-### Epic-Based
-
-- **Benefits**: Useful for grouping many related stories under larger outcomes.
-- **Trade-off**: Adds hierarchy that may be heavier than needed for this template.
+Create large hierarchical epics with sub-stories. This helps portfolio-level traceability but risks stories becoming larger than independently testable slices.
 
 ## Planning Questions
 
-Please answer each question by filling in the letter choice after the `[Answer]:` tag.
+## Question 1
 
-If none of the options match your preference, choose `X) Other` and describe your preference after the `[Answer]:` tag.
+Which persona set should the story artifacts use?
 
-### Question 1
+A) Admissions/scholarship reviewer, research mentor, mobile visitor, keyboard/screen-reader visitor, and portfolio maintainer (recommended)
+B) One general visitor persona and one maintainer persona
+C) Admissions reviewer, peer/student visitor, and maintainer only
+X) Other (please describe after [Answer]: tag below)
+
+[Answer]: A
+
+## Question 2
 
 Which story breakdown approach should be used?
 
-A) Hybrid: user journey-based for student workflows plus feature-based support stories
-B) User journey-based only
-C) Feature-based only
-D) Epic-based with grouped child stories
+A) Hybrid journey and feature approach described above (recommended)
+B) Feature-based approach
+C) Persona-based approach
+D) Domain-based approach
+E) Epic-based approach
 X) Other (please describe after [Answer]: tag below)
 
 [Answer]: A
 
-### Question 2
+## Question 3
 
-Which personas should be included?
+How granular should the stories be?
 
-A) Student template user, portfolio visitor, and template maintainer
-B) Student template user only
-C) Student template user and portfolio visitor only
-D) Student template user and teacher/mentor reviewer
+A) Small vertical slices, each delivering one independently testable visitor or maintainer outcome (recommended)
+B) Medium stories combining closely related outcomes such as inline preview and popup viewing
+C) Large stories aligned one-to-one with major page sections
 X) Other (please describe after [Answer]: tag below)
 
 [Answer]: A
 
-### Question 3
+## Question 4
 
-How detailed should acceptance criteria be?
+How should acceptance criteria be written?
 
-A) Detailed Given/When/Then criteria for each story
-B) Concise checklist criteria for each story
-C) Mixed: Given/When/Then for user workflows and checklist criteria for technical support stories
-X) Other (please describe after [Answer]: tag below)
-
-[Answer]: C
-
-### Question 4
-
-How should stories be prioritized?
-
-A) By student journey order: discover, customize, run locally, test, deploy, troubleshoot
-B) By implementation order: data extraction, shared utilities, docs, tests, deployment
-C) By value: fastest beginner wins first, then technical polish
+A) Given/When/Then criteria plus requirement IDs and applicable accessibility, responsive, security, privacy, performance, and fallback conditions (recommended)
+B) Concise checklist criteria with requirement IDs
+C) Narrative acceptance paragraphs without formal scenario structure
 X) Other (please describe after [Answer]: tag below)
 
 [Answer]: A
 
-### Question 5
+## Question 5
 
-How much story volume should be generated?
+How should archive completeness and deduplication be represented in stories?
 
-A) Focused set: about 8-12 stories
-B) Detailed set: about 13-18 stories
-C) Comprehensive set: 19+ stories covering edge cases and support scenarios
+A) Separate visitor discovery stories from a maintainer inventory/provenance story, with shared traceability between them (recommended)
+B) Combine archive inventory, deduplication, galleries, and documents into one story
+C) Include archive mechanics only as acceptance criteria under visitor gallery and document stories
 X) Other (please describe after [Answer]: tag below)
 
-[Answer]: B
+[Answer]: A
 
-## Execution Checklist
+## Question 6
 
-- [x] Read requirements and reverse engineering context.
-- [x] Validate selected story breakdown approach from answered plan questions.
-- [x] Create `aidlc-docs/inception/user-stories/personas.md`.
-- [x] Create `aidlc-docs/inception/user-stories/stories.md`.
-- [x] Ensure stories follow INVEST criteria.
-- [x] Include acceptance criteria for every story.
-- [x] Map personas to relevant stories.
-- [x] Verify stories cover all functional requirements.
-- [x] Verify stories cover maintainability, deployment, testing, accessibility, and documentation non-functional requirements.
-- [x] Update this plan's completed checkboxes as generation work is completed.
-- [x] Update `aidlc-docs/aidlc-state.md`.
-- [x] Present User Stories completion checkpoint for review.
+How should security and misuse scenarios appear in the stories?
 
-## Mandatory Artifacts
+A) Integrate applicable security acceptance criteria into each affected story and add one maintainer story for supply-chain/header verification (recommended)
+B) Put all security requirements in one standalone security story
+C) Leave security only in non-functional requirements and do not repeat it in stories
+X) Other (please describe after [Answer]: tag below)
 
-- [x] `aidlc-docs/inception/user-stories/stories.md`
-- [x] `aidlc-docs/inception/user-stories/personas.md`
+[Answer]: A
 
-## Extension Rule Compliance
+## Part 1 - Planning Checklist
 
-| Extension              | Status   | Rationale                                    |
-| ---------------------- | -------- | -------------------------------------------- |
-| Security Baseline      | Disabled | User opted out during Requirements Analysis. |
-| Property-Based Testing | Disabled | User opted out during Requirements Analysis. |
+- [x] Step 1 - Validate and document why User Stories add value.
+- [x] Step 2 - Load approved requirements and current brownfield context.
+- [x] Step 3 - Define journey-, feature-, persona-, domain-, and epic-based alternatives.
+- [x] Step 4 - Create focused questions for personas, breakdown, granularity, acceptance format, archive ownership, and security coverage.
+- [x] Step 5 - Include mandatory persona, INVEST, acceptance, traceability, extension, and validation work in the generation checklist.
+- [x] Step 6 - Validate Markdown structure, option exclusivity, final Other choices, paths, and empty Answer tags.
+- [x] Step 7 - Receive and validate answers to all six questions. Option A was selected for every question.
+- [x] Step 8 - Resolve any contradiction or ambiguity through a dedicated clarification file. No contradiction or ambiguity was found; no clarification file was required.
+- [x] Step 9 - Present the completed story-generation approach for explicit approval. The user approved the plan with all Option A decisions.
+- [x] Step 10 - Record explicit plan approval and begin Part 2.
+
+## Part 2 - Generation Checklist
+
+- [x] Step 11 - Generate `personas.md` with approved archetypes, goals, behaviors, accessibility/context needs, and relevant journey mappings.
+- [x] Step 12 - Define the approved journey and feature group structure.
+- [x] Step 13 - Generate small user stories in the approved format and verify each against INVEST criteria.
+- [x] Step 14 - Add Given/When/Then acceptance criteria, requirement IDs, persona mappings, and applicable fallback paths.
+- [x] Step 15 - Add privacy and security misuse acceptance to affected stories and a supply-chain/header verification story.
+- [x] Step 16 - Cover masthead/theme/resume, hidden summaries, layout alignment, resume-led content, archive completeness, format conversion, PDFs, images, performance, existing-route preservation, and recovery.
+- [x] Step 17 - Verify every FR, NFR, PBT requirement, and applicable SECURITY requirement maps to at least one story or documented cross-cutting acceptance rule.
+- [x] Step 18 - Validate that no story invents facts, exposes the phone number in page content, or treats source-document text as instruction.
+- [x] Step 19 - Validate Markdown, tables, identifiers, links, paths, and parsing compatibility.
+- [x] Step 20 - Update every plan checkbox and AI-DLC state in the same interaction as work completion.
+- [x] Step 21 - Present generated personas and stories for explicit approval before Workflow Planning.
+
+## Mandatory Artifact Rules
+
+- `personas.md` must define approved archetypes and map them to relevant stories.
+- `stories.md` must contain independently testable user stories with acceptance criteria.
+- Stories must be Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+- Every story must reference its persona and requirements.
+- Cross-cutting accessibility, security, privacy, performance, and fallback criteria must be explicit rather than assumed.
+
+## Extension Compliance for Planning
+
+- **Security Baseline**: Compliant. The plan requires per-story misuse/security criteria and explicit supply-chain/header verification coverage.
+- **Property-Based Testing**: N/A for story-generation mechanics. Stories will trace PBT requirements, while enforceable property identification begins during Functional Design.

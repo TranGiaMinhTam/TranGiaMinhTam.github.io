@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-17T06:46:50Z",
+  "path": "src/App.tsx",
+  "sha256": "761f8a588bc2152a81fc970fb743843f566adb82523a837880ffbf2d78b3be8e",
+  "content": "import { academicEvidenceBodyRegistry } from './portfolio/academics'\nimport { identityQuestionBodyRegistry } from './portfolio/identity'\nimport { composePortfolioBodyRegistries, researchDataBodyRegistry } from './portfolio/research'\nimport { PortfolioExperience } from './portfolio/shell/PortfolioExperience'\n\nconst portfolioBodyRegistry = composePortfolioBodyRegistries(\n  identityQuestionBodyRegistry,\n  researchDataBodyRegistry,\n  academicEvidenceBodyRegistry,\n)\n\nexport function PortfolioApp() {\n  return <PortfolioExperience sectionBodies={portfolioBodyRegistry} />\n}\n\nfunction App() {\n  return <PortfolioApp />\n}\n\nexport default App\n"
+}

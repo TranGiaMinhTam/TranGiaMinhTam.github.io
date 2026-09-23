@@ -2,146 +2,110 @@
 
 ## System Overview
 
-This project is a static React 19 and TypeScript portfolio built with Vite. `PortfolioApp` combines a three-template registry, browser-persisted runtime style selection, typed portfolio data, hash-based layout routing, local journal routing, and shared navigation. Engineering, Neutral, and Business consume the same data model while supplying distinct shells and selected section components. Chakra UI supplies responsive primitives, custom CSS variables define template themes, and GitHub Actions deploys the Vite build to GitHub Pages.
+This is a single-package static React 19 and TypeScript portfolio built by Vite. `PortfolioApp` composes five domain registries into ten section bodies and wraps the continuous portfolio in a lazy Journal hash route. `PortfolioExperience` owns theme and section-progress hooks. `ObservatoryShell` renders the masthead, sticky navigation, progress, registered sections, and footer. Local typed records, CSS Modules, images, and documents supply all content. There is no backend, database, authentication layer, or runtime application API.
 
 ## Architecture Diagram
 
 ```mermaid
 flowchart TD
-    Browser["Browser"]
-    App["App Shell"]
-    Selection["Template Selection State"]
-    Layout["Layout and Hash Routing"]
-    Registry["Template Registry"]
-    Engineering["Engineering Template"]
-    Neutral["Neutral Template"]
-    Business["Business Template"]
-    Shared["Shared Section Components"]
-    Data["Typed Portfolio Data"]
-    Journal["Markdown Journal Content"]
-    Assets["Images, Resume, and Certificates"]
-    Build["Vite Build"]
-    Actions["GitHub Actions"]
-    Pages["GitHub Pages"]
-
-    Browser --> App
-    App --> Selection
-    App --> Layout
-    App --> Registry
-    Registry --> Engineering
-    Registry --> Neutral
-    Registry --> Business
-    Engineering --> Shared
-    Neutral --> Shared
-    Business --> Shared
-    Engineering --> Data
-    Neutral --> Data
-    Business --> Data
-    Data --> Journal
-    Data --> Assets
-    Actions --> Build
-    Build --> Pages
+    Browser["Browser"] --> App["PortfolioApp"]
+    App --> Journal["JournalRoute"]
+    Journal --> Experience["PortfolioExperience"]
+    Experience --> Shell["ObservatoryShell"]
+    App --> Registries["Composed section registries"]
+    Registries --> Shell
+    Shell --> Sections["Ten registered sections"]
+    Sections --> Models["Validated local models"]
+    Models --> Assets["Local images and documents"]
+    Workflow["GitHub Actions"] --> Build["TypeScript and Vite build"]
+    Build --> Pages["GitHub Pages"]
     Pages --> Browser
 ```
 
-### Text Alternative
-
-The browser loads the App shell. App restores a valid visitor style or uses the student-configured default, resolves navigation and hash routing, and renders the selected registry entry. All three templates consume shared typed data, Markdown journal content, and bundled assets. GitHub Actions runs Vite and deploys the output to GitHub Pages.
+Text alternative: the app routes between the continuous portfolio and lazy Journal page. The portfolio experience supplies state to the shell, which resolves ten section bodies from composed registries backed by validated local models and assets. GitHub Actions builds and deploys the static site.
 
 ## Component Descriptions
 
-### Application Package
-- **Purpose**: Static student portfolio frontend.
-- **Responsibilities**: Own runtime template selection, resolve journal routes, layout mode, navigation state, and visible section rendering.
-- **Dependencies**: React, Chakra UI, template registry, layout hook, typed data, and browser history APIs.
+### React Application
+
+- **Purpose**: Static portfolio entry point.
+- **Responsibilities**: Compose domain registries and route between the portfolio and Journal.
+- **Dependencies**: React, domain registry modules, Journal route, and portfolio shell.
 - **Type**: Application.
 
-### Template Registry
-- **Purpose**: Provide swappable presentation strategies.
-- **Responsibilities**: Register Engineering, Neutral, and Business; resolve valid IDs; fall back to Engineering; and expose complete shell, journal, chapter, and section mappings.
-- **Dependencies**: Template definitions and shared `SectionId` contract.
-- **Type**: Application model.
+### Shell and Navigation
 
-### Engineering Template
-- **Purpose**: Present technical and career evidence in a structured format.
-- **Responsibilities**: Map all sections to the baseline shared components.
-- **Dependencies**: Shared section components and portfolio data.
-- **Type**: Presentation.
+- **Purpose**: Present the branded continuous portfolio frame.
+- **Responsibilities**: Masthead, sticky section rail, theme control, progress, hash navigation, registered sections, and footer.
+- **Dependencies**: Browser APIs, section registry, theme/progress hooks, and CSS tokens.
+- **Type**: Presentation and client state.
 
-### Neutral Template
-- **Purpose**: Present multidisciplinary evidence through a balanced editorial format.
-- **Responsibilities**: Supply a magazine masthead, editorial Hero, About, and Projects while reusing compatible shared sections.
-- **Dependencies**: Shared data, shared components, media, and Neutral CSS variables.
-- **Type**: Presentation.
+### Domain Modules
 
-### Business Template
-- **Purpose**: Present evidence through a professional consulting-report format.
-- **Responsibilities**: Supply a report header and contents rail plus executive Hero, About, and Projects while reusing compatible shared sections.
-- **Dependencies**: Shared data, shared components, media, and Business CSS variables.
-- **Type**: Presentation.
+- **Purpose**: Present verified identity, research, academic, evidence, impact, contact, and journal content.
+- **Responsibilities**: Validate records, create view models, render accessible content, and expose focused verification boundaries.
+- **Dependencies**: React, CSS Modules, shared primitives, typed source records, and local evidence.
+- **Type**: Model and presentation.
 
-### Runtime Template Selection
-- **Purpose**: Let each visitor choose how the same portfolio content is presented.
-- **Responsibilities**: Validate stored IDs, use `src/data/template.ts` as the no-preference default, persist valid choices, and expose one shared selector in every shell header.
-- **Dependencies**: Browser local storage, the template registry, Chakra Menu, and React state.
-- **Type**: Application behavior.
+### Journal Route
 
-### Layout and Journal Routing
-- **Purpose**: Support continuous, section-routed, and local-post experiences without a server router.
-- **Responsibilities**: Persist layout mode, parse hashes, render one or all sections, and resolve `#/journal/{slug}` routes.
-- **Dependencies**: Browser history, local storage, navigation configuration, and journal utilities.
-- **Type**: Application behavior.
+- **Purpose**: Load the fact-only research note outside the initial portfolio bundle.
+- **Responsibilities**: Parse the journal hash, lazy-load the route entry, handle loading/error/not-found states, and return to the portfolio.
+- **Dependencies**: React lazy loading, browser hashes, and research-note catalog.
+- **Type**: Client route.
 
-### UI Provider and Shared UI
-- **Purpose**: Provide theming and reusable presentation primitives.
-- **Responsibilities**: Configure Chakra, color mode, actions, section shells, logo marks, tooltips, and toasts.
-- **Dependencies**: Chakra UI, Emotion, next-themes, and React Icons.
-- **Type**: Shared UI support.
+### Evidence Preview and Modal Boundary
 
-### GitHub Pages Workflow
-- **Purpose**: Build and publish the static portfolio.
-- **Responsibilities**: Install Node dependencies, derive the repository base path, run the build, and deploy `dist/`.
-- **Dependencies**: GitHub Actions and Vite.
-- **Type**: Deployment automation.
+- **Current active behavior**: `TextDocumentPreview` renders metadata and an external-link action; it intentionally renders no `iframe`, `object`, or modal.
+- **Original-template behavior**: retained `Skills.tsx` renders first-page PDF `<object>` previews and a viewport-sized `<iframe>` modal with close and new-tab actions.
+- **Reusable behavior**: retained Gallery components already implement keyboard-triggered image dialogs.
+- **Requested direction**: adapt the proven preview/modal interaction to the active scientific portfolio without reactivating the legacy template.
+
+### Resume and Full Archive Inputs
+
+- **Resume source**: `/Users/nhamhhung/ASEAN/Resume_Minh Tam.pdf`, a four-page, 165 KB Canva PDF.
+- **Archive source**: `src/assets/minh-tam/`, containing 122 files and approximately 293 MB.
+- **Archive mix**: 94 JPEG, 20 PDF, 3 PNG, 3 HEIC, 1 SVG, and 1 DOCX file.
+- **Current publication boundary**: the active evidence manifest publishes ten curated evidence records rather than the full source archive.
+- **Constraint**: the resume must be copied into the workspace during implementation before it can become a downloadable Vite asset.
+
+### GitHub Pages Pipeline
+
+- **Purpose**: Build and publish the static application.
+- **Responsibilities**: Install dependencies, derive the Vite base path, build, upload, and deploy.
+- **Dependencies**: GitHub Actions, Node.js 20, npm, TypeScript, and Vite.
+- **Type**: Infrastructure automation.
 
 ## Data Flow
 
 ```mermaid
 sequenceDiagram
     participant Visitor
-    participant App
-    participant Selection
-    participant Layout
-    participant Template
-    participant Data
-
-    Visitor->>App: Open portfolio or hash URL
-    App->>Selection: Restore saved style or source default
-    App->>Layout: Resolve layout and active route
-    App->>Template: Resolve active template
-    Template->>Data: Read shared portfolio content
-    Template-->>Visitor: Render selected presentation
-    Visitor->>Selection: Choose another portfolio style
-    Selection-->>App: Persist valid template ID
-    App-->>Visitor: Replace shell and presentation in place
-    Visitor->>Layout: Navigate or switch layout mode
-    Layout-->>App: Update hash and visible section
-    App-->>Visitor: Render section or journal post
+    participant Route as JournalRoute
+    participant Experience as PortfolioExperience
+    participant Shell as ObservatoryShell
+    participant Registry as Section registries
+    Visitor->>Route: Open URL or hash
+    Route->>Experience: Render portfolio route
+    Experience->>Shell: Supply theme and progress state
+    Shell->>Registry: Resolve ten section bodies
+    Registry-->>Shell: Return verified domain components
+    Shell-->>Visitor: Render continuous portfolio
 ```
 
-### Text Alternative
-
-A visitor opens the site, App restores a valid saved style or uses the source default, resolves the URL, and renders the matching template over shared data. A style change replaces the presentation while route and layout state stay owned by App. Navigation updates the URL and visible content. Local journal hashes render a dedicated post page; other section hashes render one or all template sections depending on layout mode.
+Text alternative: the Journal route selects the portfolio, the experience supplies client state, and the shell resolves ten verified section bodies before rendering them to the visitor.
 
 ## Integration Points
 
-- **External APIs**: None.
-- **Databases**: None.
-- **Third-party Services**: GitHub and GitHub Pages, LinkedIn, WordPress, YouTube embeds, Google Fonts, and the visitor's email client through `mailto:`.
-- **Browser APIs**: History, hash changes, local storage for layout and template preferences, scrolling, and media/dialog interactions.
+- **External APIs and databases**: None.
+- **Static hosting**: GitHub Pages.
+- **External links**: Verified evidence and configured portfolio actions.
+- **Email client**: Encoded local `mailto:` handoff; no site-side submission.
+- **Browser APIs**: History, hash, local storage, scrolling, IntersectionObserver, and images.
+- **Embedded document viewer**: Browser-native PDF rendering through `<object>` or `<iframe>`, with a fallback and new-tab access when unsupported.
 
 ## Infrastructure Components
 
-- **CDK Stacks**: None.
-- **Deployment Model**: GitHub Actions builds a static Vite artifact and deploys it to GitHub Pages.
-- **Networking**: Public static hosting with no API server, private network, or database.
+- **Server infrastructure**: None.
+- **Deployment model**: GitHub Actions builds `dist/` and publishes it to GitHub Pages.
+- **Environment configuration**: `VITE_BASE_PATH` supports root and project Pages URLs.

@@ -1,60 +1,52 @@
-import photo1 from '../assets/photo_1.jpg'
-import photo2 from '../assets/photo_2.jpg'
-import photo3 from '../assets/photo_3.jpg'
-import photo4 from '../assets/photo_4.jpg'
-import photo5 from '../assets/photo_5.jpg'
-import photo6 from '../assets/photo_6.jpg'
-import photo7 from '../assets/photo_7.jpg'
+import kyotoSummit from '../assets/minh-tam/gallery/kyoto-summit.jpg'
+import wico from '../assets/minh-tam/gallery/wico.jpg'
+import gys from '../assets/minh-tam/gallery/gys.jpg'
+import nuiChuaCertificate from '../assets/minh-tam/gallery/nui-chua-certificate.jpg'
+import debate from '../assets/minh-tam/gallery/debate.jpg'
+import namCatTien from '../assets/minh-tam/gallery/nam-cat-tien.jpg'
 import type { GalleryItem } from '../types/portfolio'
 
 export const gallery = [
   {
-    id: 'zhonghua-secondary-school',
-    src: photo1,
-    alt: 'Gallery Image 1',
-    title: 'Zhonghua Secondary School',
-    description: "My first experience studying with local students in Singapore, where I eventually completed the GCE O-levels with 7 A's.",
+    id: 'kyoto-sdgs-youth-summit',
+    src: kyotoSummit,
+    alt: 'Tran Gia Minh Tam and fellow delegates at the Kyoto SDGs Youth Summit',
+    title: 'Kyoto SDGs Youth Summit',
+    description: 'Representing Vietnam as a full-scholarship delegate and collaborating with international students on sustainability challenges.',
   },
   {
-    id: 'saint-andrews-junior-college',
-    src: photo2,
-    alt: 'Gallery Image 2',
-    title: "Saint Andrew's Junior College",
-    description: "My next 2 years as a student there, where I also became a Student Councillor and completed the GCE A-levels with 6 A's.",
+    id: 'wico-world-invention-creativity-olympic',
+    src: wico,
+    alt: 'World Invention Creativity Olympic award presentation with Tran Gia Minh Tam',
+    title: 'World Invention Creativity Olympic',
+    description: 'Presenting the cashew testa research project at an international innovation competition in Korea.',
   },
   {
-    id: 'national-university-of-singapore',
-    src: photo3,
-    alt: 'Gallery Image 3',
-    title: 'National University of Singapore',
-    description: "I was fortunate enough to receive 3 full-scholarship offers from NUS, NTU and SUTD. After careful ponderation, I chose to pursue a Bachelor's in Computer Science with Honours at NUS.",
+    id: 'global-youth-summit',
+    src: gys,
+    alt: 'Global Youth Summit finalist presentation with student team members',
+    title: 'Global Youth Summit',
+    description: 'Working with teammates on a cashew testa valorization project and reaching the Senior Division Finals.',
   },
   {
-    id: 'university-of-texas-at-austin',
-    src: photo4,
-    alt: 'Gallery Image 4',
-    title: 'The University of Texas at Austin',
-    description: "After completing undergraduate studies at NUS, my passion for Computer Science grew strong enough to warrant another academic pursuit at the University of Texas, Austin for a Master's Degree in Computer Science.",
+    id: 'nui-chua-sea-turtle-conservation',
+    src: nuiChuaCertificate,
+    alt: 'Nui Chua National Park sea turtle conservation certificate',
+    title: 'Sea Turtle Conservation',
+    description: 'Supporting sea turtle conservation and community education during volunteer work at Nui Chua National Park.',
   },
   {
-    id: 'sea-limited',
-    src: photo5,
-    alt: 'Gallery Image 5',
-    title: 'Sea Limited',
-    description: 'During my final year in NUS, I also landed an internship as a Big Data Analyst at Sea Limited - the parent company behind Shopee and Garena. After its completion, I received a return offer as a Data Engineer in the Core Data Platform team.',
+    id: 'book-week-debate',
+    src: debate,
+    alt: 'Vinschool Book Week Debate Competition certificate',
+    title: 'Competitive Debate',
+    description: 'Building argumentation, critical-thinking, and public-speaking skills through inter-school debate.',
   },
   {
-    id: 'rakuten-asia',
-    src: photo6,
-    alt: 'Gallery Image 6',
-    title: 'Rakuten Asia Pte Ltd',
-    description: 'Hoping to gain a diverse range of skillsets and experiences, I ventured out and landed a role as a Software Engineer in Rakuten Asia, under the Global Ad Tech Supervisory Department.',
+    id: 'nam-cat-tien-wildlife-conservation',
+    src: namCatTien,
+    alt: 'Wildlife conservation volunteering at Nam Cat Tien National Park',
+    title: 'Wildlife Conservation',
+    description: 'Taking part in field volunteering for biodiversity protection and environmental awareness at Nam Cat Tien National Park.',
   },
-  {
-    id: 'torilab',
-    src: photo7,
-    alt: 'Gallery Image 7',
-    title: 'Torilab',
-    description: 'Seeking an opportunity to return back home to Vietnam, I joined Torilab - an early-stage AI startup headquartered in Japan - as a Data Engineer under the Business Intelligence (BI) team.',
-  }
 ] satisfies GalleryItem[]

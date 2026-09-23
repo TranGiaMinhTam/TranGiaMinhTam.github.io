@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-15T16:55:43Z",
+  "unit": "U-03 Identity and Questions",
+  "status": "active-and-verified",
+  "activeEntry": {
+    "appSha256": "bc61903e381be228cef404331e838d8fc33bb0859156736bc936f0316bf5f2f3",
+    "identityBodyActive": true,
+    "questionsBodyActive": true,
+    "temporaryBodyCount": 8
+  },
+  "dependencies": {
+    "packageJsonSha256": "2934c897bbcf0a73c5776cd45c90043b5483529c6072722bfb800ac6eb0a9bcb",
+    "lockfileSha256": "db382652e91d7bd4ab3c154cf79d53b6b26ecb4430efe5961273572ce25b9bb1",
+    "lockfileChangedDuringU03": false
+  },
+  "productionBuild": {
+    "transformedModules": 69,
+    "javascriptBytes": 223999,
+    "javascriptGzipBytes": 70718,
+    "cssBytes": 19150,
+    "cssGzipBytes": 4586,
+    "portraitBytes": 77650,
+    "transcriptBytes": 6817646,
+    "absoluteBudgetsPass": true
+  },
+  "pendingCv": {
+    "visibleLabel": "Download CV",
+    "statusText": "Available soon",
+    "enabled": false,
+    "hasFabricatedUrl": false,
+    "nextAction": "Register and enable the real CV only after the user supplies its file."
+  },
+  "extensions": {
+    "securityBaseline": "disabled",
+    "propertyBasedTesting": "disabled"
+  }
+}

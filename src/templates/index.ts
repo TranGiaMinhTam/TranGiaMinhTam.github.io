@@ -1,17 +1,8 @@
-import { selectedTemplateId } from "../data/template";
 import { businessTemplate } from "./business";
-import { engineeringTemplate } from "./engineering";
-import type { PortfolioTemplate, PortfolioTemplateId } from "./types";
+import type { PortfolioTemplate } from "./types";
 
-export const portfolioTemplates = [
-  engineeringTemplate,
-  businessTemplate,
-] satisfies PortfolioTemplate[];
+export const portfolioTemplates = [businessTemplate] satisfies PortfolioTemplate[];
 
-export const getPortfolioTemplate = (
-  templateId: PortfolioTemplateId | string,
-): PortfolioTemplate =>
-  portfolioTemplates.find((template) => template.id === templateId) ??
-  engineeringTemplate;
+export const getPortfolioTemplate = (): PortfolioTemplate => businessTemplate;
 
-export const activePortfolioTemplate = getPortfolioTemplate(selectedTemplateId);
+export const activePortfolioTemplate = getPortfolioTemplate();

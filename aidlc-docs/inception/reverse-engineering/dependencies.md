@@ -4,64 +4,33 @@
 
 ```mermaid
 flowchart TD
-    Main["main.tsx"]
-    Provider["UI Provider"]
-    App["App Shell"]
-    Selection["Template Selection"]
-    Registry["Template Registry"]
-    Templates["Template Definitions"]
-    Components["Section Components"]
-    Hooks["Layout Hook"]
-    Data["Typed Data"]
-    Utils["Shared Utilities"]
-    Content["Journal Content"]
-    Assets["Static Assets"]
-
-    Main --> Provider
-    Provider --> App
-    App --> Selection
-    App --> Registry
-    App --> Hooks
-    Registry --> Templates
-    Templates --> Components
-    Components --> Data
-    Components --> Utils
-    Data --> Content
-    Data --> Assets
+    App["Application entry"] --> Route["Journal route"]
+    App --> Registries["Domain registries"]
+    Route --> Shell["Portfolio shell"]
+    Registries --> Models["Domain models"]
+    Registries --> Shared["Shared primitives"]
+    Shell --> Registry["Section registry"]
+    Shell --> Browser["Browser adapters"]
+    Models --> Sources["Verified local sources"]
+    Sources --> Assets["Evidence assets"]
 ```
 
-### Text Alternative
+Text alternative: the application entry uses the Journal route and domain registries. The route renders the shell; registries use domain models and shared primitives; the shell uses the section registry and browser adapters; models use verified local sources and evidence assets.
 
-The entrypoint mounts the UI provider and App. App owns template selection and resolves the registry and layout hook. The registry loads three template definitions; templates provide shells and select section components. Components consume typed data and utilities, while data modules import local content and assets.
+## External Runtime Dependencies
 
-### Key Internal Relationships
+- `react` and `react-dom` 19.2.3 - active UI rendering.
+- `react-markdown` 10.1.0 - active research-note rendering.
+- `@chakra-ui/react`, `@chakra-ui/icons`, `@emotion/react`, `next-themes`, `react-icons`, `tailwindcss`, and `@tailwindcss/vite` - installed dependencies retained mainly for legacy presentation or build integration.
 
-- `src/App.tsx` depends on navigation data, layout behavior, journal parsing, template-selection persistence, and the three-template registry.
-- `src/templates/index.ts` depends on the configured source-default ID and all three template definitions.
-- Every template depends on the complete `SectionId` contract.
-- Engineering, Neutral, and Business shells depend on the shared `PortfolioStyleSelector`.
-- Neutral and Business components depend on shared portfolio data, actions, and their scoped presentation rules.
-- Shared and Engineering components depend on the same typed data modules and shared utilities.
-- Journal data depends on Markdown content and journal hash helpers.
-- Tests depend on the registry, data contracts, App behavior, and jsdom provider setup.
+## Development Dependencies
 
-## External Dependencies
+- TypeScript, Vite, SWC React, and vite-tsconfig-paths - compilation and bundling.
+- ESLint and TypeScript ESLint packages - static quality checks.
+- Vitest, Testing Library, jest-dom, and jsdom - model and DOM verification.
+- Prettier - formatting compatibility.
 
-- **`@chakra-ui/react` ^3.30.0** - UI primitives, responsive styling, drawers, dialogs, and controls; MIT.
-- **`@chakra-ui/icons` ^2.2.4** - Chakra icon package; MIT; no direct source usage identified.
-- **`@emotion/react` ^11.14.0** - Chakra styling runtime; MIT.
-- **`@tailwindcss/vite` ^4.1.18 and `tailwindcss` ^4.1.18** - Utility CSS integration; MIT.
-- **`next-themes` ^0.4.6** - Theme state; MIT.
-- **`react` and `react-dom` ^19.2.0** - UI framework and DOM renderer; MIT.
-- **`react-icons` ^5.5.0** - Icon components; MIT.
-- **`react-markdown` ^10.1.0** - Safe CommonMark rendering for local journal posts; MIT.
-- **`vite` ^7.2.4 and `@vitejs/plugin-react-swc` ^4.2.2** - Development and build pipeline; MIT.
-- **`vitest` ^4.1.9, Testing Library, and jsdom** - Automated tests; MIT.
-- **ESLint, TypeScript ESLint, and Prettier** - Static quality and formatting tools; MIT.
+## Infrastructure Dependencies
 
-## Dependency Health Notes
-
-- The stack is current and compatible with the documented Node 20 workflow.
-- The project has both `eslint.config.js` and `eslint.config.ts`; the active configuration should be clarified or consolidated later.
-- Runtime template selection reuses Chakra Menu, React state, and browser storage; no additional selector dependency is required.
-- There is no router package. The current hash-routing utilities deliberately avoid server rewrite requirements on GitHub Pages.
+- GitHub Actions checkout, Node setup, Pages configuration, artifact upload, and Pages deployment actions.
+- No runtime server, cloud SDK, database client, or network service dependency.

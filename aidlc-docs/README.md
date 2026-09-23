@@ -2,22 +2,96 @@
 
 ## Active Change
 
-- **Change**: Business Color and Two-Theme Refresh
-- **Requirement questions**: `inception/requirements/business-youthful-color-refresh-requirement-questions.md`
-- **Requirements**: `inception/requirements/business-youthful-color-refresh-requirements.md`
-- **Execution plan**: `inception/plans/business-youthful-color-refresh-execution-plan.md`
-- **Code-generation plan**: `construction/plans/business-youthful-color-refresh-code-generation-plan.md`
-- **Code-generation summary**: `construction/business-youthful-color-refresh/code/code-generation-summary.md`
+- **Change**: Science, Data Science, and Bioinformatics Portfolio Redesign Restart
+- **Current phase**: Operations placeholder
+- **Current gate**: Workflow complete; no deployment or monitoring action is defined by the current AI-DLC Operations phase
 - **Current reverse engineering**: `inception/reverse-engineering/`
-- **Build and Test guidance**: `construction/build-and-test/`
+- **Requirements**: `inception/requirements/requirements.md`
+- **Story plan**: `inception/plans/story-generation-plan.md`
+- **Workflow execution plan**: `inception/plans/execution-plan.md`
+- **Application Design plan**: `inception/plans/application-design-plan.md`
+- **Application Design artifacts**: `inception/application-design/`
+- **Unit-of-work plan**: `inception/plans/unit-of-work-plan.md`
+- **U-01 Functional Design plan**: `construction/plans/foundation-safe-migration-functional-design-plan.md`
+- **U-01 Functional Design artifacts**: `construction/foundation-safe-migration/functional-design/`
+- **U-01 NFR Requirements plan**: `construction/plans/foundation-safe-migration-nfr-requirements-plan.md`
+- **U-01 NFR Requirements artifacts**: `construction/foundation-safe-migration/nfr-requirements/`
+- **U-01 NFR Design plan**: `construction/plans/foundation-safe-migration-nfr-design-plan.md`
+- **U-01 NFR Design artifacts**: `construction/foundation-safe-migration/nfr-design/`
+- **U-01 Code Generation plan**: `construction/plans/foundation-safe-migration-code-generation-plan.md`
+- **U-01 Code Generation evidence**: `construction/foundation-safe-migration/code/`
+- **Complete-redesign routing question**: `construction/plans/complete-redesign-review-questions.md`
+- **U-02 Functional Design plan**: `construction/plans/scientific-shell-functional-design-plan.md`
+- **U-02 Functional Design artifacts**: `construction/scientific-shell/functional-design/`
+- **U-02 NFR Requirements plan**: `construction/plans/scientific-shell-nfr-requirements-plan.md`
+- **U-02 NFR Requirements artifacts**: `construction/scientific-shell/nfr-requirements/`
+- **U-02 NFR Design plan**: `construction/plans/scientific-shell-nfr-design-plan.md`
+- **U-02 NFR Design artifacts**: `construction/scientific-shell/nfr-design/`
+- **U-02 Code Generation plan**: `construction/plans/scientific-shell-code-generation-plan.md`
+- **U-02 Candidate review**: `construction/plans/scientific-shell-candidate-review-questions.md`
+- **U-02 Code Generation evidence**: `construction/scientific-shell/code/`
+- **U-03 Functional Design plan**: `construction/plans/identity-questions-functional-design-plan.md`
+- **U-03 Functional Design artifacts**: `construction/identity-questions/functional-design/`
+- **U-03 NFR Requirements plan**: `construction/plans/identity-questions-nfr-requirements-plan.md`
+- **U-03 NFR Requirements artifacts**: `construction/identity-questions/nfr-requirements/`
+- **U-03 NFR Design plan**: `construction/plans/identity-questions-nfr-design-plan.md`
+- **U-03 NFR Design artifacts**: `construction/identity-questions/nfr-design/`
+- **U-03 Code Generation plan**: `construction/plans/identity-questions-code-generation-plan.md`
+- **U-03 bundle amendment question**: `construction/plans/identity-questions-bundle-amendment-questions.md`
+- **U-03 rendered candidate review**: `construction/plans/identity-questions-candidate-review-questions.md`
+- **U-03 Code Generation evidence**: `construction/identity-questions/code/` and `../artifacts/portfolio/u03/`
+- **U-04 Functional Design plan and questions**: `construction/plans/research-data-functional-design-plan.md`
+- **U-04 Functional Design artifacts**: `construction/research-data/functional-design/`
+- **U-04 NFR Requirements plan and questions**: `construction/plans/research-data-nfr-requirements-plan.md`
+- **U-04 NFR Requirements artifacts**: `construction/research-data/nfr-requirements/`
+- **U-04 NFR Design plan and questions**: `construction/plans/research-data-nfr-design-plan.md`
+- **U-04 NFR Design artifacts**: `construction/research-data/nfr-design/`
+- **U-04 Code Generation plan**: `construction/plans/research-data-code-generation-plan.md`
+- **U-04 rendered candidate review**: `construction/plans/research-data-candidate-review-questions.md`
+- **U-04 Code Generation evidence**: `construction/research-data/code/` and `../artifacts/portfolio/u04/`
+- **U-05 Functional Design plan and questions**: `construction/plans/academic-evidence-functional-design-plan.md`
+- **U-05 Functional Design artifacts**: `construction/academic-evidence/functional-design/`
+- **U-05 NFR Requirements plan and questions**: `construction/plans/academic-evidence-nfr-requirements-plan.md`
+- **U-05 NFR Requirements artifacts**: `construction/academic-evidence/nfr-requirements/`
+- **U-05 NFR Design plan and questions**: `construction/plans/academic-evidence-nfr-design-plan.md`
+- **U-05 NFR Design artifacts**: `construction/academic-evidence/nfr-design/`
+- **U-05 Code Generation plan**: `construction/plans/academic-evidence-code-generation-plan.md`
+- **U-05 Code Generation evidence**: `construction/academic-evidence/code/` and `../artifacts/portfolio/u05/`
+- **Code generation**: U-01 through U-05 approved
+- **U-06 Functional Design plan and questions**: `construction/plans/tools-fieldwork-functional-design-plan.md`
+- **U-06 Functional Design artifacts**: `construction/tools-fieldwork/functional-design/`
+- **U-06 NFR Requirements plan and questions**: `construction/plans/tools-fieldwork-nfr-requirements-plan.md`
+- **U-06 NFR Requirements artifacts**: `construction/tools-fieldwork/nfr-requirements/`
+- **U-06 NFR Design plan and questions**: `construction/plans/tools-fieldwork-nfr-design-plan.md`
+- **U-06 NFR Design artifacts**: `construction/tools-fieldwork/nfr-design/`
+- **U-06 Code Generation plan**: `construction/plans/tools-fieldwork-code-generation-plan.md`
+- **U-06 Code Generation evidence**: `construction/tools-fieldwork/code/` and `../artifacts/portfolio/u06/`
+- **U-07 Functional Design plan and questions**: `construction/plans/contact-journal-functional-design-plan.md`
+- **U-07 Functional Design artifacts**: `construction/contact-journal/functional-design/`
+- **U-07 NFR Requirements plan and questions**: `construction/plans/contact-journal-nfr-requirements-plan.md`
+- **U-07 NFR Requirements artifacts**: `construction/contact-journal/nfr-requirements/`
+- **U-07 NFR Design plan and questions**: `construction/plans/contact-journal-nfr-design-plan.md`
+- **U-07 NFR Design artifacts**: `construction/contact-journal/nfr-design/`
+- **U-07 Code Generation plan**: `construction/plans/contact-journal-code-generation-plan.md`
+- **U-07 rendered candidate review**: `construction/plans/contact-journal-candidate-review-questions.md`
+- **U-07 Code Generation evidence**: `construction/contact-journal/code/` and `../artifacts/portfolio/u07/`
+- **Build and Test summary**: `construction/build-and-test/build-and-test-summary.md`
+- **Build instructions**: `construction/build-and-test/build-instructions.md`
+- **Unit test instructions**: `construction/build-and-test/unit-test-instructions.md`
+- **Integration test instructions**: `construction/build-and-test/integration-test-instructions.md`
+- **Performance test instructions**: `construction/build-and-test/performance-test-instructions.md`
+- **Security and privacy test instructions**: `construction/build-and-test/security-test-instructions.md`
+- **End-to-end review instructions**: `construction/build-and-test/e2e-test-instructions.md`
+- **Workflow outcome**: All seven construction units and final Build and Test were approved on 2026-09-18
 - **State**: `aidlc-state.md`
 - **Append-only audit history**: `audit.md`
 
-## Current Product Boundary
+## Restart Boundary
 
-- Engineering and Business are the complete supported template set.
-- Business uses the approved background and text palettes.
-- Shared content, routes, layout modes, color mode, and GitHub Pages behavior remain authoritative.
+- The previous Research Atlas output was rejected by the user.
+- Its uncommitted files are protected by the verified local U-01 recovery package.
+- No previous implementation approval authorizes changes outside the active approved unit plan.
+- Every required AI-DLC approval gate must be completed before implementation.
 
 ## Documentation Controls
 

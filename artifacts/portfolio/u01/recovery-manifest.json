@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "captureId": "research-atlas-pre-u01",
+  "capturedAt": "2026-09-13T16:26:00Z",
+  "sourceRevision": "3d8dd530e375f6b93a22ce834a5602d822175384",
+  "workspaceRoot": "/Users/nhamhhung/student_ports/TranGiaMinhTam.github.io",
+  "payloadDirectory": ".aidlc-recovery/research-atlas-pre-u01",
+  "trackedPatch": {
+    "path": "tracked-application.patch",
+    "bytes": 192145,
+    "sha256": "3a095ea1b28291aebec6df4332da748f8c00832515cf42a48664b8ab7f0d7927"
+  },
+  "untrackedArchive": {
+    "path": "untracked-application.tar.gz",
+    "bytes": 35461155,
+    "sha256": "5e1fc0dc31d6fda52063ae7f9de859a4008bb594b5ac2f01be11589f8eb9f06b",
+    "memberCount": 19,
+    "uncompressedMemberBytes": 37233523,
+    "memberInventorySha256": "17d69e7647c0a50cdd569acacb88f24d4ae43f171e5a5d73dd32b44581eaed87"
+  },
+  "trackedScope": [
+    "src/",
+    "public/",
+    "index.html",
+    "package.json",
+    "package-lock.json",
+    "vite.config.ts",
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tsconfig.node.json",
+    "eslint.config.js",
+    ".github/workflows/deploy.yml",
+    "README.md",
+    "DEPLOYMENT.md"
+  ],
+  "untrackedScope": ["src/"],
+  "exclusions": [
+    "src/assets/minh-tam/source/",
+    "aidlc-docs/",
+    "artifacts/",
+    ".aidlc-recovery/"
+  ],
+  "protectedSourceEvidence": {
+    "path": "src/assets/minh-tam/source/",
+    "fileCount": 104,
+    "bytes": 270120878,
+    "inventorySha256": "32f3a6023fe84f865f95843e128030783d9705458353e45f74d2f48cddcd335a",
+    "copied": false,
+    "mutated": false
+  },
+  "restorationSequence": [
+    "Clone sourceRevision into a fresh workspace without hardlinks.",
+    "Apply tracked-application.patch with git apply --binary.",
+    "Extract untracked-application.tar.gz at the cloned workspace root.",
+    "Verify both payload hashes and compare the normalized application inventory.",
+    "Keep src/assets/minh-tam/source/ protected in its original location."
+  ]
+}

@@ -42,6 +42,12 @@ jobs:
             echo "VITE_BASE_PATH=/${repository}/" >> "$GITHUB_ENV"
           fi
 
+      - name: Verify source-governance contracts and properties
+        run: npm run test:source-governance
+
+      - name: Verify source-governance browser boundary
+        run: npm run check:source-governance
+
       - name: Build
         run: npm run build
 

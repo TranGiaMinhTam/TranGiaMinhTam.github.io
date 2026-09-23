@@ -1,398 +1,394 @@
-# User Stories
+# User Stories: Header, Content, Evidence, and Resume Refinement
 
-## Story Approach
+## Story Organization
 
-- **Breakdown**: Hybrid user journey-based stories with feature-based support stories.
-- **Personas**: Student Template User, Portfolio Visitor, Template Maintainer.
-- **Acceptance Criteria Style**: Mixed. User workflow stories use Given/When/Then. Technical support stories use concise checklist criteria.
-- **Priority Order**: Student journey order: discover, customize, run locally, test, deploy, troubleshoot.
+Stories use the approved hybrid journey-and-feature approach. Each story is a small vertical slice with persona mapping, requirement traceability, Given/When/Then acceptance criteria, and applicable accessibility, privacy, security, fallback, or performance conditions.
 
-## Story Summary
+## Cross-Cutting Acceptance Rules
 
-| ID | Title | Primary Persona | Priority |
-|---|---|---|---|
-| US-01 | Understand the template at first glance | Student Template User | High |
-| US-02 | Identify editable content files | Student Template User | High |
-| US-03 | Edit profile and social identity safely | Student Template User | High |
-| US-04 | Edit resume-style section content safely | Student Template User | High |
-| US-05 | Replace visual and certificate assets | Student Template User | High |
-| US-06 | Keep section navigation consistent | Template Maintainer | High |
-| US-07 | Navigate the portfolio on desktop and mobile | Portfolio Visitor | High |
-| US-08 | View projects and external proof links | Portfolio Visitor | Medium |
-| US-09 | Contact the portfolio owner | Portfolio Visitor | Medium |
-| US-10 | Run the project locally | Student Template User | High |
-| US-11 | Verify the portfolio before publishing | Student Template User | High |
-| US-12 | Deploy to GitHub Pages with minimal manual setup | Student Template User | High |
-| US-13 | Troubleshoot common deployment failures | Student Template User | High |
-| US-14 | Preserve accessibility and responsive usability | Portfolio Visitor | Medium |
-| US-15 | Maintain simple reusable code structure | Template Maintainer | High |
-| US-16 | Validate template data and app rendering with tests | Template Maintainer | High |
+Unless explicitly marked not applicable, every visible story must:
 
-## US-01: Understand The Template At First Glance
+- Work at 320, 768, 1280, and 1440 CSS pixels in light and dark themes.
+- Preserve logical DOM/reading order, visible focus, keyboard access, reduced motion, 200-percent zoom, and increased text spacing.
+- Avoid document-level horizontal overflow and unsafe HTML.
+- Use only approved local or `https:` media sources and disclose no local filesystem path.
+- Preserve the resume phone number only inside the downloadable PDF, never page markup, tests, metadata, or logs.
+- Show honest generic fallbacks when media cannot load.
 
-**As a** Student Template User,  
-**I want** a beginner-friendly README that explains what this project is and how to start,  
-**so that** I can use the portfolio template without needing prior Vite or GitHub Pages experience.
+## Journey 1: Orient, Navigate, and Download
 
-### Acceptance Criteria
+### US-001 - Recognize Minh Tam from a distinctive masthead
 
-Given I open the repository README,  
-When I read the first sections,  
-Then I can understand the purpose of the template, required tools, and the first setup command.
+**Persona**: P-01 Admissions Reviewer, P-02 Research Mentor, P-03 Mobile Visitor, P-04 Keyboard/Screen-Reader Visitor
+**Requirements**: FR-001, FR-011, FR-012; NFR-001, NFR-003, NFR-005 through NFR-007
 
-Given I am new to the project,  
-When I look for customization instructions,  
-Then the README points me to the files and guide sections I should edit first.
+**Story**: As a visitor, I want a distinctive but restrained scientific masthead so that I can identify Minh Tam and the portfolio's focus immediately.
 
-### INVEST Notes
+**Acceptance Criteria**:
 
-- **Independent**: Can be completed as documentation work.
-- **Valuable**: Reduces beginner confusion.
-- **Testable**: README includes required setup, customization, and deployment sections.
+1. Given the portfolio opens, when the masthead renders, then it presents Minh Tam, scientific focus, active status, subtle scientific decoration, and a stronger hierarchy without obscuring text.
+2. Given either theme or a supported viewport, when the masthead reflows, then its identity, status, and action regions remain aligned and readable.
+3. Given zoom or increased text spacing, when content wraps, then no masthead item overlaps, clips, or creates horizontal page overflow.
 
-## US-02: Identify Editable Content Files
+**INVEST**: Pass - one visible outcome, independently reviewable and testable.
 
-**As a** Student Template User,  
-**I want** portfolio content stored in clearly named data files,  
-**so that** I can update my information without editing layout-heavy JSX.
+### US-002 - Change theme from the top of the page
 
-### Acceptance Criteria
+**Persona**: P-03, P-04
+**Requirements**: FR-002, FR-003, FR-036; NFR-001, NFR-005
 
-Given I want to change profile, education, experience, awards, projects, videos, skills, certificates, or contact details,  
-When I inspect the source tree,  
-Then I can find clearly named data/config files for those content areas.
+**Story**: As a visitor, I want the theme control in the masthead's upper-right area so that display preferences are available immediately without occupying the navigation rail.
 
-Given I edit a content field incorrectly,  
-When TypeScript checks run,  
-Then type errors help me identify the mistake.
+**Acceptance Criteria**:
 
-### INVEST Notes
+1. Given the masthead is visible, when I locate the upper-right actions, then the theme button is present above the sticky navigation.
+2. Given either current theme, when I activate the button, then the theme changes, the explicit preference persists where storage is available, and the accessible name describes the next action.
+3. Given local storage fails, when I change theme, then the current visit still updates and a safe non-sensitive fallback is used.
 
-- **Independent**: Content data can be extracted without changing visual theme.
-- **Valuable**: Makes the template student-friendly.
-- **Testable**: Data files exist and components consume them.
+**INVEST**: Pass - isolated preference workflow with existing state contract.
 
-## US-03: Edit Profile And Social Identity Safely
+### US-003 - Download the supplied resume without exposing extra contact data
 
-**As a** Student Template User,  
-**I want** profile identity, social links, email, location, and hero highlights in typed data,  
-**so that** I can personalize the first impression of my portfolio safely.
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-004 through FR-006, FR-015, FR-016; NFR-013, NFR-014
 
-### Acceptance Criteria
+**Story**: As a reviewer, I want a clearly named resume download in the masthead and Identity section so that I can retain the full application record.
 
-Given I edit profile data,  
-When the app renders,  
-Then the hero, navbar, and contact sections display my updated information.
+**Acceptance Criteria**:
 
-Given I update GitHub, LinkedIn, email, or other links,  
-When I open the portfolio,  
-Then the relevant links point to my updated destinations.
+1. Given the masthead or Identity section, when I activate Download Resume, then the bundled four-page PDF downloads with a stable descriptive filename.
+2. Given the page DOM and metadata are inspected, then the phone number is absent while the existing email remains available through Contact.
+3. Given the downloaded PDF is opened, then it is the supplied resume copy and retains its original contact content without altering the external source.
 
-### INVEST Notes
+**INVEST**: Pass - one download/privacy outcome with two discoverable entry points.
 
-- **Independent**: Can be validated through rendered text and links.
-- **Valuable**: Hero/contact identity is the most visible student customization.
-- **Testable**: Tests or manual checks can assert required profile fields.
+## Journey 2: Understand Complete Resume-Led Content
 
-## US-04: Edit Resume-Style Section Content Safely
+### US-004 - Understand identity, languages, skills, and interests
 
-**As a** Student Template User,  
-**I want** education, experience, awards, projects, skills, videos, and gallery content in typed arrays,  
-**so that** I can replace example content with my own achievements.
+**Persona**: P-01, P-02
+**Requirements**: FR-013 through FR-017
 
-### Acceptance Criteria
+**Story**: As a reviewer, I want the Identity and Methods sections to reflect the resume so that I understand Minh Tam's current profile, languages, technical capabilities, laboratory methods, and interests.
 
-Given I update an education or experience entry,  
-When the site renders,  
-Then the corresponding section shows the updated card content.
+**Acceptance Criteria**:
 
-Given I add a project with technologies and external links,  
-When the project section renders,  
-Then the project appears with readable tags and working actions.
+1. Given resume-led content is loaded, when I review Identity and Methods, then every applicable profile, language, skill, laboratory, and interest category is represented once.
+2. Given a statement has no separate evidence item, when it is displayed, then it is presented as resume-sourced rather than independently document-verified.
+3. Given existing verified content overlaps the resume, when content is reconciled, then evidence links are retained without duplicate claims.
+4. Given generated valid resume entries, property tests verify that every supported category maps to one canonical section and no unsupported claim is created.
 
-### INVEST Notes
+**INVEST**: Pass - bounded content slice across two related profile sections.
 
-- **Independent**: Each section can consume exported data.
-- **Valuable**: Covers the core student resume content.
-- **Testable**: Data shape and section rendering can be verified.
+### US-005 - Review education, grades, scholarships, and recognition
 
-## US-05: Replace Visual And Certificate Assets
+**Persona**: P-01
+**Requirements**: FR-013, FR-014, FR-017; NFR-015
 
-**As a** Student Template User,  
-**I want** clear instructions and data references for images, logos, gallery photos, and certificates,  
-**so that** I can replace example assets without breaking production builds.
+**Story**: As an admissions or scholarship reviewer, I want a complete academic progression so that I can assess current study, results, language proficiency, scholarships, and school recognition.
 
-### Acceptance Criteria
+**Acceptance Criteria**:
 
-Given I replace an image or certificate asset,  
-When I run the build,  
-Then Vite resolves the asset successfully.
+1. Given the resume and evidence catalogs, when Academic Trajectory renders, then education, grades, subjects, IELTS, scholarship offers, and merit recognition retain their dates and organizations.
+2. Given a claim conflicts with documentary evidence, when reconciliation runs, then the evidence-backed value is retained and the discrepancy is flagged for review.
+3. Given the academic layout reflows, when viewed at supported widths, then its heading, explanation, records, and evidence actions align without a conventional timeline requirement.
 
-Given I add a certificate PDF,  
-When the skills/certificates section renders,  
-Then the certificate metadata and preview/open action are available.
+**INVEST**: Pass - one reviewer outcome with evidence reconciliation.
 
-### INVEST Notes
+### US-006 - Review research, analytics, honors, and contribution boundaries
 
-- **Independent**: Asset references can be documented and typed.
-- **Valuable**: Students often personalize visuals first.
-- **Testable**: Build and data validation confirm asset references.
+**Persona**: P-01, P-02
+**Requirements**: FR-013, FR-014, FR-017; NFR-015
 
-## US-06: Keep Section Navigation Consistent
+**Story**: As a reviewer, I want research projects and related honors placed in their relevant scientific sections so that I can connect achievements with methods while understanding contribution boundaries.
 
-**As a** Template Maintainer,  
-**I want** section IDs, labels, and order defined once,  
-**so that** navigation, active section tracking, and rendered sections stay synchronized.
+**Acceptance Criteria**:
 
-### Acceptance Criteria
+1. Given computational, laboratory, and data records, when their sections render, then the resume's research projects, competitions, results, dates, and quantitative context are represented accurately.
+2. Given a role or outcome is absent from approved sources, when the model is assembled, then no role, ranking, or result is inferred.
+3. Given supporting evidence exists, when I choose it, then the canonical document or image entry opens through the approved evidence interaction.
 
-- Navigation config contains unique section IDs.
-- App section tracking uses the same section config as the navbar.
-- Desktop and mobile navigation render from the same config.
-- Adding or removing a section requires changing one shared source of truth.
+**INVEST**: Pass - one research-review outcome spanning the three approved research domains.
 
-### INVEST Notes
+### US-007 - Review leadership, volunteering, mentoring, debate, and sports
 
-- **Independent**: Shared navigation config can be implemented separately.
-- **Valuable**: Prevents template drift.
-- **Testable**: Tests can assert uniqueness and expected IDs.
+**Persona**: P-01, P-05
+**Requirements**: FR-013, FR-014, FR-017
 
-## US-07: Navigate The Portfolio On Desktop And Mobile
+**Story**: As a reviewer, I want non-academic activities organized in Fieldwork and Leadership so that I can understand sustained responsibility, community work, communication, and sports participation.
 
-**As a** Portfolio Visitor,  
-**I want** clear desktop and mobile navigation,  
-**so that** I can move to the portfolio section I care about.
+**Acceptance Criteria**:
 
-### Acceptance Criteria
+1. Given the resume, when Fieldwork and Leadership renders, then Kyoto, World Scholar's Cup, TIV, mentoring, conservation, agriculture, reforestation, debate, soccer, and badminton records are represented with their dates and roles.
+2. Given multiple evidence images belong to one activity, when records are shown, then the activity appears once with a link to its grouped media rather than repeated activity copy.
+3. Given a resume-only activity, when rendered, then it is labeled consistently as resume-sourced.
 
-Given I am using a desktop viewport,  
-When I click a navigation link,  
-Then the page scrolls smoothly to the matching section.
+**INVEST**: Pass - one coherent activity-review outcome.
 
-Given I am using a mobile viewport,  
-When I open the menu and select a section,  
-Then the drawer closes and the page scrolls to that section.
+## Journey 3: Read Balanced, Accessible Layouts
 
-### INVEST Notes
+### US-008 - Receive relationship meaning without visible duplicate tables
 
-- **Independent**: Navigation behavior can be validated apart from content changes.
-- **Valuable**: Visitors need quick scanning.
-- **Testable**: Manual or component tests can verify section config and controls.
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-007 through FR-009; NFR-001, NFR-004
 
-## US-08: View Projects And External Proof Links
+**Story**: As a visitor, I want repeated visual tables removed while preserving semantic meaning so that the page is cleaner without reducing accessibility.
 
-**As a** Portfolio Visitor,  
-**I want** project cards with clear external actions,  
-**so that** I can inspect the student's work and supporting evidence.
+**Acceptance Criteria**:
 
-### Acceptance Criteria
+1. Given any active section, when sighted presentation is inspected, then no relationship-summary table or caption occupies visible layout space.
+2. Given a screen reader follows the same section, when the relationships are reached, then equivalent source, relationship, and target meaning is available in an appropriately named hidden structure.
+3. Given hidden summaries at any width, then they neither create scrolling nor receive unintended visual focus.
 
-Given I view the projects section,  
-When I inspect a project card,  
-Then I can see title, description, technologies, and external action buttons.
+**INVEST**: Pass - one accessibility-preserving presentation change.
 
-Given I use assistive technology,  
-When I focus an external project action,  
-Then the action has a meaningful accessible name.
+### US-009 - Read consistently aligned sections at every supported width
 
-### INVEST Notes
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-010 through FR-012; NFR-003, NFR-005 through NFR-007, NFR-019
 
-- **Independent**: Project data and buttons can be checked directly.
-- **Valuable**: Projects are central portfolio evidence.
-- **Testable**: Link labels and URLs can be validated.
+**Story**: As a visitor, I want headings, cards, tracks, labels, and explanations aligned consistently so that scientific content is easy to scan.
 
-## US-09: Contact The Portfolio Owner
+**Acceptance Criteria**:
 
-**As a** Portfolio Visitor,  
-**I want** a simple contact form and social links,  
-**so that** I can reach the student without a backend service.
+1. Given the six supplied examples, when reviewed at wide widths, then station cards, header columns, question introduction, signal rows, academic header, and evidence spectrum share intentional grid lines and baselines.
+2. Given tablet or mobile widths, when the same content reflows, then it follows one logical reading order with no clipped labels, orphaned controls, or page overflow.
+3. Given every active section, when the alignment audit runs, then related defects are covered by explicit source/style assertions and rendered-review checkpoints.
 
-### Acceptance Criteria
+**INVEST**: Pass - one measurable cross-section quality outcome.
 
-Given I enter name, email, subject, and message,  
-When I submit the contact form,  
-Then my email client opens with a prefilled mailto message.
+## Journey 4: Discover the Complete Archive
 
-Given I click a social/contact link,  
-When the link opens,  
-Then it points to the portfolio owner's configured profile or email address.
+### US-010 - Inventory every physical Minh Tam file
 
-### INVEST Notes
+**Persona**: P-05 Portfolio Maintainer
+**Requirements**: FR-018, FR-038; NFR-016 through NFR-018
 
-- **Independent**: Contact remains static-site friendly.
-- **Valuable**: Supports recruiter/collaborator outreach.
-- **Testable**: Mailto composition and link data can be checked.
+**Story**: As a maintainer, I want a deterministic inventory of every archive file so that completeness and provenance can be verified without guessing from filenames.
 
-## US-10: Run The Project Locally
+**Acceptance Criteria**:
 
-**As a** Student Template User,  
-**I want** setup instructions for local development,  
-**so that** I can preview my changes before publishing.
+1. Given `src/assets/minh-tam`, when inventory generation runs, then every physical file receives a stable identifier, normalized relative path, media type, byte size, cryptographic hash, category, and disposition.
+2. Given the inventory repeats with unchanged files, when outputs are compared, then ordering and identifiers are identical.
+3. Given a path is shown to visitors, then no machine-local absolute path is emitted.
 
-### Acceptance Criteria
+**INVEST**: Pass - maintainer-only completeness outcome with deterministic evidence.
 
-Given I have Git, Node.js 20 or newer, npm, and the repository,  
-When I follow the setup guide,  
-Then I can install dependencies and start the Vite dev server.
+### US-011 - Consolidate duplicates without losing provenance
 
-Given the dev server is running,  
-When I edit content data,  
-Then I can preview my changes locally.
+**Persona**: P-05
+**Requirements**: FR-019, FR-020; NFR-016, NFR-017; PBT-R02 through PBT-R06
 
-### INVEST Notes
+**Story**: As a maintainer, I want duplicate physical files consolidated into canonical entries so that visitors avoid repetition while provenance remains complete.
 
-- **Independent**: Local setup guide can be validated with commands.
-- **Valuable**: Students need fast feedback before deploy.
-- **Testable**: `npm install` and `npm run dev` instructions are present.
+**Acceptance Criteria**:
 
-## US-11: Verify The Portfolio Before Publishing
+1. Given identical content hashes, when canonicalization runs, then exactly one published item owns all matching source paths.
+2. Given a curated and source representation are equivalent but not byte-identical, when a reviewed equivalence mapping exists, then one canonical item retains both provenances.
+3. Given generated archive records, property tests verify idempotence, deterministic grouping, preserved source membership, shrinking, and reproducible seeds.
 
-**As a** Student Template User,  
-**I want** clear build, lint, and test commands,  
-**so that** I can catch mistakes before deploying to GitHub Pages.
+**INVEST**: Pass - pure catalog-transformation outcome.
 
-### Acceptance Criteria
+### US-012 - Preserve unsupported HEIC and DOCX evidence
 
-Given I finish customizing content,  
-When I run the documented verification commands,  
-Then lint, tests, and production build can be run locally.
+**Persona**: P-05, P-01, P-02
+**Requirements**: FR-022 through FR-025; SEC-R02, SEC-R04 through SEC-R06
 
-Given a required data field is missing or invalid,  
-When tests or type checks run,  
-Then the issue is caught before deployment.
+**Story**: As a visitor, I want unsupported source media converted or represented honestly so that archive completeness does not depend on browser-specific formats.
 
-### INVEST Notes
+**Acceptance Criteria**:
 
-- **Independent**: Verification scripts are distinct from deployment.
-- **Valuable**: Prevents broken student portfolios.
-- **Testable**: Scripts exist and run.
+1. Given a HEIC image, when conversion succeeds, then a web-compatible derivative is previewed and the original remains linked through provenance or download.
+2. Given the DOCX source, when conversion succeeds, then a PDF derivative receives document-preview behavior and the original remains downloadable.
+3. Given any conversion fails, when the archive renders, then metadata and original access remain available with a generic fallback and no invented preview.
 
-## US-12: Deploy To GitHub Pages With Minimal Manual Setup
+**INVEST**: Pass - one format-compatibility outcome with failure path.
 
-**As a** Student Template User,  
-**I want** GitHub Pages deployment to use repository metadata where possible,  
-**so that** I do not have to manually understand Vite base paths before publishing.
+### US-013 - Browse every canonical archive item by meaningful group
 
-### Acceptance Criteria
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-020, FR-021, FR-025; NFR-001, NFR-008, NFR-009
 
-Given I push to the main branch,  
-When GitHub Actions runs,  
-Then it builds and deploys the site to GitHub Pages.
+**Story**: As a visitor, I want the complete archive organized by meaningful activity and evidence groups so that I can discover relevant material without scanning raw filenames.
 
-Given my repository is not named `username.github.io`,  
-When deployment builds,  
-Then the Vite base path is configured for the repository page path where possible.
+**Acceptance Criteria**:
 
-Given my repository is named `username.github.io`,  
-When deployment builds,  
-Then the site can deploy at the root path.
+1. Given the canonical inventory, when I browse Evidence Library, then every reviewed canonical item is reachable through a narrative placement, grouped gallery, document collection, or explicit original-file entry.
+2. Given group navigation, when I select a category, then labels, counts, and order match the canonical model and remain keyboard accessible.
+3. Given the initial page load, then full originals outside critical identity media are not requested until their group or detail view requires them.
 
-### INVEST Notes
+**INVEST**: Pass - visitor discovery outcome backed by canonical inventory.
 
-- **Independent**: Deployment config can be updated and documented.
-- **Valuable**: GitHub Pages base paths are a common student blocker.
-- **Testable**: Workflow and docs can be inspected; build can run locally with base path settings.
+## Journey 5: Inspect Documents and Images
 
-## US-13: Troubleshoot Common Deployment Failures
+### US-014 - Preview every canonical PDF inline
 
-**As a** Student Template User,  
-**I want** troubleshooting guidance for 404s, missing assets, wrong base paths, failed builds, and Node version issues,  
-**so that** I can recover when deployment does not work the first time.
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-026, FR-027, FR-031; NFR-001, NFR-008, NFR-012
 
-### Acceptance Criteria
+**Story**: As a reviewer, I want a first-page preview for every canonical published PDF and the resume so that I can judge relevance before opening detail.
 
-Given my deployed page returns 404,  
-When I read the deployment guide,  
-Then I can check Pages source, workflow status, repository name, and base path.
+**Acceptance Criteria**:
 
-Given assets are missing after deployment,  
-When I read troubleshooting guidance,  
-Then I can identify base path or asset reference issues.
+1. Given a canonical PDF card, when it enters the relevant loading boundary, then a responsive browser-native first-page preview is attempted with a clear title and description.
+2. Given embedded PDF rendering is unsupported or fails, when the card renders, then a fallback offers detail, download, or new-tab access without an empty frame.
+3. Given keyboard navigation, then the preview action is a real labeled control with visible focus and no pointer-only dependency.
 
-### INVEST Notes
+**INVEST**: Pass - one preview decision outcome.
 
-- **Independent**: Troubleshooting docs can be added without code changes.
-- **Valuable**: Reduces support friction.
-- **Testable**: Guide includes named failure modes and remedies.
+### US-015 - Review a PDF in an accessible popup
 
-## US-14: Preserve Accessibility And Responsive Usability
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-028 through FR-031; NFR-001 through NFR-003; SEC-R06 through SEC-R08
 
-**As a** Portfolio Visitor,  
-**I want** the portfolio to remain readable and navigable on common devices and with accessible labels,  
-**so that** I can review the student's work comfortably.
+**Story**: As a reviewer, I want to enlarge a PDF without leaving the portfolio so that I can inspect it in context.
 
-### Acceptance Criteria
+**Acceptance Criteria**:
 
-- External icon-only links have accessible labels.
-- Interactive project, gallery, certificate, menu, and contact controls have meaningful labels.
-- Existing responsive layout behavior is preserved.
-- The refactor does not remove image alt text.
+1. Given a PDF preview, when I activate it, then a named modal opens with full-height viewer, title, description, Download, Open in new tab, and Close.
+2. Given the modal is open, when I use Tab, Shift+Tab, Escape, or backdrop dismissal, then focus is contained, dismissal is predictable, background interaction is blocked, and focus returns to the trigger.
+3. Given the embedded viewer fails, then the modal remains operable and exposes safe direct actions without a stack trace, absolute path, or unsafe URL.
 
-### INVEST Notes
+**INVEST**: Pass - one detail-view workflow with accessible state boundary.
 
-- **Independent**: Accessibility improvements can be validated by inspection and smoke tests.
-- **Valuable**: Improves visitor trust and usability.
-- **Testable**: Labels and alt text can be checked.
+### US-016 - Explore image groups in an accessible detail viewer
 
-## US-15: Maintain Simple Reusable Code Structure
+**Persona**: P-01, P-02, P-03, P-04
+**Requirements**: FR-032 through FR-035; NFR-001 through NFR-003, NFR-012; PBT-R07
 
-**As a** Template Maintainer,  
-**I want** reusable helpers and components for repeated section patterns,  
-**so that** future template updates stay small and understandable.
+**Story**: As a visitor, I want lazy image thumbnails and an accessible grouped detail viewer so that I can inspect activity evidence without loading all originals.
 
-### Acceptance Criteria
+**Acceptance Criteria**:
 
-- Repeated scroll helper logic is replaced by a shared utility or hook.
-- Reusable components are introduced only where they reduce meaningful duplication.
-- Components remain easy for students to trace from data to UI.
-- Application code remains outside `aidlc-docs/`.
+1. Given an image group, when thumbnails render, then they lazy-load with dimensions, descriptive alternatives or documented decorative status, captions, and provenance.
+2. Given a thumbnail is activated, when the dialog opens, then it provides image detail, caption, provenance, original access, previous/next controls, and Close with the same focus behavior as the PDF modal.
+3. Given generated group sizes and indices, property tests prove navigation remains deterministic and within bounds, including empty, single-item, first, and last states.
 
-### INVEST Notes
+**INVEST**: Pass - one grouped image-review workflow.
 
-- **Independent**: Helper and component refactors can be implemented incrementally.
-- **Valuable**: Improves long-term maintainability.
-- **Testable**: Repeated helper code is reduced and imports use shared utilities.
+## Journey 6: Preserve Performance, Safety, and Existing Behavior
 
-## US-16: Validate Template Data And App Rendering With Tests
+### US-017 - Load the large archive only when needed
 
-**As a** Template Maintainer,  
-**I want** lightweight automated tests for rendering, navigation config, and key template data,  
-**so that** future changes do not silently break the template.
+**Persona**: P-03, P-05
+**Requirements**: FR-021, FR-026, FR-032; NFR-008 through NFR-012
 
-### Acceptance Criteria
+**Story**: As a mobile visitor, I want archive media loaded on demand so that the portfolio remains responsive despite the large source collection.
 
-- A test command is available in `package.json`.
-- Tests verify the app renders without crashing.
-- Tests verify navigation IDs are unique and include required sections.
-- Tests verify required profile/template data fields are present.
-- Tests do not require external network calls or browser automation.
+**Acceptance Criteria**:
 
-### INVEST Notes
+1. Given the initial portfolio route, when requests are measured, then it does not request every original archive item.
+2. Given archive groups or viewers are unused, then their full media and eligible interaction code remain deferred where practical.
+3. Given production measurements exceed an approved JavaScript, CSS, request, or evidence ceiling, then activation is blocked until correction or explicit budget approval.
 
-- **Independent**: Test setup can be added after or alongside refactor.
-- **Valuable**: Provides guardrails for students and maintainers.
-- **Testable**: Test command passes locally and in build/test instructions.
+**INVEST**: Pass - measurable performance outcome independent of content copy.
 
-## Requirements Coverage
+### US-018 - Preserve navigation, contact, Journal, and recovery behavior
 
-| Requirement Area | Covered By |
-|---|---|
-| Preserve sections and example content | US-03, US-04, US-05, US-07 |
-| Extract editable content | US-02, US-03, US-04, US-05 |
-| Shared types | US-02, US-03, US-04, US-16 |
-| Centralized navigation | US-06, US-07, US-16 |
-| Shared scroll behavior | US-07, US-15 |
-| Reusable UI structure | US-15 |
-| Accessibility labels | US-08, US-09, US-14 |
-| GitHub Pages base path | US-12, US-13 |
-| Beginner setup guide | US-01, US-10, US-13 |
-| Student README cleanup | US-01 |
-| Lightweight tests | US-11, US-16 |
-| Static hosting model | US-09, US-12 |
+**Persona**: P-01, P-02, P-03, P-04, P-05
+**Requirements**: FR-036 through FR-038
 
-## Extension Rule Compliance
+**Story**: As a returning visitor, I want existing portfolio routes and local interactions to keep working so that the expanded evidence experience does not break established workflows.
 
-| Extension | Status | Rationale |
-|---|---|---|
-| Security Baseline | Disabled | User opted out during Requirements Analysis. |
-| Property-Based Testing | Disabled | User opted out during Requirements Analysis. |
+**Acceptance Criteria**:
+
+1. Given any canonical section hash, theme choice, contact flow, or Journal hash route, when used after the change, then its existing supported behavior remains intact.
+2. Given an unknown or failed lazy route, when recovery occurs, then a safe, accessible fallback returns the visitor to the portfolio.
+3. Given a blocking post-activation failure, when recovery is invoked, then exact protected entry and configuration content can be restored without deleting source assets.
+
+**INVEST**: Pass - regression-preservation outcome with recovery.
+
+### US-019 - Fail safely for malformed, unsafe, or unavailable media
+
+**Persona**: P-04, P-05
+**Requirements**: NFR-013 through NFR-018; SEC-R02, SEC-R04 through SEC-R08
+
+**Story**: As a visitor, I want malformed or unavailable media to fail safely so that I can continue using the portfolio without exposure to unsafe content or internal details.
+
+**Acceptance Criteria**:
+
+1. Given a media URL with a disallowed scheme or an ineligible source path, when publication selection runs, then the item is rejected from interactive viewing and a stable finding is recorded.
+2. Given a missing, oversized, malformed, or unsupported asset, when its card renders, then metadata and eligible fallback actions remain usable without unsafe HTML or local path disclosure.
+3. Given resume and archive content are searched, then the phone number appears only inside the downloadable PDF and no source-document text controls application behavior.
+
+**INVEST**: Pass - security/failure outcome shared by both viewers.
+
+### US-020 - Verify supply chain, security headers, and production integrity
+
+**Persona**: P-05
+**Requirements**: SEC-R01, SEC-R03, SEC-R05; NFR-020
+
+**Story**: As a maintainer, I want production security and supply-chain evidence so that the static site is not claimed compliant without verifiable controls.
+
+**Acceptance Criteria**:
+
+1. Given the production endpoint, when headers are assessed, then CSP, HSTS, `nosniff`, frame policy, and referrer policy are recorded accurately; unsupported GitHub Pages controls produce an explicit deployment decision rather than a false pass.
+2. Given dependencies and CI, when the security gate runs, then the lockfile is preserved, vulnerability results are recorded, unused runtime dependencies are reviewed, an SBOM is generated, and CI references meet the approved integrity policy.
+3. Given any required applicable security control fails, then activation or deployment approval is blocked with its SECURITY identifier and remediation.
+
+**INVEST**: Pass - maintainer security-verification outcome.
+
+### US-021 - Verify transformation properties reproducibly
+
+**Persona**: P-05
+**Requirements**: PBT-R01 through PBT-R10; NFR-017, NFR-019, NFR-020
+
+**Story**: As a maintainer, I want reproducible property-based verification alongside concrete regression tests so that catalog and viewer edge cases are found without weakening executable examples.
+
+**Acceptance Criteria**:
+
+1. Given the TypeScript/Vitest project, when the verification stack is configured, then `fast-check` supplies reusable domain generators, automatic shrinking, and seed-based reproduction.
+2. Given generated archive, manifest, mapping, and navigation inputs, when properties run, then round trips, invariants, idempotence, deterministic ordering, provenance preservation, supported-category coverage, and viewer bounds are verified where applicable.
+3. Given a property failure, when the suite reports it, then the seed and shrunk counterexample are visible and the minimal failure is added as an example-based regression when fixed.
+4. Given CI or the complete local gate, when tests run, then property and example suites both execute without silent retry or exclusion.
+
+**INVEST**: Pass - one bounded verification capability with explicit observable evidence.
+
+## Requirement Coverage
+
+| Requirement group | Stories |
+| --- | --- |
+| FR-001 through FR-006 | US-001 through US-003 |
+| FR-007 through FR-012 | US-008, US-009 |
+| FR-013 through FR-017 | US-004 through US-007 |
+| FR-018 through FR-025 | US-010 through US-013 |
+| FR-026 through FR-031 | US-014, US-015 |
+| FR-032 through FR-035 | US-016 |
+| FR-036 through FR-038 | US-018 |
+| NFR-001 through NFR-007 | US-001, US-002, US-008, US-009, US-014 through US-016 |
+| NFR-008 through NFR-012 | US-013, US-014, US-016, US-017 |
+| NFR-013 through NFR-020 | US-003, US-009 through US-012, US-018 through US-020 |
+| PBT-R01 through PBT-R10 | US-004, US-011, US-016, US-021 |
+| SEC-R01 through SEC-R08 | US-012, US-015, US-019, US-020 |
+
+## INVEST Verification
+
+- **Independent**: Stories expose separable visitor or maintainer outcomes with explicit dependencies only where unavoidable.
+- **Negotiable**: Stories specify user value and acceptance boundaries without prescribing final component internals.
+- **Valuable**: Every story maps to at least one named persona and approved requirement.
+- **Estimable**: Each story has bounded content, interaction, or verification scope.
+- **Small**: No story attempts to implement the entire archive experience or page redesign alone.
+- **Testable**: Every story contains concrete Given/When/Then outcomes and requirement identifiers.
+
+## Security Compliance at User Stories
+
+| Rule group | Status | Rationale |
+| --- | --- | --- |
+| SECURITY-01 through SECURITY-03 | N/A | No server-side persistence, intermediary, or centralized application logging is introduced. |
+| SECURITY-04 | Compliant | US-020 covers required header assessment and honest platform limitation handling. |
+| SECURITY-05 through SECURITY-08 | N/A | No application API, IAM, private network, authentication, or protected endpoint exists. |
+| SECURITY-09 | Compliant | US-012, US-015, and US-019 require safe generic failures and no internal-path disclosure. |
+| SECURITY-10 | Compliant | US-020 covers dependency, vulnerability, SBOM, unused-package, lockfile, and CI integrity evidence. |
+| SECURITY-11 | Compliant | US-019 and US-020 include malformed media, unsafe schemes, oversized assets, and false-compliance misuse cases. |
+| SECURITY-12 | N/A | No authentication or credentials exist. |
+| SECURITY-13 | Compliant | US-019 and US-020 restrict media sources and require integrity evidence. |
+| SECURITY-14 | N/A | No authentication, authorization, backend, or security event stream exists. |
+| SECURITY-15 | Compliant | US-012, US-015, US-018, and US-019 cover fail-safe conversion, viewer, route, and recovery behavior. |
+
+No blocking User Stories security finding remains.
+
+## PBT Compliance at User Stories
+
+- **PBT-01 through PBT-10**: N/A as direct User Stories-stage enforcement. The stories trace approved PBT outcomes for catalog canonicalization, deduplication, serialization, navigation, and resume mapping; formal property identification and framework enforcement occur in the required later design and construction stages.
+
+No blocking User Stories PBT finding remains.
