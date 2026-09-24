@@ -22,7 +22,7 @@ const provenance = [
 
 const projectKinds = ['computational-project', 'laboratory-project', 'data-story'] as const
 const projectEvidence = [
-  ['evidence-protein-docking-publication', 'evidence-docking-research-completion', 'evidence-docking-poster-presentation', 'evidence-docking-oral-presentation', 'evidence-docking-conference-poster', 'evidence-docking-workstation'],
+  ['evidence-protein-docking-publication', 'evidence-docking-conference-poster'],
   ['evidence-wico-poster', 'evidence-cashew-polyphenol-figure'],
   ['evidence-sim-lse-certificate'],
 ] as const

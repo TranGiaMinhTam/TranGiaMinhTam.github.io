@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "phase": "active",
+  "appProviders": 1,
+  "candidateProviders": 1,
+  "findings": [],
+  "canProceed": true
+}

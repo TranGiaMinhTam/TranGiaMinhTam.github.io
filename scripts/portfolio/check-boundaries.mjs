@@ -40,7 +40,13 @@ for (const file of walk(sourceRoot).filter(
       file,
       "Prohibited UI framework or rejected-presentation import.",
     );
-  if (/assets\/minh-tam\/source\//.test(text))
+  const repositoryPath = path.relative(root, file).replaceAll("\\", "/");
+  const approvedGeneratedSourceImporter = /^src\/portfolio\/archive\/generated\/groups\/[^/]+\.ts$/u.test(repositoryPath);
+  const approvedCanonicalProjectImporter = new Set([
+    "src/portfolio/model/evidenceManifest.ts",
+    "src/portfolio/research/projectCatalog.ts",
+  ]).has(repositoryPath);
+  if (/assets\/minh-tam\/source\//.test(text) && !approvedGeneratedSourceImporter && !approvedCanonicalProjectImporter)
     add(
       "EVD-004",
       file,
@@ -65,6 +71,7 @@ const activeText = ["src/App.tsx", "src/main.tsx"]
       : "",
   )
   .join("\n");
+const approvedActiveText = activeText.replaceAll("MediaViewerProvider", "");
 const shellIsActive = /PortfolioExperience/.test(activeText);
 const mode =
   requestedMode === "auto"
@@ -72,6 +79,41 @@ const mode =
       ? "active"
       : "inactive"
     : requestedMode;
+
+if (
+  mode === "complete-archive-source" ||
+  mode === "complete-archive-candidate" ||
+  mode === "complete-archive-active"
+) {
+  const archiveRoot = path.join(sourceRoot, "archive");
+  const archiveText = walk(archiveRoot)
+    .filter((item) => inspectExtensions.has(path.extname(item)) && !/\.test\.[^.]+$/.test(item))
+    .map((item) => fs.readFileSync(item, "utf8"))
+    .join("\n");
+  if (/dangerouslySetInnerHTML|<iframe|<dialog|\b(?:fetch|XMLHttpRequest|WebSocket|EventSource)\s*\(/.test(archiveText))
+    add("U04A-SEC-001", archiveRoot, "Complete archive adds unsafe markup, an in-unit dialog, or runtime networking.");
+  if (/asset-0857163ebd922f5c0723|asset-1fa6103b2d5218d4582b/.test(
+    walk(path.join(archiveRoot, "generated/groups")).map((item) => fs.readFileSync(item, "utf8")).join("\n"),
+  )) add("U04A-EVD-001", archiveRoot, "An excluded academic transcript entered a public group module.");
+  const appPath = path.join(root, "src/App.tsx");
+  const appText = fs.readFileSync(appPath, "utf8");
+  if (mode !== "complete-archive-active") {
+    const recovery = JSON.parse(fs.readFileSync(path.join(root, ".aidlc-recovery/complete-archive-discovery/manifest.json"), "utf8"));
+    const protectedApp = recovery.targetStates.find(({ path: target }) => target === "src/App.tsx");
+    const currentHash = crypto.createHash("sha256").update(fs.readFileSync(appPath)).digest("hex");
+    if (!protectedApp || currentHash !== protectedApp.sha256)
+      add("U04A-GATE-001", appPath, "Active composition changed before complete-archive candidate approval.");
+  }
+  if (mode === "complete-archive-candidate") {
+    const entry = path.join(root, "scripts/portfolio/complete-archive-discovery-candidate/main.tsx");
+    const text = fs.existsSync(entry) ? fs.readFileSync(entry, "utf8") : "";
+    for (const contract of ["completeArchiveCandidateRegistry", "portfolioContactCandidateRegistry", "researchDataBodyRegistry", "toolsFieldworkBodyRegistry", "JournalRoute"]) {
+      if (!text.includes(contract)) add("U04A-CAN-001", entry, `Complete archive candidate is missing ${contract}.`);
+    }
+  }
+  if (mode === "complete-archive-active" && (!appText.includes("completeArchiveCandidateRegistry") || !appText.includes("portfolioContactCandidateRegistry")))
+    add("U04A-ACT-001", appPath, "Approved complete archive and Contact registries are not active.");
+}
 if (mode === "inactive" && shellIsActive)
   add(
     "MIG-001",
@@ -87,7 +129,7 @@ if (mode === "active" && !shellIsActive)
 if (
   mode === "active" &&
   /(?:Provider|App\.css|index\.css|getPortfolioTemplate|usePortfolioLayout|templates\/)/.test(
-    activeText,
+    approvedActiveText,
   )
 ) {
   add(
@@ -96,6 +138,12 @@ if (
     "Rejected presentation remains reachable from the active entry.",
   );
 }
+if (mode === "active" && (activeText.match(/<MediaViewerProvider>/g) ?? []).length > 1)
+  add(
+    "BND-006",
+    path.join(root, "src/App.tsx"),
+    "More than one approved media viewer provider is active.",
+  );
 
 if (mode === "candidate") {
   const candidateEntry = path.join(

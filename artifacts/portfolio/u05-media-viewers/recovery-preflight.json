@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-24T16:15:14.316Z",
+  "targetStates": [
+    {
+      "path": "src/App.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1433,
+      "sha256": "fde9f21e4f0639e24c6bde359385eb06bdb7048ae295ba54b43469f555d61594"
+    },
+    {
+      "path": "src/portfolio/index.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 735,
+      "sha256": "edcd8ead4b16e796ca1de53491e30f9053d993594c6a30619895ecd916e7313e"
+    },
+    {
+      "path": "src/portfolio/archive/archive.types.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 5897,
+      "sha256": "f917f293eb1e0806aa432f3bd07a82676516e16f9f0cc8be742448dc11bdf23a"
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveCards.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3451,
+      "sha256": "606301458279bdae7cd7136281a65a417a38f46a10643c725d17dd657a2dc4d3"
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveGroup.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1231,
+      "sha256": "0b8f416d254feac6d86865afdeefb61eda3e37ff053035bfb78243aafe61e126"
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveExplorer.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3014,
+      "sha256": "4eec72f71f6f1493413596d5c0709a34112da32f779f00f44f1f82488a7b6f2a"
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveExplorer.module.css",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4741,
+      "sha256": "6e7aae8d5bbd4517116e5de6ae24593c531702ae966a4eaa92c25080c58f1f1c"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicEvidenceAction.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 707,
+      "sha256": "e70c528eb38363f85d9a16ba918e63e9bef1b22eaa30114ec641aa317e668a1d"
+    },
+    {
+      "path": "src/portfolio/academics/LazyEvidenceImage.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1290,
+      "sha256": "9d4c8b64c3031bcade5bd27e72508df3a8cd7e30de3ef692182203436302ec66"
+    },
+    {
+      "path": "src/portfolio/academics/TextDocumentPreview.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 776,
+      "sha256": "4ea55154777ff43f002c544d07e866f3fbcad89870693fb235e1dbbedf299d17"
+    },
+    {
+      "path": "src/portfolio/academics/CompleteEvidenceLibrary.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 965,
+      "sha256": "31de750434bf3dfbaa08cc2a2592ea4123549f6b01284889ae2b15039c3a4818"
+    },
+    {
+      "path": "src/portfolio/research/ResearchFigure.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 997,
+      "sha256": "93f5e8a20b7d938e37cbb756366c3616a0464ec0ae9e6d5b4b2114d045af2fe2"
+    },
+    {
+      "path": "src/portfolio/research/ResearchEvidenceAction.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 668,
+      "sha256": "65b92deae578455adc603cc471973c6b03407ccd92bf46a91302fe9d657a8484"
+    },
+    {
+      "path": "src/portfolio/research/ComputationalProjects.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2609,
+      "sha256": "8c1bbcdda08877ead2670fdb1517dd65932748c08f3345189393a1e5fa937442"
+    },
+    {
+      "path": "src/portfolio/research/LaboratoryResearch.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2544,
+      "sha256": "3bf37efddf3a76d1daa6e1c7ca9978b966bac28595829740795bdc6ae2bc3136"
+    },
+    {
+      "path": "src/portfolio/shared/EvidenceAction.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 710,
+      "sha256": "628451539340b56a8e14b91d9f5e241ad33611f2ab4093e2f929c907a25cd4ed"
+    },
+    {
+      "path": "src/portfolio/resume/ResumeAction.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 615,
+      "sha256": "a9ca5ce0f044275a91d26b1254103aabf330103c5fd6067be720b83d3bcfe830"
+    },
+    {
+      "path": "src/portfolio/shell/PortfolioExperience.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 980,
+      "sha256": "e4da2e091d93e305916dd20dc1a286c5f0b4a444332013cf3e0fa5069f194d26"
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "kind": "file",
+      "bytes": 13593,
+      "sha256": "c38ec08bb18976e9734a9350c2dbdde86b4e06d8153b13f620f8fa0960e18ac9"
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "kind": "file",
+      "bytes": 345441,
+      "sha256": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971"
+    },
+    {
+      "path": "src/portfolio/media-viewer",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/pdf-image-detail-viewers-candidate",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/pdf-image-detail-viewers-review",
+      "exists": true,
+      "kind": "directory"
+    }
+  ],
+  "dependencyBaseline": {
+    "packageLockSha256": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971",
+    "dependenciesSha256": "bfc60b12c6fe1082dd3c54cecb42c60dd301a294b77e36c1df356daa5a4a9e82",
+    "devDependenciesSha256": "6e223db85d0334871a48b75a019979a809ac6046c519249f1a6bbc1e486ac6ff"
+  },
+  "restoration": {
+    "isolated": true,
+    "findings": [],
+    "passed": true
+  },
+  "canProceed": true
+}

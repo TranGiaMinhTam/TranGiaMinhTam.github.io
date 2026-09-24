@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "targetCount": 60,
+  "capturedPayloadCount": 38,
+  "absentStateCount": 22,
+  "isolatedRestorationPassed": true,
+  "findings": [],
+  "canRestore": true
+}

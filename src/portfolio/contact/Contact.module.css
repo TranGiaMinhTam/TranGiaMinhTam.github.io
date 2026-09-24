@@ -79,7 +79,8 @@
 .formIntro,
 .message,
 .submit,
-.handoffNote {
+.handoffNote,
+.actionRow {
   grid-column: 1 / -1;
 }
 
@@ -170,6 +171,22 @@
   font-size: 0.9rem;
 }
 
+.actionRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 22rem);
+  gap: var(--space-6);
+  align-items: center;
+  padding-block-start: var(--space-2);
+}
+
+.actionRow .submit {
+  grid-column: 2;
+  justify-self: stretch;
+  inline-size: 100%;
+}
+
+.actionRow .handoffNote { grid-column: 1; }
+
 .failure {
   padding: var(--space-8);
   color: var(--color-text-primary);
@@ -195,6 +212,10 @@
   .formIntro {
     display: grid;
   }
+
+  .actionRow { grid-template-columns: minmax(0, 1fr); }
+  .actionRow .submit,
+  .actionRow .handoffNote { grid-column: 1; }
 }
 
 @media (max-width: 30rem) {
@@ -207,6 +228,10 @@
   .recipient {
     padding: var(--space-4);
   }
+
+  .portfolio .submit { inline-size: 100%; }
+
+  .recipient a { font-size: 0.9rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

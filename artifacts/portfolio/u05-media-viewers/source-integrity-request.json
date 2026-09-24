@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "phase": "source",
+  "dockingGeometryCount": 5,
+  "requestReport": {
+    "checked": false
+  },
+  "findings": [],
+  "canProceed": true
+}

@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "targetCount": 60,
+  "existingFileCount": 38,
+  "existingDirectoryCount": 0,
+  "absentStateCount": 22,
+  "targetStates": [
+    {
+      "path": "src/portfolio/archive/archive.types.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3547,
+      "sha256": "dc49a9ad72eae2b8c32630b081ba16a161a279558d640532b171a07bbe0f812e"
+    },
+    {
+      "path": "src/portfolio/archive/archiveAliases.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 513,
+      "sha256": "e5a6339e2738816c9e2d0555840310dcbfbceb96cd2c0e24a4010433d3bbef11"
+    },
+    {
+      "path": "src/portfolio/archive/archiveMetadata.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 49223,
+      "sha256": "a8c798f9665deb7dd9ea3f634b1555f9843c507f65210aea01bd7784dcae3cae"
+    },
+    {
+      "path": "src/portfolio/archive/archiveModel.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2106,
+      "sha256": "cbfe091297ca3247f9669d9124da56fe77defb2aa46d9163c1fcbc6114b5a11b"
+    },
+    {
+      "path": "src/portfolio/archive/archiveModel.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2222,
+      "sha256": "025ef005f94bcd79975b42494c8ad17ae215a6915b3cb1ac1b44c3eaccb637da"
+    },
+    {
+      "path": "src/portfolio/archive/generated/archive-manifest.json",
+      "exists": true,
+      "kind": "file",
+      "bytes": 217902,
+      "sha256": "63f0865eb9d13c3dd0d5d87f91ddb0719f468687ec845a916be447ca255215ce"
+    },
+    {
+      "path": "src/portfolio/archive/index.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 201,
+      "sha256": "28a255731f91eec9bb8bf5d47d2caab915e6bf13cd0dc1d826a85d1ac63202d2"
+    },
+    {
+      "path": "src/portfolio/archive/mediaSourcePolicy.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1646,
+      "sha256": "fa3c62bb724240f2cc2565b8ff679dbd344b721d10fc465b33a813f90bc0ff58"
+    },
+    {
+      "path": "src/portfolio/archive/mediaSourcePolicy.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1106,
+      "sha256": "97b2fbc1d0bbfef651ea4df0f9015ffccad20164abba693c6483c44b57cd514f"
+    },
+    {
+      "path": "src/portfolio/academics/academic.types.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3620,
+      "sha256": "c286efd7efcdd61598f0bb5f87b50af7e21ea693aa42b3f6ebbdf0e16d23cade"
+    },
+    {
+      "path": "src/portfolio/academics/academicEvidenceCatalog.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4823,
+      "sha256": "c781613262df762e1a0f5010520275cccab222849d283cc7639adb762565c93e"
+    },
+    {
+      "path": "src/portfolio/academics/academicEvidenceCatalog.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1594,
+      "sha256": "b34298ac4debde0429d1640ca0a8698a962b2e28fa44305e857742e11b893063"
+    },
+    {
+      "path": "src/portfolio/academics/academicEvidenceModel.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 10462,
+      "sha256": "ad7198e5c1f3a993514115158f154bc380edb4b61ae71275a4c21cb83fdd189d"
+    },
+    {
+      "path": "src/portfolio/academics/academicEvidenceModel.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 5877,
+      "sha256": "2180c5a05a49dc902584f18413881d43a4f295fa76378f1fec371bb6903bc3f1"
+    },
+    {
+      "path": "src/portfolio/academics/EvidenceLibrary.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2074,
+      "sha256": "492d705099e49379f8d1fa62ff4f37836b7c60d7319f3a9aa2a0e0c1f71c11b9"
+    },
+    {
+      "path": "src/portfolio/academics/AcademicEvidence.module.css",
+      "exists": true,
+      "kind": "file",
+      "bytes": 11022,
+      "sha256": "c6dc958f3334211e3c24e3e96402e7facaee9b70175a020d638f2a4f9f9953d0"
+    },
+    {
+      "path": "src/portfolio/academics/sectionBodies.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1215,
+      "sha256": "895e1e1af8ea7e63c0eebd9af190cb7a1b9978fea09e030b509807fbbabe728c"
+    },
+    {
+      "path": "src/portfolio/contact/ContactSignal.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 6027,
+      "sha256": "f5461e03e9aea568d0dea8267136cda101a6c622be2663a01b031e4537971c01"
+    },
+    {
+      "path": "src/portfolio/contact/ContactSignal.test.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2392,
+      "sha256": "5eb7bf30835775a2ae2dc05235170f5ae5f13aaa71f7ed9b81cbccde152db0be"
+    },
+    {
+      "path": "src/portfolio/contact/Contact.module.css",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4232,
+      "sha256": "4a9f9561a3b0b210436dd66b7d464b1a58272520af3eacd7a36beba0c7441e72"
+    },
+    {
+      "path": "src/portfolio/contact/contactModel.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 4864,
+      "sha256": "f04f18e584a351f640fd7f85a5b0e042d8c7bad441c2cc4126b4b3eeced8170a"
+    },
+    {
+      "path": "src/portfolio/contact/contactModel.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2472,
+      "sha256": "78e3ca84885d43378bdaa9e9546f9b704e869fe75f36d3bd2768ec8b07c72723"
+    },
+    {
+      "path": "src/portfolio/contact/contactStyles.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 945,
+      "sha256": "a4aff4ecaa5a049d68824fc95e537d7d863240b17e27b9f5ceb39b98ff1f5010"
+    },
+    {
+      "path": "src/portfolio/research/ComputationalProjects.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2609,
+      "sha256": "8c1bbcdda08877ead2670fdb1517dd65932748c08f3345189393a1e5fa937442"
+    },
+    {
+      "path": "src/portfolio/research/projectCatalog.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 6274,
+      "sha256": "e55ac9f9663cbaa2301fba1a20b1ad2d3d3855abb9ddbef0196e55be24e79015"
+    },
+    {
+      "path": "src/portfolio/research/projectCatalog.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2157,
+      "sha256": "769c7b3fe0b7f4a6aeb3588a51649b28e17fae5b97bd19fd0159ac9cb128666d"
+    },
+    {
+      "path": "src/portfolio/model/evidenceManifest.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 5536,
+      "sha256": "4cf793f360881fa743d49c2071dc974e45b25b26979342f4f88f23f921e5c23c"
+    },
+    {
+      "path": "src/portfolio/resume/resumeClaims.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 8192,
+      "sha256": "b4c67159d295c29262a0de4f1dc63070fd5bf6cde72be329222caf3669c9feda"
+    },
+    {
+      "path": "src/data/research.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2894,
+      "sha256": "42226519dd1c63c7559f591460bf10a33ecf35378f0cd3e3c31871908ec03e35"
+    },
+    {
+      "path": "src/data/projects.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2931,
+      "sha256": "de46f8279454c142276dde99c23923b9b24b0c8c729a18b9bd7c57ba7037b95b"
+    },
+    {
+      "path": "src/data/certificates.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3438,
+      "sha256": "319d34651f5d1a987b1a39763ce5fc5c4cddd0314c7f0abe1c64abf1ef041ec9"
+    },
+    {
+      "path": "src/App.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 1351,
+      "sha256": "8b96081fca558c3db1d679992b978556002e0445e4b34a6739a3d237fa8b56fc"
+    },
+    {
+      "path": "src/App.test.tsx",
+      "exists": true,
+      "kind": "file",
+      "bytes": 2958,
+      "sha256": "3af669ec92e85701787448eae832ddc386ea6407b4bdec8b88b9467bb0353d75"
+    },
+    {
+      "path": "src/portfolio/boundaries.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 5419,
+      "sha256": "223beffba43e40af73b42dce2157fa1f26fc8a6e40e17e9c88672b963fd1a5a0"
+    },
+    {
+      "path": "src/portfolio/sourceGovernanceBoundaries.test.ts",
+      "exists": true,
+      "kind": "file",
+      "bytes": 591,
+      "sha256": "7bcf75ef6993655c79352ef4e8aeae1af9f250f2050702df2e5c86f8beb17425"
+    },
+    {
+      "path": "scripts/portfolio/check-boundaries.mjs",
+      "exists": true,
+      "kind": "file",
+      "bytes": 26431,
+      "sha256": "396618d1ab0818ded8b1900323b47adf67c48dc67d1de5ca10e8c5ab06644117"
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "kind": "file",
+      "bytes": 11637,
+      "sha256": "eb25de373a82f653264936e46f99cd0a01890afd5004c2c6511942ee8c8ef288"
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "kind": "file",
+      "bytes": 345441,
+      "sha256": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971"
+    },
+    {
+      "path": "src/portfolio/archive/archiveEligibility.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/archiveDiscoveryModel.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/archiveGroupLoaders.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/archiveGroups.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveExplorer.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveGroup.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveCards.tsx",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/ArchiveExplorer.module.css",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/archive/generated/groups",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/complete-archive-discovery-candidate/index.html",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/complete-archive-discovery-candidate/main.tsx",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/complete-archive-discovery-candidate/vite.config.mjs",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/7381606024551.jpg",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4206.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4207.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4208.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4213.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/gallery/2026 Protein Docking/7381606024551.jpg",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4207.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4208.JPG",
+      "exists": false
+    },
+    {
+      "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4213.JPG",
+      "exists": false
+    }
+  ],
+  "trackedDiff": {
+    "path": "tracked-targets.patch",
+    "bytes": 3333080,
+    "sha256": "dee6171260a01ed01255dc9a48777338692a7b6c8644d117fd7b1e8454ea4418"
+  },
+  "proteinDocking": {
+    "sourcePublication": {
+      "path": "src/assets/minh-tam/source/Science research /2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf",
+      "exists": true,
+      "kind": "file",
+      "bytes": 3490329,
+      "sha256": "dcc1b81a83eb9d3b10e6b9dc36c4452735e34f4f93db16355a2c782bf1669e74"
+    },
+    "deletedDuplicateFolderPreservedAbsent": true,
+    "recoverableImageBlobs": [
+      {
+        "path": "src/assets/minh-tam/gallery/2026 Protein Docking/7381606024551.jpg",
+        "available": true
+      },
+      {
+        "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG",
+        "available": true
+      },
+      {
+        "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4207.JPG",
+        "available": true
+      },
+      {
+        "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4208.JPG",
+        "available": true
+      },
+      {
+        "path": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4213.JPG",
+        "available": true
+      }
+    ]
+  },
+  "restoration": {
+    "isolated": true,
+    "findings": [],
+    "passed": true
+  },
+  "canProceed": true
+}

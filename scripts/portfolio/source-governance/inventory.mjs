@@ -42,6 +42,7 @@ const walk = async (root, current = root) => {
   const output = []
   const entries = await readdir(current, { withFileTypes: true })
   for (const entry of entries.sort((left, right) => left.name.localeCompare(right.name))) {
+    if (entry.name === '.DS_Store') continue
     const candidate = path.join(current, entry.name)
     if (entry.isDirectory()) output.push(...await walk(root, candidate))
     else output.push({ candidate, entry })

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "phase": "active-before-u04-complete-archive",
+  "entryGraph": {
+    "javascript": {
+      "bytes": 311303
+    },
+    "css": {
+      "bytes": 54189
+    },
+    "initialRequestCount": 3
+  }
+}

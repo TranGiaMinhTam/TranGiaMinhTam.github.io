@@ -59,7 +59,11 @@ describe("U-04 research bodies", () => {
     expect(
       screen.getAllByLabelText(/2026 protein docking project visuals/i)[0],
     ).toBeInTheDocument();
-    expect(screen.getAllByRole("img")).toHaveLength(5);
+    expect(screen.getAllByRole("img")).toHaveLength(1);
+    expect(screen.getByRole("img")).toHaveAttribute(
+      "alt",
+      expect.stringMatching(/research team with the molecular docking poster at the 2026 pharmacy conference/i),
+    );
     expectEquivalentRelationships(container, "computational-projects");
   });
 
@@ -98,7 +102,9 @@ describe("U-04 research bodies", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("Team-led project")).toBeInTheDocument();
     expect(screen.queryByTestId("data-stories-note-discovery")).not.toBeInTheDocument();
-    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "1st Place — Future Innovator Camp" })).toBeInTheDocument();
+    expect(screen.getByTestId("future-innovator-first-place-preview-image")).toHaveAttribute("loading", "lazy");
+    expect(screen.getByText(/not evidence for the retail analytics challenge/i)).toBeInTheDocument();
     expect(
       screen.getByTestId("data-stories-certificate-sim-lse-certificate-evidence-link"),
     ).toHaveAccessibleName(/certificate.*PDF.*new tab/i);

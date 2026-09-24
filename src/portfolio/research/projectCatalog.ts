@@ -1,13 +1,5 @@
-import proteinDockingPublication from '../../assets/minh-tam/gallery/2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf'
-import simLseCertificate from '../../assets/minh-tam/certificates/sim-lse-certificate.pdf'
-import wicoPoster from '../../assets/minh-tam/certificates/wico-poster.pdf'
-import cashewPolyphenolFigure from '../../assets/minh-tam/projects/cashew-polyphenol.jpg'
-import dockingResearchCompletion from '../../assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG'
-import dockingPosterPresentation from '../../assets/minh-tam/gallery/2026 Protein Docking/IMG_4213.JPG'
-import dockingOralPresentation from '../../assets/minh-tam/gallery/2026 Protein Docking/IMG_4207.JPG'
-import dockingConferencePoster from '../../assets/minh-tam/gallery/2026 Protein Docking/IMG_4208.JPG'
-import dockingWorkstation from '../../assets/minh-tam/gallery/2026 Protein Docking/7381606024551.jpg'
-import { contentId, evidenceId, type ContentId, type EvidenceRecord } from '../model/portfolio.types'
+import { evidenceManifest } from '../model/evidenceManifest'
+import { contentId, type ContentId } from '../model/portfolio.types'
 import { researchNoteDiscovery } from '../model/researchNoteCatalog'
 import type { ContributionDisclosure, ResearchDomain, ResearchNoteDestination, ResearchPractice } from './research.types'
 
@@ -64,51 +56,18 @@ export const figureGeometryByEvidenceId = Object.freeze({
   'evidence-cashew-polyphenol-figure': { width: 1280, height: 960 },
 } as const)
 
-const researchDocument = (
-  id: string,
-  title: string,
-  caption: string,
-  kind: EvidenceRecord['kind'],
-  path: string,
-  source: string,
-): EvidenceRecord => ({
-  id: evidenceId(id),
-  status: 'published',
-  kind,
-  provenance: `Reviewed curated asset: ${path}`,
-  title,
-  caption,
-  accessibleText: `${title}. ${caption}`,
-  full: { path, source, mediaKind: 'pdf' },
-  loadStrategy: 'on-demand',
-})
+const researchEvidenceIds = new Set([
+  'evidence-protein-docking-publication',
+  'evidence-docking-research-completion',
+  'evidence-docking-poster-presentation',
+  'evidence-docking-oral-presentation',
+  'evidence-docking-conference-poster',
+  'evidence-docking-workstation',
+  'evidence-wico-poster',
+  'evidence-cashew-polyphenol-figure',
+  'evidence-sim-lse-certificate',
+])
 
-const researchImage = (
-  id: string,
-  title: string,
-  caption: string,
-  path: string,
-  source: string,
-): EvidenceRecord => ({
-  id: evidenceId(id),
-  status: 'published',
-  kind: 'presentation',
-  provenance: `Reviewed curated derivative: ${path}`,
-  title,
-  caption,
-  accessibleText: `${title}. ${caption}`,
-  full: { path, source, mediaKind: 'image' },
-  loadStrategy: 'lazy',
-})
-
-export const researchEvidenceManifest = Object.freeze([
-  researchDocument('evidence-protein-docking-publication', '2026 molecular docking conference proceedings', 'Conference publication for the Type II diabetes docking study.', 'publication', 'gallery/2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf', proteinDockingPublication),
-  researchImage('evidence-docking-research-completion', 'Protein docking research completion', 'The research team at the 2026 project completion presentation.', 'gallery/2026 Protein Docking/IMG_4206.JPG', dockingResearchCompletion),
-  researchImage('evidence-docking-poster-presentation', 'Protein docking poster presentation', 'The research team presenting the molecular docking poster in March 2026.', 'gallery/2026 Protein Docking/IMG_4213.JPG', dockingPosterPresentation),
-  researchImage('evidence-docking-oral-presentation', 'Protein docking oral presentation', 'Presentation of the Type II diabetes molecular docking project.', 'gallery/2026 Protein Docking/IMG_4207.JPG', dockingOralPresentation),
-  researchImage('evidence-docking-conference-poster', 'Protein docking conference poster', 'The research team with the molecular docking poster at the 2026 pharmacy conference.', 'gallery/2026 Protein Docking/IMG_4208.JPG', dockingConferencePoster),
-  researchImage('evidence-docking-workstation', 'Protein docking workstation', 'Computational modelling work shown on the laboratory workstation.', 'gallery/2026 Protein Docking/7381606024551.jpg', dockingWorkstation),
-  researchDocument('evidence-wico-poster', 'WICO research poster', 'Poster supporting the cashew testa polyphenol project.', 'poster', 'certificates/wico-poster.pdf', wicoPoster),
-  researchImage('evidence-cashew-polyphenol-figure', 'Cashew polyphenol project figure', 'Curated visual for the laboratory research project.', 'projects/cashew-polyphenol.jpg', cashewPolyphenolFigure),
-  researchDocument('evidence-sim-lse-certificate', 'SIM-LSE challenge certificate', 'Participation evidence for the retail analytics project.', 'certificate', 'certificates/sim-lse-certificate.pdf', simLseCertificate),
-] as const satisfies readonly EvidenceRecord[])
+export const researchEvidenceManifest = Object.freeze(
+  evidenceManifest.filter(({ id }) => researchEvidenceIds.has(id)),
+)

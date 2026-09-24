@@ -1,5 +1,5 @@
 {
-  "canonicalItemCount": 104,
+  "canonicalItemCount": 110,
   "duplicateGroups": [
     {
       "canonicalId": "asset-1fa6103b2d5218d4582b",
@@ -128,15 +128,6 @@
       "sha256": "d076ab15fe4fd6ccfbdb9fdb2722e152328594ac540e5aad10547ac7e57e0502"
     },
     {
-      "canonicalId": "asset-d6e6398b821168498d4d",
-      "decision": "exact-content-duplicate",
-      "members": [
-        "src/assets/minh-tam/source/Academic competitions/Kyoto Youth Summit 2026/Kyoto 1.png",
-        "src/assets/minh-tam/profile.png"
-      ],
-      "sha256": "d6e6398b821168498d4dd7179c92354f57d7160ddbe8ec842d6cc70a3defeb54"
-    },
-    {
       "canonicalId": "asset-dc6125151ef633adf31a",
       "decision": "exact-content-duplicate",
       "members": [
@@ -164,7 +155,7 @@
       "sha256": "dedfbd3440855f44fae328ac19f8d4fde662be5164183dde437613c577cf3619"
     }
   ],
-  "physicalFileCount": 122,
+  "physicalFileCount": 127,
   "reviewedNonIdenticalAliases": [],
   "schemaVersion": 1
 }

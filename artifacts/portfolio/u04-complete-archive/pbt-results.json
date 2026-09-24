@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "suite": "U04-P01..P09 archive discovery properties",
+  "seed": 20260924,
+  "runsPerProperty": 100,
+  "shrinkingEnabled": true,
+  "propertyCount": 9,
+  "status": "passed",
+  "command": "npm test -- --run src/portfolio/archive"
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "baseline": {
+    "javascript": {
+      "bytes": 311303
+    },
+    "css": {
+      "bytes": 54189
+    },
+    "initialRequestCount": 3
+  },
+  "candidate": {
+    "javascriptBytes": 319027,
+    "cssBytes": 59031,
+    "initialRequestCount": 3,
+    "initialFiles": [
+      "assets/index-AQmJE8Qk.css",
+      "assets/index-BDZalr4Q.js"
+    ]
+  },
+  "groups": [
+    {
+      "id": "academic-competitions",
+      "javascriptBytes": 10860,
+      "emittedAssetCount": 40
+    },
+    {
+      "id": "public-speaking",
+      "javascriptBytes": 677,
+      "emittedAssetCount": 2
+    },
+    {
+      "id": "scholarships",
+      "javascriptBytes": 1327,
+      "emittedAssetCount": 4
+    },
+    {
+      "id": "scientific-research",
+      "javascriptBytes": 21132,
+      "emittedAssetCount": 83
+    },
+    {
+      "id": "sport",
+      "javascriptBytes": 1149,
+      "emittedAssetCount": 4
+    },
+    {
+      "id": "volunteering",
+      "javascriptBytes": 20187,
+      "emittedAssetCount": 68
+    }
+  ],
+  "budgets": {
+    "javascriptBytes": 327680,
+    "cssBytes": 61440,
+    "javascriptRegressionPercent": 8,
+    "cssRegressionPercent": 12,
+    "groupJavascriptBytes": 24576
+  },
+  "findings": [],
+  "canProceed": true
+}

@@ -1,0 +1,89 @@
+.explorer {
+  inline-size: 100%;
+  color: var(--color-text-primary);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.summaryButton {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  gap: var(--space-3);
+  min-block-size: 16rem;
+  padding: clamp(var(--space-5), 2.4vw, var(--space-8));
+  border: var(--border-thin) solid var(--color-rule);
+  border-block-start: 4px solid var(--color-accent);
+  background: var(--color-surface-elevated);
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.summaryButton:hover,
+.summaryButton[aria-expanded='true'] { background: color-mix(in srgb, var(--color-accent) 9%, var(--color-surface-elevated)); }
+.summaryButton:focus-visible,
+.cardAction:focus-visible,
+.safeState button:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.summaryIndex,
+.cardKind,
+.subcollectionHeader p,
+.summaryCounts,
+.summaryAction { font: 700 0.72rem/1.4 var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+.summaryIndex,
+.summaryCounts { color: var(--color-text-secondary); }
+.summaryButton strong { font: 740 clamp(1.3rem, 2vw, 2rem)/1.05 var(--font-body); letter-spacing: -0.035em; }
+.summaryButton small { color: var(--color-text-secondary); font-size: 0.96rem; line-height: 1.55; }
+.summaryAction { color: var(--color-accent); }
+
+.groupRegion { margin-block-start: clamp(var(--space-8), 5vw, 4rem); }
+.safeState { display: grid; gap: var(--space-4); justify-items: start; margin: 0; padding: var(--space-8); border: var(--border-thin) solid var(--color-rule); background: var(--color-surface-elevated); }
+.safeState p { margin: 0; }
+.safeState button { padding: var(--space-3) var(--space-5); border: 0; background: var(--color-accent); color: var(--color-surface); font-weight: 750; cursor: pointer; }
+.loadedGroup { display: grid; gap: clamp(3rem, 7vw, 5rem); }
+.subcollection { min-inline-size: 0; }
+.subcollectionHeader { display: grid; grid-template-columns: 5rem minmax(0, 1fr) auto; gap: var(--space-4); align-items: baseline; margin-block-end: var(--space-5); padding-block-end: var(--space-4); border-block-end: 2px solid var(--color-rule); }
+.subcollectionHeader p,
+.subcollectionHeader h3,
+.subcollectionHeader span { margin: 0; }
+.subcollectionHeader p,
+.subcollectionHeader span { color: var(--color-text-secondary); }
+.subcollectionHeader h3 { font: 750 clamp(1.5rem, 3vw, 2.7rem)/1 var(--font-body); letter-spacing: -0.04em; }
+.cardGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(var(--space-5), 2.5vw, var(--space-8)); }
+.card { display: grid; grid-template-rows: auto 1fr; gap: var(--space-4); min-inline-size: 0; padding: var(--space-4); border: var(--border-thin) solid var(--color-rule); background: var(--color-surface); }
+.imageFrame,
+.documentFrame,
+.originalFrame { overflow: hidden; aspect-ratio: 4 / 3; border: var(--border-thin) solid var(--color-rule); background: var(--color-surface-elevated); }
+.imageFrame img,
+.documentFrame img { display: block; inline-size: 100%; block-size: 100%; object-fit: cover; }
+.imageFrame p { display: grid; place-items: center; block-size: 100%; margin: 0; padding: var(--space-5); color: var(--color-text-secondary); }
+.documentFrame img { object-position: top; }
+.documentFrame span,
+.originalFrame { display: grid; place-items: center; block-size: 100%; min-block-size: 10rem; font: 800 1rem/1 var(--font-mono); letter-spacing: 0.15em; }
+.cardCopy { display: grid; grid-template-rows: auto auto 1fr auto; gap: var(--space-3); min-inline-size: 0; padding: 0 var(--space-1) var(--space-1); }
+.cardKind { margin: 0; color: var(--color-accent); }
+.cardCopy h4 { margin: 0; font: 740 clamp(1.1rem, 1.7vw, 1.45rem)/1.15 var(--font-body); letter-spacing: -0.025em; overflow-wrap: anywhere; }
+.cardCopy > p:not(.cardKind) { margin: 0; color: var(--color-text-secondary); line-height: 1.55; }
+.cardAction { display: flex; justify-content: space-between; gap: var(--space-4); align-items: center; inline-size: 100%; margin-block-start: var(--space-3); padding: var(--space-3) 0; border: 0; border-block-start: var(--border-thin) solid var(--color-rule); background: transparent; color: var(--color-text-primary); text-align: start; text-decoration: none; font: 730 0.9rem/1.3 var(--font-body); cursor: pointer; }
+
+@media (max-width: 960px) {
+  .summaryGrid,
+  .cardGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .summaryGrid,
+  .cardGrid { grid-template-columns: 1fr; }
+  .summaryButton { min-block-size: 13rem; }
+  .subcollectionHeader { grid-template-columns: 1fr auto; }
+  .subcollectionHeader p { grid-column: 1 / -1; }
+}
+
+@media (forced-colors: active) {
+  .summaryButton,
+  .card,
+  .safeState { border-color: CanvasText; }
+}

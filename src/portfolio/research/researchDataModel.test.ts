@@ -65,7 +65,7 @@ describe("assembleResearchData", () => {
   it("preserves complete project text when optional figure evidence is absent", () => {
     const result = assembleResearchData(
       verifiedPortfolioSource,
-      withoutEvidence(evidenceManifest, "evidence-docking-research-completion"),
+      withoutEvidence(evidenceManifest, "evidence-docking-conference-poster"),
     );
     expect(result.ok).toBe(true);
     if (!result.ok)
@@ -82,7 +82,21 @@ describe("assembleResearchData", () => {
       /computational docking/i,
     );
     expect(result.value.computational.methods).toHaveLength(4);
-    expect(result.value.computational.evidence).toHaveLength(5);
+    expect(result.value.computational.evidence).toHaveLength(1);
+  });
+
+  it("uses only the conference-poster photograph in the first computational project", () => {
+    const result = assembleResearchData(verifiedPortfolioSource, evidenceManifest);
+    expect(result.ok).toBe(true);
+    if (!result.ok) throw new Error("Expected accepted U-04 source.");
+    const images = result.value.computational.evidence.filter(
+      ({ evidence }) => evidence.full.mediaKind === "image",
+    );
+    expect(images).toHaveLength(1);
+    expect(images[0]?.id).toBe("evidence-docking-conference-poster");
+    expect(images[0]?.evidence.caption).toBe(
+      "The research team with the molecular docking poster at the 2026 pharmacy conference.",
+    );
   });
 
   it("fails closed for missing, duplicate, malformed, and misallocated required projects", () => {

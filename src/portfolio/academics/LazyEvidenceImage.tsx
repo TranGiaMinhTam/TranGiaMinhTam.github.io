@@ -3,10 +3,10 @@ import type { LazyImageCapability } from './academic.types'
 import { AcademicEvidenceAction } from './AcademicEvidenceAction'
 import styles from './AcademicEvidence.module.css'
 
-export function LazyEvidenceImage({ capability }: Readonly<{ capability: LazyImageCapability }>) {
+export function LazyEvidenceImage({ capability, group }: Readonly<{ capability: LazyImageCapability; group?: readonly LazyImageCapability[] }>) {
   const [failed, setFailed] = useState(false)
   return <div className={styles.imagePreview} data-testid={`image-preview-${capability.id}`}>
-    <div className={styles.imageFrame} style={{ aspectRatio: `${capability.width} / ${capability.height}` }}>
+    <div className={styles.imageFrame}>
       {failed
         ? <p className={styles.imageUnavailable} role="status">Preview unavailable. The full image action remains available.</p>
         : <img
@@ -23,7 +23,7 @@ export function LazyEvidenceImage({ capability }: Readonly<{ capability: LazyIma
       <p className={styles.itemKind}>project visual</p>
       <h4>{capability.evidence.title}</h4>
       <p>{capability.evidence.caption}</p>
-      <AcademicEvidenceAction capability={capability} label="Open full image" />
+      <AcademicEvidenceAction capability={capability} group={group} label="Open full image" />
     </div>
   </div>
 }

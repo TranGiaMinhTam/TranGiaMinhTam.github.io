@@ -7,8 +7,8 @@
 - **Change**: Header, Content, Evidence, and Resume Refinement
 - **Start date**: 2026-09-19T18:31:21Z
 - **Current phase**: CONSTRUCTION
-- **Current stage**: U-04 Code Generation Part 1 - planning
-- **Workflow status**: Active - U-04 Code Generation plan complete; twelve decisions awaiting answers and explicit approval
+- **Current stage**: U-05 Code Generation - Review amendment in progress
+- **Workflow status**: Active - implementing requested layout and content consolidation before repeating the standardized review gate
 - **Previous workflow**: Science, Data Science, and Bioinformatics Portfolio Redesign Restart completed on 2026-09-18
 - **Rejected attempt**: Research Atlas implementation; retained temporarily as recoverable uncommitted workspace state
 - **Active requirement questions**: `aidlc-docs/inception/requirements/requirement-verification-questions.md`
@@ -17,7 +17,7 @@
 - **Active execution plan**: `aidlc-docs/inception/plans/execution-plan.md`
 - **Active application-design plan**: `aidlc-docs/inception/plans/application-design-plan.md`
 - **Active unit-of-work plan**: `aidlc-docs/inception/plans/unit-of-work-plan.md`
-- **Active unit**: U-04 Complete Archive Discovery
+- **Active unit**: U-05 PDF and Image Detail Viewers
 - **Active functional-design plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-functional-design-plan.md`
 - **Active U-02 functional-design plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-functional-design-plan.md`
 - **Active U-02 NFR requirements plan**: `aidlc-docs/construction/plans/masthead-theme-responsive-alignment-nfr-requirements-plan.md`
@@ -29,6 +29,7 @@
 - **Active U-03 code-generation plan**: `aidlc-docs/construction/plans/resume-led-content-integration-code-generation-plan.md`
 - **Active U-04 functional-design plan**: `aidlc-docs/construction/plans/complete-archive-discovery-functional-design-plan.md`
 - **Active U-04 code-generation plan**: `aidlc-docs/construction/plans/complete-archive-discovery-code-generation-plan.md`
+- **Active U-05 functional-design plan**: `aidlc-docs/construction/plans/pdf-image-detail-viewers-functional-design-plan.md`
 - **Active U-01 NFR requirements plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-nfr-requirements-plan.md`
 - **Active U-01 NFR design plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-nfr-design-plan.md`
 - **Active source-governance code-generation plan**: `aidlc-docs/construction/plans/source-governance-safe-foundation-code-generation-plan.md`
@@ -51,7 +52,7 @@
 - **Active U-05 NFR requirements plan**: `aidlc-docs/construction/plans/academic-evidence-nfr-requirements-plan.md`; completed and approved on 2026-09-16
 - **Active U-05 NFR design plan**: `aidlc-docs/construction/plans/academic-evidence-nfr-design-plan.md`; completed and approved on 2026-09-16
 - **Active U-05 code-generation plan**: `aidlc-docs/construction/plans/academic-evidence-code-generation-plan.md`; Part 2 executed and completed on 2026-09-17
-- **Next action**: Receive and validate answers in `aidlc-docs/construction/plans/complete-archive-discovery-code-generation-plan.md`, then obtain explicit plan approval
+- **Next action**: Execute amendment Steps 20 through 25, validate the active portfolio, and repeat the U-05 completion review
 - **Active U-06 functional-design plan**: `aidlc-docs/construction/plans/tools-fieldwork-functional-design-plan.md`; approved on 2026-09-17
 - **Active U-06 NFR requirements plan**: `aidlc-docs/construction/plans/tools-fieldwork-nfr-requirements-plan.md`; approved on 2026-09-17
 - **Active U-06 NFR design plan**: `aidlc-docs/construction/plans/tools-fieldwork-nfr-design-plan.md`; approved on 2026-09-17
@@ -119,7 +120,14 @@
 - [ ] NFR Requirements - U-04 skipped by explicit user override on 2026-09-23
 - [ ] NFR Design - U-04 skipped by explicit user override on 2026-09-23
 - [ ] Infrastructure Design - N/A for U-04; no hosting or infrastructure change
-- [ ] Code Generation Part 1 - U-04 plan complete; answers and explicit approval pending
+- [x] Code Generation Part 1 - U-04 complete plan approved on 2026-09-24
+- [x] Code Generation Part 2 - U-04 approved on 2026-09-24
+- [x] Functional Design - U-05 approved on 2026-09-24 after the single-image Computational Project amendment
+- [x] NFR Requirements - U-05 approved on 2026-09-24
+- [ ] NFR Design - U-05 skipped by explicit user instruction on 2026-09-24
+- [ ] Infrastructure Design - N/A for U-05; no hosting, backend, persistence, or deployment architecture change
+- [x] Code Generation Part 1 - U-05 plan approved on 2026-09-24
+- [ ] Code Generation Part 2 - U-05 in progress
 - [ ] Infrastructure Design - Execute for the security/delivery unit; N/A for unaffected units
 - [ ] Code Generation - Execute planning and implementation per generated unit
 - [ ] Build and Test - Execute after all units complete

@@ -3,11 +3,25 @@ import { PublicationStatus } from './PublicationStatus'
 import { ResearchEvidenceAction } from './ResearchEvidenceAction'
 import { ResearchFigure } from './ResearchFigure'
 import { ResearchRelationshipSummary } from './ResearchRelationshipSummary'
+import { resolvePublishedEvidence } from '../model/evidenceManifest'
+import type { ResearchEvidenceCapability } from './research.types'
 import type { DataStoryViewModel } from './research.types'
 import styles from './ResearchData.module.css'
 
 const relationshipFor = (model: DataStoryViewModel, targetId: string) =>
   model.relationships.find((relationship) => relationship.targetId === targetId)?.id
+
+const futureInnovatorEvidence = resolvePublishedEvidence('evidence-future-innovator-first-place')
+const futureInnovatorPreview: ResearchEvidenceCapability | undefined = futureInnovatorEvidence
+  ? Object.freeze({
+      id: 'future-innovator-first-place-preview',
+      evidence: futureInnovatorEvidence,
+      purpose: 'Future Innovator Camp — Cool Ride innovation project',
+      testId: 'future-innovator-first-place-preview-link',
+      width: 2568,
+      height: 1926,
+    })
+  : undefined
 
 export function DataStories({ model }: Readonly<{ model: DataStoryViewModel }>) {
   const figure = model.evidence.find(({ evidence }) => evidence.full.mediaKind === 'image')
@@ -39,6 +53,15 @@ export function DataStories({ model }: Readonly<{ model: DataStoryViewModel }>) 
       <p className={styles.timeBand} data-visual-relationship={relationshipFor(model, model.time.id)}><strong>Challenge context</strong> {model.time.label}</p>
     </div>
 
+    {futureInnovatorPreview ? <section className={styles.innovationPreview} aria-labelledby="future-innovator-preview-title">
+      <header>
+        <p>Separate innovation project</p>
+        <h4 id="future-innovator-preview-title">1st Place — Future Innovator Camp</h4>
+        <p>Cool Ride combined a customizable helmet concept, product planning, and an investment pitch. This preview documents that project and is not evidence for the retail analytics challenge.</p>
+      </header>
+      <ResearchFigure capability={futureInnovatorPreview} />
+    </section> : null}
+
     <div className={styles.evidenceStrip} aria-label="Data project evidence">
       {model.evidence.map((capability) => <div key={capability.id} data-visual-relationship={relationshipFor(model, capability.id)}>
         <ResearchEvidenceAction capability={capability} />
@@ -46,6 +69,8 @@ export function DataStories({ model }: Readonly<{ model: DataStoryViewModel }>) 
     </div>
     {figure ? <ResearchFigure capability={figure} /> : null}
     <PublicationStatus destinations={model.destinations} />
-    <ResearchRelationshipSummary domain={model.domain} rows={model.semanticRows} />
+    <div className={styles.relationshipSummary}>
+      <ResearchRelationshipSummary domain={model.domain} rows={model.semanticRows} />
+    </div>
   </div>
 }

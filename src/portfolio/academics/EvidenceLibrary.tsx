@@ -1,4 +1,4 @@
-import type { EvidenceLibraryViewModel } from './academic.types'
+import type { EvidenceLibraryViewModel, LazyImageCapability } from './academic.types'
 import { EvidenceCountSummary } from './EvidenceCountSummary'
 import { LazyEvidenceImage } from './LazyEvidenceImage'
 import { TextDocumentPreview } from './TextDocumentPreview'
@@ -20,7 +20,9 @@ export function EvidenceLibrary({ model }: Readonly<{ model: EvidenceLibraryView
     <EvidenceCountSummary entries={model.semanticCounts} />
 
     <div className={styles.archive}>
-      {model.groups.map((group) => <section className={styles.archiveGroup} id={`evidence-${group.id}`} key={group.id} tabIndex={-1}>
+      {model.groups.map((group) => {
+        const imageGroup = group.items.flatMap(({ capability }) => capability.kind === 'lazy-image' ? [capability] : []) satisfies readonly LazyImageCapability[]
+        return <section className={styles.archiveGroup} id={`evidence-${group.id}`} key={group.id} tabIndex={-1}>
         <header className={styles.groupHeader}>
           <span className={styles.groupMarker} aria-hidden="true">{group.marker}</span>
           <div><p>{String(group.order).padStart(2, '0')} / {group.count} records</p><h3>{group.label}</h3><small>{group.description}</small></div>
@@ -30,10 +32,10 @@ export function EvidenceLibrary({ model }: Readonly<{ model: EvidenceLibraryView
             <span className={styles.rowIndex} aria-hidden="true">{String(item.order).padStart(2, '0')}</span>
             {item.capability.kind === 'text-document'
               ? <TextDocumentPreview capability={item.capability} />
-              : <LazyEvidenceImage capability={item.capability} />}
+              : <LazyEvidenceImage capability={item.capability} group={imageGroup} />}
           </div>)}
         </div>
-      </section>)}
+      </section>})}
     </div>
   </article>
 }

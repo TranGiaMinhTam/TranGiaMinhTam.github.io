@@ -1,6 +1,7 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { ContactSignal } from "./ContactSignal";
+import { portfolioContactPresentation } from './contactPresentation'
 
 afterEach(() => cleanup());
 
@@ -58,5 +59,14 @@ describe("U-07 Contact signal", () => {
       "Could we discuss the data project?",
     );
     expect(screen.queryByText(/sent|delivered/i)).not.toBeInTheDocument();
+  });
+
+  it("uses inclusive personal-portfolio copy and an accurate email-app action in the candidate", () => {
+    render(<ContactSignal presentation={portfolioContactPresentation} />);
+    expect(screen.getByRole("heading", { name: "Let us connect." })).toBeInTheDocument();
+    expect(screen.getByText(/project, collaboration, opportunity, or question/i)).toBeInTheDocument();
+    expect(screen.getByText(/nothing is submitted or stored/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /open email draft/i })).toBeInTheDocument();
+    expect(screen.queryByText(/research mentorship/i)).not.toBeInTheDocument();
   });
 });

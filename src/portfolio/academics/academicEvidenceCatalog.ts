@@ -45,19 +45,14 @@ export const evidenceGroupCatalog = Object.freeze([
 ] as const)
 
 export const evidenceEligibility = Object.freeze([
-  { id: evidenceId('evidence-borsworth-scholarship'), groupId: 'scholarships', purpose: 'Borsworth scholarship offer', order: 1 },
-  { id: evidenceId('evidence-worthgate-scholarship'), groupId: 'scholarships', purpose: 'Worthgate scholarship offer', order: 2 },
+  { id: evidenceId('evidence-borsworth-scholarship'), groupId: 'scholarships', purpose: '80% scholarship offer', order: 1 },
+  { id: evidenceId('evidence-worthgate-scholarship'), groupId: 'scholarships', purpose: '90% scholarship offer', order: 2 },
   { id: evidenceId('evidence-gys-brochure'), groupId: 'research-outputs', purpose: 'Global Youth Summit research brochure', order: 1 },
   { id: evidenceId('evidence-protein-docking-publication'), groupId: 'research-outputs', purpose: 'Molecular docking research publication', order: 2 },
   { id: evidenceId('evidence-sim-lse-certificate'), groupId: 'research-outputs', purpose: 'SIM-LSE participation certificate', order: 3 },
   { id: evidenceId('evidence-wico-poster'), groupId: 'research-outputs', purpose: 'WICO research poster', order: 4 },
-  { id: evidenceId('evidence-docking-research-completion'), groupId: 'project-visuals', purpose: 'Protein docking research completion', order: 1 },
-  { id: evidenceId('evidence-docking-poster-presentation'), groupId: 'project-visuals', purpose: 'Protein docking poster presentation', order: 2 },
-  { id: evidenceId('evidence-docking-oral-presentation'), groupId: 'project-visuals', purpose: 'Protein docking oral presentation', order: 3 },
-  { id: evidenceId('evidence-docking-conference-poster'), groupId: 'project-visuals', purpose: 'Protein docking conference poster', order: 4 },
-  { id: evidenceId('evidence-docking-workstation'), groupId: 'project-visuals', purpose: 'Protein docking workstation', order: 5 },
-  { id: evidenceId('evidence-cashew-polyphenol-figure'), groupId: 'project-visuals', purpose: 'Cashew polyphenol project figure', order: 6 },
-  { id: evidenceId('evidence-future-innovator-first-place'), groupId: 'project-visuals', purpose: 'Future Innovator Camp first-place recognition', order: 7 },
+  { id: evidenceId('evidence-cashew-polyphenol-figure'), groupId: 'project-visuals', purpose: 'Cashew polyphenol project figure', order: 1 },
+  { id: evidenceId('evidence-future-innovator-first-place'), groupId: 'project-visuals', purpose: 'Future Innovator Camp first-place recognition', order: 2 },
 ] as const satisfies readonly EvidenceEligibility[])
 
 export const evidenceEligibilityById: ReadonlyMap<EvidenceId, EvidenceEligibility> = new Map(
@@ -65,11 +60,6 @@ export const evidenceEligibilityById: ReadonlyMap<EvidenceId, EvidenceEligibilit
 )
 
 export const imageGeometryById = Object.freeze({
-  'evidence-docking-research-completion': { width: 2568, height: 1926 },
-  'evidence-docking-poster-presentation': { width: 1280, height: 960 },
-  'evidence-docking-oral-presentation': { width: 1920, height: 2560 },
-  'evidence-docking-conference-poster': { width: 2568, height: 1926 },
-  'evidence-docking-workstation': { width: 1536, height: 2048 },
   'evidence-cashew-polyphenol-figure': { width: 1280, height: 960 },
   'evidence-future-innovator-first-place': { width: 2568, height: 1926 },
 } as const)

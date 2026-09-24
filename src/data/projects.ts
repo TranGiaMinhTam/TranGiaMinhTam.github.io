@@ -1,6 +1,6 @@
 import type { ProjectEntry } from '../types/portfolio'
 
-import molecularDockingImage from '../assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG'
+import molecularDockingImage from '../assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4208.JPG'
 import cashewPolyphenolImage from '../assets/minh-tam/projects/cashew-polyphenol.jpg'
 
 export const projects = [
@@ -11,7 +11,7 @@ export const projects = [
       'Built a computational molecular-docking workflow across five therapeutic protein targets, integrating protein selection, active-site optimization, docking simulations, and interactive ligand-visualization support.',
     image: molecularDockingImage,
     imageAlt:
-      'Molecular docking project screenshot showing therapeutic protein targets and molecular interaction analysis',
+      'The research team with the molecular docking poster at the 2026 pharmacy conference',
     logoKey: 'python',
     logoLabel: 'Python project logo',
     logoAccent: '#3776ab',

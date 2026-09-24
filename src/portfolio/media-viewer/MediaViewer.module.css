@@ -1,0 +1,63 @@
+.viewerLocked { overflow: hidden; }
+
+.dialog {
+  inline-size: min(76rem, calc(100vw - 2 * clamp(1rem, 4vw, 3rem)));
+  max-inline-size: none;
+  block-size: min(54rem, calc(100dvh - 2 * clamp(1rem, 4vw, 3rem)));
+  max-block-size: none;
+  margin: auto;
+  padding: 0;
+  color: var(--color-text-primary);
+  border: var(--border-thin) solid var(--color-rule-strong);
+  background: var(--color-surface);
+  box-shadow: var(--elevation-high, 0 1rem 4rem rgb(0 0 0 / 30%));
+}
+
+.dialog::backdrop { background: var(--modal-overlay-bg, rgb(0 0 0 / 48%)); }
+.surface { display: grid; grid-template-rows: auto minmax(0, 1fr); block-size: 100%; min-inline-size: 0; }
+.header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-5); align-items: start; padding: clamp(var(--space-4), 3vw, var(--space-7)); border-block-end: var(--border-thin) solid var(--color-rule); }
+.header h2 { max-inline-size: 32ch; margin: var(--space-1) 0; font: 760 clamp(1.35rem, 3vw, 2.4rem)/1.05 var(--font-body); overflow-wrap: anywhere; }
+.header p { max-inline-size: 68ch; margin: 0; color: var(--color-text-secondary); overflow-wrap: anywhere; }
+.eyebrow { font: 700 0.75rem/1.2 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; }
+.closeButton,
+.navigation button,
+.actions a { min-inline-size: 2.75rem; min-block-size: 2.75rem; }
+.closeButton { display: inline-flex; gap: var(--space-2); align-items: center; justify-content: center; padding: var(--space-3) var(--space-4); color: var(--color-text-primary); border: var(--border-thin) solid var(--color-rule-strong); background: var(--color-surface-elevated); cursor: pointer; }
+.body { display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; min-block-size: 0; padding: clamp(var(--space-4), 3vw, var(--space-7)); overflow: auto; }
+.pdfFrame,
+.imageFrame { display: grid; place-items: center; min-block-size: 0; overflow: hidden; border: var(--border-thin) solid var(--color-rule); background: var(--color-surface-elevated); }
+.pdfFrame iframe { inline-size: 100%; block-size: 100%; min-block-size: 24rem; border: 0; }
+.imageFrame img { display: block; max-inline-size: 100%; max-block-size: 100%; inline-size: auto; block-size: auto; object-fit: contain; }
+.imageMeta { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-6); justify-content: space-between; align-items: baseline; padding-block: var(--space-4); }
+.imageMeta p { margin: 0; }
+.context { margin: var(--space-4) 0 0; color: var(--color-text-secondary); overflow-wrap: anywhere; }
+.navigation,
+.actions { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+.navigation { padding-block-end: var(--space-4); }
+.navigation button,
+.actions a { display: inline-flex; align-items: center; justify-content: center; padding: var(--space-3) var(--space-4); color: var(--color-text-primary); border: var(--border-thin) solid var(--color-rule-strong); background: var(--color-surface-elevated); text-decoration: none; cursor: pointer; }
+.navigation button:disabled { cursor: not-allowed; opacity: 0.5; }
+.closeButton:focus-visible,
+.navigation button:focus-visible,
+.actions a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.failure,
+.loadingState { align-self: center; margin: auto; max-inline-size: 42rem; padding: clamp(var(--space-6), 5vw, var(--space-9)); text-align: center; }
+.failure p { color: var(--color-text-secondary); }
+.failure .actions { justify-content: center; }
+
+@media (max-width: 42rem) {
+  .dialog { inline-size: calc(100vw - 1rem); block-size: calc(100dvh - 1rem); margin: 0.5rem; }
+  .surface { padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom); }
+  .header { grid-template-columns: minmax(0, 1fr); }
+  .closeButton { inline-size: 100%; }
+  .body { padding: var(--space-4); }
+  .pdfFrame iframe { min-block-size: 18rem; }
+  .navigation button,
+  .actions a { flex: 1 1 10rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dialog,
+  .surface,
+  .imageFrame img { animation: none; transition: none; }
+}

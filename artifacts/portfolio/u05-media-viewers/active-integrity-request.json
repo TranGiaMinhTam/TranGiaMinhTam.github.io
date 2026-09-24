@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "phase": "active",
+  "dockingGeometryCount": 5,
+  "requestReport": {
+    "checked": true,
+    "lazyBodyCount": 3,
+    "initialFiles": [
+      "assets/index-CTkMZDN2.js",
+      "assets/index-CgY9gJWc.css"
+    ]
+  },
+  "findings": [],
+  "canProceed": true
+}

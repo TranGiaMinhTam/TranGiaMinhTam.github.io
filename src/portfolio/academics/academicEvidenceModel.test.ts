@@ -22,7 +22,7 @@ describe('assembleAcademicEvidence', () => {
     expect(first.value.trajectory.strata[0].facts.map(({ label }) => label)).toEqual(expect.arrayContaining([
       'GPA 9.0/10 in Grade 10', 'Grade 11 AS-level: AAA', 'IELTS 7.0 (September 2025)',
     ]))
-    expect(first.value.library.groups.map(({ count }) => count)).toEqual([2, 4, 7])
+    expect(first.value.library.groups.map(({ count }) => count)).toEqual([2, 4, 2])
     expect(first.value.library.spectrum).toEqual(first.value.library.semanticCounts)
     expect(first.value.trajectory.semanticRows.map(({ relationshipId }) => relationshipId)).toEqual(
       first.value.trajectory.relationships.map(({ id }) => id),

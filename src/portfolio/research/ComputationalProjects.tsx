@@ -38,11 +38,11 @@ export function ComputationalProjects({ model }: Readonly<{ model: Computational
     <div className={styles.evidenceTerminal} aria-label="Computational project evidence">
       <p>Evidence terminals</p>
       {model.evidence.map((capability) => <div key={capability.id} data-visual-relationship={relationshipFor(model, capability.id)}>
-        <ResearchEvidenceAction capability={capability} />
+        <ResearchEvidenceAction capability={capability} group={figures} />
       </div>)}
     </div>
     {figures.length > 0 ? <div className={styles.researchGallery} aria-label="2026 protein docking project visuals">
-      {figures.map((figure) => <ResearchFigure capability={figure} key={figure.id} />)}
+      {figures.map((figure) => <ResearchFigure capability={figure} group={figures} key={figure.id} />)}
     </div> : null}
     <ResearchRelationshipSummary domain={model.domain} rows={model.semanticRows} />
   </div>

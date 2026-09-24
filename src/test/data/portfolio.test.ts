@@ -215,7 +215,7 @@ describe("src/data/portfolio.ts", () => {
       if (project.image || project.imageAlt) {
         expectNonEmpty(project.image, `src/data/projects.ts project "${project.title}" needs a project cover`);
         expect(project.image).toMatch(/\.(?:png|jpe?g)$/i);
-        expectNonEmpty(project.imageAlt, `src/data/projects.ts project "${project.title}" needs image alt text`);
+        expectNonEmpty(project.imageAlt ?? '', `src/data/projects.ts project "${project.title}" needs image alt text`);
         expect(project.imageAlt!.split(/\s+/).length).toBeGreaterThanOrEqual(6);
         expect(project.imageAlt).toMatch(/screenshot|diagram|overview|presentation/i);
       }

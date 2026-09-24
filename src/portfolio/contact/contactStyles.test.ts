@@ -13,6 +13,8 @@ describe("U-07 Contact styles", () => {
     expect(styles).not.toMatch(/border-inline-start/);
     expect(styles).toMatch(/@media \(max-width: 48rem\)/);
     expect(styles).toMatch(/@media \(max-width: 30rem\)/);
+    expect(styles).toMatch(/\.actionRow[\s\S]*grid-template-columns/);
+    expect(styles).toMatch(/\.portfolio \.submit[\s\S]*inline-size:\s*100%/);
   });
 
   it("uses tokens, opaque reading surfaces, and visible focus without forbidden patterns", () => {

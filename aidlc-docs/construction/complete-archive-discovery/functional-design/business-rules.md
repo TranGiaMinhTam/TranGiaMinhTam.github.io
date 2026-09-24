@@ -19,7 +19,7 @@
 - **U04-BR12**: Empty public groups are omitted from the default summary grid; an explicit empty state remains testable for loader and integrity scenarios.
 - **U04-BR13**: The academic-records group stays absent while its only members are excluded transcripts.
 - **U04-BR14**: The technical `complete-archive` label does not imply a downloadable archive. A literal archive action requires a real admitted file capability.
-- **U04-BR15**: The five curated 2026 Protein Docking images remain available as Featured Project Visuals and connected to the computational project without duplicate primary cards.
+- **U04-BR15**: `IMG_4208.JPG` is the first computational project's sole narrative image; the other four curated 2026 Protein Docking photographs remain available once in Scientific Research without duplicate project cards.
 
 ## Lazy Loading and Interaction Rules
 

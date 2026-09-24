@@ -101,6 +101,105 @@ export type CanonicalArchiveItem = Readonly<{
   derivatives: readonly DerivativeOutcome[]
 }>
 
+export type ArchiveExclusionReason = 'explicit-user-exclusion' | 'system-metadata'
+
+export type ArchiveEligibilityDecision = Readonly<
+  | {
+      id: CanonicalAssetId
+      publication: 'public'
+      primaryDisposition: PublicationDisposition
+    }
+  | {
+      id: CanonicalAssetId
+      publication: 'excluded'
+      reason: ArchiveExclusionReason
+    }
+>
+
+export type ArchiveEligibilityFinding = Readonly<{
+  code:
+    | 'ARCHIVE_ELIGIBILITY_DUPLICATE'
+    | 'ARCHIVE_ELIGIBILITY_MISSING'
+    | 'ARCHIVE_ELIGIBILITY_UNKNOWN'
+  target: string
+}>
+
+export type ArchiveEligibilityResult = Readonly<{
+  ok: boolean
+  decisions: readonly ArchiveEligibilityDecision[]
+  findings: readonly ArchiveEligibilityFinding[]
+}>
+
+export type ArchiveCardKind = 'document' | 'image' | 'original'
+
+export type ArchiveCardBase = Readonly<{
+  id: CanonicalAssetId
+  kind: ArchiveCardKind
+  title: string
+  caption: string
+  accessibilityText: string
+  subcollection: string
+  order: number
+  originalHref: string
+  originalMediaType: ArchiveMediaType
+}>
+
+export type ArchiveImageCard = ArchiveCardBase & Readonly<{
+  kind: 'image'
+  thumbnailHref: string
+  width: number
+  height: number
+}>
+
+export type ArchiveDocumentCard = ArchiveCardBase & Readonly<{
+  kind: 'document'
+  previewHref?: string
+  previewWidth?: number
+  previewHeight?: number
+}>
+
+export type ArchiveOriginalCard = ArchiveCardBase & Readonly<{
+  kind: 'original'
+}>
+
+export type ArchiveCard = ArchiveImageCard | ArchiveDocumentCard | ArchiveOriginalCard
+
+export type ArchiveGroupSummary = Readonly<{
+  id: ArchiveGroupId
+  label: string
+  description: string
+  order: number
+  count: number
+  imageCount: number
+  documentCount: number
+  originalCount: number
+}>
+
+export type ArchiveGroupData = Readonly<{
+  id: ArchiveGroupId
+  label: string
+  description: string
+  order: number
+  items: readonly ArchiveCard[]
+}>
+
+export type ArchiveGroupModule = Readonly<{
+  archiveGroup: ArchiveGroupData
+}>
+
+export type ArchiveDetailTrigger = Readonly<{
+  id: CanonicalAssetId
+  kind: 'document' | 'image'
+  title: string
+  href: string
+  mediaType: ArchiveMediaType
+}>
+
+export type ArchiveGroupLoadResult = Readonly<
+  | { ok: true; group: ArchiveGroupData; cached: boolean }
+  | { ok: false; code: 'ARCHIVE_GROUP_INVALID' | 'ARCHIVE_GROUP_LOAD_FAILED' | 'ARCHIVE_GROUP_UNKNOWN'; publicMessage: string }
+>
+
 export type ArchiveManifest = Readonly<{
   schemaVersion: 1
   physicalFileCount: number

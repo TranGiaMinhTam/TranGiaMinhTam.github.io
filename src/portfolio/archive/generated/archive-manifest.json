@@ -26,15 +26,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 001 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 01. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0266b31a34c17dc48903",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 1,
-        "title": "Archive record 001"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 01"
       },
       "physicalSources": [
         {
@@ -75,26 +75,26 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 002 in the curated gallery collection."
+          "text": "Protein docking conference poster. Photograph from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-02ed8286ffa69acd6cd0",
-        "caption": "Preserved evidence from the reviewed curated gallery collection.",
+        "caption": "Photograph from the 2026 Protein Docking collection.",
         "disposition": "gallery",
-        "groupId": "curated-gallery",
+        "groupId": "scientific-research",
         "order": 2,
-        "title": "Archive record 002"
+        "title": "Protein docking conference poster"
       },
       "physicalSources": [
         {
           "bytes": 1055975,
-          "category": "gallery",
+          "category": "Science research",
           "disposition": "review-required",
-          "id": "physical-efb1a2cee9388b153a77",
+          "id": "physical-266669052ed5f3637290",
           "mediaType": "image/jpeg",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4208.JPG",
+          "relativePath": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4208.JPG",
           "sha256": "02ed8286ffa69acd6cd030cfe3ecc13b188d632ea7fdf016f6c4714e71293ea1",
-          "sourceRelativePath": "gallery/2026 Protein Docking/IMG_4208.JPG"
+          "sourceRelativePath": "source/Science research /2026 Protein Docking/IMG_4208.JPG"
         }
       ]
     },
@@ -124,15 +124,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 003 in the academic records collection."
+          "text": "Transcript semester 2. Published document from the GPA 8 + 9 + 10 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0857163ebd922f5c0723",
-        "caption": "Preserved evidence from the reviewed academic records collection.",
+        "caption": "Published document from the GPA 8 + 9 + 10 collection.",
         "disposition": "document-collection",
         "groupId": "academic-records",
         "order": 3,
-        "title": "Archive record 003"
+        "title": "Transcript semester 2"
       },
       "physicalSources": [
         {
@@ -173,15 +173,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 004 in the scientific research collection."
+          "text": "GYS 2025 photograph 01. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0aa96c7de58bd9a7aa64",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 4,
-        "title": "Archive record 004"
+        "title": "GYS 2025 photograph 01"
       },
       "physicalSources": [
         {
@@ -222,15 +222,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 005 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 02. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0c646113181a9d5052a2",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 5,
-        "title": "Archive record 005"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 02"
       },
       "physicalSources": [
         {
@@ -271,15 +271,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 006 in the volunteering collection."
+          "text": "Tree Planting, Binh Chau. Photograph from the Volunteer Cert collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0c8bf178c5235a3c2479",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Volunteer Cert collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 6,
-        "title": "Archive record 006"
+        "title": "Tree Planting, Binh Chau"
       },
       "physicalSources": [
         {
@@ -320,15 +320,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 007 in the scientific research collection."
+          "text": "WICO 2. Photograph from the WICO 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-0fc0288dccb2d4c12ac1",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 7,
-        "title": "Archive record 007"
+        "title": "WICO 2"
       },
       "physicalSources": [
         {
@@ -369,15 +369,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 008 in the scientific research collection."
+          "text": "NCKH 1. Photograph from the Science Research Project collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-17661bf4a885f128bde7",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the Science Research Project collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 8,
-        "title": "Archive record 008"
+        "title": "NCKH 1"
       },
       "physicalSources": [
         {
@@ -418,15 +418,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 009 in the academic records collection."
+          "text": "4. Transcript. Published document from the GPA 8 + 9 + 10 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-1fa6103b2d5218d4582b",
-        "caption": "Preserved evidence from the reviewed academic records collection.",
+        "caption": "Published document from the GPA 8 + 9 + 10 collection.",
         "disposition": "document-collection",
         "groupId": "academic-records",
         "order": 9,
-        "title": "Archive record 009"
+        "title": "4. Transcript"
       },
       "physicalSources": [
         {
@@ -477,15 +477,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 010 in the scientific research collection."
+          "text": "TCKH NTTU VOL9 NO4. Published document from the Science Research Project collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-21238a6eca88f1ad8509",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the Science Research Project collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 10,
-        "title": "Archive record 010"
+        "title": "TCKH NTTU VOL9 NO4"
       },
       "physicalSources": [
         {
@@ -526,15 +526,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 011 in the volunteering collection."
+          "text": "Green Farm 2024 photograph 01. Photograph from the Green Farm 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-22f73cceafea3d5e3ae4",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Green Farm 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 11,
-        "title": "Archive record 011"
+        "title": "Green Farm 2024 photograph 01"
       },
       "physicalSources": [
         {
@@ -575,15 +575,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 012 in the scientific research collection."
+          "text": "GYS image. Photograph from the GYS 2025_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-259a79f368ad5d0b6d76",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025_Certificate collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 12,
-        "title": "Archive record 012"
+        "title": "GYS image"
       },
       "physicalSources": [
         {
@@ -624,15 +624,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 013 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 03. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-270415df5f354fb588fa",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 13,
-        "title": "Archive record 013"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 03"
       },
       "physicalSources": [
         {
@@ -673,15 +673,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 014 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 04. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-2b7e3aa1e2efc9907b1e",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 14,
-        "title": "Archive record 014"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 04"
       },
       "physicalSources": [
         {
@@ -722,26 +722,26 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 015 in the curated gallery collection."
+          "text": "Protein docking poster presentation. Photograph from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-2e7f7799ff0ac20929d2",
-        "caption": "Preserved evidence from the reviewed curated gallery collection.",
+        "caption": "Photograph from the 2026 Protein Docking collection.",
         "disposition": "gallery",
-        "groupId": "curated-gallery",
+        "groupId": "scientific-research",
         "order": 15,
-        "title": "Archive record 015"
+        "title": "Protein docking poster presentation"
       },
       "physicalSources": [
         {
           "bytes": 230055,
-          "category": "gallery",
+          "category": "Science research",
           "disposition": "review-required",
-          "id": "physical-add8d262e6de2f8fbaf2",
+          "id": "physical-e4850ce480a82ed5e596",
           "mediaType": "image/jpeg",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4213.JPG",
+          "relativePath": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4213.JPG",
           "sha256": "2e7f7799ff0ac20929d23e4e9b11e4a0322474a6e8bcbc9d08c0f7cd470def04",
-          "sourceRelativePath": "gallery/2026 Protein Docking/IMG_4213.JPG"
+          "sourceRelativePath": "source/Science research /2026 Protein Docking/IMG_4213.JPG"
         }
       ]
     },
@@ -771,15 +771,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 016 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 01. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-2e985e465b271c78ac27",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 16,
-        "title": "Archive record 016"
+        "title": "Kyoto Youth Summit 2026 photograph 01"
       },
       "physicalSources": [
         {
@@ -820,26 +820,26 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 017 in the curated gallery collection."
+          "text": "Protein docking oral presentation. Photograph from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-2fe544898047bc141c69",
-        "caption": "Preserved evidence from the reviewed curated gallery collection.",
+        "caption": "Photograph from the 2026 Protein Docking collection.",
         "disposition": "gallery",
-        "groupId": "curated-gallery",
+        "groupId": "scientific-research",
         "order": 17,
-        "title": "Archive record 017"
+        "title": "Protein docking oral presentation"
       },
       "physicalSources": [
         {
           "bytes": 458130,
-          "category": "gallery",
+          "category": "Science research",
           "disposition": "review-required",
-          "id": "physical-8f8524ea6768f411bddd",
+          "id": "physical-397eef8aa54326323ad1",
           "mediaType": "image/jpeg",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4207.JPG",
+          "relativePath": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4207.JPG",
           "sha256": "2fe544898047bc141c691192caca649e21510c32455a73b38b5a017b1fb0df81",
-          "sourceRelativePath": "gallery/2026 Protein Docking/IMG_4207.JPG"
+          "sourceRelativePath": "source/Science research /2026 Protein Docking/IMG_4207.JPG"
         }
       ]
     },
@@ -885,15 +885,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 018 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 02. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-306b52b0504a07b64e4d",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 18,
-        "title": "Archive record 018"
+        "title": "Kyoto Youth Summit 2026 photograph 02"
       },
       "physicalSources": [
         {
@@ -934,15 +934,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 019 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 05. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-320cb589c9778ba3dab4",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 19,
-        "title": "Archive record 019"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 05"
       },
       "physicalSources": [
         {
@@ -983,15 +983,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 020 in the scientific research collection."
+          "text": "GYS 2025 photograph 02. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-33d5164f6a1042f0b751",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 20,
-        "title": "Archive record 020"
+        "title": "GYS 2025 photograph 02"
       },
       "physicalSources": [
         {
@@ -1032,26 +1032,26 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 021 in the curated gallery collection."
+          "text": "Protein docking workstation. Photograph from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-33f273994f6986d06291",
-        "caption": "Preserved evidence from the reviewed curated gallery collection.",
+        "caption": "Photograph from the 2026 Protein Docking collection.",
         "disposition": "gallery",
-        "groupId": "curated-gallery",
+        "groupId": "scientific-research",
         "order": 21,
-        "title": "Archive record 021"
+        "title": "Protein docking workstation"
       },
       "physicalSources": [
         {
           "bytes": 335167,
-          "category": "gallery",
+          "category": "Science research",
           "disposition": "review-required",
-          "id": "physical-675d7d4da1a3154dcc71",
+          "id": "physical-a646db3a93ff0f3c700f",
           "mediaType": "image/jpeg",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/7381606024551.jpg",
+          "relativePath": "src/assets/minh-tam/source/Science research /2026 Protein Docking/7381606024551.jpg",
           "sha256": "33f273994f6986d062914773f1fa1db4c276e07990b070192a7d940787fac35e",
-          "sourceRelativePath": "gallery/2026 Protein Docking/7381606024551.jpg"
+          "sourceRelativePath": "source/Science research /2026 Protein Docking/7381606024551.jpg"
         }
       ]
     },
@@ -1097,15 +1097,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 022 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 03. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-3526b6ac1566cfb28d13",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 22,
-        "title": "Archive record 022"
+        "title": "Kyoto Youth Summit 2026 photograph 03"
       },
       "physicalSources": [
         {
@@ -1146,15 +1146,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 023 in the scholarships collection."
+          "text": "80% scholarship offer. Published document from the School Scholarship collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-387e7a940cacfc2d6326",
-        "caption": "Preserved evidence from the reviewed scholarships collection.",
+        "caption": "Published document from the School Scholarship collection.",
         "disposition": "document-collection",
         "groupId": "scholarships",
         "order": 23,
-        "title": "Archive record 023"
+        "title": "80% scholarship offer"
       },
       "physicalSources": [
         {
@@ -1205,15 +1205,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 024 in the scientific research collection."
+          "text": "GYS 2025 photograph 03. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-399813b78041a8a2ba7c",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 24,
-        "title": "Archive record 024"
+        "title": "GYS 2025 photograph 03"
       },
       "physicalSources": [
         {
@@ -1254,15 +1254,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 025 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 01. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-3bf5a4a4c13a3f0d4669",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 25,
-        "title": "Archive record 025"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 01"
       },
       "physicalSources": [
         {
@@ -1303,15 +1303,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 026 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 06. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-3db9f2c2716aefce96ce",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 26,
-        "title": "Archive record 026"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 06"
       },
       "physicalSources": [
         {
@@ -1352,15 +1352,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 027 in the scientific research collection."
+          "text": "Poster. Published document from the WICO_document collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-429f2d3ae420734faa76",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the WICO_document collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 27,
-        "title": "Archive record 027"
+        "title": "Poster"
       },
       "physicalSources": [
         {
@@ -1411,15 +1411,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 028 in the scientific research collection."
+          "text": "GYS 2025 photograph 04. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-44a6e91bb27496b9ccae",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 28,
-        "title": "Archive record 028"
+        "title": "GYS 2025 photograph 04"
       },
       "physicalSources": [
         {
@@ -1460,15 +1460,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 029 in the scientific research collection."
+          "text": "WICO. Photograph from the WICO 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-452f1568b330e85f7501",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 29,
-        "title": "Archive record 029"
+        "title": "WICO"
       },
       "physicalSources": [
         {
@@ -1519,15 +1519,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 030 in the scientific research collection."
+          "text": "NCKH 4. Photograph from the Science Research Project collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4595d591b08e7bb58a93",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the Science Research Project collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 30,
-        "title": "Archive record 030"
+        "title": "NCKH 4"
       },
       "physicalSources": [
         {
@@ -1568,15 +1568,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 031 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 07. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-468c2e11b31eb2a44ac6",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 31,
-        "title": "Archive record 031"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 07"
       },
       "physicalSources": [
         {
@@ -1617,15 +1617,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 032 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 08. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-480f3b82fe7267de9835",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 32,
-        "title": "Archive record 032"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 08"
       },
       "physicalSources": [
         {
@@ -1666,15 +1666,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 033 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 09. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4830d42b94e5bc99c45b",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 33,
-        "title": "Archive record 033"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 09"
       },
       "physicalSources": [
         {
@@ -1715,15 +1715,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 034 in the academic competitions collection."
+          "text": "SIM-LSE Data Analytics Challenge presentation. Published document from the SIM-LSE Data Analytics Challenge 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-489b20bebf05f6ba18c6",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Published document from the SIM-LSE Data Analytics Challenge 2026 collection.",
         "disposition": "document-collection",
         "groupId": "academic-competitions",
         "order": 34,
-        "title": "Archive record 034"
+        "title": "SIM-LSE Data Analytics Challenge presentation"
       },
       "physicalSources": [
         {
@@ -1764,15 +1764,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 035 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 04. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4c4d85544b08e6742584",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 35,
-        "title": "Archive record 035"
+        "title": "Kyoto Youth Summit 2026 photograph 04"
       },
       "physicalSources": [
         {
@@ -1813,15 +1813,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 036 in the scientific research collection."
+          "text": "GYS 2025 photograph 05. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4d379ebadb17e03ff926",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 36,
-        "title": "Archive record 036"
+        "title": "GYS 2025 photograph 05"
       },
       "physicalSources": [
         {
@@ -1862,15 +1862,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 037 in the scientific research collection."
+          "text": "WICO participation certificate. Photograph from the WICO 2025_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4e359a4e45c9d5b6070d",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025_Certificate collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 37,
-        "title": "Archive record 037"
+        "title": "WICO participation certificate"
       },
       "physicalSources": [
         {
@@ -1911,15 +1911,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 038 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 01. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-4f4f143cbccfbfaa856e",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 38,
-        "title": "Archive record 038"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 01"
       },
       "physicalSources": [
         {
@@ -1960,15 +1960,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 039 in the academic competitions collection."
+          "text": "SIM-LSE Data Analytics Challenge certificate. Published document from the SIM-LSE Data Analytics Challenge 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-54fee476945d2584cc28",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Published document from the SIM-LSE Data Analytics Challenge 2026 collection.",
         "disposition": "document-collection",
         "groupId": "academic-competitions",
         "order": 39,
-        "title": "Archive record 039"
+        "title": "SIM-LSE Data Analytics Challenge certificate"
       },
       "physicalSources": [
         {
@@ -2019,15 +2019,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 040 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 05. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-554ad295d0a8a2b6d9ed",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 40,
-        "title": "Archive record 040"
+        "title": "Kyoto Youth Summit 2026 photograph 05"
       },
       "physicalSources": [
         {
@@ -2078,15 +2078,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 041 in the scientific research collection."
+          "text": "NCKH. Photograph from the Science Research Project collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-597501346162b189fc12",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the Science Research Project collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 41,
-        "title": "Archive record 041"
+        "title": "NCKH"
       },
       "physicalSources": [
         {
@@ -2137,15 +2137,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 042 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 10. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-59793e8d4a3a02db9545",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 42,
-        "title": "Archive record 042"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 10"
       },
       "physicalSources": [
         {
@@ -2186,15 +2186,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 043 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 06. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-5b68a8de4c9b5d3733fe",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 43,
-        "title": "Archive record 043"
+        "title": "Kyoto Youth Summit 2026 photograph 06"
       },
       "physicalSources": [
         {
@@ -2235,15 +2235,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 044 in the scientific research collection."
+          "text": "GYS 2025 photograph 06. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-5b6d12beb426bbc3c620",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 44,
-        "title": "Archive record 044"
+        "title": "GYS 2025 photograph 06"
       },
       "physicalSources": [
         {
@@ -2284,15 +2284,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 045 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 02. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-5c67c6cbf721748951c0",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 45,
-        "title": "Archive record 045"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 02"
       },
       "physicalSources": [
         {
@@ -2333,15 +2333,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 046 in the volunteering collection."
+          "text": "Nam Cat Tien Protect Wild Animal 2024. Photograph from the Volunteer Cert collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-5dad9112dba18ed21e24",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Volunteer Cert collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 46,
-        "title": "Archive record 046"
+        "title": "Nam Cat Tien Protect Wild Animal 2024"
       },
       "physicalSources": [
         {
@@ -2382,15 +2382,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 047 in the scientific research collection."
+          "text": "GYS 2025 photograph 07. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-5dded886429737d40722",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 47,
-        "title": "Archive record 047"
+        "title": "GYS 2025 photograph 07"
       },
       "physicalSources": [
         {
@@ -2431,15 +2431,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 048 in the volunteering collection."
+          "text": "Green Farm 2024 photograph 02. Photograph from the Green Farm 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-60e27aefc2c420b25333",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Green Farm 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 48,
-        "title": "Archive record 048"
+        "title": "Green Farm 2024 photograph 02"
       },
       "physicalSources": [
         {
@@ -2480,15 +2480,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 049 in the sport collection."
+          "text": "Soccer. Photograph from the Sport collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-65e5f1a39e01e6f3ba7f",
-        "caption": "Preserved evidence from the reviewed sport collection.",
+        "caption": "Photograph from the Sport collection.",
         "disposition": "gallery",
         "groupId": "sport",
         "order": 49,
-        "title": "Archive record 049"
+        "title": "Soccer"
       },
       "physicalSources": [
         {
@@ -2545,15 +2545,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 050 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 07. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-66ba2c925abcfc332309",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 50,
-        "title": "Archive record 050"
+        "title": "Kyoto Youth Summit 2026 photograph 07"
       },
       "physicalSources": [
         {
@@ -2594,15 +2594,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 051 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 11. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-69fb735990622fae45db",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 51,
-        "title": "Archive record 051"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 11"
       },
       "physicalSources": [
         {
@@ -2643,26 +2643,26 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 052 in the curated gallery collection."
+          "text": "Protein docking research completion. Photograph from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-6ac9d9b9698aa3b2310a",
-        "caption": "Preserved evidence from the reviewed curated gallery collection.",
+        "caption": "Photograph from the 2026 Protein Docking collection.",
         "disposition": "gallery",
-        "groupId": "curated-gallery",
+        "groupId": "scientific-research",
         "order": 52,
-        "title": "Archive record 052"
+        "title": "Protein docking research completion"
       },
       "physicalSources": [
         {
           "bytes": 600751,
-          "category": "gallery",
+          "category": "Science research",
           "disposition": "review-required",
-          "id": "physical-4bc38a71a10278aa3b48",
+          "id": "physical-c757e34b9361d301a5b4",
           "mediaType": "image/jpeg",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/IMG_4206.JPG",
+          "relativePath": "src/assets/minh-tam/source/Science research /2026 Protein Docking/IMG_4206.JPG",
           "sha256": "6ac9d9b9698aa3b2310abd9414c76f7c84e8a5b6a4e7ba9675b9ba90e4652bf6",
-          "sourceRelativePath": "gallery/2026 Protein Docking/IMG_4206.JPG"
+          "sourceRelativePath": "source/Science research /2026 Protein Docking/IMG_4206.JPG"
         }
       ]
     },
@@ -2692,15 +2692,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 053 in the scientific research collection."
+          "text": "GYS 2025 photograph 08. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-6ce2bfce4f25ae03cfb5",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 53,
-        "title": "Archive record 053"
+        "title": "GYS 2025 photograph 08"
       },
       "physicalSources": [
         {
@@ -2741,15 +2741,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 054 in the scientific research collection."
+          "text": "GYS 2025 photograph 09. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-6db1afc56cb78607f608",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 54,
-        "title": "Archive record 054"
+        "title": "GYS 2025 photograph 09"
       },
       "physicalSources": [
         {
@@ -2790,15 +2790,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 055 in the academic competitions collection."
+          "text": "World Scholar's Cup Regional Round certificate. Photograph from the WSC 2024_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-74b383e79ecc5412e1b4",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the WSC 2024_Certificate collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 55,
-        "title": "Archive record 055"
+        "title": "World Scholar's Cup Regional Round certificate"
       },
       "physicalSources": [
         {
@@ -2839,15 +2839,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 056 in the scientific research collection."
+          "text": "WICO 4. Photograph from the WICO 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-76ebd0c48a96f4dbd1df",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 56,
-        "title": "Archive record 056"
+        "title": "WICO 4"
       },
       "physicalSources": [
         {
@@ -2888,15 +2888,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 057 in the academic competitions collection."
+          "text": "FINO 2026 photograph 01. Photograph from the FINO 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-7739142035e7e681e267",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the FINO 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 57,
-        "title": "Archive record 057"
+        "title": "FINO 2026 photograph 01"
       },
       "physicalSources": [
         {
@@ -2937,15 +2937,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 058 in the academic competitions collection."
+          "text": "FINO 2026 photograph 02. Photograph from the FINO 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-81624ac0f5d1800c2021",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the FINO 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 58,
-        "title": "Archive record 058"
+        "title": "FINO 2026 photograph 02"
       },
       "physicalSources": [
         {
@@ -2996,15 +2996,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 059 in the scientific research collection."
+          "text": "GYS 2025 photograph 10. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8239915f4c7698c68dce",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 59,
-        "title": "Archive record 059"
+        "title": "GYS 2025 photograph 10"
       },
       "physicalSources": [
         {
@@ -3045,15 +3045,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 060 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 08. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8352c07635433d51b48f",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 60,
-        "title": "Archive record 060"
+        "title": "Kyoto Youth Summit 2026 photograph 08"
       },
       "physicalSources": [
         {
@@ -3094,15 +3094,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 061 in the scientific research collection."
+          "text": "GYS 2025 photograph 11. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-88e1c41648aca5072329",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 61,
-        "title": "Archive record 061"
+        "title": "GYS 2025 photograph 11"
       },
       "physicalSources": [
         {
@@ -3143,15 +3143,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 062 in the volunteering collection."
+          "text": "Bu Gia Map Protect Wild Animal 2023. Photograph from the Volunteer Cert collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8ab886e932a033cc32fb",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Volunteer Cert collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 62,
-        "title": "Archive record 062"
+        "title": "Bu Gia Map Protect Wild Animal 2023"
       },
       "physicalSources": [
         {
@@ -3192,15 +3192,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 063 in the scientific research collection."
+          "text": "GYS 2025 photograph 12. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8b0b039556f78d2a2b7b",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 63,
-        "title": "Archive record 063"
+        "title": "GYS 2025 photograph 12"
       },
       "physicalSources": [
         {
@@ -3241,15 +3241,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 064 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 02. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8e53ab3f1019e548e69c",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 64,
-        "title": "Archive record 064"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 02"
       },
       "physicalSources": [
         {
@@ -3290,15 +3290,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 065 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 03. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-8fce51314a555c5e651e",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 65,
-        "title": "Archive record 065"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 03"
       },
       "physicalSources": [
         {
@@ -3349,15 +3349,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 066 in the complete archive collection."
+          "text": "Profile portrait. Photograph from the Portfolio identity collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-949b0facaa575830d071",
-        "caption": "Preserved evidence from the reviewed complete archive collection.",
+        "caption": "Photograph from the Portfolio identity collection.",
         "disposition": "gallery",
-        "groupId": "complete-archive",
+        "groupId": "identity-material",
         "order": 66,
-        "title": "Archive record 066"
+        "title": "Profile portrait"
       },
       "physicalSources": [
         {
@@ -3398,15 +3398,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 067 in the scientific research collection."
+          "text": "Nhãn dán. Published document from the WICO_document collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-9933e166e6988bf4e9ea",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the WICO_document collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 67,
-        "title": "Archive record 067"
+        "title": "Nhãn dán"
       },
       "physicalSources": [
         {
@@ -3437,15 +3437,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 068 in the scientific research collection."
+          "text": "Application + Brochure. Document from the WICO_document collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-9bd73853aefc129a9fa0",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Document from the WICO_document collection.",
         "disposition": "original-download",
         "groupId": "scientific-research",
         "order": 68,
-        "title": "Archive record 068"
+        "title": "Application + Brochure"
       },
       "physicalSources": [
         {
@@ -3486,15 +3486,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 069 in the scientific research collection."
+          "text": "BROCHURE. Published document from the GYS_Document collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-9bed56ad995fcc168569",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the GYS_Document collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 69,
-        "title": "Archive record 069"
+        "title": "BROCHURE"
       },
       "physicalSources": [
         {
@@ -3545,15 +3545,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 070 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 03. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-9c77d1b8f150131e57f6",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 70,
-        "title": "Archive record 070"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 03"
       },
       "physicalSources": [
         {
@@ -3594,15 +3594,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 071 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 04. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-9e0895e7f324b08b2edb",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 71,
-        "title": "Archive record 071"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 04"
       },
       "physicalSources": [
         {
@@ -3643,15 +3643,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 072 in the volunteering collection."
+          "text": "Nui Chua Protect Sea Turtle 2022. Photograph from the Volunteer Cert collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-a146235baa69448ea4f4",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Volunteer Cert collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 72,
-        "title": "Archive record 072"
+        "title": "Nui Chua Protect Sea Turtle 2022"
       },
       "physicalSources": [
         {
@@ -3692,15 +3692,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 073 in the academic competitions collection."
+          "text": "World Scholar's Cup Global Round certificate. Photograph from the WSC 2024_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-a5c8a0c08915d344dd32",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the WSC 2024_Certificate collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 73,
-        "title": "Archive record 073"
+        "title": "World Scholar's Cup Global Round certificate"
       },
       "physicalSources": [
         {
@@ -3741,15 +3741,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 074 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 05. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-a6e82a26a1ef83ba6057",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 74,
-        "title": "Archive record 074"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 05"
       },
       "physicalSources": [
         {
@@ -3790,15 +3790,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 075 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 12. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-aa0a83e709a4291f4d73",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 75,
-        "title": "Archive record 075"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 12"
       },
       "physicalSources": [
         {
@@ -3839,15 +3839,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 076 in the scientific research collection."
+          "text": "WICO award recognition. Photograph from the WICO 2025_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-aa1f9f0b6b0fc7a58d60",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025_Certificate collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 76,
-        "title": "Archive record 076"
+        "title": "WICO award recognition"
       },
       "physicalSources": [
         {
@@ -3888,15 +3888,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 077 in the volunteering collection."
+          "text": "IAM volunteer. Photograph from the IAM Volunteen collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-aba4ad6e3ee1c4348b15",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the IAM Volunteen collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 77,
-        "title": "Archive record 077"
+        "title": "IAM volunteer"
       },
       "physicalSources": [
         {
@@ -3937,15 +3937,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 078 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 04. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-af845645eb7dcecb18ba",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 78,
-        "title": "Archive record 078"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 04"
       },
       "physicalSources": [
         {
@@ -3986,15 +3986,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 079 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 13. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b29e5caca0b8be6f5785",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 79,
-        "title": "Archive record 079"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 13"
       },
       "physicalSources": [
         {
@@ -4035,15 +4035,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 080 in the scientific research collection."
+          "text": "GYS 2025 photograph 13. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b2e75214a3102f96b356",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 80,
-        "title": "Archive record 080"
+        "title": "GYS 2025 photograph 13"
       },
       "physicalSources": [
         {
@@ -4084,15 +4084,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 081 in the scientific research collection."
+          "text": "Bán kết + Chung kết HN. Published document from the GYS_Document collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b4027c9fa9a738f96f17",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the GYS_Document collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 81,
-        "title": "Archive record 081"
+        "title": "Bán kết + Chung kết HN"
       },
       "physicalSources": [
         {
@@ -4133,15 +4133,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 082 in the scientific research collection."
+          "text": "NCKH 3. Photograph from the Science Research Project collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b4c4be731cca49c7942f",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the Science Research Project collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 82,
-        "title": "Archive record 082"
+        "title": "NCKH 3"
       },
       "physicalSources": [
         {
@@ -4192,15 +4192,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 083 in the academic competitions collection."
+          "text": "WSC. Photograph from the WSC 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b6dc2597180efaa1131d",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the WSC 2024 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 83,
-        "title": "Archive record 083"
+        "title": "WSC"
       },
       "physicalSources": [
         {
@@ -4241,15 +4241,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 084 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 09. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-b77458f7882b5f885105",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 84,
-        "title": "Archive record 084"
+        "title": "Kyoto Youth Summit 2026 photograph 09"
       },
       "physicalSources": [
         {
@@ -4290,15 +4290,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 085 in the volunteering collection."
+          "text": "Nui Chua Protect Sea Turle 2025. Photograph from the Volunteer Cert collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-bb6558ed2c3d21a636a8",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Volunteer Cert collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 85,
-        "title": "Archive record 085"
+        "title": "Nui Chua Protect Sea Turle 2025"
       },
       "physicalSources": [
         {
@@ -4349,15 +4349,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 086 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 10. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-bc6d8af1de5cfd4f36c5",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 86,
-        "title": "Archive record 086"
+        "title": "Kyoto Youth Summit 2026 photograph 10"
       },
       "physicalSources": [
         {
@@ -4398,15 +4398,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 087 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2024 photograph 06. Photograph from the Nui Chua Protecting Turtle 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-c4cdb1929281bba9711a",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 87,
-        "title": "Archive record 087"
+        "title": "Nui Chua Protecting Turtle 2024 photograph 06"
       },
       "physicalSources": [
         {
@@ -4447,15 +4447,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 088 in the public speaking collection."
+          "text": "Debate. Photograph from the Public speaking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-c7b4fac692d858f06b63",
-        "caption": "Preserved evidence from the reviewed public speaking collection.",
+        "caption": "Photograph from the Public speaking collection.",
         "disposition": "gallery",
         "groupId": "public-speaking",
         "order": 88,
-        "title": "Archive record 088"
+        "title": "Debate"
       },
       "physicalSources": [
         {
@@ -4506,15 +4506,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 089 in the scientific research collection."
+          "text": "GYS 2025 photograph 14. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-ce9cfd672111d2c1c892",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 89,
-        "title": "Archive record 089"
+        "title": "GYS 2025 photograph 14"
       },
       "physicalSources": [
         {
@@ -4555,15 +4555,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 090 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 05. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-d076ab15fe4fd6ccfbdb",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 90,
-        "title": "Archive record 090"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 05"
       },
       "physicalSources": [
         {
@@ -4614,15 +4614,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 091 in the academic competitions collection."
+          "text": "WSC. Photograph from the WSC 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-d08d28e05a3c5b78cc7f",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the WSC 2024 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 91,
-        "title": "Archive record 091"
+        "title": "WSC"
       },
       "physicalSources": [
         {
@@ -4663,15 +4663,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 092 in the identity material collection."
+          "text": "Biomedical research mark. Photograph from the Identity Material collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-d5561a78f6b611308cef",
-        "caption": "Preserved evidence from the reviewed identity material collection.",
+        "caption": "Photograph from the Identity Material collection.",
         "disposition": "gallery",
         "groupId": "identity-material",
         "order": 92,
-        "title": "Archive record 092"
+        "title": "Biomedical research mark"
       },
       "physicalSources": [
         {
@@ -4712,15 +4712,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 093 in the scientific research collection."
+          "text": "GYS 2025 photograph 15. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-d5a4cc02b74eda392e46",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 93,
-        "title": "Archive record 093"
+        "title": "GYS 2025 photograph 15"
       },
       "physicalSources": [
         {
@@ -4777,15 +4777,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 094 in the academic competitions collection."
+          "text": "Kyoto 1. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-d6e6398b821168498d4d",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 94,
-        "title": "Archive record 094"
+        "title": "Kyoto 1"
       },
       "physicalSources": [
         {
@@ -4826,15 +4826,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 095 in the sport collection."
+          "text": "Badminton achievement certificate. Published document from the Sport collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-daebfb751989aab34b6c",
-        "caption": "Preserved evidence from the reviewed sport collection.",
+        "caption": "Published document from the Sport collection.",
         "disposition": "document-collection",
         "groupId": "sport",
         "order": 95,
-        "title": "Archive record 095"
+        "title": "Badminton achievement certificate"
       },
       "physicalSources": [
         {
@@ -4875,15 +4875,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 096 in the scholarships collection."
+          "text": "90% scholarship offer. Published document from the School Scholarship collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-dc6125151ef633adf31a",
-        "caption": "Preserved evidence from the reviewed scholarships collection.",
+        "caption": "Published document from the School Scholarship collection.",
         "disposition": "document-collection",
         "groupId": "scholarships",
         "order": 96,
-        "title": "Archive record 096"
+        "title": "90% scholarship offer"
       },
       "physicalSources": [
         {
@@ -4934,27 +4934,17 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 097 in the scientific research collection."
+          "text": "Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted). Published document from the 2026 Protein Docking collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-dcc1b81a83eb9d3b10e6",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Published document from the 2026 Protein Docking collection.",
         "disposition": "document-collection",
         "groupId": "scientific-research",
         "order": 97,
-        "title": "Archive record 097"
+        "title": "Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted)"
       },
       "physicalSources": [
-        {
-          "bytes": 3490329,
-          "category": "gallery",
-          "disposition": "review-required",
-          "id": "physical-19a6acd7b8d7c21e0f2c",
-          "mediaType": "application/pdf",
-          "relativePath": "src/assets/minh-tam/gallery/2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf",
-          "sha256": "dcc1b81a83eb9d3b10e6b9dc36c4452735e34f4f93db16355a2c782bf1669e74",
-          "sourceRelativePath": "gallery/2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf"
-        },
         {
           "bytes": 3490329,
           "category": "Science research",
@@ -5003,15 +4993,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 098 in the scientific research collection."
+          "text": "GYS. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-dedfbd3440855f44fae3",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 98,
-        "title": "Archive record 098"
+        "title": "GYS"
       },
       "physicalSources": [
         {
@@ -5062,15 +5052,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 099 in the volunteering collection."
+          "text": "Nui Chua Protecting Turtle 2025 photograph 14. Photograph from the Nui Chua Protecting Turtle 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-e8ba5265e449f11fe597",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nui Chua Protecting Turtle 2025 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 99,
-        "title": "Archive record 099"
+        "title": "Nui Chua Protecting Turtle 2025 photograph 14"
       },
       "physicalSources": [
         {
@@ -5111,15 +5101,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 100 in the scientific research collection."
+          "text": "GYS 2025 photograph 17. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-ea8a7390dd8790039649",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 100,
-        "title": "Archive record 100"
+        "title": "GYS 2025 photograph 17"
       },
       "physicalSources": [
         {
@@ -5160,15 +5150,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 101 in the volunteering collection."
+          "text": "Nam Cat Tien Protecting Wildlife 2024 photograph 06. Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-ec0593b107444d4591ed",
-        "caption": "Preserved evidence from the reviewed volunteering collection.",
+        "caption": "Photograph from the Nam Cat Tien Protecting Wildlife 2024 collection.",
         "disposition": "gallery",
         "groupId": "volunteering",
         "order": 101,
-        "title": "Archive record 101"
+        "title": "Nam Cat Tien Protecting Wildlife 2024 photograph 06"
       },
       "physicalSources": [
         {
@@ -5209,15 +5199,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 102 in the scientific research collection."
+          "text": "GYS 2025 photograph 18. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-ef211dbd31703b169d1c",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 102,
-        "title": "Archive record 102"
+        "title": "GYS 2025 photograph 18"
       },
       "physicalSources": [
         {
@@ -5258,15 +5248,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 103 in the scientific research collection."
+          "text": "GYS 2. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f0838ee50e5f167c2f3f",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 103,
-        "title": "Archive record 103"
+        "title": "GYS 2"
       },
       "physicalSources": [
         {
@@ -5307,15 +5297,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 104 in the scientific research collection."
+          "text": "GYS 2025 photograph 20. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f11a6e4ab0b41d53f927",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 104,
-        "title": "Archive record 104"
+        "title": "GYS 2025 photograph 20"
       },
       "physicalSources": [
         {
@@ -5356,15 +5346,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 105 in the scientific research collection."
+          "text": "GYS 2025 photograph 21. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f291ab1d4740ff1032af",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 105,
-        "title": "Archive record 105"
+        "title": "GYS 2025 photograph 21"
       },
       "physicalSources": [
         {
@@ -5405,15 +5395,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 106 in the scientific research collection."
+          "text": "WICo 3. Photograph from the WICO 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f321a0d152a481b79933",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 106,
-        "title": "Archive record 106"
+        "title": "WICo 3"
       },
       "physicalSources": [
         {
@@ -5454,15 +5444,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 107 in the scientific research collection."
+          "text": "WICO 1. Photograph from the WICO 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f348a014286967e8abec",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the WICO 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 107,
-        "title": "Archive record 107"
+        "title": "WICO 1"
       },
       "physicalSources": [
         {
@@ -5503,15 +5493,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 108 in the academic competitions collection."
+          "text": "Kyoto Youth Summit 2026 photograph 12. Photograph from the Kyoto Youth Summit 2026 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f5663031c569f1c638fe",
-        "caption": "Preserved evidence from the reviewed academic competitions collection.",
+        "caption": "Photograph from the Kyoto Youth Summit 2026 collection.",
         "disposition": "gallery",
         "groupId": "academic-competitions",
         "order": 108,
-        "title": "Archive record 108"
+        "title": "Kyoto Youth Summit 2026 photograph 12"
       },
       "physicalSources": [
         {
@@ -5552,15 +5542,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 109 in the scientific research collection."
+          "text": "GYS 2025 photograph 22. Photograph from the GYS 2025 collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f5f4e6909f6128421823",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025 collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 109,
-        "title": "Archive record 109"
+        "title": "GYS 2025 photograph 22"
       },
       "physicalSources": [
         {
@@ -5601,15 +5591,15 @@
       "metadata": {
         "accessibility": {
           "kind": "description",
-          "text": "Preview of archive record 110 in the scientific research collection."
+          "text": "Global Youth Summit finalist certificate. Photograph from the GYS 2025_Certificate collection."
         },
         "authority": "owner-reviewed",
         "canonicalId": "asset-f8238c7ba2659e7d7801",
-        "caption": "Preserved evidence from the reviewed scientific research collection.",
+        "caption": "Photograph from the GYS 2025_Certificate collection.",
         "disposition": "gallery",
         "groupId": "scientific-research",
         "order": 110,
-        "title": "Archive record 110"
+        "title": "Global Youth Summit finalist certificate"
       },
       "physicalSources": [
         {
@@ -5625,7 +5615,7 @@
       ]
     }
   ],
-  "physicalFileCount": 128,
+  "physicalFileCount": 127,
   "schemaVersion": 1,
-  "totalBytes": 314709235
+  "totalBytes": 311218906
 }

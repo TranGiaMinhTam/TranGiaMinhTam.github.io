@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "phase": "active",
+  "inventory": {
+    "physicalFileCount": 127,
+    "canonicalItemCount": 110,
+    "sourceMembershipCount": 109
+  },
+  "generatedGroups": {
+    "count": 6,
+    "sha256": "96326d1b6cf4dd51c7df392fef8bb0a8cc58d3a3ab0db82df304c760d08ec63f"
+  },
+  "candidate": {
+    "checked": true,
+    "dynamicGroupCount": 6,
+    "initialGroupImportCount": 0
+  },
+  "lockHash": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971",
+  "findings": [],
+  "canProceed": true
+}

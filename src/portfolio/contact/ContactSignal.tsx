@@ -4,7 +4,6 @@ import {
   browserMailtoHandoff,
   buildMailtoUrl,
   CONTACT_LIMITS,
-  CONTACT_PRIVACY,
   selectContactRecipient,
   validateContactDraft,
 } from "./contactModel";
@@ -13,6 +12,7 @@ import type {
   MailtoHandoff,
   RawContactDraft,
 } from "./contact.types";
+import { legacyContactPresentation, type ContactPresentation } from './contactPresentation'
 import styles from "./Contact.module.css";
 
 const emptyDraft: RawContactDraft = Object.freeze({
@@ -23,7 +23,8 @@ const emptyDraft: RawContactDraft = Object.freeze({
 
 export function ContactSignal({
   handoff = browserMailtoHandoff,
-}: Readonly<{ handoff?: MailtoHandoff }>) {
+  presentation = legacyContactPresentation,
+}: Readonly<{ handoff?: MailtoHandoff; presentation?: ContactPresentation }>) {
   const recipient = useMemo(
     () => selectContactRecipient(verifiedPortfolioSource),
     [],
@@ -70,15 +71,11 @@ export function ContactSignal({
   };
 
   return (
-    <div className={styles.contactSignal} data-testid="contact-body">
+    <div className={`${styles.contactSignal} ${presentation.layout === "portfolio" ? styles.portfolio : ""}`} data-testid="contact-body">
       <header className={styles.header}>
-        <p>Correspondence channel / 10</p>
-        <h3>Start with a clear research question.</h3>
-        <p>
-          For research mentorship, collaboration, or academic opportunities,
-          prepare an email draft locally—without submitting this form to a
-          server.
-        </p>
+        <p>{presentation.eyebrow}</p>
+        <h3>{presentation.heading}</h3>
+        <p>{presentation.introduction}</p>
       </header>
 
       <aside
@@ -90,18 +87,18 @@ export function ContactSignal({
         <a href={recipient.value.directHref} data-testid="contact-direct-email">
           {recipient.value.email}
         </a>
-        <p>Prefer your own workflow? Use the direct email link at any time.</p>
+        <p>{presentation.recipientNote}</p>
       </aside>
 
       <form
         className={styles.composer}
         onSubmit={submit}
         noValidate
-        aria-label="Prepare an email draft"
+          aria-label={presentation.action}
       >
         <div className={styles.formIntro}>
-          <span>Local draft composer</span>
-          <p>{CONTACT_PRIVACY}</p>
+          <span>{presentation.composerLabel}</span>
+          <p>{presentation.privacy}</p>
         </div>
 
         <div className={styles.field}>
@@ -170,12 +167,17 @@ export function ContactSignal({
           )}
         </div>
 
-        <button className={styles.submit} type="submit">
-          Prepare email draft <span aria-hidden="true">↗</span>
-        </button>
-        <p className={styles.handoffNote}>
-          This opens your email application. Review and send the message there.
-        </p>
+        {presentation.layout === "portfolio" ? <div className={styles.actionRow}>
+          <p className={styles.handoffNote}>{presentation.handoffNote}</p>
+          <button className={styles.submit} type="submit">
+            {presentation.action} <span aria-hidden="true">↗</span>
+          </button>
+        </div> : <>
+          <button className={styles.submit} type="submit">
+            {presentation.action} <span aria-hidden="true">↗</span>
+          </button>
+          <p className={styles.handoffNote}>{presentation.handoffNote}</p>
+        </>}
       </form>
     </div>
   );

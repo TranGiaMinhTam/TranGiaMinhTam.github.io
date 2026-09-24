@@ -20,6 +20,8 @@ export const CONTACT_LIMITS = Object.freeze({
 export const CONTACT_SUBJECT = "Portfolio opportunity enquiry";
 export const CONTACT_PRIVACY =
   "Your details stay in this page and are passed only to your own email application.";
+export const PORTFOLIO_CONTACT_PRIVACY =
+  "Nothing is submitted or stored by this site. Your message opens in your email app for review.";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const hasUnsupportedControl = (value: string) =>
