@@ -15,6 +15,10 @@ describe("U-07 Contact styles", () => {
     expect(styles).toMatch(/@media \(max-width: 30rem\)/);
     expect(styles).toMatch(/\.actionRow[\s\S]*grid-template-columns/);
     expect(styles).toMatch(/\.portfolio \.submit[\s\S]*inline-size:\s*100%/);
+    expect(styles).toMatch(/\.composer > \.field:not\(\.message\)[^{]*\{[^}]*margin-block-start:\s*var\(--space-3\)/s);
+    expect(styles).toMatch(/\.submit\s*\{[^}]*min-height:\s*4rem[^}]*padding:\s*var\(--space-4\) var\(--space-6\)/s);
+    expect(styles).not.toMatch(/\.submit\s*\{[^}]*var\(--space-5\)/s);
+    expect(styles).not.toMatch(/var\(--space-(5|7|9)\)/);
   });
 
   it("uses tokens, opaque reading surfaces, and visible focus without forbidden patterns", () => {

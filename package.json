@@ -119,6 +119,17 @@
     "measure:media-viewers:active": "node scripts/portfolio/pdf-image-detail-viewers-review/measure.mjs --active",
     "review:media-viewers:candidate": "node scripts/portfolio/pdf-image-detail-viewers-review/review.mjs",
     "review:media-viewers:active": "node scripts/portfolio/pdf-image-detail-viewers-review/review.mjs --active",
+    "test:security-delivery": "vitest run src/portfolio/release",
+    "generate:security-delivery:sbom": "node scripts/portfolio/security-delivery/sbom.mjs",
+    "verify:security-delivery:dependencies": "node scripts/portfolio/security-delivery/dependencies.mjs",
+    "verify:security-delivery:ci:candidate": "node scripts/portfolio/security-delivery/ci-integrity.mjs --candidate --workflow scripts/portfolio/security-delivery-candidate/deploy.yml",
+    "verify:security-delivery:ci:active": "node scripts/portfolio/security-delivery/ci-integrity.mjs",
+    "verify:security-delivery:headers": "node scripts/portfolio/security-delivery/headers.mjs",
+    "verify:security-delivery:privacy": "node scripts/portfolio/security-delivery/privacy.mjs",
+    "verify:security-delivery:recovery": "node scripts/portfolio/security-delivery/verify-recovery.mjs",
+    "verify:security-delivery:build": "node scripts/portfolio/security-delivery/verify-build.mjs",
+    "verify:security-delivery:integrated": "node scripts/portfolio/security-delivery/integrated.mjs",
+    "verify:security-delivery:candidate": "npm run test:security-delivery && npm run lint && npm run build && npm run verify:security-delivery:build && npm run generate:security-delivery:sbom && npm run verify:security-delivery:dependencies && npm run verify:security-delivery:ci:candidate && npm run verify:security-delivery:headers && npm run verify:security-delivery:privacy && npm run verify:security-delivery:recovery && npm run verify:security-delivery:integrated",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -155,8 +166,8 @@
     "prettier": "3.7.4",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.51.0",
-    "vite": "^7.2.4",
+    "vite": "^7.3.6",
     "vite-tsconfig-paths": "^6.0.3",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.11"
   }
 }

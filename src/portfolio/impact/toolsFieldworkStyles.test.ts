@@ -6,7 +6,7 @@ const styles = fs.readFileSync('src/portfolio/impact/ToolsFieldwork.module.css',
 describe('U-06 tools and fieldwork styles', () => {
   it('defines distinct category and activity geometry with local responsive behavior', () => {
     expect(styles).toMatch(/\.categories[\s\S]*grid-template-columns/)
-    expect(styles).toMatch(/\.groupRecords[\s\S]*display:\s*grid/)
+    expect(styles).toMatch(/\.activityRecords[\s\S]*display:\s*grid/)
     expect(styles).toMatch(/@media \(max-width: 760px\)/)
     expect(styles).toMatch(/var\(--color-/)
     expect(styles).not.toMatch(/!important|position:\s*fixed|100vw|\.timeline|\.cardGrid|\.carousel|\.ledger/i)
@@ -18,13 +18,10 @@ describe('U-06 tools and fieldwork styles', () => {
     expect(styles).toMatch(/\.headerNote\s*\{[^}]*text-transform:\s*none/)
   })
 
-  it('preserves visible focus for interactive context links', () => {
-    expect(styles).toMatch(/\.contextLink:focus-visible/)
-    expect(styles).toMatch(/\.contextLink\s*\{[^}]*min-block-size/)
-    expect(styles).toMatch(/\.toolList li\s*\{[^}]*grid-template-columns[^}]*align-items:\s*start/)
-    expect(styles).toMatch(/\.categories\s*\{[^}]*grid-template-columns:\s*minmax\(0, 1fr\)/)
-    expect(styles).toMatch(/\.toolConnections\s*\{[^}]*display:\s*grid/)
-    expect(styles).toMatch(/\.classificationMarker\s*\{[^}]*min-block-size:\s*2\.5rem/)
+  it('uses a compact two-column list without secondary connection geometry', () => {
+    expect(styles).toMatch(/\.categories\s*\{[^}]*grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\)/)
+    expect(styles).toMatch(/\.toolList\s*\{[^}]*grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\)/)
+    expect(styles).toMatch(/\.toolList li\s*\{[^}]*padding:/)
     expect(styles).toMatch(/\.activityRecord\s*\{[^}]*grid-template-columns/)
   })
 

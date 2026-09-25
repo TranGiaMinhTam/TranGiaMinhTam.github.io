@@ -121,7 +121,7 @@
 .evidenceList li {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: var(--space-5);
+  gap: var(--space-6);
   align-items: center;
   padding: var(--space-4);
   background: var(--color-surface-elevated);
@@ -190,7 +190,7 @@
 @media (max-width: 30rem) {
   .note {
     width: calc(100% - 2rem);
-    margin-block: var(--space-5);
+    margin-block: var(--space-6);
   }
 
   .noteHeader,

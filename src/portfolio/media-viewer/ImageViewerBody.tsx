@@ -12,7 +12,7 @@ export function ImageViewerBody({ state, onPrevious, onNext, onFailed }: Readonl
   if (!item) return null
   const position = `Image ${state.index + 1} of ${state.group.items.length}`
   return <div className={styles.body} data-testid="media-viewer-image-body">
-    <div className={styles.imageFrame}>
+    <div className={styles.imageFrame} tabIndex={0} aria-label="Scrollable full image preview">
       {item.embedAllowed
         ? <img src={item.href} alt={item.alt} width={item.width} height={item.height} onError={onFailed} />
         : <p role="status">This image is available through the actions below.</p>}

@@ -18,7 +18,7 @@ The first computational project displays only the requested `IMG_4208.JPG` photo
 - Archive cards and groups now open document and deterministic image-group detail views while preserving lazy group loading and direct fallbacks.
 - Academic document/image actions, research evidence/actions/figures, shared PDF actions, and resume actions now request the shared host when available.
 - Identity retains the resume download and adds an explicit resume preview action.
-- Image cards use stable `4 / 3` crops; document cards use contained `3 / 4` previews; full detail images use `object-fit: contain`.
+- Archive image, document, and supporting-file cards use one stable `4 / 3` cropped preview frame with consistent internal gutters; full detail images use `object-fit: contain` and PDFs retain complete native detail viewing.
 - `src/App.tsx` mounts exactly one approved provider around the existing `PortfolioApp`; registries and content composition remain unchanged.
 - The legacy active boundary now permits exactly `MediaViewerProvider` while continuing to reject other providers, retired styles, templates, and layout APIs.
 
@@ -33,13 +33,13 @@ The first computational project displays only the requested `IMG_4208.JPG` photo
 
 ## Verification
 
-- Complete regression: 291 tests across 79 files pass.
+- Complete regression: 292 tests across 80 files pass.
 - Property verification: fixed seed `20260924`, 120 runs per property, shrinking enabled.
 - Strict TypeScript and ESLint pass.
 - General and U-05 active boundaries, dependency/recovery verification, privacy, Protein Docking allocation, Vite request/lazy-chunk integrity, and production build pass with zero findings.
-- Active initial output: 326,548 bytes JavaScript, 63,517 bytes CSS, and three initial requests.
+- Active initial output: 325,081 bytes JavaScript, 64,587 bytes CSS, and three initial requests.
 - Lazy viewer output: three chunks totaling 2,146 bytes JavaScript.
-- Active Chrome review: 14 cases and 14 screenshots across 320, 768, 1280, and 1440 CSS pixels; both themes; text spacing; 200-percent zoom; reduced motion; forced colors; PDF, resume, single-image, and multi-image states; zero findings.
+- Active Chrome review: 23 cases and 23 screenshots across 320, 768, 1280, and 1440 CSS pixels; both themes; text spacing; 200-percent zoom; reduced motion; forced colors; PDF, resume, single-image, multi-image, Evidence cards, Data Stories, Methods and Tools, Fieldwork and Leadership, and Contact states; zero findings.
 - Firefox, Safari, and iOS Safari were unavailable and were not represented as passes.
 
 ## Recovery and Scope
@@ -48,6 +48,14 @@ The first computational project displays only the requested `IMG_4208.JPG` photo
 - `package-lock.json` and dependency declarations are unchanged.
 - No duplicate `_modified`, `_new`, or replacement-copy application files were created.
 - No backend, database, analytics, authentication, deployment, CSP/header, or U-06 delivery behavior was added.
+
+## Review Amendment
+
+- Evidence Library cards now have responsive inter-card spacing, internal media/copy padding, and consistent `4 / 3` cropped preview geometry.
+- Data Stories uses explicit aligned workflow/context columns and full-width downstream blocks. A separate `1st Place — Future Innovator Camp` Cool Ride preview uses the existing project image and explicitly does not represent SIM-LSE retail-project evidence.
+- Methods and Tools is now a simple sixteen-item categorized list with no classification boxes, secondary context panels, evidence actions, or duplicate summary.
+- Fieldwork and Leadership is one continuous four-record sequence with a single consistent card treatment and no secondary activity grouping.
+- Contact first-row labels have additional top separation, and the Open email draft action has a larger four-rem target and increased internal padding.
 
 ## Story and Requirement Completion
 

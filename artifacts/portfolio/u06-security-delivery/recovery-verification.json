@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "capturedFileCount": 8,
+  "isolatedRestorationPassed": true,
+  "plannedChanges": {
+    "packageLockChanged": true,
+    "dependenciesChanged": false,
+    "devDependenciesChanged": true
+  },
+  "findings": [],
+  "canRestore": true
+}

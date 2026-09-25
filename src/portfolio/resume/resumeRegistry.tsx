@@ -12,7 +12,7 @@ export const decorateRegistryWithResumeContent = (
     Body
       ? (context: Parameters<NonNullable<typeof Body>>[0]) => <div className={styles.sectionStack} data-testid={`resume-section-stack-${sectionId}`}>
           {Body(context)}
-          <ResumeContentGroup group={sections[sectionId as ResumeSectionGroup['sectionId']]} />
+          {sectionId === 'data-stories' ? null : <ResumeContentGroup group={sections[sectionId as ResumeSectionGroup['sectionId']]} />}
         </div>
       : Body,
   ]))

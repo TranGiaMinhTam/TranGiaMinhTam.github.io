@@ -14,6 +14,7 @@ describe("U-07 Contact signal", () => {
     expect(screen.getByLabelText("Name")).toBeInTheDocument();
     expect(screen.getByLabelText("Reply-to email")).toBeInTheDocument();
     expect(screen.getByLabelText("Message")).toBeInTheDocument();
+    expect(screen.getByTestId("contact-email-draft-button")).toBeInTheDocument();
     expect(screen.getByTestId("contact-direct-email")).toHaveAttribute(
       "href",
       "mailto:minhtamtrangia@gmail.com",

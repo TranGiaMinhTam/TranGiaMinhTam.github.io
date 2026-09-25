@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-25T06:29:16.472Z",
+  "targetStates": [
+    {
+      "path": "src/App.tsx",
+      "exists": true,
+      "bytes": 1547,
+      "sha256": "f90bff81afb09cb721b0ca555b673d4d481857ec164af825362fc85b5c92e846"
+    },
+    {
+      "path": "src/portfolio/index.ts",
+      "exists": true,
+      "bytes": 766,
+      "sha256": "0e74c39dac46c7e27fb89056d2b9ce984e5251382a5acbd7c8b62f73519310fd"
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "bytes": 15631,
+      "sha256": "86bbfd937c141b6286053679da5ac2c19af672db38f152999a0906e4d1d12f21"
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "bytes": 345441,
+      "sha256": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "exists": true,
+      "bytes": 1576,
+      "sha256": "b26343ecf7023ddec8fd93fa410ea25272bdd6b7cba6f0ebd879b83cb3b20a0b"
+    },
+    {
+      "path": "vite.config.ts",
+      "exists": true,
+      "bytes": 805,
+      "sha256": "7a95380f9862492b953c8100e4bb6307c7a427d3a57b68cec18e90ca5acceb7c"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "exists": true,
+      "bytes": 827,
+      "sha256": "239b60fa4f16a4e900f491237390dd1311952e5697d2d0680d190990e46a1e08"
+    },
+    {
+      "path": "eslint.config.js",
+      "exists": true,
+      "bytes": 623,
+      "sha256": "8b4aa25cc6750bbc9d385793ddc578c229c04a36b46d1ce298801cbfacbe0729"
+    },
+    {
+      "path": "src/portfolio/release/release.types.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/release/releaseDecision.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/release/headerAssessment.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/release/evidenceBundle.ts",
+      "exists": false
+    },
+    {
+      "path": "src/portfolio/release/index.ts",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/reports.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/sbom.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/dependencies.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/ci-integrity.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/headers.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/integrated.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/privacy.mjs",
+      "exists": false
+    },
+    {
+      "path": "scripts/portfolio/security-delivery/review.mjs",
+      "exists": false
+    }
+  ],
+  "dependencyBaseline": {
+    "packageLockSha256": "46c5271e0ef6101dbe3dd45399c3c615a2755c4e8139d80c3efb0a71c6389971",
+    "dependenciesSha256": "bfc60b12c6fe1082dd3c54cecb42c60dd301a294b77e36c1df356daa5a4a9e82",
+    "devDependenciesSha256": "6e223db85d0334871a48b75a019979a809ac6046c519249f1a6bbc1e486ac6ff"
+  },
+  "restoration": {
+    "isolated": true,
+    "findings": [],
+    "passed": true
+  },
+  "canProceed": true
+}

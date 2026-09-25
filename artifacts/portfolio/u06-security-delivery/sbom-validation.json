@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "format": "SPDX-2.3",
+  "packageCount": 660,
+  "output": "artifacts/portfolio/u06-security-delivery/sbom.spdx.json",
+  "findings": [],
+  "passed": true
+}

@@ -109,6 +109,7 @@ describe('shared media viewer host', () => {
     expect(await screen.findByTestId('media-viewer-position')).toHaveTextContent('Image 1 of 1')
     expect(screen.getByTestId('media-viewer-previous-button')).toBeDisabled()
     expect(screen.getByTestId('media-viewer-next-button')).toBeDisabled()
+    expect(screen.getByLabelText('Scrollable full image preview')).toHaveAttribute('tabindex', '0')
   })
 
   it('keeps oversized media operable through direct actions and handles a removed trigger safely', async () => {

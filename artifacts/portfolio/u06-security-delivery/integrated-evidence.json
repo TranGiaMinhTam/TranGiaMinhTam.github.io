@@ -1,0 +1,1649 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-25T11:01:28.709Z",
+  "seeds": [
+    6062026
+  ],
+  "expectedRequirementCount": 159,
+  "results": [
+    {
+      "requirementId": "FR-001",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-002",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-003",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-004",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-005",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-006",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-007",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-008",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-009",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-010",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-011",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-012",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-013",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-014",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-015",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-016",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-017",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-018",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-019",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-020",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-021",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-022",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-023",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-024",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-025",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-026",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-027",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-028",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-029",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-030",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-031",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-032",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-033",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-034",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-035",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-036",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-037",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "FR-038",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-001",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-002",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-003",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-004",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-005",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-006",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-007",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-008",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-009",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-010",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-011",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-012",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-013",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-014",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-015",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-016",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-017",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-018",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-019",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "NFR-020",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-01",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-02",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-03",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-04",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-05",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-06",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-07",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-08",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-09",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "PBT-R-10",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-01",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-02",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-03",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-04",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-05",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-06",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-07",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SEC-R-08",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-01",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-02",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-03",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-04",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-05",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-06",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-07",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-08",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-09",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-10",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-11",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-12",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-13",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-14",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "SECURITY-15",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-001",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-002",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-003",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-004",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-005",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-006",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-007",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-008",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-009",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-010",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-011",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-012",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-013",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-014",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-015",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-016",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-017",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-018",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-019",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-020",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "US-021",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-001",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-002",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-003",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-004",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-005",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-006",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-007",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-008",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-009",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-010",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-011",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-012",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-013",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-014",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-015",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-016",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-017",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-018",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-019",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-020",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-021",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-022",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-023",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-024",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-025",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-026",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-027",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-028",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-029",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-030",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-031",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-032",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-033",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-034",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-035",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-036",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-037",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-038",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-039",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-040",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-041",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-042",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-043",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-044",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-045",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-046",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    },
+    {
+      "requirementId": "U06-NFR-047",
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "artifacts/portfolio/u06-security-delivery/integrated-evidence.json",
+          "description": "Integrated verification index"
+        }
+      ]
+    }
+  ],
+  "missingRequirementIds": [],
+  "duplicateRequirementIds": [],
+  "gates": {
+    "sbom-validation.json": true,
+    "dependency-assessment.json": true,
+    "candidate-ci-integrity.json": true,
+    "header-assessment.json": false,
+    "privacy-source-integrity.json": true,
+    "recovery-preflight.json": true
+  },
+  "blockingGateFindings": [
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "content-security-policy",
+      "reason": "header-missing",
+      "evidence": "header-assessment.json"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "strict-transport-security",
+      "reason": "policy-mismatch",
+      "evidence": "header-assessment.json"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "x-content-type-options",
+      "reason": "header-missing",
+      "evidence": "header-assessment.json"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "x-frame-options",
+      "reason": "header-missing",
+      "evidence": "header-assessment.json"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "referrer-policy",
+      "reason": "header-missing",
+      "evidence": "header-assessment.json"
+    }
+  ],
+  "releaseOutcome": "deploy-not-authorized",
+  "candidateImplementationPassed": true
+}

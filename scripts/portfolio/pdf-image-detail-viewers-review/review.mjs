@@ -20,6 +20,16 @@ const cases = [
   { id: 'resume-pdf-320-dark', width: 320, height: 1000, theme: 'dark', section: 'identity', action: 'resume', textSpacing: true },
   { id: 'image-zoom-768-dark', width: 768, height: 1000, theme: 'dark', section: 'computational-projects', action: 'single-image', zoom: 2 },
   { id: 'pdf-forced-colors-reduced', width: 1280, height: 1000, theme: 'light', section: 'computational-projects', action: 'pdf', forcedColors: true, reducedMotion: true },
+  { id: 'archive-summary-1440-light', width: 1440, height: 1000, theme: 'light', section: 'evidence-library' },
+  { id: 'archive-cards-1440-light', width: 1440, height: 1000, theme: 'light', section: 'evidence-library', action: 'archive-cards' },
+  { id: 'data-stories-1440-light', width: 1440, height: 1000, theme: 'light', section: 'data-stories' },
+  { id: 'data-stories-768-dark', width: 768, height: 1000, theme: 'dark', section: 'data-stories' },
+  { id: 'methods-tools-1280-light', width: 1280, height: 1000, theme: 'light', section: 'tools' },
+  { id: 'fieldwork-1280-dark', width: 1280, height: 1000, theme: 'dark', section: 'fieldwork-leadership' },
+  { id: 'contact-1440-light', width: 1440, height: 1000, theme: 'light', section: 'contact' },
+  { id: 'contact-320-dark', width: 320, height: 1000, theme: 'dark', section: 'contact' },
+  { id: 'future-innovator-preview-1280-light', width: 1280, height: 1000, theme: 'light', section: 'data-stories', action: 'future-preview' },
+  { id: 'contact-action-768-dark', width: 768, height: 1000, theme: 'dark', section: 'contact', action: 'contact-button' },
 ]
 
 await rm(screenshotRoot, { recursive: true, force: true })
@@ -83,11 +93,14 @@ const actionExpression = (reviewCase) => `new Promise((resolve, reject) => {
     if(action==='pdf')document.querySelector('[data-testid="computational-projects-publication-protein-docking-publication-evidence-link"]')?.click();
     if(action==='single-image')document.querySelector('[data-testid="computational-projects-figure-docking-conference-poster-evidence-link"]')?.click();
     if(action==='resume')document.querySelector('[data-testid="resume-download-identity-preview-button"]')?.click();
-    if(action==='archive-image')document.querySelector('[data-archive-summary="scientific-research"]')?.click();
+    if(action==='archive-image'||action==='archive-cards')document.querySelector('[data-archive-summary="scientific-research"]')?.click();
     const finish=()=>{
-      if(action==='archive-image'&&!document.querySelector('[data-archive-group]'))return setTimeout(finish,40);
+      if((action==='archive-image'||action==='archive-cards')&&!document.querySelector('[data-archive-group]'))return setTimeout(finish,40);
       if(action==='archive-image')document.querySelector('[data-archive-kind="image"] button')?.click();
-      if(action&&!document.querySelector('[data-testid="media-viewer-dialog"]'))return setTimeout(finish,40);
+      if(action==='archive-cards')document.querySelector('[data-archive-kind]')?.scrollIntoView({block:'start',behavior:'auto'});
+      if(action==='future-preview')document.getElementById('future-innovator-preview-title')?.closest('section')?.scrollIntoView({block:'center',behavior:'auto'});
+      if(action==='contact-button')document.querySelector('[data-testid="contact-email-draft-button"]')?.scrollIntoView({block:'center',behavior:'auto'});
+      if(['pdf','single-image','resume','archive-image'].includes(action)&&!document.querySelector('[data-testid="media-viewer-dialog"]'))return setTimeout(finish,40);
       if((action==='pdf'||action==='resume')&&!document.querySelector('[data-testid="media-viewer-pdf-body"]'))return setTimeout(finish,40);
       if((action==='single-image'||action==='archive-image')&&!document.querySelector('[data-testid="media-viewer-position"]'))return setTimeout(finish,40);
       setTimeout(()=>resolve(true),250);
@@ -125,7 +138,7 @@ try {
     result.caseId = reviewCase.id
     result.action = reviewCase.action ?? null
     result.screenshot = path.relative(root, screenshotPath).split(path.sep).join('/')
-    if (reviewCase.action) {
+    if (['pdf', 'single-image', 'resume', 'archive-image'].includes(reviewCase.action)) {
       await cdp.send('Runtime.evaluate', { expression: `document.querySelector('[data-testid="media-viewer-close-button"]')?.click()` })
       await wait(50)
       const restored = await cdp.send('Runtime.evaluate', { expression: `!document.querySelector('[data-testid="media-viewer-dialog"]')&&!document.querySelector('#scan-field')?.hasAttribute('inert')`, returnByValue: true })
@@ -137,8 +150,8 @@ try {
   const findings = []
   for (const result of results) {
     if (result.overflowPixels > 0) findings.push({ code: 'U05-UI-OVERFLOW', caseId: result.caseId })
-    if (result.action && (result.dialogCount !== 1 || !result.closeFocused || !result.mainInert || !result.closeCleanupPassed)) findings.push({ code: 'U05-UI-DIALOG', caseId: result.caseId })
-    if (!result.action && (result.dialogCount !== 0 || result.requestedPdfCount !== 0)) findings.push({ code: 'U05-UI-EAGER-MEDIA', caseId: result.caseId })
+    if (['pdf', 'single-image', 'resume', 'archive-image'].includes(result.action) && (result.dialogCount !== 1 || !result.closeFocused || !result.mainInert || !result.closeCleanupPassed)) findings.push({ code: 'U05-UI-DIALOG', caseId: result.caseId })
+    if ((!result.action || ['archive-cards', 'future-preview', 'contact-button'].includes(result.action)) && (result.dialogCount !== 0 || result.requestedPdfCount !== 0)) findings.push({ code: 'U05-UI-EAGER-MEDIA', caseId: result.caseId })
     if (result.action === 'single-image' && (result.position !== 'Image 1 of 1' || !result.previousDisabled || !result.nextDisabled)) findings.push({ code: 'U05-UI-SINGLE-IMAGE', caseId: result.caseId })
     if (result.action === 'archive-image' && (!/^Image 2 of /u.test(result.afterNextPosition ?? '') || result.nextDisabled === true)) findings.push({ code: 'U05-UI-GROUP-NAVIGATION', caseId: result.caseId })
     if ((result.action === 'pdf' || result.action === 'resume') && result.pdfFrameCount !== 1) findings.push({ code: 'U05-UI-PDF', caseId: result.caseId })
@@ -149,7 +162,10 @@ try {
   if (!report.canProceed) process.exitCode = 1
 } finally {
   server.kill('SIGTERM')
+  const browserExit = browser.exitCode === null
+    ? new Promise((resolve) => browser.once('exit', resolve))
+    : Promise.resolve()
   browser.kill('SIGTERM')
-  if (browser.exitCode === null) await new Promise((resolve) => browser.once('exit', resolve))
+  await Promise.race([browserExit, wait(2000)])
   await rm(profile, { recursive: true, force: true })
 }

@@ -102,12 +102,18 @@ describe("U-04 research bodies", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("Team-led project")).toBeInTheDocument();
     expect(screen.queryByTestId("data-stories-note-discovery")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Top 10 Finalist — SIM-LSE Data Analytics Challenge" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "1st Place — Future Innovator Camp" })).toBeInTheDocument();
     expect(screen.getByTestId("future-innovator-first-place-preview-image")).toHaveAttribute("loading", "lazy");
-    expect(screen.getByText(/not evidence for the retail analytics challenge/i)).toBeInTheDocument();
+    expect(screen.getByText(/received first prize and VND 5 million/i)).toBeInTheDocument();
+    const signalSheet = screen.getByLabelText("Analytical workflow signal sheet");
+    expect(within(signalSheet).getByText("Step")).toBeInTheDocument();
+    expect(within(signalSheet).getByText("Method")).toBeInTheDocument();
+    expect(container.querySelector('[aria-label="Analytical workflow signal sheet"] i')).not.toBeInTheDocument();
     expect(
       screen.getByTestId("data-stories-certificate-sim-lse-certificate-evidence-link"),
     ).toHaveAccessibleName(/certificate.*PDF.*new tab/i);
+    expect(screen.getByLabelText("SIM-LSE project evidence")).toBeInTheDocument();
     expect(container.textContent).not.toMatch(
       /wordpress|dashboard metric|repository/i,
     );

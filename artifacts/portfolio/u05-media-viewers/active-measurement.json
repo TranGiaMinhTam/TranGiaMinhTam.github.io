@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "phase": "active",
   "measurement": {
-    "javascriptBytes": 326548,
-    "cssBytes": 63517,
+    "javascriptBytes": 325081,
+    "cssBytes": 64587,
     "initialRequestCount": 3,
     "lazyViewerJavascriptBytes": 2146,
     "lazyViewerRequestCount": 3,
     "initialFiles": [
-      "assets/index-CTkMZDN2.js",
-      "assets/index-CgY9gJWc.css"
+      "assets/index-DMOZoKxf.css",
+      "assets/index-Du1Q2Ufu.js"
     ],
     "lazyFiles": [
-      "assets/ImageViewerBody-BZzyKrde.js",
-      "assets/MediaFailureBody-D_Gpi599.js",
-      "assets/PdfViewerBody-BjJwurkT.js"
+      "assets/ImageViewerBody-BC5VJEGR.js",
+      "assets/MediaFailureBody-BEoa3gMs.js",
+      "assets/PdfViewerBody-GP2N41v5.js"
     ]
   },
   "budgets": {

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "endpoint": "https://trangiaminhtam.github.io/",
+  "finalUrl": "https://trangiaminhtam.github.io/",
+  "status": 200,
+  "available": true,
+  "checks": [
+    {
+      "name": "content-security-policy",
+      "observed": null,
+      "passed": false,
+      "reason": "header-missing"
+    },
+    {
+      "name": "strict-transport-security",
+      "observed": "max-age=31556952",
+      "passed": false,
+      "reason": "policy-mismatch"
+    },
+    {
+      "name": "x-content-type-options",
+      "observed": null,
+      "passed": false,
+      "reason": "header-missing"
+    },
+    {
+      "name": "x-frame-options",
+      "observed": null,
+      "passed": false,
+      "reason": "header-missing"
+    },
+    {
+      "name": "referrer-policy",
+      "observed": null,
+      "passed": false,
+      "reason": "header-missing"
+    }
+  ],
+  "findings": [
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "content-security-policy",
+      "reason": "header-missing"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "strict-transport-security",
+      "reason": "policy-mismatch"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "x-content-type-options",
+      "reason": "header-missing"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "x-frame-options",
+      "reason": "header-missing"
+    },
+    {
+      "code": "U06-HEADER-NONCOMPLIANT",
+      "severity": "blocking",
+      "header": "referrer-policy",
+      "reason": "header-missing"
+    }
+  ],
+  "compliant": false,
+  "releaseEffect": "deploy-not-authorized"
+}

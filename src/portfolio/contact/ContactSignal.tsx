@@ -169,11 +169,11 @@ export function ContactSignal({
 
         {presentation.layout === "portfolio" ? <div className={styles.actionRow}>
           <p className={styles.handoffNote}>{presentation.handoffNote}</p>
-          <button className={styles.submit} type="submit">
+          <button className={styles.submit} type="submit" data-testid="contact-email-draft-button">
             {presentation.action} <span aria-hidden="true">↗</span>
           </button>
         </div> : <>
-          <button className={styles.submit} type="submit">
+          <button className={styles.submit} type="submit" data-testid="contact-email-draft-button">
             {presentation.action} <span aria-hidden="true">↗</span>
           </button>
           <p className={styles.handoffNote}>{presentation.handoffNote}</p>

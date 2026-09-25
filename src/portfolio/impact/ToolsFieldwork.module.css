@@ -45,7 +45,7 @@
 
 .categories {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(var(--space-6), 3vw, var(--space-8));
 }
 
@@ -62,23 +62,20 @@
 
 .toolList {
   display: grid;
-  gap: var(--space-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 var(--space-6);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .toolList li {
-  display: grid;
-  grid-template-columns: minmax(10rem, 0.65fr) minmax(10rem, 0.42fr) minmax(16rem, 1fr);
-  gap: var(--space-3);
-  align-items: start;
   min-inline-size: 0;
-  padding-block: var(--space-3);
+  padding: var(--space-4) var(--space-3);
   border-block-end: var(--border-thin) solid var(--color-rule);
 }
 
-.toolTitle { padding-block-start: 0.7rem; font-weight: 700; }
+.toolTitle { display: block; font-weight: 700; overflow-wrap: anywhere; }
 
 .classificationMarker {
   display: inline-flex;
@@ -122,26 +119,11 @@
 .semanticGroup > dt { font-weight: 700; }
 .semanticGroup > dd { margin: var(--space-2) 0 0; color: var(--color-text-secondary); }
 
-.groups {
-  display: grid;
-  gap: clamp(var(--space-8), 5vw, 4rem);
-}
-
-.group {
-  padding-block-start: var(--space-6);
-  border-block-start: 2px solid var(--impact-accent);
-}
-
-.group h3 {
-  display: flex;
-  gap: var(--space-3);
-  margin: 0 0 var(--space-6);
-  font-size: clamp(1.6rem, 3vw, 2.6rem);
-}
-
-.groupRecords {
+.activityRecords {
   display: grid;
   gap: var(--space-6);
+  padding-block-start: var(--space-6);
+  border-block-start: 2px solid var(--impact-accent);
 }
 
 .activityRecord {
@@ -181,7 +163,7 @@
   .activityHeader { grid-template-columns: 1fr; }
   .toolsHeader h2,
   .activityHeader h2 { max-inline-size: 18ch; }
-  .categories { grid-template-columns: 1fr; }
-  .toolList li,
+  .categories,
+  .toolList { grid-template-columns: 1fr; }
   .activityRecord { grid-template-columns: 1fr; }
 }

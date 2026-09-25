@@ -44,7 +44,7 @@
   display: grid;
   gap: var(--space-2);
   align-self: end;
-  padding: var(--space-5);
+  padding: var(--space-6);
   border-block-start: var(--border-strong) solid var(--color-rule);
 }
 
@@ -70,7 +70,7 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-5);
+  gap: var(--space-6);
   padding: clamp(1.25rem, 3vw, 2.5rem);
   background: var(--color-surface-elevated);
   border-block-start: var(--border-strong) solid var(--color-data-positive);
@@ -103,6 +103,10 @@
   display: grid;
   gap: var(--space-2);
   min-width: 0;
+}
+
+.composer > .field:not(.message) {
+  margin-block-start: var(--space-3);
 }
 
 .field input,
@@ -151,8 +155,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 3.25rem;
-  padding: var(--space-3) var(--space-5);
+  min-height: 4rem;
+  padding: var(--space-4) var(--space-6);
   color: var(--color-accent-contrast);
   background: var(--color-accent);
   border: var(--border-strong) solid var(--color-accent);

@@ -15,7 +15,7 @@
 
 .dialog::backdrop { background: var(--modal-overlay-bg, rgb(0 0 0 / 48%)); }
 .surface { display: grid; grid-template-rows: auto minmax(0, 1fr); block-size: 100%; min-inline-size: 0; }
-.header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-5); align-items: start; padding: clamp(var(--space-4), 3vw, var(--space-7)); border-block-end: var(--border-thin) solid var(--color-rule); }
+.header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-6); align-items: start; padding: clamp(var(--space-4), 3vw, var(--space-8)); border-block-end: var(--border-thin) solid var(--color-rule); }
 .header h2 { max-inline-size: 32ch; margin: var(--space-1) 0; font: 760 clamp(1.35rem, 3vw, 2.4rem)/1.05 var(--font-body); overflow-wrap: anywhere; }
 .header p { max-inline-size: 68ch; margin: 0; color: var(--color-text-secondary); overflow-wrap: anywhere; }
 .eyebrow { font: 700 0.75rem/1.2 var(--font-mono); letter-spacing: 0.14em; text-transform: uppercase; }
@@ -23,11 +23,12 @@
 .navigation button,
 .actions a { min-inline-size: 2.75rem; min-block-size: 2.75rem; }
 .closeButton { display: inline-flex; gap: var(--space-2); align-items: center; justify-content: center; padding: var(--space-3) var(--space-4); color: var(--color-text-primary); border: var(--border-thin) solid var(--color-rule-strong); background: var(--color-surface-elevated); cursor: pointer; }
-.body { display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; min-block-size: 0; padding: clamp(var(--space-4), 3vw, var(--space-7)); overflow: auto; }
+.body { display: grid; grid-template-rows: minmax(0, 1fr) auto auto auto; min-block-size: 0; padding: clamp(var(--space-4), 3vw, var(--space-8)); overflow: auto; }
 .pdfFrame,
 .imageFrame { display: grid; place-items: center; min-block-size: 0; overflow: hidden; border: var(--border-thin) solid var(--color-rule); background: var(--color-surface-elevated); }
+.imageFrame { align-content: start; max-block-size: min(60dvh, 42rem); padding: clamp(var(--space-3), 2vw, var(--space-6)); overflow: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
 .pdfFrame iframe { inline-size: 100%; block-size: 100%; min-block-size: 24rem; border: 0; }
-.imageFrame img { display: block; max-inline-size: 100%; max-block-size: 100%; inline-size: auto; block-size: auto; object-fit: contain; }
+.imageFrame img { display: block; max-inline-size: none; max-block-size: none; inline-size: 100%; block-size: auto; object-fit: contain; }
 .imageMeta { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-6); justify-content: space-between; align-items: baseline; padding-block: var(--space-4); }
 .imageMeta p { margin: 0; }
 .context { margin: var(--space-4) 0 0; color: var(--color-text-secondary); overflow-wrap: anywhere; }
@@ -41,7 +42,7 @@
 .navigation button:focus-visible,
 .actions a:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
 .failure,
-.loadingState { align-self: center; margin: auto; max-inline-size: 42rem; padding: clamp(var(--space-6), 5vw, var(--space-9)); text-align: center; }
+.loadingState { align-self: center; margin: auto; max-inline-size: 42rem; padding: clamp(var(--space-6), 5vw, var(--space-8)); text-align: center; }
 .failure p { color: var(--color-text-secondary); }
 .failure .actions { justify-content: center; }
 
