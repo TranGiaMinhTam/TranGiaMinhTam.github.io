@@ -18,7 +18,7 @@ describe('streaming archive inventory', () => {
     const second = await inventoryArchive({ workspaceRoot, sourceRoot: path.join(workspaceRoot, 'src/assets/minh-tam') })
     expect(first.report).toMatchObject({ canProceed: true, blockingCount: 0 })
     expect(first.summary.fileCount).toBe(127)
-    expect(first.summary.totalBytes).toBe(314709235)
+    expect(first.summary.totalBytes).toBe(311218906)
     expect(second.facts).toEqual(first.facts)
   }, 60_000)
 

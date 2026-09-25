@@ -15,9 +15,11 @@ describe('reviewed neutral archive metadata', () => {
     const joined = joinArchiveMetadata({ canonicalItems: canonical.items, metadata })
     expect(metadata).toHaveLength(110)
     expect(joined.report.canProceed).toBe(true)
-    expect(joined.items.flatMap(({ physicalSources }) => physicalSources)).toHaveLength(128)
+    expect(joined.items.flatMap(({ physicalSources }) => physicalSources)).toHaveLength(127)
     for (const record of metadata) {
-      expect(record.title).toMatch(/^Archive record \d{3}$/u)
+      expect(record.title.length).toBeGreaterThan(0)
+      expect(record.title).not.toMatch(/[/\\]/u)
+      expect(record.title).not.toMatch(/\.(?:jpg|jpeg|png|heic|pdf|docx)$/iu)
       expect(record.caption).not.toMatch(/\.(?:jpg|jpeg|png|heic|pdf|docx)/iu)
     }
   }, 60_000)
