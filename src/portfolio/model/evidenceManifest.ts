@@ -1,6 +1,6 @@
 import borsworthScholarship from '../../assets/generated/minh-tam/document-preview/borsworth-scholarship-first-2-pages.pdf'
 import gysBrochure from '../../assets/minh-tam/certificates/gys-brochure.pdf'
-import proteinDockingPublication from '../../assets/minh-tam/source/Science research /2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf'
+import proteinDockingPublication from '../../assets/minh-tam/source/Science research /2026 Protein Docking/Kỷ yếu hội nghị khoa học kỹ thuật Dược lần thứ 42 năm 2026 (extracted).pdf'
 import simLseCertificate from '../../assets/minh-tam/certificates/sim-lse-certificate.pdf'
 import wicoPoster from '../../assets/minh-tam/certificates/wico-poster.pdf'
 import worthgateScholarship from '../../assets/generated/minh-tam/document-preview/worthgate-scholarship-first-2-pages.pdf'
