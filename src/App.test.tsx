@@ -19,7 +19,7 @@ describe('active scientific observatory portfolio', () => {
 
     expect(screen.getByTestId('portfolio-observatory')).toBeInTheDocument()
     expect(screen.getByRole('main')).toHaveAttribute('id', 'scan-field')
-    expect(screen.getAllByRole('region').map((region) => region.id).filter(Boolean)).toEqual(
+    expect(screen.getAllByRole('region').map((region) => region.id).filter((id) => sectionRegistry.some((section) => section.id === id))).toEqual(
       sectionRegistry.map((section) => section.id),
     )
     expect(screen.getAllByTestId(/^locus-link-/)).toHaveLength(10)
@@ -40,8 +40,8 @@ describe('active scientific observatory portfolio', () => {
       screen.getByTestId('resume-download-identity'),
     ]
 
-    expect(screen.getAllByTestId(/^resume-content-/)).toHaveLength(4)
-    expect(container.querySelectorAll('[data-resume-claim]')).toHaveLength(13)
+    expect(screen.getAllByTestId(/^resume-content-/)).toHaveLength(3)
+    expect(container.querySelectorAll('[data-resume-claim]')).toHaveLength(11)
     expect(container.querySelectorAll('[data-authority]')).toHaveLength(0)
     expect(downloads.every((link) => link.hasAttribute('download'))).toBe(true)
     expect(downloads[0]).toHaveAttribute('href', downloads[1].getAttribute('href'))

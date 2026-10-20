@@ -40,11 +40,13 @@ export function LaboratoryResearch({ model }: Readonly<{ model: LaboratoryResear
     </div>
 
     <div className={styles.evidenceStrip} aria-label="Laboratory research evidence">
-      {model.evidence.map((capability) => <div key={capability.id} data-visual-relationship={relationshipFor(model, capability.id)}>
+      {model.evidence.filter(({ id }) => id !== figure?.id).map((capability) => <div key={capability.id} data-visual-relationship={relationshipFor(model, capability.id)}>
         <ResearchEvidenceAction capability={capability} group={figure ? [figure] : undefined} />
       </div>)}
     </div>
-    {figure ? <ResearchFigure capability={figure} group={[figure]} /> : null}
+    {figure ? <div data-visual-relationship={relationshipFor(model, figure.id)}>
+      <ResearchFigure capability={figure} group={[figure]} />
+    </div> : null}
     <ResearchRelationshipSummary domain={model.domain} rows={model.semanticRows} />
   </div>
 }

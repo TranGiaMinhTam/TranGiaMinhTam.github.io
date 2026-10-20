@@ -12,7 +12,7 @@ describe('U-05 academic and evidence bodies', () => {
   it('renders the curriculum cross-section with exact status, results, and canonical actions', () => {
     if (!selection) throw new Error('Expected accepted U-05 selection.')
     render(<AcademicTrajectory model={selection.trajectory} />)
-    expect(screen.getByRole('heading', { name: /curriculum cross-section/i })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: /curriculum cross-section/i })).not.toBeInTheDocument()
     expect(screen.getByText('In progress')).toBeInTheDocument()
     expect(screen.getByText('Completed')).toBeInTheDocument()
     expect(screen.getByText('GPA 9.0/10 in Grade 10')).toBeInTheDocument()

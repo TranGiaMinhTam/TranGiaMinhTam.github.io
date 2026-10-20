@@ -38,6 +38,28 @@ const group = Object.freeze({
 }) satisfies ArchiveGroupData
 
 describe('U-04 Archive Explorer', () => {
+  it('loads Scientific Research by default and supports closing, reopening, and switching groups', async () => {
+    const research = { ...summary, id: asArchiveGroupId('scientific-research'), label: 'Scientific Research', description: 'Research evidence.' }
+    const loadGroup = vi.fn(async (id: string) => ({ ok: true as const, group: { ...group, id: asArchiveGroupId(id) }, cached: false }))
+    render(<ArchiveExplorer summaries={[research, summary]} loadGroup={loadGroup} />)
+    const researchButton = screen.getByRole('button', { name: /scientific research/i })
+    const otherButton = screen.getByRole('button', { name: /test gallery/i })
+    expect(researchButton).toHaveAttribute('aria-expanded', 'true')
+    expect(otherButton).toHaveAttribute('aria-expanded', 'false')
+    expect(await screen.findByRole('heading', { name: 'Field Project' })).toBeInTheDocument()
+    expect(loadGroup).toHaveBeenCalledWith('scientific-research')
+    fireEvent.click(researchButton)
+    expect(researchButton).toHaveAttribute('aria-expanded', 'false')
+    expect(screen.queryByRole('region', { name: 'Scientific Research' })).not.toBeInTheDocument()
+    fireEvent.click(researchButton)
+    expect(await screen.findByRole('heading', { name: 'Field Project' })).toBeInTheDocument()
+    fireEvent.click(otherButton)
+    expect(researchButton).toHaveAttribute('aria-expanded', 'false')
+    expect(otherButton).toHaveAttribute('aria-expanded', 'true')
+    await waitFor(() => expect(loadGroup).toHaveBeenLastCalledWith('test-gallery'))
+    expect(await screen.findByRole('heading', { name: 'Field Project' })).toBeInTheDocument()
+  })
+
   it('starts summary-only and loads one selected group through a button', async () => {
     const loadGroup = vi.fn(async () => ({ ok: true as const, group, cached: false }))
     render(<ArchiveExplorer summaries={[summary]} loadGroup={loadGroup} />)

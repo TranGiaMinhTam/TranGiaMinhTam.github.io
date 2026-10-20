@@ -93,6 +93,10 @@
 - [x] Step 29 - Correct Future Innovator preview spacing, restore proper media-viewer margins and image containment, and replace the Data Stories signal bars with a clean aligned four-row method list. Replaced every remaining undefined `--space-5`, `--space-7`, and `--space-9` reference under `src/portfolio` with defined tokens; added valid inset padding to the innovation card and image viewer; and reduced the signal sheet to aligned Step/Method columns with no bars or Meaning/Decision labels. Fifty focused tests, strict TypeScript, the production build, and the 24-case responsive Chrome matrix pass with zero findings; the three requested surfaces were manually inspected.
 - [ ] Step 30 - Remove the Data Stories lined-paper background and excess empty height, present SIM-LSE and Future Innovator Camp as two sibling project cards without appended resume duplication, and make full image previews keyboard-scrollable within a bounded viewer region.
 
+- [x] Step 31 - Match Preview resume typography to adjacent identity actions; open Scientific Research by default when present, preserve close/reopen and other category selection, and verify focused tests plus production build.
+
+- [x] Step 32 - Simplify repeated section copy and supplemental headings, remove the duplicated scholarship summary from composed academic content, consolidate image evidence actions with previews, and verify focused tests, types, build, and changed-file lint. Preserve unique information and accessible summaries.
+
 ## Story Traceability
 
 | Story | Planned implementation | Verification |

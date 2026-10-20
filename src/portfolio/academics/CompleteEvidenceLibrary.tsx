@@ -12,7 +12,6 @@ export function CompleteEvidenceLibrary() {
       </div>
       <div className={styles.archiveHeaderNote}>
         <p>Select a category to explore the related photographs and documents.</p>
-        <p>Project-specific highlights, including the selected 2026 Protein Docking conference photograph, stay with their project stories.</p>
       </div>
     </header>
     <ArchiveExplorer />

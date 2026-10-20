@@ -4,16 +4,13 @@ import { AcademicRelationshipSummary } from './AcademicRelationshipSummary'
 import { AcademicStatus } from './AcademicStatus'
 import styles from './AcademicEvidence.module.css'
 
+const scholarshipSchools: Readonly<Record<string, string>> = {
+  'evidence-worthgate-scholarship': 'Worthgate School',
+  'evidence-borsworth-scholarship': 'Bosworth Independent School',
+}
+
 export function AcademicTrajectory({ model }: Readonly<{ model: AcademicTrajectoryViewModel }>) {
   return <article className={styles.trajectory} data-testid="academic-trajectory-body">
-    <header className={styles.trajectoryHeader}>
-      <div>
-        <p className={styles.eyebrow}>ACADEMIC FIELD / LEARNING PROGRESSION</p>
-        <h2>A curriculum cross-section of scientific growth.</h2>
-      </div>
-      <p className={styles.headerNote}>Two learning stages connect subjects, completed results, current study, and recognition in one concise academic overview.</p>
-    </header>
-
     <div className={styles.strata}>
       {model.strata.map((stratum, index) => <article className={styles.stratum} key={stratum.id} aria-labelledby={`${stratum.id}-title`}>
         <div className={styles.stratumIndex} aria-hidden="true">{String(index + 1).padStart(2, '0')}</div>
@@ -36,6 +33,7 @@ export function AcademicTrajectory({ model }: Readonly<{ model: AcademicTrajecto
           {stratum.recognitions.map((recognition) => <div className={styles.recognition} key={recognition.id}>
             <span>Scholarship offer</span>
             <strong>{recognition.label}</strong>
+            {scholarshipSchools[recognition.evidence.evidence.id] ? <p>{scholarshipSchools[recognition.evidence.evidence.id]}</p> : null}
             <AcademicEvidenceAction capability={recognition.evidence} label="Open offer evidence" />
           </div>)}
           {stratum.transcript && <AcademicEvidenceAction capability={stratum.transcript} label="Open academic transcript" />}

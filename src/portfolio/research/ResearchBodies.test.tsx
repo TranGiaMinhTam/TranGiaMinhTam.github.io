@@ -60,6 +60,10 @@ describe("U-04 research bodies", () => {
       screen.getAllByLabelText(/2026 protein docking project visuals/i)[0],
     ).toBeInTheDocument();
     expect(screen.getAllByRole("img")).toHaveLength(1);
+    const imageEvidence = selection.computational.evidence.find(({ evidence }) => evidence.full.mediaKind === 'image');
+    if (!imageEvidence) throw new Error('Expected project image evidence.');
+    expect(screen.getAllByTestId(imageEvidence.testId)).toHaveLength(1);
+    expect(screen.getByTestId(imageEvidence.testId).closest('figure')).not.toBeNull();
     expect(screen.getByRole("img")).toHaveAttribute(
       "alt",
       expect.stringMatching(/research team with the molecular docking poster at the 2026 pharmacy conference/i),
@@ -85,6 +89,7 @@ describe("U-04 research bodies", () => {
     expect(
       screen.getByTestId("laboratory-research-figure-cashew-polyphenol-figure-evidence-link-fallback"),
     ).toHaveTextContent("Project figure unavailable");
+    expect(screen.getAllByTestId('laboratory-research-figure-cashew-polyphenol-figure-evidence-link')).toHaveLength(1);
     expect(
       screen.getByRole("heading", { name: /agricultural by-product/i }),
     ).toBeInTheDocument();

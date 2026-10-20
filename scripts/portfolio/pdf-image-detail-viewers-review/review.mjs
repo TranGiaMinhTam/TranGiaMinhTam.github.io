@@ -93,7 +93,7 @@ const actionExpression = (reviewCase) => `new Promise((resolve, reject) => {
     if(action==='pdf')document.querySelector('[data-testid="computational-projects-publication-protein-docking-publication-evidence-link"]')?.click();
     if(action==='single-image')document.querySelector('[data-testid="computational-projects-figure-docking-conference-poster-evidence-link"]')?.click();
     if(action==='resume')document.querySelector('[data-testid="resume-download-identity-preview-button"]')?.click();
-    if(action==='archive-image'||action==='archive-cards')document.querySelector('[data-archive-summary="scientific-research"]')?.click();
+    if(action==='archive-image'||action==='archive-cards')document.querySelector('[data-archive-summary="scientific-research"][aria-expanded="false"]')?.click();
     const finish=()=>{
       if((action==='archive-image'||action==='archive-cards')&&!document.querySelector('[data-archive-group]'))return setTimeout(finish,40);
       if(action==='archive-image')document.querySelector('[data-archive-kind="image"] button')?.click();

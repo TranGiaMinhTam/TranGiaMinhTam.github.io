@@ -12,7 +12,7 @@ describe('U-06 tools and fieldwork bodies', () => {
   it('renders sixteen tools as a simple list across four categories with no ratings or secondary panels', () => {
     if (!selection) throw new Error('Expected accepted U-06 selection.')
     const { container } = render(<MethodsAndTools model={selection.tools} />)
-    expect(screen.getByRole('heading', { name: /what i use, and where it shows up/i })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: /what i use, and where it shows up/i })).not.toBeInTheDocument()
     expect(container.querySelectorAll('[data-tool-id]')).toHaveLength(16)
     expect(container.querySelector('[data-classification]')).toBeNull()
     expect(container.querySelector('[class*="toolConnections"]')).toBeNull()
@@ -31,7 +31,7 @@ describe('U-06 tools and fieldwork bodies', () => {
   it('renders all four fieldwork and leadership records in one consistent sequence', () => {
     if (!selection) throw new Error('Expected accepted U-06 selection.')
     const { container } = render(<FieldworkAndLeadership model={selection.fieldworkLeadership} />)
-    expect(screen.getByRole('heading', { name: /where responsibility met the field/i })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: /where responsibility met the field/i })).not.toBeInTheDocument()
     const recordList = screen.getByLabelText('Fieldwork and leadership experiences')
     expect(within(recordList).getAllByRole('article')).toHaveLength(4)
     expect(within(recordList).getByText('Volunteer & Conservation Participant')).toBeInTheDocument()

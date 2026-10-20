@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { createImageViewerGroup, resolveImageCapability, useMediaViewer } from '../media-viewer'
 import type { ResearchEvidenceCapability } from './research.types'
+import { ResearchEvidenceAction } from './ResearchEvidenceAction'
 import styles from './ResearchData.module.css'
 
 export function ResearchFigure({ capability, group }: Readonly<{ capability: ResearchEvidenceCapability; group?: readonly ResearchEvidenceCapability[] }>) {
@@ -9,6 +10,7 @@ export function ResearchFigure({ capability, group }: Readonly<{ capability: Res
   if (failed) return <div className={styles.figureFallback} role="status" data-testid={`${capability.testId}-fallback`}>
     <strong>Project figure unavailable.</strong>
     <span>Project context and relationships remain available in text.</span>
+    <ResearchEvidenceAction capability={capability} group={group} />
   </div>
 
   const image = <img
@@ -34,6 +36,9 @@ export function ResearchFigure({ capability, group }: Readonly<{ capability: Res
           if (imageGroup) viewer.openImage(imageGroup, Math.max(0, index), event.currentTarget)
         }}>{image}</button>
       : image}
-    <figcaption>{capability.evidence.caption}</figcaption>
+    <figcaption>
+      <p>{capability.evidence.caption}</p>
+      <ResearchEvidenceAction capability={capability} group={group} />
+    </figcaption>
   </figure>
 }

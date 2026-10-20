@@ -98,6 +98,7 @@
 .directionLine { grid-column: 2; margin: 0; color: var(--color-text-primary); font-weight: 550; }
 
 .identityActions { grid-area: actions; display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.identityActions button { font: inherit; }
 .identityActions a,
 .identityActions button,
 .pendingAction { display: flex; justify-content: space-between; gap: var(--space-8); min-width: min(100%, 19rem); min-height: 3rem; padding: var(--space-3) var(--space-4); border: var(--border-strong) solid var(--color-accent); font-weight: 750; text-decoration: none; }

@@ -12480,3 +12480,35 @@ fix alignment for the 4 bullet points, there's some weird chart on the right"
 **Context**: CONSTRUCTION - U-05 UI Amendment Read-Only Status Review Complete; U-06 Remains Paused and Unactivated; SECURITY and PBT Rules N/A to This Non-Mutating Review
 
 ---
+
+## U-05 UI Review Amendment - Resume Typography and Default Research Panel
+**Timestamp**: 2026-10-20T15:01:44Z
+**User Input**: "Please fix the preview resume font and by default, open the content of Scientific Research button"
+**AI Response**: "Resumed the existing U-05 UI amendment. Workspace detection confirms the existing React/TypeScript/Vite portfolio with a clean working tree and prior reverse-engineering artifacts. Plan: inherit typography for identity actions, initialize Scientific Research as the selected archive category, and verify initial loading plus close/reopen behavior with focused tests and production build."
+**Context**: User-requested correction within current Code Generation review; no new workflow or stage advancement. Two attached screenshots show the smaller Preview resume label and desired expanded Scientific Research card. Enabled Security and PBT extensions retained.
+
+---
+
+## U-05 UI Review Amendment - Resume Typography and Default Research Panel Complete
+**Timestamp**: 2026-10-20T15:03:10Z
+**User Input**: "N/A"
+**AI Response**: "Matched Preview resume font to adjacent actions, initialized Scientific Research expansion when present, retained closing/reopening and category switching, and adapted browser review automation to the new default. All 77 focused tests, strict TypeScript, production build, changed-file lint and whitespace validation pass. Full lint reports three pre-existing unrelated release errors. Visual browser verification was not run. Updated Step 31 and state; retained pending Step 30 without claiming completion. Security/PBT compliance is recorded in the code summary; no blocking findings introduced within this amendment."
+**Context**: U-05 Code Generation review correction complete; no workflow advancement or deployment. Verification reused cached dependencies; normal build initially failed because dependencies were absent, then temp build-info paths and runner config loading allowed verification without writing outside workspace.
+
+---
+
+## U-05 UI Review Amendment - Page Simplification Requested
+**Timestamp**: 2026-10-20T19:00:12Z
+**User Input**: "please simplify the page and remove duplicated information where relevant"
+**AI Response**: "Resumed current UI review. Inspecting active bodies and resume composition. Plan: remove repeated section boilerplate, keep scholarship facts in their existing academic cards, simplify supplemental headings, and consolidate image evidence actions with the preview figures. Preserve unique records, accessible semantic summaries, preview/download actions, section targets, and the default research expansion."
+**Context**: Existing brownfield React/Vite project and approved U-05 review amendment; user authorizes simplification. Previously uncommitted changes preserved.
+
+---
+
+## U-05 UI Review Amendment - Page Simplification Complete
+**Timestamp**: 2026-10-20T19:04:35Z
+**User Input**: "N/A"
+**AI Response**: "Removed repeated section headings and introductory copy, consolidated scholarships into academic cards while preserving school names/percentages/evidence, and placed image evidence actions with their previews, retaining failure access. Preserved all unique records, accessible summaries, downloads, stable targets, preview behavior and initial Scientific Research expansion. Passed 172 tests, TypeScript checks, production build, changed-file lint, whitespace checks and all 24 final Chrome cases in both themes with zero findings. Extension compliance is documented in the code summary. Updated Step 32 and state without advancing stages."
+**Context**: Final UI review amendment. A temporary browser-check setup initially encountered sandbox local-server restrictions and duplicate React from cached dependencies; local testing authorization and a temporary dedupe config resolved verification. Temporary browser evidence remains in /private/tmp; no dependency or repository Vite config changes. Earlier tracked screenshots temporarily removed by the review harness were restored from HEAD using read-only git access; final checks used temporary outputs.
+
+---

@@ -16,7 +16,9 @@ export function ArchiveExplorer({
   loadGroup?: LoadGroup
   onDetail?: (trigger: ArchiveDetailTrigger) => void
 }>) {
-  const [activeId, setActiveId] = useState<ArchiveGroupId | null>(null)
+  const [activeId, setActiveId] = useState<ArchiveGroupId | null>(() =>
+    summaries.find(({ id }) => id === 'scientific-research')?.id ?? null,
+  )
   const [result, setResult] = useState<ArchiveGroupLoadResult | null>(null)
   const [requestVersion, setRequestVersion] = useState(0)
 

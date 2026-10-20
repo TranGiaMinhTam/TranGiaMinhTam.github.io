@@ -24,8 +24,6 @@ export function ResearchIdentity({
 
     <div className={styles.identityMeta} aria-label="Identity metadata">
       <span>Based in {identity.location}</span>
-      <span>Student-led inquiry</span>
-      <span>Science and data portfolio</span>
     </div>
 
     <p className={styles.identitySummary}>{identity.summary}</p>

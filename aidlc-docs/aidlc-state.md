@@ -67,6 +67,16 @@
 - **Build and Test summary**: `aidlc-docs/construction/build-and-test/build-and-test-summary.md`; completed and approved on 2026-09-18
 - **U-06 external-source status**: Unactivated `src/portfolio/impact/` source and preliminary preflight artifacts detected; preserved for plan-governed reconciliation after approval. Preliminary TypeScript, 23 focused tests, and lint pass; no candidate or activation approval is implied.
 
+## Latest UI Review Amendment
+
+- [x] Page simplification: removed duplicate internal section headings and filler copy, kept scholarship facts and evidence in academic cards only, and consolidated image evidence actions into figures with fallback access.
+- [x] Simplification verified with 172 tests across 44 files, TypeScript checks, production build, changed-file ESLint, and 24 Chrome cases at 320/768/1280/1440 pixels in both themes with zero findings.
+
+- [x] Resume preview now inherits the identity-action font and Scientific Research opens by default when available.
+- [x] Verified 77 tests across 22 files, strict TypeScript, production build, changed-file lint, and whitespace validation.
+- Full lint has three pre-existing errors in release/evidenceBundle.ts and release/releaseArbitraries.ts; no visual browser verification performed for this amendment.
+- Current stage remains U-05 Code Generation review; U-06 remains paused.
+
 ## Workspace State
 
 - **Existing code**: Yes

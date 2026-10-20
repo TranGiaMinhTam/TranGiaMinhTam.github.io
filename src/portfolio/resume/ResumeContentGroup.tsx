@@ -32,9 +32,7 @@ export function ResumeContentGroup({ group }: Readonly<{ group: ResumeSectionGro
     data-testid={`resume-content-${group.sectionId}`}
   >
     <header className={styles.groupHeader}>
-      <p>Selected experience</p>
       <h3 id={`resume-group-${group.sectionId}`}>{group.label}</h3>
-      <p>Additional background and achievements connected to this section.</p>
     </header>
     <ul className={styles.claims}>
       {group.claims.map((claim) => <ResumeClaim claim={claim} key={claim.id} />)}
